@@ -1,0 +1,23 @@
+
+#sidebar {
+
+    .submenu-item {
+        display:flex;
+
+
+        .sidebar-icon {
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            font-size:22px
+        }
+    }
+    .sidebar-badges {
+
+        .sidebar-badge {
+            color: #25396f;
+        }
+        
+    }
+}
+
