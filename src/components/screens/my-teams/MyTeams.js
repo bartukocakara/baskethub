@@ -1,13 +1,14 @@
-import React from 'react'
-
-const LastSearch = () => {
+import React from 'react';
+import MyTeamsCard from '../../cards/my-teams/MyTeamsCard';
+import "./_myTeams.scss";
+const MyTeams = () => {
     return (
         <>
             <section id="content-types">
                 <div className="row">
                     {
-                        [...Array(10)].map((match) => (
-                            <MyMatchesCard />
+                        [...Array(5)].map((match) => (
+                            <MyTeamsCard />
                         ))
                     }
                    
@@ -17,4 +18,4 @@ const LastSearch = () => {
     )
 }
 
-export default LastSearch
+export default MyTeams

@@ -1,0 +1,67 @@
+.feed-my-players-card {
+
+
+    .card-custom {
+
+        .card-avatar {
+        }
+        .card-middle-text {
+            width: 70%;
+            justify-content:space-between;
+            padding:2px;
+
+            .car-middle-div {
+                width:30%;
+                justify-content:center;
+                text-align: center;
+                align-items:center;
+                justify-content:space-between;
+                .prop-name{
+                    border-bottom:1px solid rgb(221, 221, 238);
+                    line-height: 17px;
+                }
+                p{
+                    font-weight: bold;
+                    text-align: center;
+                    white-space:pre-wrap;
+                    word-break:break-word;
+                    height: 5vh;
+                }
+            }
+
+            
+        }
+    
+        .card-left-image {
+            width:45%;
+
+            img{
+                width:70% !important;
+            }
+
+        }
+    }
+    .card-footer {
+        display: flex;
+
+        .footer-left{
+            float: left;
+        }
+        .footer-right{
+            margin-left:auto;
+            float:right;
+            a{
+                padding:7px;
+                align-items:center;
+                justify-content:center;
+                margin-right:20px
+            }
+            .card-footer-icon{
+                font-size: 25px;
+                font-weight: bold;
+            }
+
+        }
+    }
+    
+}

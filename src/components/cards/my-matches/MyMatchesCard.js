@@ -1,5 +1,8 @@
 import React from 'react'
 import "./_myMatchesCard.scss";
+import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail";
+import { FaHandshake } from "@react-icons/all-files/fa/FaHandshake";
+import { FiShare2 } from "@react-icons/all-files/fi/FiShare2";
 
 const MyMatchesCard = () => {
     return (
@@ -11,9 +14,18 @@ const MyMatchesCard = () => {
                         <img src="assets/images/faces/2.jpg" alt="" srcset="" />
                     </div>
                     <div className="card-middle-text d-flex">
-                        <span><p>Text 1</p></span>
-                        <span><p>Text 1</p></span>
-                        <span><p>Text 1</p></span>
+                        <div class="car-middle-div">
+                            <p className="prop-name">Maç Saati</p>
+                            <p>19:00 - 20:00</p>
+                        </div>
+                        <div class="car-middle-div">
+                            <p className="prop-name">Oyuncu sayısı</p>
+                            <p>8</p>
+                        </div>
+                        <div class="car-middle-div">
+                            <p className="prop-name">Gerekli oyuncu</p>
+                            <p>1-3</p>
+                        </div>
 
                     </div>
                     <div className="card-left-image">
@@ -21,9 +33,23 @@ const MyMatchesCard = () => {
                         alt="Card image cap" />
                     </div>
                 </div>
-                <div className="card-footer d-flex justify-content-between">
-                    <span>Card Footer</span>
-                    <button className="btn btn-light-primary">Read More</button>
+                <div className="card-footer">
+                    <div className="footer-left">
+                        <a href="">
+                            Court Details
+                        </a>
+                    </div>
+                    <div className="footer-right">
+                    <a href="" >
+                        <AiOutlineMail className="card-footer-icon" />
+                    </a>
+                    <a href="" >
+                        <FaHandshake className="card-footer-icon" />
+                    </a>
+                    <a href="" >
+                        <FiShare2 className="card-footer-icon" />
+                    </a>
+                    </div>
                 </div>
             </div>
         </div>

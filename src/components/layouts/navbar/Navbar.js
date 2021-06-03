@@ -1,4 +1,5 @@
 import React from 'react'
+import "./_navbar.scss";
 
 const Navbar = () => {
     return (
@@ -22,11 +23,14 @@ const Navbar = () => {
                                     aria-expanded="false">
                                     <i class='bi bi-envelope bi-sub fs-4 text-gray-600'></i>
                                 </a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-                                    <li>
-                                        <h6 class="dropdown-header">Mail</h6>
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">No new mail</a></li>
+                                <ul class="dropdown-menu dropdown-menu-end mail-drop" aria-labelledby="dropdownMenuButton">
+                                    <h6 class="dropdown-header">Mail</h6>
+                                    {
+                                        [...Array(5)].map(() => (
+                                            <li><a class="dropdown-item" href="#">No new mail</a></li>
+
+                                        ))
+                                    }
                                 </ul>
                             </li>
                             <li class="nav-item dropdown me-3">
@@ -34,11 +38,14 @@ const Navbar = () => {
                                     aria-expanded="false">
                                     <i class='bi bi-bell bi-sub fs-4 text-gray-600'></i>
                                 </a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-                                    <li>
+                                <ul class="dropdown-menu dropdown-menu-end notification-drop" aria-labelledby="dropdownMenuButton">
                                         <h6 class="dropdown-header">Notifications</h6>
-                                    </li>
-                                    <li><a class="dropdown-item">No notification available</a></li>
+                                    {
+                                        [...Array(5)].map(() => (
+                                            <li><a class="dropdown-item" href="#">No new mail</a></li>
+
+                                        ))
+                                    }
                                 </ul>
                             </li>
                         </ul>
@@ -56,9 +63,7 @@ const Navbar = () => {
                                 </div>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-                                <li>
-                                    <h6 class="dropdown-header">Hello, John!</h6>
-                                </li>
+                                <h5 class="dropdown-header">Hello, Bartu!</h5>
                                 <li><a class="dropdown-item" href="#"><i class="icon-mid bi bi-person me-2"></i> My
                                         Profile</a></li>
                                 <li><a class="dropdown-item" href="#"><i class="icon-mid bi bi-gear me-2"></i>

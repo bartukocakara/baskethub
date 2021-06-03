@@ -1,10 +1,20 @@
 import React from 'react'
+import FavouriteCourtCard from '../../cards/favourite-courts/FavouriteCourtCard'
 
 const MyFavCourts = () => {
     return (
-        <div>
-            
-        </div>
+        <>
+            <section id="content-types">
+                <div className="row">
+                    {
+                        [...Array(10)].map((match) => (
+                            <FavouriteCourtCard />
+                        ))
+                    }
+                   
+                </div>
+            </section>
+        </>
     )
 }
 

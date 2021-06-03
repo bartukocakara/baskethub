@@ -1,9 +1,61 @@
 import React from 'react'
+import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail";
+import { FaHandshake } from "@react-icons/all-files/fa/FaHandshake";
+import { FiShare2 } from "@react-icons/all-files/fi/FiShare2";
+import "./_favouritePlayer.scss";
 
 const FavouritePlayerCard = () => {
     return (
-        <div>
-            
+        <div className="col-xl-12 col-md-12 col-sm-12 feed-card feed-my-fav-players-card">
+            <div className="card">
+                <h4 className="card-title">Bartu Kocakara</h4>
+                <div className="card-content d-flex card-body card-custom">
+                    <div className="card-middle-text d-flex">
+                        <div class="car-middle-div">
+                            <p className="prop-name w-100 p-2 badge bg-primary">Yaş</p>
+                            <p>28</p>
+                        </div>
+                        <div class="car-middle-div">
+                            <p className="prop-name w-100 p-2 badge bg-primary">Kilo</p>
+                            <p>90</p>
+                        </div>
+                        <div class="car-middle-div">
+                            <p className="prop-name w-100 p-2 badge bg-primary">Boy</p>
+                            <p>1.90</p>
+                        </div>
+                        <div class="car-middle-div">
+                            <p className="prop-name w-100 p-2 badge bg-primary">Konum</p>
+                            <p>İstanbul</p>
+                        </div>
+                        <div class="car-middle-div">
+                            <p className="prop-name w-100 p-2 badge bg-primary">Posizyon</p>
+                            <p>SF</p>
+                        </div>
+                    </div>
+                    <div className="card-left-image">
+                        <img className="img-fluid w-50 card-image" src="assets/images/samples/player.jpg"
+                        alt="Card image cap" />
+                    </div>
+                </div>
+                <div className="card-footer">
+                    <div className="footer-left">
+                        <a href="">
+                            Player Details
+                        </a>
+                    </div>
+                    <div className="footer-right">
+                    <a href="" >
+                        <AiOutlineMail className="card-footer-icon" />
+                    </a>
+                    <a href="" >
+                        <FaHandshake className="card-footer-icon" />
+                    </a>
+                    <a href="" >
+                        <FiShare2 className="card-footer-icon" />
+                    </a>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

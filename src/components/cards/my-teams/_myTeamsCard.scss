@@ -1,0 +1,32 @@
+.feed-my-teams-card {
+
+    .card-custom {
+        ul{
+            margin:auto;
+            list-style-type: none !important;
+
+            li{
+                justify-content:center;
+                align-items: center;
+                padding:0.5rem;
+                border:1px solid #dee2e6;
+                margin:0.5rem;
+                border-radius: 20px;
+                transition: 0.15s ease all;
+
+                &:hover {
+                    background-color: #f8f9fa;
+                }
+                p{
+                    margin:auto;
+                }
+            }
+        }
+    }
+    .card-footer {
+        .footer {
+            margin:auto;
+        }
+    }
+    
+}

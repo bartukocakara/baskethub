@@ -55,7 +55,9 @@ const Sidebar = () => {
                                     <li className="submenu-item ">
                                         <a href="component-badge.html">Favourite Courts</a>
                                     </li>
-                                    
+                                    <li className="submenu-item ">
+                                        <a href="component-badge.html">Favourite Teams</a>
+                                    </li>
                                 </ul>
                             </li>
 
