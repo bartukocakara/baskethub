@@ -4,7 +4,9 @@ import { RiTeamLine } from "@react-icons/all-files/ri/RiTeamLine";
 import { GoPerson } from "@react-icons/all-files/go/GoPerson";
 import { AiFillStar } from "@react-icons/all-files/ai/AiFillStar";
 import { AiOutlineFileSearch } from "@react-icons/all-files/ai/AiOutlineFileSearch";
-
+import {
+    Link,
+  } from "react-router-dom";
 
 import "./_sidebar.scss";
 
@@ -12,8 +14,17 @@ const Sidebar = () => {
     return (
             <div id="sidebar" className="active">
                 <div className="sidebar-wrapper active ps ps--active-y">
+                    <div class="sidebar-header">
+                        <div class="d-flex justify-content-between">
+                            <div class="logo">
+                                <h1 class="sidebar-app-name">BasketHall</h1>
+                            </div>
+                            <div class="toggler">
+                                <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                            </div>
+                        </div>
+                    </div>
                     <div className="sidebar-menu">
-                        <h1 class="sidebar-app-name">BasketHall</h1>
                         <ul className="menu">
                             <li className="sidebar-item active has-sub">
                                 <a href="#" className="sidebar-link">
@@ -22,62 +33,83 @@ const Sidebar = () => {
                                 </a>
                                 <ul className="submenu" style={{display: "none"}}>
                                     <li className="submenu-item">
-                                        <GiBasketballBasket className="sidebar-icon" />
-                                        <a href="component-alert.html">Court Search</a>
+                                        <Link to="/my-games">
+                                            <GiBasketballBasket className="sidebar-icon" />
+                                            Court Search
+                                        </Link>
                                     </li>
                                     <li className="submenu-item ">
+                                        <Link to="/my-games">
                                         <RiTeamLine className="sidebar-icon"/>
-                                        <a href="component-badge.html">Team Search</a>
+                                        Team Search
+                                        </Link>
                                     </li>
                                     <li className="submenu-item ">
+                                        <Link to="/my-games">
                                         <GoPerson className="sidebar-icon" />
-                                        <a href="component-breadcrumb.html">Player Search</a>
+                                        Player Search
+                                        </Link>
                                     </li>
                                     
                                 </ul>
                             </li>
                             <li className="sidebar-item ">
-                                <a href="index.html" className="sidebar-link">
+                                <Link to="/my-games" className="sidebar-link">
+
                                     <i className="bi bi-grid-fill"></i>
                                     <span>My Matches</span>
-                                </a>
+                                </Link>
                             </li>
 
                             <li className="sidebar-item  has-sub">
-                                <a href="#" className="sidebar-link">
+                                    <Link to="/my-games" className="sidebar-link">
                                     <AiFillStar />
                                     <span >Favourite</span>
-                                </a>
+                                </Link>
                                 <ul className="submenu" style={{display: "none"}}>
                                     <li className="submenu-item ">
-                                        <a href="component-alert.html">Favorite Players</a>
+                                        <Link to="/favourite-players" className="sidebar-link">
+                                            Favorite Players
+                                        </Link>
                                     </li>
                                     <li className="submenu-item ">
-                                        <a href="component-badge.html">Favourite Courts</a>
-                                    </li>
-                                    <li className="submenu-item ">
-                                        <a href="component-badge.html">Favourite Teams</a>
+                                        <Link to="/favourite-courts" className="sidebar-link">
+                                        Favourite courts
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>
 
                             <li className="sidebar-item">
-                                <a href="#" className="sidebar-link">
-                                <AiOutlineFileSearch />
-                                <span>Last Search</span>
-                                </a>
+                                <Link to="/last-search" className="sidebar-link">
+                                    <AiOutlineFileSearch />
+                                    <span>Last Search</span>
+                                </Link>
                             </li>
                         </ul>
                     </div>
+
                     <div class="sidebar-badges">
                         <div class="card-body">
                             <div class="badges">
-                                <span class="badge sidebar-badge">Hizmet Şartları</span>
-                                <span class="badge sidebar-badge">Gizlilik politikası</span>
-                                <span class="badge sidebar-badge">Çerez Politikası</span>
-                                <span class="badge sidebar-badge">Hakkımızda</span>
-                                <span class="badge sidebar-badge">İletişim</span>
-                                <span class="badge sidebar-badge">S.S.S</span>
+                                <Link to="/service-policies" className="sidebar-link">
+                                    <span class="badge sidebar-badge">Hizmet Şartları</span>
+                                </Link>
+                                <Link to="/secure" className="sidebar-link">
+                                    <span class="badge sidebar-badge">Gizlilik politikası</span>
+                                </Link>
+                                <Link to="/cookies" className="sidebar-link">
+                                    <span class="badge sidebar-badge">Çerez Politikası</span>
+                                </Link>                                
+                                <Link to="/about-us" className="sidebar-link">
+                                    <span class="badge sidebar-badge">Hakkımızda</span>
+                                </Link>
+                                <Link to="/contact" className="sidebar-link">
+                                    <span class="badge sidebar-badge">İletişim</span>
+                                </Link>
+                                <Link to="/faq" className="sidebar-link">
+                                    <span class="badge sidebar-badge">S.S.S</span>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -90,6 +122,7 @@ const Sidebar = () => {
                     <div className="ps__thumb-y" tabindex="0" style={{top: "0px", height: "316px"}}></div>
                 </div>
             </div>
+            
         // </div>
     )
 }

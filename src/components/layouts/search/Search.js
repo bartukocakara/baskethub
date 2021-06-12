@@ -2,7 +2,7 @@ import React from 'react'
 
 const Search = () => {
     return (
-        <section id="main" className="form-search">
+        <section id="main" className="form-search section">
             {/* <div className="row match-height"> */}
                 <div className="col-md-12 col-12">
                     <nav class="nav nav-pills flex-row flex-sm-row">

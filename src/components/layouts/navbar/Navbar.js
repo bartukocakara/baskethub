@@ -3,7 +3,7 @@ import "./_navbar.scss";
 
 const Navbar = () => {
     return (
-        <div id="main" class='layout-navbar'>
+        <>
         <header class='mb-3'>
             <nav class="navbar navbar-expand navbar-light ">
                 <div class="container-fluid">
@@ -82,7 +82,8 @@ const Navbar = () => {
             </nav>
         </header>
         
-    </div>
+        </>
+        
     )
 }
 

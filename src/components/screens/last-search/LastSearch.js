@@ -1,4 +1,5 @@
 import React from 'react'
+import MyMatchesCard from '../../cards/my-matches/MyMatchesCard'
 
 const LastSearch = () => {
     return (
