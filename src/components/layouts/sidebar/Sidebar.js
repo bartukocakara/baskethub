@@ -106,7 +106,7 @@ const Sidebar = () => {
                                     </li>
                                     <li className="submenu-item ">
                                         <Link to="/favourite-courts" className="sidebar-link">
-                                        Favourite courts
+                                        Favourite Courts
                                         </Link>
                                     </li>
                                 </ul>

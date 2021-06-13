@@ -27,6 +27,7 @@ import {
 import Profile from './components/screens/profile/Profile';
 import MessageDetail from './components/screens/message-detail/MessageDetail';
 import NotificationDetail from './components/screens/notification-detail/NotificationDetail';
+import MatchDetail from './components/card-details/match-detail/MatchDetail';
 function App() {
   return (
       <>
@@ -44,7 +45,9 @@ function App() {
                         <Search />
                         <Switch>
                             <Route exact path="/my-games" component={MyMatches} />
+                            <Route path="/match-detail" component={MatchDetail} />
                             <Route path="/favourite-players" component={MyFavPlayers} />
+                            <Route path="/player-detail" component={PlayerDetail} />
                             <Route path="/favourite-courts" component={MyFavCourts} />
                             <Route path="/fav-court-detail" component={FavCourtDetail} />
                             <Route path="/last-search" component={LastSearch} />

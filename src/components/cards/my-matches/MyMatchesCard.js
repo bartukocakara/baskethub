@@ -3,7 +3,10 @@ import "./_myMatchesCard.scss";
 import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail";
 import { FaHandshake } from "@react-icons/all-files/fa/FaHandshake";
 import { FiShare2 } from "@react-icons/all-files/fi/FiShare2";
-
+import {
+    NavLink,
+    Link
+  } from "react-router-dom";
 const MyMatchesCard = () => {
     return (
         <>
@@ -37,9 +40,9 @@ const MyMatchesCard = () => {
                 </div>
                 <div className="card-footer">
                     <div className="footer-left">
-                        <a href="">
-                            Court Details
-                        </a>
+                        <Link to="match-detail">
+                            Match Details
+                        </Link>
                     </div>
                     <div className="footer-right">
                     <a href="" >

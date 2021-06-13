@@ -2,13 +2,16 @@ import React from 'react'
 import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail";
 import { FaHandshake } from "@react-icons/all-files/fa/FaHandshake";
 import { FiShare2 } from "@react-icons/all-files/fi/FiShare2";
+import {
+    Link
+  } from "react-router-dom";
 import "./_favouritePlayer.scss";
 
 const FavouritePlayerCard = () => {
     return (
         <div className="col-xl-12 col-md-12 col-sm-12 feed-card feed-my-fav-players-card">
             <div className="card">
-                <h4 className="card-title">Bartu Kocakara</h4>
+                <h4 className="card-title text-center">Bartu Kocakara</h4>
                 <div className="card-content d-flex card-body card-custom">
                     <div className="card-middle-text d-flex">
                         <div class="car-middle-div">
@@ -39,9 +42,9 @@ const FavouritePlayerCard = () => {
                 </div>
                 <div className="card-footer">
                     <div className="footer-left">
-                        <a href="">
+                        <Link to="player-detail">
                             Player Details
-                        </a>
+                        </Link>
                     </div>
                     <div className="footer-right">
                     <a href="" >

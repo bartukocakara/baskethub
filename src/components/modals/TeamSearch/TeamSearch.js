@@ -17,11 +17,6 @@ const TeamSearch = ({handleTeamClose, show}) => {
                     <div className="form-group">
                         <input type="text" placeholder="Write Name" className="form-control" />
                     </div>
-                    <hr />
-                        <label>Password: </label>
-                        <div className="form-group">
-                            <input type="password" placeholder="Password" className="form-control" />
-                        </div>
                 </div>
             </form>
             <Modal.Footer>
