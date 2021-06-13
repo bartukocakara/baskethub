@@ -2,12 +2,15 @@ import React from 'react'
 import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail";
 import { FaHandshake } from "@react-icons/all-files/fa/FaHandshake";
 import { FiShare2 } from "@react-icons/all-files/fi/FiShare2";
+import {
+    Link
+  } from "react-router-dom";
 import "./_favouriteCourt.scss";        
 const FavouriteCourtCard = () => {
     return (
         <div className="col-xl-12 col-md-12 col-sm-12 feed-card feed-my-fav-courts-card">
             <div className="card">
-                <h4 className="card-title">Dr. Cavit Spor Salonu - İzmir/Bornova</h4>
+                <h4 className="card-title text-center">Dr. Cavit Spor Salonu - İzmir/Bornova</h4>
                 <div className="card-content d-flex card-body card-custom">
                     <div class="avatar avatar-lg me-2 card-avatar">
                         <img src="assets/images/faces/2.jpg" alt="" srcset="" />
@@ -34,9 +37,9 @@ const FavouriteCourtCard = () => {
                 </div>
                 <div className="card-footer">
                     <div className="footer-left">
-                        <a href="">
+                        <Link to="fav-court-detail">
                             Court Details
-                        </a>
+                        </Link>
                     </div>
                     <div className="footer-right">
                     <a href="" >

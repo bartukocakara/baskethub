@@ -1,17 +1,43 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { GiBasketballBasket } from "@react-icons/all-files/gi/GiBasketballBasket";
 import { RiTeamLine } from "@react-icons/all-files/ri/RiTeamLine";
 import { GoPerson } from "@react-icons/all-files/go/GoPerson";
 import { AiFillStar } from "@react-icons/all-files/ai/AiFillStar";
 import { AiOutlineFileSearch } from "@react-icons/all-files/ai/AiOutlineFileSearch";
+import {FaBasketballBall} from "@react-icons/all-files/fa/FaBasketballBall";
+import CourtSearch from '../../modals/CourtSearch/CourtSearch';
+import PlayerSearch from '../../modals/PlayerSearch/PlayerSearch';
+import TeamSearch from '../../modals/TeamSearch/TeamSearch';
 import {
     Link,
   } from "react-router-dom";
+import Button from 'react-bootstrap/Button';
 
 import "./_sidebar.scss";
+import { render } from '@testing-library/react';
 
 const Sidebar = () => {
+
+    const [showTeamSearch, setTeamShow] = useState(false);
+  
+    const handleTeamClose = () => setTeamShow(false);
+    const handleTeamShow = () => setTeamShow(true);
+
+    const [showPlayerSearch, setPlayerShow] = useState(false);
+  
+    const handlePlayerClose = () => setPlayerShow(false);
+    const handlePlayerShow = () => setPlayerShow(true);
+
+    const [showCourtSearch, setCourtShow] = useState(false);
+  
+    const handleCourtClose = () => setCourtShow(false);
+    const handleCourtShow = () => setCourtShow(true);
     return (
+        <>
+        <CourtSearch handleCourtClose={handleCourtClose} show={showCourtSearch} />
+        <PlayerSearch handlePlayerClose={handlePlayerClose} show={showPlayerSearch} />
+        <TeamSearch handleTeamClose={handleTeamClose} show={showTeamSearch} />
+
             <div id="sidebar" className="active">
                 <div className="sidebar-wrapper active ps ps--active-y">
                     <div class="sidebar-header">
@@ -33,21 +59,21 @@ const Sidebar = () => {
                                 </a>
                                 <ul className="submenu" style={{display: "none"}}>
                                     <li className="submenu-item">
-                                        <Link to="/my-games">
+                                        <Link variant="primary" onClick={handleCourtShow}>
                                             <GiBasketballBasket className="sidebar-icon" />
                                             Court Search
                                         </Link>
                                     </li>
                                     <li className="submenu-item ">
-                                        <Link to="/my-games">
-                                        <RiTeamLine className="sidebar-icon"/>
-                                        Team Search
+                                        <Link variant="primary" onClick={handleTeamShow}>
+                                            <RiTeamLine className="sidebar-icon"/>
+                                            Team Search
                                         </Link>
                                     </li>
                                     <li className="submenu-item ">
-                                        <Link to="/my-games">
-                                        <GoPerson className="sidebar-icon" />
-                                        Player Search
+                                        <Link variant="primary" onClick={handlePlayerShow}>
+                                            <GoPerson className="sidebar-icon" />
+                                            Player Search
                                         </Link>
                                     </li>
                                     
@@ -56,11 +82,17 @@ const Sidebar = () => {
                             <li className="sidebar-item ">
                                 <Link to="/my-games" className="sidebar-link">
 
-                                    <i className="bi bi-grid-fill"></i>
+                                    <FaBasketballBall />
                                     <span>My Matches</span>
                                 </Link>
                             </li>
+                            <li className="sidebar-item ">
+                                <Link to="/my-teams" className="sidebar-link">
 
+                                    <i className="bi bi-grid-fill"></i>
+                                    <span>My Teams</span>
+                                </Link>
+                            </li>
                             <li className="sidebar-item  has-sub">
                                     <Link to="/my-games" className="sidebar-link">
                                     <AiFillStar />
@@ -123,7 +155,7 @@ const Sidebar = () => {
                 </div>
             </div>
             
-        // </div>
+        </>
     )
 }
 

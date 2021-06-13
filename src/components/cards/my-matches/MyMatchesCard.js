@@ -6,9 +6,11 @@ import { FiShare2 } from "@react-icons/all-files/fi/FiShare2";
 
 const MyMatchesCard = () => {
     return (
+        <>
+        <h6>HAZ 13, PAZAR</h6>
         <div className="col-xl-12 col-md-12 col-sm-12 feed-card feed-my-matches-card">
             <div className="card">
-                <h4 className="card-title">Dr. Cavit Spor Salonu - İzmir/Bornova</h4>
+                <h4 className="card-title text-center">Dr. Cavit Spor Salonu - İzmir/Bornova</h4>
                 <div className="card-content d-flex card-body card-custom">
                     <div class="avatar avatar-lg me-2 card-avatar">
                         <img src="assets/images/faces/2.jpg" alt="" srcset="" />
@@ -53,6 +55,7 @@ const MyMatchesCard = () => {
                 </div>
             </div>
         </div>
+        </>
     )
 }
 

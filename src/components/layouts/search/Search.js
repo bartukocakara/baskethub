@@ -5,19 +5,9 @@ const Search = () => {
         <section id="main" className="form-search section">
             {/* <div className="row match-height"> */}
                 <div className="col-md-12 col-12">
-                    <nav class="nav nav-pills flex-row flex-sm-row">
-                        <a class="flex-sm-fill text-sm-center nav-link active" href="#">İstanbul</a>
-                        <button type="button"
-                            class="btn btn-light dropdown-toggle dropdown-toggle-split border"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                            data-reference="parent">
-                            <span class="sr-only">Diğer</span>
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">İzmir</a>
-                            <a class="dropdown-item" href="#">Ankara</a>
-                            <a class="dropdown-item" href="#">Antalya</a>
-                        </div>
+                    <nav className="nav nav-pills flex-row flex-sm-row">
+                        <h4 className="flex-sm-fill   active" >İstanbul</h4>
+                        <input className="form-control w-50" placeholder="Hızlı ara"  />
                     </nav>
                 </div>
             {/* </div> */}

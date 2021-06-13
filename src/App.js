@@ -24,6 +24,9 @@ import {
   Switch,
   Link
 } from "react-router-dom";
+import Profile from './components/screens/profile/Profile';
+import MessageDetail from './components/screens/message-detail/MessageDetail';
+import NotificationDetail from './components/screens/notification-detail/NotificationDetail';
 function App() {
   return (
       <>
@@ -37,46 +40,46 @@ function App() {
             <Navbar />
             <div id="main-content" className="container main-section">
                 <div className="row">
-                    <div className="col-md-8 col-lg-8 feed">
-                    <Search />
+                    <div className="col-md-9 col-lg-8 feed">
+                        <Search />
+                        <Switch>
+                            <Route exact path="/my-games" component={MyMatches} />
+                            <Route path="/favourite-players" component={MyFavPlayers} />
+                            <Route path="/favourite-courts" component={MyFavCourts} />
+                            <Route path="/fav-court-detail" component={FavCourtDetail} />
+                            <Route path="/last-search" component={LastSearch} />
+                            <Route path="/my-teams" component={MyTeams} />
+                            <Route path="/my-team-detail" component={MyTeamDetail} />
+                            <Route path="/team/:name" component={MyTeamDetail} />
+                            <Route path="/player-detail/:name" component={PlayerDetail} />
+                            <Route path="/court-detail/:name" component={FavCourtDetail} />
+                            <Route path="/service-policies" component={ServicePolicies} />
+                            <Route path="/about-us" component={About} />
+                            <Route path="/secure" component={Secure} />
+                            <Route path="/contact" component={Contact} />
+                            <Route path="/cookies" component={Cookies} />
+                            <Route path="/faq" component={Faq} />
+                            <Route path="/my-profile" component={Profile} />
+                            <Route path="/message-detail" component={MessageDetail} />
+                            <Route path="/notification-detail" component={NotificationDetail} />
 
-                  {/* ========== Feed Screens ============ */}
-                  {/* <MyMatches /> */}
-                  {/* <MyFavCourts /> */}
-                  {/* <MyFavPlayers /> */}
-                  {/* <MyTeams />  */}
-                  <Switch>
-                      <Route exact path="/my-games" component={MyMatches} />
-                      <Route path="/favourite-players" component={MyFavPlayers} />
-                      <Route path="/favourite-courts" component={MyFavCourts} />
-                      <Route path="/last-search" component={LastSearch} />
-                      <Route path="/my-teams" component={MyTeams} />
-                      <Route path="/team/:name" component={MyTeamDetail} />
-                      <Route path="/player-detail/:name" component={PlayerDetail} />
-                      <Route path="/court-detail/:name" component={FavCourtDetail} />
-                      <Route path="/service-policies" component={ServicePolicies} />
-                      <Route path="/about-us" component={About} />
-                      <Route path="/secure" component={Secure} />
-                      <Route path="/contact" component={Contact} />
-                      <Route path="/cookies" component={Cookies} />
-                      <Route path="/faq" component={Faq} />
-                  </Switch>
-                
-                  </div>
+                        </Switch>
+                    
+                    </div>
               
-                  <Widgets />
-                  {/* ========== Without Widget Screens ========= */}
-                  {/* PlayerDetail */}
-                  {/* FavCourtDetail */}
-                  {/* MatchDetail */}
-                  {/* FavPlayerDetail */}
-                  {/* MyProfile */}
-                  {/* Contact */}
-                  {/* Hizmet Şartları */}
-                  {/* Gizlilik politikası */}
-                  {/* Çerez Politikası */}
-                  {/* Hakkımızda */}
-                  {/* S.S.S */}
+                    <Widgets />
+                    {/* ========== Without Widget Screens ========= */}
+                    {/* PlayerDetail */}
+                    {/* FavCourtDetail */}
+                    {/* MatchDetail */}
+                    {/* FavPlayerDetail */}
+                    {/* MyProfile */}
+                    {/* Contact */}
+                    {/* Hizmet Şartları */}
+                    {/* Gizlilik politikası */}
+                    {/* Çerez Politikası */}
+                    {/* Hakkımızda */}
+                    {/* S.S.S */}
 
                 </div>
 
