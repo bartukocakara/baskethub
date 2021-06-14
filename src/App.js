@@ -3,7 +3,6 @@ import './_app.scss';
 import Sidebar from "./components/layouts/sidebar/Sidebar";
 import Navbar from "./components/layouts/navbar/Navbar";
 import MyMatches from './components/screens/my-matches/MyMatches';
-import Search from './components/layouts/search/Search';
 import Widgets from './components/layouts/widgets/Widgets';
 import MyFavCourts from './components/screens/my-fav-courts/MyFavCourts';
 import LastSearch from './components/screens/last-search/LastSearch';
@@ -42,7 +41,6 @@ function App() {
             <div id="main-content" className="container main-section">
                 <div className="row">
                     <div className="col-md-9 col-lg-8 feed">
-                        <Search />
                         <Switch>
                             <Route exact path="/my-games" component={MyMatches} />
                             <Route path="/match-detail" component={MatchDetail} />

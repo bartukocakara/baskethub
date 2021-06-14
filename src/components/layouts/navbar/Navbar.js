@@ -28,10 +28,10 @@ const Navbar = () => {
                                     <i className='bi bi-envelope bi-sub fs-4 text-gray-600'></i>
                                 </a>
                                 <ul className="dropdown-menu dropdown-menu-end mail-drop" aria-labelledby="dropdownMenuButton">
-                                    <h6 class="dropdown-header">Mail</h6>
+                                    <h6 class="dropdown-header">Messages</h6>
                                     {
                                         [...Array(5)].map(() => (
-                                            <li><Link class="dropdown-item" to="message-detail">No new mail</Link></li>
+                                            <li><Link class="dropdown-item" to="message-detail">No new message</Link></li>
 
                                         ))
                                     }
@@ -81,6 +81,9 @@ const Navbar = () => {
                                 <li>
                                     <hr className="dropdown-divider" />
                                 </li>
+                                <li>
+                                    <ExampleComponent />
+                                </li>
                                 <li><a className="dropdown-item" href="#"><i
                                             cclassNameass="icon-mid bi bi-box-arrow-left me-2"></i> Logout</a></li>
                             </ul>
@@ -96,3 +99,13 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+
+function ExampleComponent() {
+  const stopEvent = (event) => event.stopPropagation();
+
+  return (
+    // removed everything but anchor for brevity
+    <a href="my-profile" id="wfu" onClick={stopEvent}> Write For Us? </a>
+  )
+}

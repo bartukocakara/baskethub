@@ -42,7 +42,7 @@ const FavouritePlayerCard = () => {
                 </div>
                 <div className="card-footer">
                     <div className="footer-left">
-                        <Link to="player-detail">
+                        <Link to="my-profile">
                             Player Details
                         </Link>
                     </div>

@@ -1,5 +1,8 @@
 import React from 'react'
 import "./_messageDetail.scss";
+import {
+    Link
+  } from "react-router-dom";
 const MessageDetail = () => {
     return (
         <div class="row">
@@ -8,7 +11,7 @@ const MessageDetail = () => {
                     <div class="card-header">
                         <div class="media d-flex align-items-center">
                             <div class="avatar me-3">
-                                <img src="assets/images/faces/1.jpg" alt="" srcset="" />
+                                <Link to="my-profile"><img src="assets/images/faces/1.jpg" alt="" srcset="" /></Link>
                                 <span class="avatar-status bg-success"></span>
                             </div>
                             <div class="name flex-grow-1">
