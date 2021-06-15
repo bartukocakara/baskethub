@@ -1,4 +1,8 @@
 import React from 'react'
+import {
+    Link
+  } from "react-router-dom";
+import MatchTeamList from '../match-team-list/MatchTeamList';
 
 const MatchDetail = () => {
     return (
@@ -43,20 +47,30 @@ const MatchDetail = () => {
                 <div class="card">
                     <div class="card-content">
                         <div class="card-body">
-                            <h4 class="card-title">Card With Header And Footer</h4>
-                            <p class="card-text">
-                                Gummies bonbon apple pie fruitcake icing biscuit apple pie jelly-o sweet
-                                roll. Toffee
-                                sugar plum sugar plum jelly-o jujubes bonbon dessert carrot cake.
-                            </p>
+                            <div className="buttons text-center">
+                                <button className="btn btn-success">Katıl +</button>
+                                <Link to="message-detail" className="btn btn-primary">Mesaj</Link>
+                                <button className="btn btn-warning">Paylaş</button>
+                            </div>
+                            <br />
+                            <h4 class="card-title text-center">Match Details</h4>
+                            <hr />
+                            <label class="btn btn-danger">
+                                Date - Time : <span class="badge">21/06/2021 | 12:00 - 13:00</span>
+                            </label>
+                            <hr />
+                            <label class="btn btn-primary">
+                                Player Count <span class="badge bg-transparent">8</span>
+                            </label>
+                            <hr />
+                            <label class="btn btn-warning">
+                                Player Need <span class="badge bg-transparent">1-3</span>
+                            </label>
                         </div>
-                    </div>
-                    <div class="card-footer d-flex justify-content-between">
-                        <span>Card Footer</span>
-                        <button class="btn btn-light-primary">Read More</button>
                     </div>
                 </div>
             </div>
+            <MatchTeamList />
         </div>
     )
 }

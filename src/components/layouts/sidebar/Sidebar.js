@@ -5,16 +5,15 @@ import { GoPerson } from "@react-icons/all-files/go/GoPerson";
 import { AiFillStar } from "@react-icons/all-files/ai/AiFillStar";
 import { AiOutlineFileSearch } from "@react-icons/all-files/ai/AiOutlineFileSearch";
 import {FaBasketballBall} from "@react-icons/all-files/fa/FaBasketballBall";
+import {BsPeopleFill} from "@react-icons/all-files/bs/BsPeopleFill";
 import CourtSearch from '../../modals/CourtSearch/CourtSearch';
 import PlayerSearch from '../../modals/PlayerSearch/PlayerSearch';
 import TeamSearch from '../../modals/TeamSearch/TeamSearch';
 import {
+    NavLink,
     Link,
   } from "react-router-dom";
-import Button from 'react-bootstrap/Button';
-
 import "./_sidebar.scss";
-import { render } from '@testing-library/react';
 
 const Sidebar = () => {
 
@@ -32,6 +31,7 @@ const Sidebar = () => {
   
     const handleCourtClose = () => setCourtShow(false);
     const handleCourtShow = () => setCourtShow(true);
+
     return (
         <>
         <CourtSearch handleCourtClose={handleCourtClose} show={showCourtSearch} />
@@ -43,20 +43,22 @@ const Sidebar = () => {
                     <div class="sidebar-header">
                         <div class="d-flex justify-content-between">
                             <div class="logo">
+                                <Link to="/">
                                 <h1 class="sidebar-app-name">BasketHall</h1>
+                                </Link>
                             </div>
                             <div class="toggler">
-                                <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                                <Link class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></Link>
                             </div>
                         </div>
                     </div>
                     <div className="sidebar-menu">
                         <ul className="menu">
-                            <li className="sidebar-item active has-sub">
-                                <a href="#" className="sidebar-link">
+                            <li exact className="sidebar-item has-sub">
+                                <Link className="sidebar-link">
                                 <i class="bi bi-search"></i>
                                 <span>New Search</span>
-                                </a>
+                                </Link>
                                 <ul className="submenu" style={{display: "none"}}>
                                     <li className="submenu-item">
                                         <Link variant="primary" onClick={handleCourtShow}>
@@ -64,13 +66,13 @@ const Sidebar = () => {
                                             Court Search
                                         </Link>
                                     </li>
-                                    <li className="submenu-item ">
+                                    <li className="submenu-item">
                                         <Link variant="primary" onClick={handleTeamShow}>
                                             <RiTeamLine className="sidebar-icon"/>
                                             Team Search
                                         </Link>
                                     </li>
-                                    <li className="submenu-item ">
+                                    <li className="submenu-item">
                                         <Link variant="primary" onClick={handlePlayerShow}>
                                             <GoPerson className="sidebar-icon" />
                                             Player Search
@@ -79,44 +81,41 @@ const Sidebar = () => {
                                     
                                 </ul>
                             </li>
-                            <li className="sidebar-item ">
-                                <Link to="/my-games" className="sidebar-link">
-
+                            <li className="sidebar-item">
+                                <NavLink  to="/my-games" className="sidebar-link">
                                     <FaBasketballBall />
                                     <span>My Matches</span>
-                                </Link>
+                                </NavLink >
                             </li>
-                            <li className="sidebar-item ">
-                                <Link to="/my-teams" className="sidebar-link">
-
-                                    <i className="bi bi-grid-fill"></i>
+                            <li className="sidebar-item">
+                                <NavLink  to="/my-teams" className="sidebar-link">
+                                    <BsPeopleFill />
                                     <span>My Teams</span>
-                                </Link>
+                                </NavLink >
                             </li>
-                            <li className="sidebar-item  has-sub">
-                                    <Link to="/my-games" className="sidebar-link">
+                            <li className="sidebar-item has-sub">
+                                <Link  to="/my-games" className="sidebar-link">
                                     <AiFillStar />
                                     <span >Favourite</span>
-                                </Link>
+                                </Link >
                                 <ul className="submenu" style={{display: "none"}}>
-                                    <li className="submenu-item ">
-                                        <Link to="/favourite-players" className="sidebar-link">
+                                    <li className="submenu-item">
+                                        <NavLink  to="/favourite-players" className="sidebar-link">
                                             Favorite Players
-                                        </Link>
+                                        </NavLink>
                                     </li>
-                                    <li className="submenu-item ">
-                                        <Link to="/favourite-courts" className="sidebar-link">
+                                    <li className="submenu-item">
+                                        <NavLink  to="/favourite-courts" className="sidebar-link">
                                         Favourite Courts
-                                        </Link>
+                                        </NavLink >
                                     </li>
                                 </ul>
                             </li>
-
                             <li className="sidebar-item">
-                                <Link to="/last-search" className="sidebar-link">
+                                <NavLink  to="/last-search" className="sidebar-link">
                                     <AiOutlineFileSearch />
                                     <span>Last Search</span>
-                                </Link>
+                                </NavLink >
                             </li>
                         </ul>
                     </div>
@@ -124,24 +123,24 @@ const Sidebar = () => {
                     <div class="sidebar-badges">
                         <div class="card-body">
                             <div class="badges">
-                                <Link to="/service-policies" className="sidebar-link">
+                                <NavLink to="/service-policies" className="sidebar-link">
                                     <span class="badge sidebar-badge">Hizmet Şartları</span>
-                                </Link>
-                                <Link to="/secure" className="sidebar-link">
+                                </NavLink>
+                                <NavLink to="/secure" className="sidebar-link">
                                     <span class="badge sidebar-badge">Gizlilik politikası</span>
-                                </Link>
-                                <Link to="/cookies" className="sidebar-link">
+                                </NavLink>
+                                <NavLink to="/cookies" className="sidebar-link">
                                     <span class="badge sidebar-badge">Çerez Politikası</span>
-                                </Link>                                
-                                <Link to="/about-us" className="sidebar-link">
+                                </NavLink>                                
+                                <NavLink to="/about-us" className="sidebar-link">
                                     <span class="badge sidebar-badge">Hakkımızda</span>
-                                </Link>
+                                </NavLink>
                                 <Link to="/contact" className="sidebar-link">
                                     <span class="badge sidebar-badge">İletişim</span>
                                 </Link>
-                                <Link to="/faq" className="sidebar-link">
+                                <NavLink to="/faq" className="sidebar-link">
                                     <span class="badge sidebar-badge">S.S.S</span>
-                                </Link>
+                                </NavLink>
                             </div>
                         </div>
                     </div>
@@ -158,5 +157,4 @@ const Sidebar = () => {
         </>
     )
 }
-
 export default Sidebar

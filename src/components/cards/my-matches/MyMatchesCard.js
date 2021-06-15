@@ -4,7 +4,6 @@ import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail";
 import { FaHandshake } from "@react-icons/all-files/fa/FaHandshake";
 import { FiShare2 } from "@react-icons/all-files/fi/FiShare2";
 import {
-    NavLink,
     Link
   } from "react-router-dom";
 const MyMatchesCard = () => {
@@ -35,7 +34,7 @@ const MyMatchesCard = () => {
                     </div>
                     <div className="card-left-image">
                         <img className="img-fluid w-50 card-image" src="assets/images/samples/hall.jpg"
-                        alt="Card image cap" />
+                        alt="Card cap" />
                     </div>
                 </div>
                 <div className="card-footer">
@@ -45,15 +44,15 @@ const MyMatchesCard = () => {
                         </Link>
                     </div>
                     <div className="footer-right">
-                    <a href="" >
-                        <AiOutlineMail className="card-footer-icon" />
-                    </a>
-                    <a href="" >
-                        <FaHandshake className="card-footer-icon" />
-                    </a>
-                    <a href="" >
-                        <FiShare2 className="card-footer-icon" />
-                    </a>
+                        <Link>
+                            <AiOutlineMail className="card-footer-icon" />
+                        </Link>
+                        <Link >
+                            <FaHandshake className="card-footer-icon" />
+                        </Link>
+                        <Link >
+                            <FiShare2 className="card-footer-icon" />
+                        </Link>
                     </div>
                 </div>
             </div>

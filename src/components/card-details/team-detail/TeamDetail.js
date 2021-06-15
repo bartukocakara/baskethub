@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MyTeamDetail = () => {
+const TeamDetail = () => {
     return (
         <div class="row">
             <div class="col-12">
@@ -35,4 +35,4 @@ const MyTeamDetail = () => {
     )
 }
 
-export default MyTeamDetail
+export default TeamDetail

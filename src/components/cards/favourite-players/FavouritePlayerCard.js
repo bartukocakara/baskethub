@@ -37,25 +37,25 @@ const FavouritePlayerCard = () => {
                     </div>
                     <div className="card-left-image">
                         <img className="img-fluid w-50 card-image" src="assets/images/samples/player.jpg"
-                        alt="Card image cap" />
+                        alt="Card cap" />
                     </div>
                 </div>
                 <div className="card-footer">
                     <div className="footer-left">
-                        <Link to="my-profile">
+                        <Link to="player-detail">
                             Player Details
                         </Link>
                     </div>
                     <div className="footer-right">
-                    <a href="" >
+                    <Link to="message-detail">
                         <AiOutlineMail className="card-footer-icon" />
-                    </a>
-                    <a href="" >
+                    </Link>
+                    <Link >
                         <FaHandshake className="card-footer-icon" />
-                    </a>
-                    <a href="" >
+                    </Link>
+                    <Link >
                         <FiShare2 className="card-footer-icon" />
-                    </a>
+                    </Link>
                     </div>
                 </div>
             </div>

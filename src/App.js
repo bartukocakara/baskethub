@@ -21,7 +21,6 @@ import {
   BrowserRouter as Router,
   Route,
   Switch,
-  Link
 } from "react-router-dom";
 import Profile from './components/screens/profile/Profile';
 import MessageDetail from './components/screens/message-detail/MessageDetail';
@@ -88,7 +87,7 @@ function App() {
        
 
         </div>
-        </Router>  
+        </Router>
     </>
   );
 }

@@ -13,7 +13,7 @@ const FavouriteCourtCard = () => {
                 <h4 className="card-title text-center">Dr. Cavit Spor Salonu - İzmir/Bornova</h4>
                 <div className="card-content d-flex card-body card-custom">
                     <div class="avatar avatar-lg me-2 card-avatar">
-                        <img src="assets/images/faces/2.jpg" alt="" srcset="" />
+                        <img src="assets/images/faces/2.jpg" alt="hall" srcset="" />
                     </div>
                     <div className="card-middle-text d-flex">
                         <div class="car-middle-div">
@@ -32,7 +32,7 @@ const FavouriteCourtCard = () => {
                     </div>
                     <div className="card-left-image">
                         <img className="img-fluid w-50 card-image" src="assets/images/samples/hall.jpg"
-                        alt="Card image cap" />
+                        alt="Card cap" />
                     </div>
                 </div>
                 <div className="card-footer">
@@ -42,15 +42,15 @@ const FavouriteCourtCard = () => {
                         </Link>
                     </div>
                     <div className="footer-right">
-                    <a href="" >
+                    <Link to="message-detail">
                         <AiOutlineMail className="card-footer-icon" />
-                    </a>
-                    <a href="" >
+                    </Link>
+                    <Link >
                         <FaHandshake className="card-footer-icon" />
-                    </a>
-                    <a href="" >
+                    </Link>
+                    <Link >
                         <FiShare2 className="card-footer-icon" />
-                    </a>
+                    </Link>
                     </div>
                 </div>
             </div>

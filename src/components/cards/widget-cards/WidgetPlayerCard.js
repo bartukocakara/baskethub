@@ -6,7 +6,7 @@ import {
   } from "react-router-dom";
 const WidgetPlayerCard = () => {
     return (
-        <Link to="my-profile">
+        <Link to="player-detail">
             <div className="card-body border b-primary m-3 widget-player-card d-flex p-2">
                 <FiPlusSquare className="widget-player-icon" color="#FA8602"/>
                 <div className="widget-player-text">
