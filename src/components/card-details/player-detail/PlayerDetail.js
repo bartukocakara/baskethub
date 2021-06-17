@@ -6,6 +6,8 @@ import { GoLocation } from "@react-icons/all-files/go/GoLocation";
 import {
     Link
   } from "react-router-dom";
+import "./_playerDetail.scss";
+
 const PlayerDetail = () => {
     return (
         <div className="col-12 col-lg-12">

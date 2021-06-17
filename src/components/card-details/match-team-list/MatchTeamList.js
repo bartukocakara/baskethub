@@ -6,7 +6,7 @@ const MatchTeamList = () => {
         <div claclassNamess="col-12">
                 <div className="card">
                     <div class="card-body">
-                        <ul class="nav nav-tabs text-center" id="myTab" role="tablist">
+                        <ul class="nav nav-tabs match-team-list text-center col-lg-12" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Team 1</a>
                             </li>

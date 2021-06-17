@@ -3,6 +3,7 @@ import "./_myTeamsCard.scss";
 import {
     Link
   } from "react-router-dom";
+
 const MyTeamsCard = () => {
     return (
         <div className="col-xl-6 col-md-6 col-sm-12 feed-card feed-my-teams-card">
@@ -19,12 +20,14 @@ const MyTeamsCard = () => {
                         
                     </ul>
                 </div>
-                <div className="card-footer">
-                    <div className="footer">
-                        <Link to="my-team-detail">
+                <div className="card-footer row my-teams">
+                        <Link to="my-team-detail" className="btn btn-light col-md-4 team-detail-btn">
                             Team Details
                         </Link>
-                    </div>
+                        <div className="col-md-4"></div>
+                        <Link to="team-chat" className="btn btn-warning col-md-4 team-chat-btn">
+                            Team Chat
+                        </Link>
                 </div>
             </div>
         </div>

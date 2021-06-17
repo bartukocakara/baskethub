@@ -1,13 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {
     Link
   } from "react-router-dom";
 import MatchTeamList from '../match-team-list/MatchTeamList';
+import CourtReservation from '../../modals/CourtReservation/CourtReservation';
+import Share from '../../modals/Share/Share';
+import "./_matchDetail.scss";
 
 const MatchDetail = () => {
+
+    const [showCourtRes, setCourtResShow] = useState(false);
+
+    const handleCourtResModalClose = () => setCourtResShow(false);
+    const handleShowCourtResModal = () => setCourtResShow(true);
+
+    const [showShareModal, setShareModalShow] = useState(false);
+
+    const handleShareModalClose = () => setShareModalShow(false);
+    const handleShowShareModal = () => setShareModalShow(true);
     return (
+        <>
+        <CourtReservation handleCourtResModalClose={handleCourtResModalClose} show={showCourtRes} />
+        <Share handleShareModalClose={handleShareModalClose} show={showShareModal} />
+        
         <div className="row">
-            <div className="col-6">
+            <div className="col-lg-6 col-md-12">
                 <div className="card">
                     <div className="card-header">
                         <h4>Court Photos</h4>
@@ -43,14 +60,17 @@ const MatchDetail = () => {
                     </div>
                 </div>
             </div>
-            <div className="col-6">
+            <div className="col-lg-6 col-md-12">
                 <div class="card">
                     <div class="card-content">
-                        <div class="card-body">
+                        <div class="card-body text-center   ">
                             <div className="buttons text-center">
-                                <button className="btn btn-success">Katıl +</button>
-                                <Link to="message-detail" className="btn btn-primary">Mesaj</Link>
-                                <button className="btn btn-warning">Paylaş</button>
+                            
+                                <Link variant="primary" class="btn btn-success" onClick={handleShowCourtResModal}>
+                                    Katıl +
+                                    </Link>
+                                <Link to="team-message-detail" className="btn btn-primary">Mesaj</Link>
+                                <Link variant="primary" className="btn btn-warning" onClick={handleShowShareModal}>Paylaş</Link>
                             </div>
                             <br />
                             <h4 class="card-title text-center">Match Details</h4>
@@ -59,7 +79,7 @@ const MatchDetail = () => {
                                 Date - Time : <span class="badge">21/06/2021 | 12:00 - 13:00</span>
                             </label>
                             <hr />
-                            <label class="btn btn-primary">
+                            <label class="btn btn-primary ">
                                 Player Count <span class="badge bg-transparent">8</span>
                             </label>
                             <hr />
@@ -72,6 +92,7 @@ const MatchDetail = () => {
             </div>
             <MatchTeamList />
         </div>
+        </>
     )
 }
 

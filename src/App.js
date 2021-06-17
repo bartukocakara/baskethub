@@ -24,6 +24,7 @@ import {
 } from "react-router-dom";
 import Profile from './components/screens/profile/Profile';
 import MessageDetail from './components/screens/message-detail/MessageDetail';
+import TeamMessage from './components/screens/team-message-detail/TeamMessage';
 import NotificationDetail from './components/screens/notification-detail/NotificationDetail';
 import MatchDetail from './components/card-details/match-detail/MatchDetail';
 function App() {
@@ -61,6 +62,7 @@ function App() {
                             <Route path="/faq" component={Faq} />
                             <Route path="/my-profile" component={Profile} />
                             <Route path="/message-detail" component={MessageDetail} />
+                            <Route path="/team-message-detail" component={TeamMessage} />
                             <Route path="/notification-detail" component={NotificationDetail} />
 
                         </Switch>

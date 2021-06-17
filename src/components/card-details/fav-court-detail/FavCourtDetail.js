@@ -1,4 +1,14 @@
 import React from 'react'
+import {
+    BrowserRouter as Router,
+    Route,
+    Switch,
+    Link
+  } from "react-router-dom";
+import Day from './calendar/Day';
+import Month from './calendar/Month';
+import Year from './calendar/Year';
+import "./_favCourtDetail.scss";
 
 const FavCourtDetail = () => {
     return (
@@ -42,21 +52,83 @@ const FavCourtDetail = () => {
             <div className="col-6">
                 <div class="card">
                     <div class="card-content">
-                        <div class="card-body">
-                            <h4 class="card-title">Card With Header And Footer</h4>
-                            <p class="card-text">
-                                Gummies bonbon apple pie fruitcake icing biscuit apple pie jelly-o sweet
-                                roll. Toffee
-                                sugar plum sugar plum jelly-o jujubes bonbon dessert carrot cake.
-                            </p>
+                        <div class="card-body text-center">
+                            <h5>Dr. Cavit Spor Salonu</h5>
+                            <div className="buttons text-center">
+                                <Link to="team-message-detail" className="btn btn-primary">Mesaj</Link>
+                                <button className="btn btn-warning">Paylaş</button>
+                            </div>
+                            <br />
+                            <h4 class="card-title text-center">Court Details</h4>
+                            <hr />
+                            <label class="btn btn-primary">
+                                Hygiene : <span class="badge">21/06/2021 | 12:00 - 13:00</span>
+                            </label>
+                            <hr />
+                            <label class="btn btn-warning ">
+                                Response : <span class="badge bg-transparent">8</span>
+                            </label>
+                            <hr />
+                            <label class="btn btn-success ">
+                                Intensity <span class="badge bg-transparent">1-3</span>
+                            </label>
                         </div>
-                    </div>
-                    <div class="card-footer d-flex justify-content-between">
-                        <span>Card Footer</span>
-                        <button class="btn btn-light-primary">Read More</button>
                     </div>
                 </div>
             </div>
+            <div claclassNamess="col-12">
+                <div className="card">
+                    <div class="card-body">
+                        <ul class="nav nav-tabs match-team-list text-center col-lg-12" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Reservation Calendar</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Comments</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <h5 className="text-center">2021</h5>
+                        <Router>
+                            <Year />
+                        <Switch>
+                            <Route exact path="/year" component={Year} />
+                            <Route path="/month" component={Month} />
+                            <Route path="/days" component={Day} />
+
+                        </Switch>
+                        </Router>
+                        </div>
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        {
+                            [...Array(5)].map((teamDetail) => (
+                                <>
+                                    <div className="media fav-court-detail-comment d-flex align-items-center">
+                                        <div className="avatar me-3">
+                                            <img src="assets/images/faces/1.jpg" alt="" srcset="" />
+                                            <span claclassNamess="avatar-status bg-success"></span>
+                                        </div>
+                                        <div className="name flex-grow-1">
+                                            <h6 className="mb-0">Fred</h6>
+                                            <span className="text-xs">Online</span>
+                                        </div>
+                                        <div className="name flex-grow-1 p-4">
+                                            <p>Basketball quotes are terrific for motivating and inspiring coaches and athletes. Countless times I’ve recited various quotes to my players or fellow coaches and they always have a positive effect.</p>
+                                        </div>
+                                        <div className="name flex-grow-1">
+                                            <div id="basic" class="star-rating" style={{ width: "160px", height: "32px", backgroundSize: "32px" }} title="5/5"><div class="star-value" style={{ backgroundSize: "32px", width: "0%" }}></div></div>
+                                        </div>
+                                    </div>
+                                <hr />
+                                </>
+                            ))
+                        }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
     )
 }

@@ -17,15 +17,15 @@ const FavouriteCourtCard = () => {
                     </div>
                     <div className="card-middle-text d-flex">
                         <div class="car-middle-div">
-                            <p className="prop-name">Hijyen</p>
+                            <p className="prop-name w-100 p-2 badge bg-primary">Hijyen</p>
                             <p>5/10</p>
                         </div>
                         <div class="car-middle-div">
-                            <p className="prop-name">Güvenilirlik</p>
+                            <p className="prop-name w-100 p-2 badge bg-primary">Güvenilirlik</p>
                             <p>8/10</p>
                         </div>
                         <div class="car-middle-div">
-                            <p className="prop-name">Cevap Hızı</p>
+                            <p className="prop-name w-100 p-2 badge bg-primary">Cevap Hızı</p>
                             <p>7/10</p>
                         </div>
 
@@ -37,7 +37,7 @@ const FavouriteCourtCard = () => {
                 </div>
                 <div className="card-footer">
                     <div className="footer-left">
-                        <Link to="fav-court-detail">
+                        <Link to="fav-court-detail" className="btn btn-light">
                             Court Details
                         </Link>
                     </div>

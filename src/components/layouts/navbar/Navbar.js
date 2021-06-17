@@ -26,11 +26,12 @@ const Navbar = () => {
                                     aria-expanded="false">
                                     <i className='bi bi-envelope bi-sub fs-4 text-gray-600'></i>
                                 </Link>
-                                <ul className="dropdown-menu dropdown-menu-end mail-drop" aria-labelledby="dropdownMenuButton">
-                                    <h6 class="dropdown-header">Messages</h6>
+                                <ul className="dropdown-menu dropdown-menu-end mail-drop text-center" aria-labelledby="dropdownMenuButton">
+                                    <h5>Messages</h5>
+                                    <hr/>
                                     {
                                         [...Array(5)].map(() => (
-                                            <li><Link class="dropdown-item" to="message-detail">No new message</Link></li>
+                                            <li><Link class="dropdown-item text-center" to="message-detail"><h6>Deniz Polat</h6></Link></li>
 
                                         ))
                                     }
@@ -41,11 +42,12 @@ const Navbar = () => {
                                     aria-expanded="false">
                                     <i class='bi bi-bell bi-sub fs-4 text-gray-600'></i>
                                 </Link>
-                                <ul className="dropdown-menu dropdown-menu-end notification-drop" aria-labelledby="dropdownMenuButton">
-                                        <h6 class="dropdown-header">Notifications</h6>
+                                <ul className="dropdown-menu dropdown-menu-end notification-drop text-center" aria-labelledby="dropdownMenuButton">
+                                <h5>Notifications</h5>
+                                <hr />
                                     {
                                         [...Array(5)].map(() => (
-                                            <li><Link class="dropdown-item" to="notification-detail">No new mail</Link></li>
+                                            <li><Link class="dropdown-item text-center" to="notification-detail"><h6>Pınar Uygur</h6></Link></li>
 
                                         ))
                                     }

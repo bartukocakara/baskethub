@@ -28,5 +28,22 @@
             margin:auto;
         }
     }
+    .my-teams {
+        margin:auto;
+        width:100% !important;
+    }
+    .team-detail-btn{
+        margin:auto;
+        &:hover{
+            background-color: #eeeeee !important;
+        }
+    }
+    .team-chat-btn{
+        margin:auto;
+
+        &:hover {
+            background-color: #f7a03e !important;   
+        }
+    }
     
 }

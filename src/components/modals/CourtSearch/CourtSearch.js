@@ -50,7 +50,7 @@ const CourtSearch = ({handleCourtClose, show}) => {
                 <Button variant="primary" onClick={handleCourtClose}>
                     Start Search
                 </Button>
-                </Modal.Footer>
+            </Modal.Footer>
         </Modal>
         </>
     )

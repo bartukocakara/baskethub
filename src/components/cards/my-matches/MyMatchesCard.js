@@ -39,12 +39,12 @@ const MyMatchesCard = () => {
                 </div>
                 <div className="card-footer">
                     <div className="footer-left">
-                        <Link to="match-detail">
+                        <Link to="match-detail" className="btn btn-light">
                             Match Details
                         </Link>
                     </div>
                     <div className="footer-right">
-                        <Link>
+                        <Link to="team-message-detail">
                             <AiOutlineMail className="card-footer-icon" />
                         </Link>
                         <Link >

@@ -3,9 +3,9 @@ import { AiFillEye } from "@react-icons/all-files/ai/AiFillEye";
 import { BiCheckDouble } from "@react-icons/all-files/bi/BiCheckDouble";
 import { HiCheck } from "@react-icons/all-files/hi/HiCheck";
 import { GoLocation } from "@react-icons/all-files/go/GoLocation";
-import {
-    Link
-  } from "react-router-dom";
+// import {
+//     Link
+//   } from "react-router-dom";
 import "./_profile.scss";
 
 const Profile = () => {
@@ -26,15 +26,6 @@ const Profile = () => {
                                     <div class="ms-5">
                                         <GoLocation />
                                         <p class="font-bold">İzmir</p>
-                                    </div>
-                                    <div class="ms-5 name">
-                                        <h5 class="font-bold">Positions</h5>
-                                        <h6 class="text-muted mb-0">C, PF, SF </h6>
-                                    </div>
-                                    <div class="ms-4 actions">
-                                        <Link to="message-detail" class="btn btn-warning border m-2 p-3 font-bold">Mesaj</Link>
-                                        
-                                        <button class="btn border m-2 p-3 font-bold">Takip Et</button>
                                     </div>
                                 </div>
                             </div>
