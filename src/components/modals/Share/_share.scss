@@ -6,7 +6,36 @@
     padding:0.5rem;
     list-style-type: none;
     cursor: pointer;
+}
+h6{
+    color:white;
+}
+.whatsapp{
+    background: #25D366;
+
+    
     &:hover {
-        background-color: rgb(238, 237, 237);
+        background-color: #0d923e;
+    }
+}
+.facebook{
+    background: #1877F2;
+
+    &:hover {
+        background-color: #044aa5;
+    }
+}
+.twitter{
+    background: #2962ff;
+
+    &:hover {
+        background-color: #053472;
+    }
+}
+.instagram{
+    background: #683105;
+
+    &:hover {
+        background-color: rgb(68, 29, 2);
     }
 }

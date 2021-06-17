@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import { TiSocialInstagram } from "@react-icons/all-files/ti/TiSocialInstagram";
 import { TiSocialTwitter } from "@react-icons/all-files/ti/TiSocialTwitter";
 import { TiSocialFacebook } from "@react-icons/all-files/ti/TiSocialFacebook";
+import { AiOutlineWhatsApp } from "@react-icons/all-files/ai/AiOutlineWhatsApp";
 
 import "./_share.scss";
 
@@ -22,13 +23,16 @@ const Share = ({handleShareModalClose, show}) => {
             </Modal.Header>
             <Modal.Body>
                 <ul>
-                    <li className="share-li">
+                    <li className="share-li whatsapp">
+                        <h6> Whatsapp <AiOutlineWhatsApp /></h6>
+                    </li>
+                    <li className="share-li facebook">
                         <h6> Facebook <TiSocialFacebook /></h6>
                     </li>
-                    <li className="share-li">
+                    <li className="share-li twitter">
                         <h6> Twitter <TiSocialTwitter /></h6>
                     </li>
-                    <li className="share-li">
+                    <li className="share-li instagram">
                         <h6> Instagram <TiSocialInstagram /></h6>
                     </li>
                 </ul>
