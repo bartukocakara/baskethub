@@ -3,7 +3,7 @@ import './_app.scss';
 import Sidebar from "./components/layouts/sidebar/Sidebar";
 import Navbar from "./components/layouts/navbar/Navbar";
 import MyMatches from './components/screens/my-matches/MyMatches';
-import Widgets from './components/layouts/widgets/Widgets';
+// import Widgets from './components/layouts/widgets/Widgets';
 import MyFavCourts from './components/screens/my-fav-courts/MyFavCourts';
 import LastSearch from './components/screens/last-search/LastSearch';
 import MyFavPlayers from './components/screens/my-fav-players/MyFavPlayers';
@@ -27,6 +27,7 @@ import MessageDetail from './components/screens/message-detail/MessageDetail';
 import TeamMessage from './components/screens/team-message-detail/TeamMessage';
 import NotificationDetail from './components/screens/notification-detail/NotificationDetail';
 import MatchDetail from './components/card-details/match-detail/MatchDetail';
+import Trainers from './components/screens/trainer-search/Trainers';
 function App() {
   return (
       <>
@@ -40,11 +41,11 @@ function App() {
             <Navbar />
             <div id="main-content" className="container main-section">
                 <div className="row">
-                    <div className="col-md-9 col-lg-8 feed">
                         <Switch>
                             <Route exact path="/my-games" component={MyMatches} />
                             <Route path="/match-detail" component={MatchDetail} />
                             <Route path="/favourite-players" component={MyFavPlayers} />
+                            <Route path="/trainers" component={Trainers} />
                             <Route path="/player-detail" component={PlayerDetail} />
                             <Route path="/favourite-courts" component={MyFavCourts} />
                             <Route path="/fav-court-detail" component={FavCourtDetail} />
@@ -66,11 +67,7 @@ function App() {
                             <Route path="/notification-detail" component={NotificationDetail} />
 
                         </Switch>
-                    
-                    </div>
-              
-                    <Widgets />
-                    {/* ========== Without Widget Screens ========= */}
+        {/* ========== Without Widget Screens ========= */}
                     {/* PlayerDetail */}
                     {/* FavCourtDetail */}
                     {/* MatchDetail */}

@@ -5,6 +5,9 @@ import {
 import MatchTeamList from '../match-team-list/MatchTeamList';
 import CourtReservation from '../../modals/CourtReservation/CourtReservation';
 import Share from '../../modals/Share/Share';
+import {FaHandshake} from "@react-icons/all-files/fa/FaHandshake";
+import {BiShareAlt} from "@react-icons/all-files/bi/BiShareAlt";
+
 import "./_matchDetail.scss";
 
 const MatchDetail = () => {
@@ -18,12 +21,14 @@ const MatchDetail = () => {
 
     const handleShareModalClose = () => setShareModalShow(false);
     const handleShowShareModal = () => setShareModalShow(true);
+    
     return (
         <>
         <CourtReservation handleCourtResModalClose={handleCourtResModalClose} show={showCourtRes} />
         <Share handleShareModalClose={handleShareModalClose} show={showShareModal} />
         
         <div className="row">
+            <h5 className="text-center m-4">Balçova Spor Salonu</h5>
             <div className="col-lg-6 col-md-12">
                 <div className="card">
                     <div className="card-header">
@@ -66,25 +71,29 @@ const MatchDetail = () => {
                         <div class="card-body text-center   ">
                             <div className="buttons text-center">
                             
-                                <Link variant="primary" class="btn btn-success" onClick={handleShowCourtResModal}>
-                                    Katıl +
+                                <Link variant="primary" class="btn btn-light handshake" onClick={handleShowCourtResModal}>
+                                    <FaHandshake />
                                     </Link>
-                                <Link to="team-message-detail" className="btn btn-primary">Mesaj</Link>
-                                <Link variant="primary" className="btn btn-warning" onClick={handleShowShareModal}>Paylaş</Link>
+                                <Link to="team-message-detail" className="btn btn-light message">
+                                    <i className='bi bi-envelope bi-sub fs-4 text-gray-600'></i>
+                                </Link>
+                                <Link variant="primary" className="btn btn-light share" onClick={handleShowShareModal}>
+                                    <BiShareAlt />
+                                </Link>
                             </div>
                             <br />
                             <h4 class="card-title text-center">Match Details</h4>
                             <hr />
-                            <label class="btn btn-danger">
-                                Date - Time : <span class="badge">21/06/2021 | 12:00 - 13:00</span>
+                            <label class="btn-light text-dark p-2">
+                                Date - Time : <span class="badge text-dark">21/06/2021 | 12:00 - 13:00</span>
                             </label>
                             <hr />
-                            <label class="btn btn-primary ">
-                                Player Count <span class="badge bg-transparent">8</span>
+                            <label class="btn-light text-dark p-2">
+                                Player Count <span class="badge text-dark">8</span>
                             </label>
                             <hr />
-                            <label class="btn btn-warning">
-                                Player Need <span class="badge bg-transparent">1-3</span>
+                            <label class="btn-light text-dark p-2">
+                                Player Need <span class="badge text-dark">1-3</span>
                             </label>
                         </div>
                     </div>

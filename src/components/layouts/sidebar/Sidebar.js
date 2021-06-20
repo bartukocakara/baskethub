@@ -78,7 +78,12 @@ const Sidebar = () => {
                                             Player Search
                                         </Link>
                                     </li>
-                                    
+                                    <li className="submenu-item">
+                                        <Link variant="primary" onClick={handlePlayerShow}>
+                                            <GoPerson className="sidebar-icon" />
+                                            Trainer Search
+                                        </Link>
+                                    </li>
                                 </ul>
                             </li>
                             <li className="sidebar-item">

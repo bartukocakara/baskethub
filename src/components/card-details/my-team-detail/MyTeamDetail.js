@@ -2,8 +2,8 @@ import React from 'react'
 
 const MyTeamDetail = () => {
     return (
-        <div class="row">
-            <div class="col-12">
+        <>
+            <div class="col-6">
                 <div class="card">
                     <div class="card-header">
                     {
@@ -31,7 +31,7 @@ const MyTeamDetail = () => {
                     
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 

@@ -6,10 +6,11 @@
     padding:0.5rem;
     list-style-type: none;
     cursor: pointer;
+    h6{
+        color:white;
+    }
 }
-h6{
-    color:white;
-}
+
 .whatsapp{
     background: #25D366;
 
@@ -33,9 +34,16 @@ h6{
     }
 }
 .instagram{
-    background: #683105;
-
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
     &:hover {
         background-color: rgb(68, 29, 2);
     }
+}
+.player{
+    background: #FA8602 !important;
+    color:white;
 }

@@ -13,7 +13,7 @@ const CourtReservation = ({handleCourtResModalClose, show}) => {
             >
             <Modal.Header className="court-res-header">
                 <Modal.Title>
-                <p>You can add send note to match host</p>
+                <p>You can send note to match host</p>
                 <div class="avatar me-3">
                     <img src="assets/images/faces/1.jpg" alt="" srcset="" />
                     <span class="avatar-status bg-success"></span>
@@ -27,7 +27,7 @@ const CourtReservation = ({handleCourtResModalClose, show}) => {
             <Button variant="danger" onClick={handleCourtResModalClose}>
                 Close
             </Button>
-            <Button variant="success">Send Join Request</Button>
+            <Button variant="primary">Send Join Request</Button>
             </Modal.Footer>
         </Modal>
     )

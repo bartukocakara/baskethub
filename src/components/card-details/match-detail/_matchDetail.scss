@@ -1,3 +1,27 @@
 .match-detail-text {
     margin-left: 20%;
 }
+
+.btn i, .btn svg .message {
+    width: 30px;
+    height: 30px;
+}
+.handshake{
+    &:hover{
+        background-color:#dbe4ec
+
+    }
+}
+.share{
+    &:hover{
+        background-color:#dbe4ec
+
+    }
+}
+
+.message{
+    &:hover{
+        background-color:#dbe4ec
+
+    }
+}

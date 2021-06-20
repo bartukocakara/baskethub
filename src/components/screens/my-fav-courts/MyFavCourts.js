@@ -1,10 +1,12 @@
 import React from 'react'
 import FavouriteCourtCard from '../../cards/favourite-courts/FavouriteCourtCard'
 import Search from '../../layouts/search/Search';
+import CourtWidget from '../../layouts/widgets/court-widget/CourtWidget';
 
 const MyFavCourts = () => {
     return (
         <>
+        <div className="col-8">
             <Search />
 
             <section id="content-types">
@@ -17,6 +19,8 @@ const MyFavCourts = () => {
                    
                 </div>
             </section>
+        </div>
+        <CourtWidget />
         </>
     )
 }

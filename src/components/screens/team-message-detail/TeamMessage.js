@@ -2,11 +2,12 @@ import React from 'react'
 import {
     Link
   } from "react-router-dom";
+import TeamMessageWidget from '../../layouts/widgets/team-message-widget/TeamMessageWidget';
   
 const TeamMessage = () => {
     return (
-        <div class="row">
-            <div class="col-md-12">
+        <>
+            <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">
                         <div class="media d-flex align-items-center">
@@ -59,7 +60,8 @@ const TeamMessage = () => {
                 </div>
             </div>
             </div>
-        </div>
+            <TeamMessageWidget />
+        </>
     )
 }
 

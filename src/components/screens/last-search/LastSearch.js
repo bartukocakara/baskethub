@@ -1,9 +1,11 @@
 import React from 'react'
 import MyMatchesCard from '../../cards/my-matches/MyMatchesCard'
+import LastSearchWidget from '../../layouts/widgets/search-widget/LastSearchWidget'
 
 const LastSearch = () => {
     return (
         <>
+        <div className="col-8">
             <section id="content-types">
                 <div className="row">
                     {
@@ -14,6 +16,8 @@ const LastSearch = () => {
                    
                 </div>
             </section>
+        </div>
+        <LastSearchWidget />
         </>
     )
 }

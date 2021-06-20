@@ -3,10 +3,11 @@ import "./_messageDetail.scss";
 import {
     Link
   } from "react-router-dom";
+import MessageWidget from '../../layouts/widgets/message-widget/MessageWidget';
 const MessageDetail = () => {
     return (
-        <div class="row">
-            <div class="col-md-12">
+        <>
+            <div class="col-8">
                 <div class="card">
                     <div class="card-header">
                         <div class="media d-flex align-items-center">
@@ -59,7 +60,8 @@ const MessageDetail = () => {
                 </div>
             </div>
             </div>
-        </div>
+            <MessageWidget />
+        </>
     )
 }
 

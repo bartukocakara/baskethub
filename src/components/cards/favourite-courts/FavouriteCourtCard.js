@@ -1,13 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail";
 import { FaHandshake } from "@react-icons/all-files/fa/FaHandshake";
 import { FiShare2 } from "@react-icons/all-files/fi/FiShare2";
+import Share from '../../modals/Share/Share';
+
 import {
     Link
   } from "react-router-dom";
-import "./_favouriteCourt.scss";        
+import "./_favouriteCourt.scss";
+     
+
 const FavouriteCourtCard = () => {
+    const [showShareModal, setShareModalShow] = useState(false);
+
+    const handleShareModalClose = () => setShareModalShow(false);
+    const handleShowShareModal = () => setShareModalShow(true); 
     return (
+        <>
+        <Share handleShareModalClose={handleShareModalClose} show={showShareModal} />
+
         <div className="col-xl-12 col-md-12 col-sm-12 feed-card feed-my-fav-courts-card">
             <div className="card">
                 <h4 className="card-title text-center">Dr. Cavit Spor Salonu - İzmir/Bornova</h4>
@@ -49,12 +60,13 @@ const FavouriteCourtCard = () => {
                         <FaHandshake className="card-footer-icon" />
                     </Link>
                     <Link >
-                        <FiShare2 className="card-footer-icon" />
+                        <FiShare2 className="card-footer-icon" onClick={handleShowShareModal} />
                     </Link>
                     </div>
                 </div>
             </div>
         </div>
+        </>
     )
 }
 

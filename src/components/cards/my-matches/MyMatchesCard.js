@@ -1,7 +1,6 @@
 import React from 'react'
 import "./_myMatchesCard.scss";
 import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail";
-import { FaHandshake } from "@react-icons/all-files/fa/FaHandshake";
 import { FiShare2 } from "@react-icons/all-files/fi/FiShare2";
 import {
     Link
@@ -12,7 +11,7 @@ const MyMatchesCard = () => {
         <h6>HAZ 13, PAZAR</h6>
         <div className="col-xl-12 col-md-12 col-sm-12 feed-card feed-my-matches-card">
             <div className="card">
-                <h4 className="card-title text-center">Dr. Cavit Spor Salonu - İzmir/Bornova</h4>
+                <h4 className="card-title text-center m-2">Dr. Cavit Spor Salonu - İzmir/Bornova</h4>
                 <div className="card-content d-flex card-body card-custom">
                     <div class="avatar avatar-lg me-2 card-avatar">
                         <img src="assets/images/faces/2.jpg" alt="" srcset="" />
@@ -45,12 +44,9 @@ const MyMatchesCard = () => {
                     </div>
                     <div className="footer-right">
                         <Link to="team-message-detail">
-                            <AiOutlineMail className="card-footer-icon" />
+                            <AiOutlineMail className="card-footer-icon"/>
                         </Link>
-                        <Link >
-                            <FaHandshake className="card-footer-icon" />
-                        </Link>
-                        <Link >
+                        <Link>
                             <FiShare2 className="card-footer-icon" />
                         </Link>
                     </div>

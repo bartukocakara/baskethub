@@ -2,3 +2,17 @@
     padding:0.2rem;
     text-align: center;
 }
+.player-detail-buttons{
+    margin-left:5%;
+}
+.request-join{
+    font-weight: bold;
+
+    &:hover{
+        background-color:#fc5407 !important
+    }
+}
+.player-detail-handshake{
+    width:20px !important;
+    margin-left:10px !important;
+}

@@ -5,6 +5,7 @@ import { TiSocialInstagram } from "@react-icons/all-files/ti/TiSocialInstagram";
 import { TiSocialTwitter } from "@react-icons/all-files/ti/TiSocialTwitter";
 import { TiSocialFacebook } from "@react-icons/all-files/ti/TiSocialFacebook";
 import { AiOutlineWhatsApp } from "@react-icons/all-files/ai/AiOutlineWhatsApp";
+import { GoPerson } from "@react-icons/all-files/go/GoPerson";
 
 import "./_share.scss";
 
@@ -23,6 +24,9 @@ const Share = ({handleShareModalClose, show}) => {
             </Modal.Header>
             <Modal.Body>
                 <ul>
+                    <li className="share-li player">
+                        <h6> With Player <GoPerson /></h6>
+                    </li>
                     <li className="share-li whatsapp">
                         <h6> Whatsapp <AiOutlineWhatsApp /></h6>
                     </li>

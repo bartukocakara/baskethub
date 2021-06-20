@@ -10,3 +10,16 @@
 .fav-court-detail-comment{
     height: 15vh;
 }
+.btn i, .btn svg .message {
+    width: 20px;
+    height: 20px;
+}
+.share, .message{
+    &:hover{
+        background-color:#dbe4ec
+
+    }
+}
+.court-detail-header-text{
+    justify-content:space-between;
+}

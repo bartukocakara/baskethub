@@ -52,10 +52,16 @@
             margin-left:auto;
             float:right;
             a{
-                padding:7px;
+                width:40px;
+                padding:10px;
                 align-items:center;
                 justify-content:center;
-                margin-right:20px
+                margin-right:20px;
+
+                &:hover{
+                    border-radius: 5px;
+                    background-color:rgb(245, 244, 244)
+                }
             }
             .card-footer-icon{
                 font-size: 25px;
