@@ -4,6 +4,7 @@ import {
     NavLink,
     Link
   } from "react-router-dom";
+import { FaHandshake } from "@react-icons/all-files/fa/FaHandshake";
 
 const Navbar = () => {
     return (
@@ -27,15 +28,18 @@ const Navbar = () => {
                                     <i className='bi bi-envelope bi-sub fs-4 text-gray-600'></i>
                                 </Link>
                                 <ul className="dropdown-menu dropdown-menu-end mail-drop text-center" aria-labelledby="dropdownMenuButton">
-                                    <h5>Messages</h5>
+                                    <h6>You have 3 Messages</h6>
                                     <hr/>
                                     {
                                         [...Array(5)].map(() => (
-                                            <li><Link class="dropdown-item text-center" to="message-detail"><h6>Deniz Polat</h6></Link></li>
+                                            <li><Link class="dropdown-item text-center d-flex" to="message-detail"><h6>Pınar Uygur</h6><span class="badge bg-success notify-name">New</span></Link></li>
 
                                         ))
                                     }
+                                    <hr/>
+                                    <button className="btn btn-primary text-light">Mark all as read</button>
                                 </ul>
+                                
                             </li>
                             <li className="nav-item dropdown me-3">
                                 <Link className="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown"
@@ -43,14 +47,16 @@ const Navbar = () => {
                                     <i class='bi bi-bell bi-sub fs-4 text-gray-600'></i>
                                 </Link>
                                 <ul className="dropdown-menu dropdown-menu-end notification-drop text-center" aria-labelledby="dropdownMenuButton">
-                                <h5>Notifications</h5>
+                                <h6>You have 3 Notifications</h6>
                                 <hr />
                                     {
                                         [...Array(5)].map(() => (
-                                            <li><Link class="dropdown-item text-center" to="notification-detail"><h6>Pınar Uygur</h6></Link></li>
+                                            <li><Link class="dropdown-item text-center d-flex" to="notification-detail"><FaHandshake /><h6 className="notify-name">Deniz Polat</h6><span class="badge bg-success">New</span></Link></li>
 
                                         ))
                                     }
+                                    <hr/>
+                                    <button className="btn btn-primary text-light">Mark all as read</button><Link to="notifications" className="btn btn-primary see-all">See all</Link>
                                 </ul>
                             </li>
                         </ul>

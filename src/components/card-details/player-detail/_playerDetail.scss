@@ -9,10 +9,22 @@
     font-weight: bold;
 
     &:hover{
-        background-color:#fc5407 !important
+        background-color:#f5962a !important
     }
 }
 .player-detail-handshake{
     width:20px !important;
     margin-left:10px !important;
+}
+.player-teams{
+    width:100%;
+    display:flex !important;
+    overflow:initial;
+    .col-3{
+        min-width:27%;
+        margin:1rem;
+    }
+}
+.court-name{
+    margin:auto;
 }

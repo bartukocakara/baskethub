@@ -7,9 +7,19 @@
         .nav-item{
             li{
                 height:7vh;
-
+                svg{
+                    font-size: 20px;
+                }
+                .notify-name{
+                    margin-left:2rem;
+                }
+                span{
+                    margin-left:1rem;
+                }
             }
-
+            .see-all{
+                margin-left:15px;
+            }
             .mail-drop{
 
                 

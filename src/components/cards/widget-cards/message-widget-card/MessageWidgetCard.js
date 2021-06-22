@@ -1,17 +1,16 @@
 import React from 'react'
-import { FiPlusSquare } from "@react-icons/all-files/fi/FiPlusSquare";
 import {
     Link
   } from "react-router-dom";
-  
+import "./_messageWidgetCard.scss";
+
 const MessageWidgetCard = () => {
     return (
         <Link to="message-detail">
-            <div className="card-body border b-primary m-3 widget-player-card d-flex p-2">
-                <FiPlusSquare className="widget-player-icon" color="#FA8602"/>
+            <div className="card-body border b-primary m-3 widget-player-card d-flex p-2 rounded">
                 <div className="widget-player-text">
                     <h6 className="">Bartu Kocakara</h6>
-                    <p className="text-muted">İstanbul</p>
+                    <p className="text-muted cut-text">property specifies whether to clip the content, add a scroll bar, or display overflow content of a block-level element, when it overflows at the top and bottom </p>
                 </div>
                 <div className="avatar avatar-lg me-2 widget-card-right">
                     <img src="assets/images/faces/2.jpg" alt="" srcset="" />

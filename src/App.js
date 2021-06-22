@@ -11,6 +11,9 @@ import MyTeams from './components/screens/my-teams/MyTeams';
 import PlayerDetail from './components/card-details/player-detail/PlayerDetail';
 import FavCourtDetail from './components/card-details/fav-court-detail/FavCourtDetail';
 import MyTeamDetail from './components/card-details/my-team-detail/MyTeamDetail';
+import TeamDetail from './components/card-details/team-detail/TeamDetail';
+import EndedMatch from './components/card-details/ended-match/EndedMatch';
+
 import ServicePolicies from './components/info/service-policies/ServicePolicies';
 import About from './components/info/about/About';
 import Secure from './components/info/secure/Secure';
@@ -26,6 +29,7 @@ import Profile from './components/screens/profile/Profile';
 import MessageDetail from './components/screens/message-detail/MessageDetail';
 import TeamMessage from './components/screens/team-message-detail/TeamMessage';
 import NotificationDetail from './components/screens/notification-detail/NotificationDetail';
+import Notifications from './components/screens/notifications/Notifications';
 import MatchDetail from './components/card-details/match-detail/MatchDetail';
 import Trainers from './components/screens/trainer-search/Trainers';
 function App() {
@@ -44,6 +48,7 @@ function App() {
                         <Switch>
                             <Route exact path="/my-games" component={MyMatches} />
                             <Route path="/match-detail" component={MatchDetail} />
+                            <Route path="/ended-match-detail" component={EndedMatch} />
                             <Route path="/favourite-players" component={MyFavPlayers} />
                             <Route path="/trainers" component={Trainers} />
                             <Route path="/player-detail" component={PlayerDetail} />
@@ -52,6 +57,7 @@ function App() {
                             <Route path="/last-search" component={LastSearch} />
                             <Route path="/my-teams" component={MyTeams} />
                             <Route path="/my-team-detail" component={MyTeamDetail} />
+                            <Route path="/team-detail" component={TeamDetail} />
                             <Route path="/team/:name" component={MyTeamDetail} />
                             <Route path="/player-detail/:name" component={PlayerDetail} />
                             <Route path="/court-detail/:name" component={FavCourtDetail} />
@@ -63,7 +69,8 @@ function App() {
                             <Route path="/faq" component={Faq} />
                             <Route path="/my-profile" component={Profile} />
                             <Route path="/message-detail" component={MessageDetail} />
-                            <Route path="/team-message-detail" component={TeamMessage} />
+                            <Route path="/team-chat" component={TeamMessage} />
+                            <Route path="/notifications" component={Notifications} />
                             <Route path="/notification-detail" component={NotificationDetail} />
 
                         </Switch>

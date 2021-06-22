@@ -5,12 +5,12 @@ const MatchWidget = () => {
     return (
         <div className="col-4">
             <div class="card w-100" >
-                <div class="card-header widget-header">
-                    <h4>Recommended Players</h4>
-                </div>
-                <MatchWidgetCard />
-                <MatchWidgetCard />
-                <MatchWidgetCard />
+                <h4 className="text-center">Matches Around You</h4>
+                {
+                    [...Array(3)].map((item) => (
+                        <MatchWidgetCard />
+                    ))
+                }
             </div>
         </div>
     )

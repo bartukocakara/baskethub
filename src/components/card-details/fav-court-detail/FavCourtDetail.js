@@ -187,7 +187,7 @@ const FavCourtDetail = () => {
                     </div>
                 </div>
             </div>
-            <div claclassNamess="col-12">
+            <div classNames="col-12">
                 <div className="card">
                     <div class="card-body">
                         <ul class="nav nav-tabs match-team-list text-center col-lg-12" id="myTab" role="tablist">
@@ -285,7 +285,7 @@ const FavCourtDetail = () => {
                                     <div className="media fav-court-detail-comment d-flex align-items-center">
                                         <div className="avatar me-3">
                                             <img src="assets/images/faces/1.jpg" alt="" srcset="" />
-                                            <span claclassNamess="avatar-status bg-success"></span>
+                                            <span className="avatar-status bg-success"></span>
                                         </div>
                                         <div className="name flex-grow-1">
                                             <h6 className="mb-0">Fred</h6>

@@ -1,0 +1,17 @@
+.table-hover>tbody>tr:hover{
+    cursor:pointer;
+    border:1px solid transparent !important;
+    border-radius: 20px !important;
+}
+.notification{
+    margin-bottom:1rem;
+    flex-direction : row !important;
+
+    .buttons{
+        display:flex;
+
+        .btn{
+            margin:auto;
+        }
+    }
+}

@@ -14,6 +14,7 @@ import "./_playerDetail.scss";
 import Widgets from '../../layouts/widgets/Widgets';
 import RequestPlayerJoin from '../../modals/RequestPlayerJoin/RequestPlayerJoin';
 import Teams from "./teams/Teams";
+import Matches from './matches/Matches';
 
 const PlayerDetail = () => {
 
@@ -123,7 +124,7 @@ const PlayerDetail = () => {
                         </div>
                     </div>
                 </div>
-                <div class="col-19">
+                <div class="col-12">
                     <div class="card">
                         <div class="card-body">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -155,30 +156,14 @@ const PlayerDetail = () => {
                                 {
                                     [...Array(5)].map((matchesList) => (
                                         <>
-                                            <div className="media fav-court-detail-comment d-flex align-items-center">
-                                                <div className="avatar me-3">
-                                                    <img src="assets/images/faces/1.jpg" alt="" srcset="" />
-                                                    <span claclassNamess="avatar-status bg-success"></span>
-                                                </div>
-                                                <div className="name flex-grow-1">
-                                                    <h6 className="mb-0">Fred</h6>
-                                                    <span className="text-xs">Online</span>
-                                                </div>
-                                                <div className="name flex-grow-1 p-4">
-                                                    <p>Basketball quotes are terrific for motivating and inspiring coaches and athletes. Countless times I’ve recited various quotes to my players or fellow coaches and they always have a positive effect.</p>
-                                                </div>
-                                                <div className="name flex-grow-1">
-                                                    <div id="basic" class="star-rating" style={{ width: "160px", height: "32px", backgroundSize: "32px" }} title="5/5"><div class="star-value" style={{ backgroundSize: "32px", width: "0%" }}></div></div>
-                                                </div>
-                                            </div>
-                                        <hr />
+                                            <Matches />
                                         </>
                                     ))
                                 }
                                 </div>
-                                <div class="tab-pane fade row" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                <div class="tab-pane fade player-teams row" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                                 {
-                                    [...Array(2)].map((teamsList) => (
+                                    [...Array(10)].map((teamsList) => (
                                         <Teams />
                                     ))
                                     }
