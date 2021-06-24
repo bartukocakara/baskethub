@@ -47,7 +47,7 @@ const PlayerDetail = () => {
                                 </div>
                                 <div className="buttons text-center player-detail-buttons ml-5">
                                     <button className="btn btn-warning share">Takip Et +</button>
-                                    <Link to="team-message-detail" className="btn btn-light message">
+                                    <Link to="message-detail" className="btn btn-light message">
                                         <i className='bi bi-envelope bi-sub fs-4'></i>
                                     </Link>
                                     <button className="btn btn-light share fs-4"><BiShareAlt/></button>
