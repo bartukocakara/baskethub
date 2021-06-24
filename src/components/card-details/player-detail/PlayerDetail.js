@@ -152,7 +152,7 @@ const PlayerDetail = () => {
                                         Nunc ultricies ligula a tempor vulputate. Suspendisse pretium mollis
                                         ultrices.</p>
                                 </div>
-                                <div class="tab-pane fade mt-2" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="tab-pane fade mt-4" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                 {
                                     [...Array(5)].map((matchesList) => (
                                         <>
@@ -161,7 +161,7 @@ const PlayerDetail = () => {
                                     ))
                                 }
                                 </div>
-                                <div class="tab-pane fade player-teams row" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                <div class="tab-pane fade player-teams row mt-4" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                                 {
                                     [...Array(10)].map((teamsList) => (
                                         <Teams />

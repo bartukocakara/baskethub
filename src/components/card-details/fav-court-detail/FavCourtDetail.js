@@ -61,7 +61,7 @@ const FavCourtDetail = () => {
                                 </div>
                             </div>
                             <div className="buttons text-center">
-                                <Link to="team-message-detail" className="btn btn-light message">
+                                <Link to="message-detail" className="btn btn-light message">
                                     <i className='bi bi-envelope bi-sub fs-4 text-gray-600'></i>
                                 </Link>
                                 <button className="btn btn-light share"><BiShareAlt size={100}/></button>
@@ -73,32 +73,34 @@ const FavCourtDetail = () => {
                                     <table class="table table-borderless">
                                         <tbody><tr>
                                             <td class="col-3">Hygiene:</td>
-                                            <td class="col-6">
-                                                <div class="progress progress-info">
-                                                    <div class="progress-bar" role="progressbar" style={{ width: "60%" }} aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                            </td>
+                                                <td class="col-6">
+                                                    <div class="progress progress-info">
+                                                        <div class="progress-bar" role="progressbar" style={{ width: "60%" }} aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </td>
                                             <td class="col-3 text-center">60%</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="col-3">Response:</td>
-                                            <td class="col-6">
-                                                <div class="progress progress-success">
-                                                    <div class="progress-bar" role="progressbar" style={{ width: "35%" }} aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                            </td>
-                                            <td class="col-3 text-center">30%</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="col-3">Intensity:</td>
-                                            <td class="col-6">
-                                                <div class="progress progress-danger">
-                                                    <div class="progress-bar" role="progressbar" style={{ width: "50%" }} aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                            </td>
-                                            <td class="col-3 text-center">50%</td>
-                                        </tr>
-                                    </tbody></table>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-3">Response:</td>
+                                                    <td class="col-6">
+                                                        <div class="progress progress-success">
+                                                            <div class="progress-bar" role="progressbar" style={{ width: "35%" }} aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </td>
+                                                <td class="col-3 text-center">30%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-3">Intensity:</td>
+                                                    <td class="col-6">
+                                                        <div class="progress progress-danger">
+                                                            <div class="progress-bar" role="progressbar" style={{ width: "50%" }} aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </td>
+                                                <td class="col-3 text-center">50%</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <h6>2.323 Players Voted</h6>
                                 </div>
                         </div>
                     </div>
@@ -115,6 +117,14 @@ const FavCourtDetail = () => {
                                 <h5 class="font-bold">John Duck</h5>
                                 <h6 class="text-muted mb-0">@johnducky</h6>
                             </div>
+                            <div class="ms-5 name">
+                                <h5 class="font-bold">Email</h5>
+                                <h6 class="text-muted mb-0">bartuu_436@hotmail.com</h6>
+                            </div>
+                            <div class="ms-5 name">
+                                <h5 class="font-bold">Phone</h5>
+                                <h6 class="text-muted mb-0">+90 555 667 66 80</h6>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -129,7 +139,7 @@ const FavCourtDetail = () => {
                                 </div>
                             </div>
                             <div className="col-md-8">
-                                <h6 className="text-muted font-semibold">Profile Views</h6>
+                                <h6 className="text-muted font-semibold">Court Views</h6>
                                 <h6 className="font-extrabold mb-0">112.000</h6>
                             </div>
                         </div>
@@ -146,7 +156,7 @@ const FavCourtDetail = () => {
                                 </div>
                             </div>
                             <div className="col-md-8">
-                                <h6 className="text-muted font-semibold">Followers</h6>
+                                <h6 className="text-muted font-semibold">Likes</h6>
                                 <h6 className="font-extrabold mb-0">183.000</h6>
                             </div>
                         </div>
@@ -163,7 +173,7 @@ const FavCourtDetail = () => {
                                 </div>
                             </div>
                             <div className="col-md-8">
-                                <h6 className="text-muted font-semibold">Match Joined</h6>
+                                <h6 className="text-muted font-semibold">Matches Played</h6>
                                 <h6 className="font-extrabold mb-0">80.000</h6>
                             </div>
                         </div>
@@ -180,7 +190,7 @@ const FavCourtDetail = () => {
                                 </div>
                             </div>
                             <div className="col-md-8">
-                                <h6 className="text-muted font-semibold">Match Accepted</h6>
+                                <h6 className="text-muted font-semibold">Matches Created</h6>
                                 <h6 className="font-extrabold mb-0">112</h6>
                             </div>
                         </div>

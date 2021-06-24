@@ -43,7 +43,7 @@ const MyMatchesCard = () => {
                         </Link>
                     </div>
                     <div className="footer-right">
-                        <Link to="team-message-detail">
+                        <Link to="match-chat">
                             <AiOutlineMail className="card-footer-icon"/>
                         </Link>
                         <Link>

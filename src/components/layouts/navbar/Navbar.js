@@ -32,7 +32,7 @@ const Navbar = () => {
                                     <hr/>
                                     {
                                         [...Array(5)].map(() => (
-                                            <li><Link class="dropdown-item text-center d-flex" to="message-detail"><h6>Pınar Uygur</h6><span class="badge bg-success notify-name">New</span></Link></li>
+                                            <li><Link class="dropdown-item text-center d-flex border-bottom" to="message-detail"><h6>Pınar Uygur</h6><span class="badge bg-success notify-name">New</span></Link></li>
 
                                         ))
                                     }
@@ -51,7 +51,7 @@ const Navbar = () => {
                                 <hr />
                                     {
                                         [...Array(5)].map(() => (
-                                            <li><Link class="dropdown-item text-center d-flex" to="notification-detail"><FaHandshake /><h6 className="notify-name">Deniz Polat</h6><span class="badge bg-success">New</span></Link></li>
+                                            <li><Link class="dropdown-item text-center d-flex border-bottom" to="notification-detail"><FaHandshake /><h6 className="notify-name">Deniz Polat</h6><span class="badge bg-success">New</span></Link></li>
 
                                         ))
                                     }

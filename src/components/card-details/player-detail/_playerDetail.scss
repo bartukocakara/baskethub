@@ -28,3 +28,55 @@
 .court-name{
     margin:auto;
 }
+.player-details-teams {
+    height:21vh;
+    margin-bottom:1rem !important;
+    .card-custom {
+        ul{
+            margin-left:20%;
+            list-style-type: none !important;
+
+            li{
+                justify-content:center;
+                align-items: center;
+                padding:0.5rem;
+                border:1px solid #dee2e6;
+                margin:0.5rem;
+                border-radius: 20px;
+                transition: 0.15s ease all;
+
+                &:hover {
+                    background-color: #f8f9fa;
+                }
+                p{
+                    margin:auto;
+                }
+            }
+        }
+    }
+    .card-footer {
+        .footer {
+            margin:auto;
+        }
+    }
+    .my-teams {
+        margin:auto;
+        width:100% !important;
+    }
+    .team-detail-btn{
+        margin:auto;
+        &:hover{
+            background-color: #eeeeee !important;
+        }
+    }
+    .team-chat-btn{
+        margin:auto;
+
+        &:hover {
+            background-color: #f7a03e !important;   
+        }
+    }
+    .MuiAvatarGroup-root{
+        margin-left:20% !important;
+    }
+}

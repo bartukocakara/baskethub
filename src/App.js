@@ -28,6 +28,7 @@ import {
 import Profile from './components/screens/profile/Profile';
 import MessageDetail from './components/screens/message-detail/MessageDetail';
 import TeamMessage from './components/screens/team-message-detail/TeamMessage';
+import MatchMessage from './components/screens/match-message-detail/MatchMessage';
 import NotificationDetail from './components/screens/notification-detail/NotificationDetail';
 import Notifications from './components/screens/notifications/Notifications';
 import MatchDetail from './components/card-details/match-detail/MatchDetail';
@@ -46,7 +47,7 @@ function App() {
             <div id="main-content" className="container main-section">
                 <div className="row">
                         <Switch>
-                            <Route exact path="/my-games" component={MyMatches} />
+                            <Route exact path="/my-matches" component={MyMatches} />
                             <Route path="/match-detail" component={MatchDetail} />
                             <Route path="/ended-match-detail" component={EndedMatch} />
                             <Route path="/favourite-players" component={MyFavPlayers} />
@@ -70,6 +71,7 @@ function App() {
                             <Route path="/my-profile" component={Profile} />
                             <Route path="/message-detail" component={MessageDetail} />
                             <Route path="/team-chat" component={TeamMessage} />
+                            <Route path="/match-chat" component={MatchMessage} />
                             <Route path="/notifications" component={Notifications} />
                             <Route path="/notification-detail" component={NotificationDetail} />
 

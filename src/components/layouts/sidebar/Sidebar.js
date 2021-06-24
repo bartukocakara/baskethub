@@ -9,6 +9,7 @@ import {BsPeopleFill} from "@react-icons/all-files/bs/BsPeopleFill";
 import CourtSearch from '../../modals/CourtSearch/CourtSearch';
 import PlayerSearch from '../../modals/PlayerSearch/PlayerSearch';
 import TeamSearch from '../../modals/TeamSearch/TeamSearch';
+import TrainerSearch from '../../modals/TrainerSearch/TrainerSearch';
 import {
     NavLink,
     Link,
@@ -32,12 +33,17 @@ const Sidebar = () => {
     const handleCourtClose = () => setCourtShow(false);
     const handleCourtShow = () => setCourtShow(true);
 
+    const [showTrainerSearch, setTrainerShow] = useState(false);
+  
+    const handleTrainerClose = () => setTrainerShow(false);
+    const handleTrainerShow = () => setTrainerShow(true);
+
     return (
         <>
         <CourtSearch handleCourtClose={handleCourtClose} show={showCourtSearch} />
         <PlayerSearch handlePlayerClose={handlePlayerClose} show={showPlayerSearch} />
         <TeamSearch handleTeamClose={handleTeamClose} show={showTeamSearch} />
-
+        <TrainerSearch handleTrainerClose={handleTrainerClose} show={showTrainerSearch}/>
             <div id="sidebar" className="active">
                 <div className="sidebar-wrapper active ps ps--active-y">
                     <div class="sidebar-header">
@@ -79,7 +85,7 @@ const Sidebar = () => {
                                         </Link>
                                     </li>
                                     <li className="submenu-item">
-                                        <Link variant="primary" onClick={handlePlayerShow}>
+                                        <Link variant="primary" onClick={handleTrainerShow}>
                                             <GoPerson className="sidebar-icon" />
                                             Trainer Search
                                         </Link>
@@ -87,7 +93,7 @@ const Sidebar = () => {
                                 </ul>
                             </li>
                             <li className="sidebar-item">
-                                <NavLink  to="/my-games" className="sidebar-link">
+                                <NavLink  to="/my-matches" className="sidebar-link">
                                     <FaBasketballBall />
                                     <span>My Matches</span>
                                 </NavLink >
@@ -99,7 +105,7 @@ const Sidebar = () => {
                                 </NavLink >
                             </li>
                             <li className="sidebar-item has-sub">
-                                <Link  to="/my-games" className="sidebar-link">
+                                <Link  to="/my-matches" className="sidebar-link">
                                     <AiFillStar />
                                     <span >Favourite</span>
                                 </Link >

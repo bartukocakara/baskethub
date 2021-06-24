@@ -3,12 +3,24 @@
 
     #navbarSupportedContent{
         
+        .nav-item.dropdown{
+            padding:0 !important;
+            border-radius: 10px;
+            a{
+                margin:auto !important;
+                text-align: center;
+            }
+            &:hover{
+                background:#fff;
 
+            
+            }
+        }
         .nav-item{
             li{
-                height:7vh;
+                height:9vh;
                 svg{
-                    font-size: 20px;
+                    font-size: 25px;
                 }
                 .notify-name{
                     margin-left:2rem;
@@ -21,12 +33,12 @@
                 margin-left:15px;
             }
             .mail-drop{
-
+                width:400px;
                 
             }
 
             .notification-drop{
-
+                width:400px;
             
             }
         }
