@@ -1,0 +1,12 @@
+.widget-match-text{
+
+    margin:5px;
+    .cut-text {
+        
+        text-overflow: ellipsis;
+        overflow: hidden;
+        height: 1.4em;
+        white-space: nowrap;
+    }
+
+}

@@ -74,7 +74,7 @@ const MatchDetail = () => {
                                 <Link variant="primary" class="btn btn-light handshake" onClick={handleShowCourtResModal}>
                                     <FaHandshake />
                                     </Link>
-                                <Link to="team-message-detail" className="btn btn-light message">
+                                <Link to="team-chat" className="btn btn-light message">
                                     <i className='bi bi-envelope bi-sub fs-4 text-gray-600'></i>
                                 </Link>
                                 <Link variant="primary" className="btn btn-light share" onClick={handleShowShareModal}>

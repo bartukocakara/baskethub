@@ -8,7 +8,7 @@ import "./_teamMessageWidgetCard.scss";
 
 const TeamMessageWidgetCard = () => {
     return (
-        <Link to="team-message-detail">
+        <Link to="team-chat">
             <div className="card-body border b-primary m-3 widget-player-card d-flex p-2 rounded">
                 <div className="m-auto">
                     <h6 className="">Oşbo Team</h6>
