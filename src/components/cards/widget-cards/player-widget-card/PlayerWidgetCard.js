@@ -3,10 +3,12 @@ import { FiPlusSquare } from "@react-icons/all-files/fi/FiPlusSquare";
 import {
     Link
   } from "react-router-dom";
+import "./_playerWidgetCard.scss";
+
 const PlayerWidgetCard = () => {
     return (
         <Link to="player-detail">
-            <div className="card-body border b-primary m-3 widget-player-card d-flex p-2">
+            <div className="card-body border b-primary m-2 widget-player-card d-flex p-3">
                 <FiPlusSquare className="widget-player-icon" color="#FA8602"/>
                 <div className="widget-player-text">
                     <h6 className="">Bartu Kocakara</h6>

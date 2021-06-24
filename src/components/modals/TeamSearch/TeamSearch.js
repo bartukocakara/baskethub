@@ -13,20 +13,20 @@ const TeamSearch = ({handleTeamClose, show}) => {
             </Modal.Header>
             <form action="#">
                 <div className="modal-body">
-                    <label>Search by Name: </label>
+                <h6 className="text-center">Search by Name : </h6>
                     <div className="form-group">
                         <input type="text" placeholder="Write Name" className="form-control" />
                     </div>
                 </div>
             </form>
-            <Modal.Footer>
-                <Button variant="secondary" onClick={handleTeamClose}>
+            <div className="text-center">
+                <Button variant="secondary m-2" onClick={handleTeamClose}>
                     Close
                 </Button>
-                <Button variant="primary" onClick={handleTeamClose}>
-                    Save Changes
+                <Button variant="warning m-2" onClick={handleTeamClose}>
+                    Start search
                 </Button>
-                </Modal.Footer>
+            </div>
         </Modal>
     )
 }

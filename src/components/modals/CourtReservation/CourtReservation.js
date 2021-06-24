@@ -13,7 +13,7 @@ const CourtReservation = ({handleCourtResModalClose, show}) => {
             >
             <Modal.Header className="court-res-header">
                 <Modal.Title>
-                <p>You can send note to match host</p>
+                <h6 className="text-center">You can send note to match host</h6>
                 <div class="avatar me-3">
                     <img src="assets/images/faces/1.jpg" alt="" srcset="" />
                     <span class="avatar-status bg-success"></span>
@@ -21,6 +21,7 @@ const CourtReservation = ({handleCourtResModalClose, show}) => {
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
+            <h6 className="text-center">You can send note to a player</h6>
             <textarea className="form-control" rows="5" placeholder="Please add note"></textarea>
             </Modal.Body>
             <Modal.Footer>

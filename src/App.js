@@ -2,6 +2,7 @@ import './_app.scss';
 
 import Sidebar from "./components/layouts/sidebar/Sidebar";
 import Navbar from "./components/layouts/navbar/Navbar";
+import LastActivities from './components/screens/last-activities/LastActivities';
 import MyMatches from './components/screens/my-matches/MyMatches';
 // import Widgets from './components/layouts/widgets/Widgets';
 import MyFavCourts from './components/screens/my-fav-courts/MyFavCourts';
@@ -47,7 +48,8 @@ function App() {
             <div id="main-content" className="container main-section">
                 <div className="row">
                         <Switch>
-                            <Route exact path="/my-matches" component={MyMatches} />
+                            <Route exact path="/" component={LastActivities} />
+                            <Route path="/my-matches" component={MyMatches} />
                             <Route path="/match-detail" component={MatchDetail} />
                             <Route path="/ended-match-detail" component={EndedMatch} />
                             <Route path="/favourite-players" component={MyFavPlayers} />

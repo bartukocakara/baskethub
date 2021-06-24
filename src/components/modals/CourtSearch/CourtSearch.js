@@ -13,7 +13,7 @@ const CourtSearch = ({handleCourtClose, show}) => {
             </Modal.Header>
             <form action="#">
                 <div class="modal-body">
-                    <label>City: </label>
+                <h6 className="text-center">City</h6>
                     <div class="form-group">
                         <select class="form-control">
                             <option>İstanbul</option>
@@ -21,7 +21,7 @@ const CourtSearch = ({handleCourtClose, show}) => {
                             <option>Ankara</option>
                         </select>
                     </div>
-                    <label>District: </label>
+                    <h6 className="text-center">District</h6>
                     <div className="form-group">
                         <select className="form-control">
                             <option>Kadıköy</option>
@@ -29,11 +29,11 @@ const CourtSearch = ({handleCourtClose, show}) => {
                             <option>Kızılay</option>
                         </select>
                     </div>
-                    <label>Tarih: </label>
+                    <h6 className="text-center">Date</h6>
                     <div className="form-group">
                         <input type="date" className="form-control" />
                     </div>
-                    <label>Zaman Aralığı: </label>
+                    <h6 className="text-center">Time interval</h6>
                     <div className="form-group">
                         <select className="form-control">
                             <option>00:00 - 01:00</option>
@@ -43,14 +43,14 @@ const CourtSearch = ({handleCourtClose, show}) => {
                     </div>
                 </div>
             </form>
-            <Modal.Footer>
-                <Button variant="secondary" onClick={handleCourtClose}>
+            <div className="text-center">
+                <Button className="" variant="secondary m-2" onClick={handleCourtClose}>
                     Close
                 </Button>
-                <Button variant="primary" onClick={handleCourtClose}>
-                    Start Search
+                <Button className="" variant="warning m-2" onClick={handleCourtClose}>
+                    Start search
                 </Button>
-            </Modal.Footer>
+            </div>
         </Modal>
         </>
     )

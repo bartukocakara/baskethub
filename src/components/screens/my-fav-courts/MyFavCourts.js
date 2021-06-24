@@ -1,6 +1,6 @@
 import React from 'react'
 import FavouriteCourtCard from '../../cards/favourite-courts/FavouriteCourtCard'
-import Search from '../../layouts/search/Search';
+import Search from '../../layouts/quick-search/Search';
 import CourtWidget from '../../layouts/widgets/court-widget/CourtWidget';
 
 const MyFavCourts = () => {

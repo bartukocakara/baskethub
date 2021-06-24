@@ -1,27 +1,28 @@
 import React from 'react'
-import FavouritePlayerCard from '../../cards/favourite-players/FavouritePlayerCard'
+import MyMatchesCard from '../../cards/my-matches/MyMatchesCard'
 import Search from '../../layouts/quick-search/Search';
-import PlayerWidget from '../../layouts/widgets/player-widget/PlayerWidget';
+import MatchWidget from '../../layouts/widgets/match-widget/MatchWidget';
 
-const MyFavPlayers = () => {
+const LastActivities = () => {
     return (
         <>
         <div className="col-8">
+            <h5>Last Activities</h5>
             <Search />
             <section id="content-types">
                 <div className="row">
                     {
                         [...Array(10)].map((match) => (
-                            <FavouritePlayerCard />
+                            <MyMatchesCard />
                         ))
                     }
                    
                 </div>
             </section>
         </div>
-        <PlayerWidget />
+        <MatchWidget />
         </>
     )
 }
 
-export default MyFavPlayers
+export default LastActivities

@@ -17,8 +17,7 @@ const PlayerSearch = ({handlePlayerClose, show}) => {
                         <input type="text" placeholder="Write Name" className="form-control" />
                     </div>
                     <hr />
-                    <h6>Location</h6>
-                    <label>City: </label>
+                    <h6 className="text-center">City</h6>
                     <div className="form-group">
                         <select class="form-control">
                             <option>İstanbul</option>
@@ -26,7 +25,7 @@ const PlayerSearch = ({handlePlayerClose, show}) => {
                             <option>Ankara</option>
                         </select>
                     </div>
-                    <label>District: </label>
+                    <h6 className="text-center">District</h6>
                     <div className="form-group">
                         <select className="form-control">
                             <option>Kadıköy</option>
@@ -34,7 +33,7 @@ const PlayerSearch = ({handlePlayerClose, show}) => {
                             <option>Kızılay</option>
                         </select>
                     </div>
-                    <label>Position: </label>
+                    <h6 className="text-center">Position</h6>
                     <div className="form-group">
                         <select className="form-control">
                             <option>PointGuard</option>
@@ -45,12 +44,11 @@ const PlayerSearch = ({handlePlayerClose, show}) => {
                         </select>
                     </div>
                     <hr />
-                    <h6>Availability Times of Player</h6>
-                    <label>Tarih: </label>
+                    <h6 className="text-center">Date</h6>
                     <div className="form-group">
                         <input type="date" className="form-control" />
                     </div>
-                    <label>Zaman Aralığı: </label>
+                    <h6 className="text-center">Time interval</h6>
                     <div className="form-group">
                         <select className="form-control">
                             <option>00:00 - 01:00</option>
@@ -60,14 +58,14 @@ const PlayerSearch = ({handlePlayerClose, show}) => {
                     </div>
                 </div>
             </form>
-            <Modal.Footer>
-                <Button variant="secondary" onClick={handlePlayerClose}>
+            <div className="text-center">
+                <Button variant="secondary m-2" onClick={handlePlayerClose}>
                     Close
                 </Button>
-                <Button variant="primary" onClick={handlePlayerClose}>
-                    Start Search
+                <Button variant="warning m-2" onClick={handlePlayerClose}>
+                    Start search
                 </Button>
-            </Modal.Footer>
+            </div>
         </Modal>
     )
 }

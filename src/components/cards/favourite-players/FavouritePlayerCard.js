@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail";
 import { FaHandshake } from "@react-icons/all-files/fa/FaHandshake";
 import { FiShare2 } from "@react-icons/all-files/fi/FiShare2";
@@ -6,9 +6,17 @@ import {
     Link
   } from "react-router-dom";
 import "./_favouritePlayer.scss";
+import RequestPlayerJoin from '../../modals/RequestPlayerJoin/RequestPlayerJoin';
 
 const FavouritePlayerCard = () => {
+    const [showRequestPlayerJoin, setRequestPJShow] = useState(false);
+
+    const handleRequestPlayerJoinClose = () => setRequestPJShow(false);
+    const handleRequestPlayerJoinModal = () => setRequestPJShow(true);
     return (
+        <>
+        <RequestPlayerJoin handleRequestPlayerJoinClose={handleRequestPlayerJoinClose} show={showRequestPlayerJoin}  />
+
         <div className="col-xl-12 col-md-12 col-sm-12 feed-card feed-my-fav-players-card">
             <div className="card">
                 <h4 className="card-title text-center">Bartu Kocakara</h4>
@@ -50,7 +58,7 @@ const FavouritePlayerCard = () => {
                     <Link to="message-detail">
                         <AiOutlineMail className="card-footer-icon" />
                     </Link>
-                    <Link >
+                    <Link onClick={handleRequestPlayerJoinModal}>
                         <FaHandshake className="card-footer-icon" />
                     </Link>
                     <Link >
@@ -60,6 +68,7 @@ const FavouritePlayerCard = () => {
                 </div>
             </div>
         </div>
+        </>
     )
 }
 

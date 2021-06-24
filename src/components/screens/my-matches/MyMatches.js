@@ -1,6 +1,6 @@
 import React from 'react'
 import MyMatchesCard from '../../cards/my-matches/MyMatchesCard'
-import Search from '../../layouts/search/Search';
+import Search from '../../layouts/quick-search/Search';
 import MatchWidget from '../../layouts/widgets/match-widget/MatchWidget';
 
 const MyMatches = () => {

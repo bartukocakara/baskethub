@@ -5,8 +5,12 @@ import Button from 'react-bootstrap/Button';
 const RequestPlayerJoin = ({handleRequestPlayerJoinClose, show}) => {
     return (
         <Modal show={show} onHide={handleRequestPlayerJoinClose} >
+                        
             <form className="p-4">
-                <label>Please select match</label>
+            <div class="avatar avatar-lg m-4 widget-card-right">
+                <img src="assets/images/faces/2.jpg" alt="" srcset="" />
+                <h6 className="text-center">Please select match you want to ask for join Bartu</h6>
+            </div>
                 <select className="form-control m-2">
                     <option>Game 1</option>
                     <option>Game 2</option>
@@ -14,14 +18,18 @@ const RequestPlayerJoin = ({handleRequestPlayerJoinClose, show}) => {
                     <option>Game 4</option>
                     <option>Game 5</option>
                 </select>
-            <Modal.Footer>
-                <Button variant="danger" onClick={handleRequestPlayerJoinClose}>
+                <h6 className="text-center">You can send note to a player</h6>
+                <textarea className="form-control m-2" rows="5">Write here...</textarea>
+            {/* <Modal.Footer> */}
+                <div className="text-center">
+                <Button variant="danger m-2" onClick={handleRequestPlayerJoinClose}>
                     Close
                 </Button>
-                <Button variant="warning" onClick={handleRequestPlayerJoinClose}>
+                <Button variant="warning m-2" onClick={handleRequestPlayerJoinClose}>
                     Send Request
                 </Button>
-            </Modal.Footer>
+                </div>
+            {/* </Modal.Footer> */}
             </form>
         </Modal>
     )

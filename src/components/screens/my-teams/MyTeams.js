@@ -1,6 +1,6 @@
 import React from 'react';
 import MyTeamsCard from '../../cards/my-teams/MyTeamsCard';
-import Search from '../../layouts/search/Search';
+import Search from '../../layouts/quick-search/Search';
 import TeamWidget from '../../layouts/widgets/team-widget/TeamWidget';
 
 import "./_myTeams.scss";
