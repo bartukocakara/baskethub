@@ -34,6 +34,8 @@ import NotificationDetail from './components/screens/notification-detail/Notific
 import Notifications from './components/screens/notifications/Notifications';
 import MatchDetail from './components/card-details/match-detail/MatchDetail';
 import Trainers from './components/screens/trainer-search/Trainers';
+import Tournaments from './components/screens/tournaments/Tournaments';
+import TrainerDetail from './components/card-details/trainer-detail/TrainerDetail';
 function App() {
   return (
       <>
@@ -58,9 +60,11 @@ function App() {
                             <Route path="/favourite-courts" component={MyFavCourts} />
                             <Route path="/fav-court-detail" component={FavCourtDetail} />
                             <Route path="/last-search" component={LastSearch} />
+                            <Route path="/tournaments" component={Tournaments} />
                             <Route path="/my-teams" component={MyTeams} />
                             <Route path="/my-team-detail" component={MyTeamDetail} />
                             <Route path="/team-detail" component={TeamDetail} />
+                            <Route path="/trainer-detail" component={TrainerDetail} />
                             <Route path="/team/:name" component={MyTeamDetail} />
                             <Route path="/player-detail/:name" component={PlayerDetail} />
                             <Route path="/court-detail/:name" component={FavCourtDetail} />

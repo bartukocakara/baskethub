@@ -7,14 +7,20 @@
             padding:0 !important;
             border-radius: 10px;
             a{
-                margin:auto !important;
-                text-align: center;
+                i{
+                    border-radius: 20px;
+                    padding:7px 7px !important;
+                    width:50px !important;
+                    height:50px !important;
+                    &:hover{
+                        
+                        background:#fff;
+        
+                    
+                    }  
+                }
             }
-            &:hover{
-                background:#fff;
-
             
-            }
         }
         .nav-item{
             li{

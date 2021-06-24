@@ -4,11 +4,10 @@ import AvatarGroup from '@material-ui/lab/AvatarGroup';
 import {
     Link
   } from "react-router-dom";
-import "./_matchWidgetCard.scss";
 
-const MatchWidgetCard = () => {
+const TournamentWidgetCard = () => {
     return (
-        <Link to="match-detail">
+        <Link to="tournament-detail">
             <div className="card-body border b-primary m-2 widget-player-card d-flex p-2 rounded">
                 <div className="widget-match-text">
                     <h6 className="cut-text mt-1">İstanbul Moda Spor Salonu Match</h6>
@@ -28,4 +27,4 @@ const MatchWidgetCard = () => {
     )
 }
 
-export default MatchWidgetCard
+export default TournamentWidgetCard

@@ -6,10 +6,13 @@ import { AiFillStar } from "@react-icons/all-files/ai/AiFillStar";
 import { AiOutlineFileSearch } from "@react-icons/all-files/ai/AiOutlineFileSearch";
 import {FaBasketballBall} from "@react-icons/all-files/fa/FaBasketballBall";
 import {BsPeopleFill} from "@react-icons/all-files/bs/BsPeopleFill";
+import {ImTree} from "@react-icons/all-files/im/ImTree";
 import CourtSearch from '../../modals/CourtSearch/CourtSearch';
 import PlayerSearch from '../../modals/PlayerSearch/PlayerSearch';
 import TeamSearch from '../../modals/TeamSearch/TeamSearch';
 import TrainerSearch from '../../modals/TrainerSearch/TrainerSearch';
+
+
 import {
     NavLink,
     Link,
@@ -128,28 +131,34 @@ const Sidebar = () => {
                                     <span>Last Search</span>
                                 </NavLink >
                             </li>
+                            <li className="sidebar-item">
+                                <NavLink  to="/tournaments" className="sidebar-link">
+                                    <ImTree />
+                                    <span>Tournaments</span>
+                                </NavLink >
+                            </li>
                         </ul>
                     </div>
 
                     <div class="sidebar-badges">
                         <div class="card-body">
                             <div class="badges">
-                                <NavLink to="/service-policies" className="sidebar-link">
+                                <NavLink to="/service-policies" target="_blank" className="sidebar-link info">
                                     <span class="badge sidebar-badge">Hizmet Şartları</span>
                                 </NavLink>
-                                <NavLink to="/secure" className="sidebar-link">
+                                <NavLink to="/secure" target="_blank" className="sidebar-link info">
                                     <span class="badge sidebar-badge">Gizlilik politikası</span>
                                 </NavLink>
-                                <NavLink to="/cookies" className="sidebar-link">
+                                <NavLink to="/cookies" target="_blank" className="sidebar-link info">
                                     <span class="badge sidebar-badge">Çerez Politikası</span>
                                 </NavLink>                                
-                                <NavLink to="/about-us" className="sidebar-link">
+                                <NavLink to="/about-us" target="_blank" className="sidebar-link info">
                                     <span class="badge sidebar-badge">Hakkımızda</span>
                                 </NavLink>
-                                <Link to="/contact" className="sidebar-link">
+                                <NavLink to="/contact" target="_blank" className="sidebar-link info">
                                     <span class="badge sidebar-badge">İletişim</span>
-                                </Link>
-                                <NavLink to="/faq" className="sidebar-link">
+                                </NavLink>
+                                <NavLink to="/faq" className="sidebar-link info">
                                     <span class="badge sidebar-badge">S.S.S</span>
                                 </NavLink>
                             </div>

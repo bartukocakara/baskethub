@@ -5,18 +5,6 @@ import {
 
 const Matches = () => {
     return (
-        // <div className="media ended-match d-flex align-items-center border rounded p-2 m-2">
-        //     <div className="name flex-grow-1">
-        //         <Link to="ended-match-detail"><h6 className="mb-0">Match Name</h6></Link>
-        //     </div>
-        //     <div className="name flex-grow-1">
-        //         <h6 className="mb-0">Karşıyaka</h6>
-        //         <span className="text-xs">Spor salonu</span>
-        //     </div>
-        //     <div className="name flex-grow-1">
-        //         <h6>26/12/2022 - 18:00 - 19:00</h6>
-        //     </div>
-        // </div>
         <div class="card component-card_8">
             <div class="card-body">
                 <div class="progress-order">

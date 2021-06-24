@@ -41,10 +41,10 @@ const Navbar = () => {
                                 </ul>
                                 
                             </li>
-                            <li className="nav-item dropdown me-3">
+                            <li className="nav-item dropdown me-1">
                                 <Link className="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown"
                                     aria-expanded="false">
-                                    <i class='bi bi-bell bi-sub fs-4 text-gray-600'></i>
+                                    <i className='bi bi-bell bi-sub fs-4 text-gray-600'></i>
                                 </Link>
                                 <ul className="dropdown-menu dropdown-menu-end notification-drop text-center" aria-labelledby="dropdownMenuButton">
                                 <h6>You have 3 Notifications</h6>

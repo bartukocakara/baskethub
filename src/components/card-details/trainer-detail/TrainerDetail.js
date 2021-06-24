@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { AiFillEye } from "@react-icons/all-files/ai/AiFillEye";
 import { BiCheckDouble } from "@react-icons/all-files/bi/BiCheckDouble";
 import { HiCheck } from "@react-icons/all-files/hi/HiCheck";
@@ -10,21 +10,12 @@ import {
   } from "react-router-dom";
   import {BiShareAlt} from "@react-icons/all-files/bi/BiShareAlt";
 
-import "./_playerDetail.scss";
+import "./_trainerDetail.scss";
 import Widgets from '../../layouts/widgets/Widgets';
-import RequestPlayerJoin from '../../modals/RequestPlayerJoin/RequestPlayerJoin';
-import Teams from "./teams/Teams";
-import Matches from './matches/Matches';
 
-const PlayerDetail = () => {
-
-    const [showRequestPlayerJoin, setRequestPJShow] = useState(false);
-
-    const handleRequestPlayerJoinClose = () => setRequestPJShow(false);
-    const handleRequestPlayerJoinModal = () => setRequestPJShow(true);
+const TrainerDetail = () => {
     return (
         <>
-        <RequestPlayerJoin handleRequestPlayerJoinClose={handleRequestPlayerJoinClose} show={showRequestPlayerJoin}  />
             <div class="col-8">
                 <div className="row"> 
                     <div class="card">
@@ -51,7 +42,7 @@ const PlayerDetail = () => {
                                         <i className='bi bi-envelope bi-sub fs-4'></i>
                                     </Link>
                                     <button className="btn btn-light share fs-4"><BiShareAlt/></button>
-                                    <button className="btn btn-warning request-join p-3" onClick={handleRequestPlayerJoinModal}>Request Join Match <FaHandshake className="player-detail-handshake" /></button>
+                                    <button className="btn btn-warning request-join p-3">Request Join Match <FaHandshake className="player-detail-handshake" /></button>
                                 </div>
                             </div>
                         </div>
@@ -153,29 +144,10 @@ const PlayerDetail = () => {
                                         ultrices.</p>
                                 </div>
                                 <div class="tab-pane fade mt-4" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                {
-                                    [...Array(5)].map((matchesList) => (
-                                        <>
-                                            <Matches />
-                                        </>
-                                    ))
-                                }
-                                <nav aria-label="Page navigation example ">
-                                    <ul className="pagination pagination-primary match-pagination">
-                                        <li className="page-item"><Link class="page-link">Prev</Link></li>
-                                        <li className="page-item"><Link class="page-link">1</Link></li>
-                                        <li className="page-item active"><Link class="page-link">2</Link></li>
-                                        <li className="page-item"><Link class="page-link">3</Link></li>
-                                        <li className="page-item"><Link class="page-link">Next</Link></li>
-                                    </ul>
-                                </nav>
+                                <h1>LABEL</h1>
                                 </div>
                                 <div class="tab-pane fade player-teams row mt-4" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                                {
-                                    [...Array(10)].map((teamsList) => (
-                                        <Teams />
-                                    ))
-                                    }
+                                <h1>LABEL</h1>
                                 </div>
                             </div>
                             </div>
@@ -188,4 +160,4 @@ const PlayerDetail = () => {
     )
 }
 
-export default PlayerDetail
+export default TrainerDetail
