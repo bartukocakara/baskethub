@@ -1,13 +1,13 @@
 import React from 'react'
 import { Modal } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
-import "./_courtReservation.scss";
+import "./_requestMatchJoin.scss";
 
-const CourtReservation = ({handleCourtResModalClose, show}) => {
+const RequestMatchJoin = ({handleRequestMatchJoinModalClose, show}) => {
     return (
         <Modal
             show={show}
-            onHide={handleCourtResModalClose}
+            onHide={handleRequestMatchJoinModalClose}
             backdrop="static"
             keyboard={false}
             >
@@ -25,7 +25,7 @@ const CourtReservation = ({handleCourtResModalClose, show}) => {
             <textarea className="form-control" rows="5" placeholder="Please add note"></textarea>
             </Modal.Body>
             <Modal.Footer>
-            <Button variant="danger" onClick={handleCourtResModalClose}>
+            <Button variant="danger" onClick={handleRequestMatchJoinModalClose}>
                 Close
             </Button>
             <Button variant="primary">Send Join Request</Button>
@@ -34,4 +34,4 @@ const CourtReservation = ({handleCourtResModalClose, show}) => {
     )
 }
 
-export default CourtReservation
+export default RequestMatchJoin

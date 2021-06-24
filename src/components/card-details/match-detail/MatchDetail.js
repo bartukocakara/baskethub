@@ -3,19 +3,12 @@ import {
     Link
   } from "react-router-dom";
 import MatchTeamList from '../match-team-list/MatchTeamList';
-import CourtReservation from '../../modals/CourtReservation/CourtReservation';
 import Share from '../../modals/Share/Share';
-import {FaHandshake} from "@react-icons/all-files/fa/FaHandshake";
 import {BiShareAlt} from "@react-icons/all-files/bi/BiShareAlt";
 
 import "./_matchDetail.scss";
 
 const MatchDetail = () => {
-
-    const [showCourtRes, setCourtResShow] = useState(false);
-
-    const handleCourtResModalClose = () => setCourtResShow(false);
-    const handleShowCourtResModal = () => setCourtResShow(true);
 
     const [showShareModal, setShareModalShow] = useState(false);
 
@@ -24,7 +17,6 @@ const MatchDetail = () => {
     
     return (
         <>
-        <CourtReservation handleCourtResModalClose={handleCourtResModalClose} show={showCourtRes} />
         <Share handleShareModalClose={handleShareModalClose} show={showShareModal} />
         
         <div className="row">
@@ -70,10 +62,6 @@ const MatchDetail = () => {
                     <div class="card-content">
                         <div class="card-body text-center   ">
                             <div className="buttons text-center">
-                            
-                                <Link variant="primary" class="btn btn-light handshake" onClick={handleShowCourtResModal}>
-                                    <FaHandshake />
-                                    </Link>
                                 <Link to="match-chat" className="btn btn-light message">
                                     <i className='bi bi-envelope bi-sub fs-4 text-gray-600'></i>
                                 </Link>
