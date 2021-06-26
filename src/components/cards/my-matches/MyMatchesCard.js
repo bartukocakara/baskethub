@@ -10,7 +10,7 @@ const MyMatchesCard = () => {
         <>
         <h6>HAZ 13, PAZAR</h6>
         <div className="col-xl-12 col-md-12 col-sm-12 feed-card feed-my-matches-card">
-            <div className="card">
+            <div className="card shadow">
                 <h4 className="card-title text-center m-2">Dr. Cavit Spor Salonu - İzmir/Bornova</h4>
                 <div className="card-content d-flex card-body card-custom">
                     <div class="avatar avatar-lg me-2 card-avatar">

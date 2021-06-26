@@ -10,7 +10,7 @@ import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail";
 const MyTeamsCard = () => {
     return (
         <div className="col-4 feed-card feed-my-teams-card">
-            <div className="card">
+            <div className="card shadow">
                 <h4 className="card-title text-center">Bornova Team</h4>
                 <div className="card-content card-body">
                     <AvatarGroup max={3} >

@@ -1,13 +1,13 @@
 import React from 'react'
 import MyMatchesCard from '../../cards/my-matches/MyMatchesCard'
-import Search from '../../layouts/quick-search/Search';
+import MatchSearch from '../../layouts/quick-search/match-search/MatchSearch';
 import MatchWidget from '../../layouts/widgets/match-widget/MatchWidget';
 
 const MyMatches = () => {
     return (
         <>
         <div className="col-8">
-            <Search />
+            <MatchSearch />
             <section id="content-types">
                 <div className="row">
                     {

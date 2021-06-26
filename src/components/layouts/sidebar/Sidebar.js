@@ -7,10 +7,10 @@ import { AiOutlineFileSearch } from "@react-icons/all-files/ai/AiOutlineFileSear
 import {FaBasketballBall} from "@react-icons/all-files/fa/FaBasketballBall";
 import {BsPeopleFill} from "@react-icons/all-files/bs/BsPeopleFill";
 import {ImTree} from "@react-icons/all-files/im/ImTree";
-import CourtSearch from '../../modals/CourtSearch/CourtSearch';
-import PlayerSearch from '../../modals/PlayerSearch/PlayerSearch';
-import TeamSearch from '../../modals/TeamSearch/TeamSearch';
-import TrainerSearch from '../../modals/TrainerSearch/TrainerSearch';
+import CourtSearch from '../../modals/court-search/CourtSearch';
+import PlayerSearch from '../../modals/player-search/PlayerSearch';
+import TeamSearch from '../../modals/team-search/TeamSearch';
+import TrainerSearch from '../../modals/trainer-search/TrainerSearch';
 
 
 import {

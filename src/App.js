@@ -10,7 +10,7 @@ import LastSearch from './components/screens/last-search/LastSearch';
 import MyFavPlayers from './components/screens/my-fav-players/MyFavPlayers';
 import MyTeams from './components/screens/my-teams/MyTeams';
 import PlayerDetail from './components/card-details/player-detail/PlayerDetail';
-import FavCourtDetail from './components/card-details/fav-court-detail/FavCourtDetail';
+import CourtDetail from './components/card-details/court-detail/CourtDetail';
 import MyTeamDetail from './components/card-details/my-team-detail/MyTeamDetail';
 import TeamDetail from './components/card-details/team-detail/TeamDetail';
 import EndedMatch from './components/card-details/ended-match/EndedMatch';
@@ -58,7 +58,7 @@ function App() {
                             <Route path="/trainers" component={Trainers} />
                             <Route path="/player-detail" component={PlayerDetail} />
                             <Route path="/favourite-courts" component={MyFavCourts} />
-                            <Route path="/fav-court-detail" component={FavCourtDetail} />
+                            <Route path="/court-detail" component={CourtDetail} />
                             <Route path="/last-search" component={LastSearch} />
                             <Route path="/tournaments" component={Tournaments} />
                             <Route path="/my-teams" component={MyTeams} />
@@ -67,7 +67,7 @@ function App() {
                             <Route path="/trainer-detail" component={TrainerDetail} />
                             <Route path="/team/:name" component={MyTeamDetail} />
                             <Route path="/player-detail/:name" component={PlayerDetail} />
-                            <Route path="/court-detail/:name" component={FavCourtDetail} />
+                            <Route path="/court-detail/:name" component={CourtDetail} />
                             <Route path="/service-policies" component={ServicePolicies} />
                             <Route path="/about-us" component={About} />
                             <Route path="/secure" component={Secure} />

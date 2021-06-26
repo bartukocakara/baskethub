@@ -10,7 +10,7 @@ import "./_trainerCard.scss";
 const TrainerCard = () => {
     return (
         <div className="col-xl-12 col-md-12 col-sm-12 feed-card feed-my-fav-players-card">
-            <div className="card">
+            <div className="card shadow">
                 <h4 className="card-title text-center">Bartu Kocakara</h4>
                 <div className="card-content d-flex card-body card-custom">
                     <div className="card-middle-text d-flex">

@@ -99,7 +99,7 @@ const Navbar = () => {
                 </div>
             </nav>
         </header>
-        
+        <hr className="nav-shadow"/>
         </>
         
     )

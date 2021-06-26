@@ -8,16 +8,13 @@ import { BiCheckDouble } from "@react-icons/all-files/bi/BiCheckDouble";
 import { HiCheck } from "@react-icons/all-files/hi/HiCheck";
 import { GoLocation } from "@react-icons/all-files/go/GoLocation";
 
-import "./_favCourtDetail.scss";
+import "./_courtDetail.scss";
 
 const FavCourtDetail = () => {
     return (
         <>
             <div className="col-6">
                 <div className="card">
-                    <div className="card-header">
-                        <h4>Court Photos</h4>
-                    </div>
                     <div class="card-body">
                         <div id="carouselExampleCaptions" class="carousel slide" style={{ height:"200px" }} data-bs-ride="carousel">
                             <ol class="carousel-indicators">

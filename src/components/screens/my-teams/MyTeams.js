@@ -1,6 +1,6 @@
 import React from 'react';
 import MyTeamsCard from '../../cards/my-teams/MyTeamsCard';
-import Search from '../../layouts/quick-search/Search';
+import TeamSearch from '../../layouts/quick-search/team-search/TeamSearch';
 import TeamWidget from '../../layouts/widgets/team-widget/TeamWidget';
 
 import "./_myTeams.scss";
@@ -8,7 +8,7 @@ const MyTeams = () => {
     return (
         <>
         <div className="col-8">
-            <Search />
+            <TeamSearch />
             <section id="content-types">
                 <div className="row">
                     {

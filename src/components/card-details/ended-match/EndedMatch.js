@@ -3,7 +3,7 @@ import React from 'react'
 const EndedMatch = () => {
     return (
         <>
-            <h5 className="text-center m-4">Balçova Spor Salonu <span class="badge bg-danger">Ended</span></h5>
+            <h5 className="text-center m-2">Balçova Spor Salonu <span class="badge bg-danger">Ended</span></h5>
             <div className="col-lg-6 col-md-12">
                 <div className="card">
                     <div className="card-header">

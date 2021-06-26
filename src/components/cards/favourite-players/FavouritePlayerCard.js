@@ -2,11 +2,16 @@ import React, { useState } from 'react'
 import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail";
 import { FaHandshake } from "@react-icons/all-files/fa/FaHandshake";
 import { FiShare2 } from "@react-icons/all-files/fi/FiShare2";
+import { TiSocialInstagram } from "@react-icons/all-files/ti/TiSocialInstagram";
+import { TiSocialTwitter } from "@react-icons/all-files/ti/TiSocialTwitter";
+import { TiSocialFacebook } from "@react-icons/all-files/ti/TiSocialFacebook";
+import { AiOutlineWhatsApp } from "@react-icons/all-files/ai/AiOutlineWhatsApp";
+import { GoPerson } from "@react-icons/all-files/go/GoPerson";
 import {
     Link
   } from "react-router-dom";
 import "./_favouritePlayer.scss";
-import RequestPlayerJoin from '../../modals/RequestPlayerJoin/RequestPlayerJoin';
+import RequestPlayerJoin from '../../modals/request-player-join/RequestPlayerJoin';
 
 const FavouritePlayerCard = () => {
     const [showRequestPlayerJoin, setRequestPJShow] = useState(false);
@@ -18,7 +23,7 @@ const FavouritePlayerCard = () => {
         <RequestPlayerJoin handleRequestPlayerJoinClose={handleRequestPlayerJoinClose} show={showRequestPlayerJoin}  />
 
         <div className="col-xl-12 col-md-12 col-sm-12 feed-card feed-my-fav-players-card">
-            <div className="card">
+            <div className="card shadow">
                 <h4 className="card-title text-center">Bartu Kocakara</h4>
                 <div className="card-content d-flex card-body card-custom">
                     <div className="card-middle-text d-flex">
@@ -54,16 +59,26 @@ const FavouritePlayerCard = () => {
                             Player Details
                         </Link>
                     </div>
-                    <div className="footer-right">
+                    <div className="footer-right d-flex">
                     <Link to="message-detail">
                         <AiOutlineMail className="card-footer-icon" />
                     </Link>
                     <Link onClick={handleRequestPlayerJoinModal}>
                         <FaHandshake className="card-footer-icon" />
                     </Link>
-                    <Link >
-                        <FiShare2 className="card-footer-icon" />
-                    </Link>
+                    <div class="dropdown">
+                        <Link class="btn btn-light dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        <FiShare2 className="card-footer-icon"  />
+                        </Link>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><Link class="dropdown-item text-center">With Player <GoPerson /></Link></li>
+                            <li><Link class="dropdown-item text-center">Whatsapp <AiOutlineWhatsApp /></Link></li>
+                            <li><Link class="dropdown-item text-center">Facebook <TiSocialFacebook /></Link></li>
+                            <li><Link class="dropdown-item text-center">Twitter <TiSocialTwitter /></Link></li>
+                            <li><Link class="dropdown-item text-center">Instagram <TiSocialInstagram /></Link></li>
+                        </ul>
+                    </div>
                     </div>
                 </div>
             </div>

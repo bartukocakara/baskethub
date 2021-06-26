@@ -1,13 +1,13 @@
 import React from 'react'
 import FavouritePlayerCard from '../../cards/favourite-players/FavouritePlayerCard'
-import Search from '../../layouts/quick-search/Search';
+import PlayerSearch from '../../layouts/quick-search/player-search/PlayerSearch';
 import PlayerWidget from '../../layouts/widgets/player-widget/PlayerWidget';
 
 const MyFavPlayers = () => {
     return (
         <>
         <div className="col-8">
-            <Search />
+            <PlayerSearch />
             <section id="content-types">
                 <div className="row">
                     {

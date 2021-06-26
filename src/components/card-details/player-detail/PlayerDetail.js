@@ -12,7 +12,7 @@ import {
 
 import "./_playerDetail.scss";
 import Widgets from '../../layouts/widgets/Widgets';
-import RequestPlayerJoin from '../../modals/RequestPlayerJoin/RequestPlayerJoin';
+import RequestPlayerJoin from '../../modals/request-player-join/RequestPlayerJoin';
 import Teams from "./teams/Teams";
 import Matches from './matches/Matches';
 
