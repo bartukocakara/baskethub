@@ -11,3 +11,16 @@
 
   
 }
+.btn-warning{
+
+  &:hover{
+      background-color:#f5962a !important;
+  }
+}
+.cut-text { 
+  text-overflow: ellipsis;
+  overflow: hidden; 
+  width: 190px; 
+  height: 1em; 
+  white-space: nowrap;
+}

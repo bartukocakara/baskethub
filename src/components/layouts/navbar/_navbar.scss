@@ -2,10 +2,17 @@
 
 
     #navbarSupportedContent{
-        
+
         .nav-item.dropdown{
             padding:0 !important;
             border-radius: 10px;
+            
+            .list-height{
+                overflow-y:scroll;
+            }
+            hr{
+                margin:0;
+            }
             a{
                 i{
                     border-radius: 20px;
@@ -24,7 +31,17 @@
         }
         .nav-item{
             li{
-                height:12vh;
+                a{
+                    height:12vh;
+
+                    padding:15px 5% !important;
+                    h6{
+                        padding:3px;
+                    }
+                    p{
+                        padding:2px;
+                    }
+                }
 
                 svg{
                     font-size: 25px;
@@ -33,7 +50,8 @@
                     margin-left:2rem;
                 }
                 span{
-                    margin-left:1rem;
+                    margin:auto !important;
+                    // margin-left:1rem;
                 }
             }
             .see-all{
@@ -41,12 +59,15 @@
             }
             .mail-drop{
                 width:400px;
+                overflow:auto;
+                -webkit-overflow-scrolling: touch;
                 
             }
 
             .notification-drop{
                 width:400px;
-            
+                overflow:auto;
+                -webkit-overflow-scrolling: touch;
             }
         }
     }

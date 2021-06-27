@@ -2,17 +2,46 @@ import React from 'react'
 import {
     Link
   } from "react-router-dom";
-import {BiShareAlt} from "@react-icons/all-files/bi/BiShareAlt";
 import { AiFillEye } from "@react-icons/all-files/ai/AiFillEye";
 import { BiCheckDouble } from "@react-icons/all-files/bi/BiCheckDouble";
 import { HiCheck } from "@react-icons/all-files/hi/HiCheck";
 import { GoLocation } from "@react-icons/all-files/go/GoLocation";
-
+import { FiShare2 } from "@react-icons/all-files/fi/FiShare2";
+import { TiSocialInstagram } from "@react-icons/all-files/ti/TiSocialInstagram";
+import { TiSocialTwitter } from "@react-icons/all-files/ti/TiSocialTwitter";
+import { TiSocialFacebook } from "@react-icons/all-files/ti/TiSocialFacebook";
+import { AiOutlineWhatsApp } from "@react-icons/all-files/ai/AiOutlineWhatsApp";
+import { GoPerson } from "@react-icons/all-files/go/GoPerson";
 import "./_courtDetail.scss";
 
 const FavCourtDetail = () => {
     return (
         <>
+        <div className="d-flex court-detail-header-text">
+            <div className="d-flex m-auto">
+                <h5>Dr. Cavit Spor Salonu</h5>
+                <GoLocation />
+                <p class="font-bold">İzmir</p>
+            </div>
+            <div className="buttons text-center d-flex">
+                <Link to="message-detail" className="btn btn-warning message">
+                    <i className='bi bi-envelope bi-sub fs-4 text-light-600'></i>
+                </Link>
+                <div class="dropdown">
+                    <Link className="btn btn-primary share-button" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    <FiShare2 />
+                    </Link>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><Link class="dropdown-item text-center">With Player <GoPerson /></Link></li>
+                        <li><Link class="dropdown-item text-center">Whatsapp <AiOutlineWhatsApp /></Link></li>
+                        <li><Link class="dropdown-item text-center">Facebook <TiSocialFacebook /></Link></li>
+                        <li><Link class="dropdown-item text-center">Twitter <TiSocialTwitter /></Link></li>
+                        <li><Link class="dropdown-item text-center">Instagram <TiSocialInstagram /></Link></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
             <div className="col-6">
                 <div className="card">
                     <div class="card-body">
@@ -49,22 +78,8 @@ const FavCourtDetail = () => {
             <div className="col-6">
                 <div class="card">
                     <div class="card-content">
-                        <div class="card-body text-center">
-                            <div className="d-flex court-detail-header-text">
-                                <h5>Dr. Cavit Spor Salonu</h5>
-                                <div>
-                                    <GoLocation />
-                                    <p class="font-bold">İzmir</p>
-                                </div>
-                            </div>
-                            <div className="buttons text-center">
-                                <Link to="message-detail" className="btn btn-light message">
-                                    <i className='bi bi-envelope bi-sub fs-4 text-gray-600'></i>
-                                </Link>
-                                <button className="btn btn-light share"><BiShareAlt size={100}/></button>
-                            </div>
-                            <br />
-                            <h4 class="card-title text-center">Court Details</h4>
+                        <div class="card-body text-center p-2">
+                            <h4 class="card-title text-center ">Court Details</h4>
                             <hr />
                             <div class="card-body px-0 py-1">
                                     <table class="table table-borderless">

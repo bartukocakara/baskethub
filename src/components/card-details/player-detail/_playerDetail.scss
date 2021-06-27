@@ -2,19 +2,15 @@
     padding:0.2rem;
     text-align: center;
 }
-.player-detail-buttons{
-    margin-left:5%;
-}
+// .player-detail-buttons{
+//     margin-left:auto !important;
+// }
 .request-join{
     font-weight: bold;
-
-    &:hover{
-        background-color:#f5962a !important
-    }
 }
 .player-detail-handshake{
     width:20px !important;
-    margin-left:10px !important;
+    margin-right:10px !important;
 }
 .player-teams{
     width:100%;
@@ -84,4 +80,12 @@
 
 .match-pagination{
     margin-left:30% !important;
+}
+
+.share-button{
+    text-align: center !important;
+    justify-content: center !important;
+    margin:auto !important;
+    padding:12px !important;
+    font-size:11px;
 }

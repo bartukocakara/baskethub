@@ -14,12 +14,9 @@
     width: 20px;
     height: 20px;
 }
-.share, .message{
-    &:hover{
-        background-color:#dbe4ec
-
-    }
-}
-.court-detail-header-text{
-    justify-content:space-between;
+.share-button{
+    text-align: center !important;
+    justify-content: center !important;
+    margin:auto !important;
+    padding:12px !important;
 }
