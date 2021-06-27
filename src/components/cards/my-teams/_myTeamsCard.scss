@@ -1,4 +1,5 @@
 .feed-my-teams-card {
+    transition: transform .2s; 
 
     .card-custom {
         ul{
@@ -47,5 +48,10 @@
     }
     .MuiAvatarGroup-root{
         margin-left:30% !important;
+    }
+
+    &:hover{
+        transform: scale(1.03);
+
     }
 }
