@@ -1,6 +1,8 @@
 import React from 'react'
 import "./_matchTeamList.scss";
-
+import {
+    Link
+  } from "react-router-dom";
 const MatchTeamList = () => {
     return (
         <div className="col-12">
@@ -12,6 +14,21 @@ const MatchTeamList = () => {
                             </li>
                             <li class="nav-item" role="presentation">
                                 <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Team 2</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <div class="dropdown">
+                                    <Link class="btn btn-light m-1" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="bi bi-gear"></i> Make changes
+                                    </Link>
+
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <li><Link class="dropdown-item text-center">Player change </Link></li>
+                                        <li><Link class="dropdown-item text-center">Whatsapp </Link></li>
+                                        <li><Link class="dropdown-item text-center">Facebook </Link></li>
+                                        <li><Link class="dropdown-item text-center">Twitter </Link></li>
+                                        <li><Link class="dropdown-item text-center">Instagram </Link></li>
+                                    </ul>
+                                </div>
                             </li>
                         </ul>
                         <div class="tab-content" id="myTabContent">

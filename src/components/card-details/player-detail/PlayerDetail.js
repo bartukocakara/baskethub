@@ -33,8 +33,11 @@ const PlayerDetail = () => {
                     <div class="card">
                         <div class="card-body py-4 px-5">
                             <div class="d-flex align-items-center row">
-                                <div class="avatar avatar-xl col-md-1">
-                                    <img src="assets/images/faces/1.jpg" alt="Face 1" />
+                                <div class="avatar avatar-xl col-md-1 player-detail-avatar">
+                                    <img src="assets/images/faces/1.jpg" className="d-block" alt="Face 1" />
+                                    <i class="bi bi-award"></i>
+                                    <i class="bi bi-award"></i>
+                                    <i class="bi bi-award"></i>
                                 </div>
                                 <div class="ms-3 name col-md-2">
                                     <h5 class="font-bold">John Duck</h5>
@@ -50,6 +53,7 @@ const PlayerDetail = () => {
                                 </div>
                                 <div className="buttons player-detail-buttons col-md-4">
                                     <div className="d-flex">
+
                                     <button className="btn btn-warning">Add to favourite +</button>
                                     <Link to="message-detail" className="btn btn-primary">
                                         <i className='bi bi-envelope bi-sub fs-5 '></i>
