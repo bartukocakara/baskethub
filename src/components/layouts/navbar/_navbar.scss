@@ -1,13 +1,21 @@
 .layout-navbar{
 
+    .navbar-nav .nav-link{
+        padding:0 !important;
+    }
 
     #navbarSupportedContent{
 
         .nav-item.dropdown{
             padding:0 !important;
             border-radius: 10px;
+
+            span{
+                right: 50px;
+            }
             
             .list-height{
+                height:50vh;
                 overflow-y:scroll;
             }
             hr{

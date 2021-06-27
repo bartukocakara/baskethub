@@ -23,16 +23,17 @@ const Navbar = () => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li className="nav-item dropdown me-1">
-                                <Link className="nav-link active dropdown-toggle" data-bs-toggle="dropdown"
+                                <Link className="nav-link active dropdown-toggle avatar" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     <i className='bi bi-envelope bi-sub fs-4 text-gray-600'></i>
+                                    <span className="avatar-status bg-success"></span>
                                 </Link>
                                 <ul className="dropdown-menu dropdown-menu-end mail-drop text-center" aria-labelledby="dropdownMenuButton">
                                     <h6>You have 3 Messages</h6>
                                     <hr/>
                                     <div className="list-height">
                                     {
-                                        [...Array(5)].map(() => (
+                                        [...Array(7)].map(() => (
                                             <li className="border-bottom"><Link class="dropdown-item text-center d-flex" to="message-detail"><h6>Pınar Uygur</h6><p className="cut-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p><span class="badge bg-success notify-name">New</span></Link></li>
 
                                         ))
@@ -43,16 +44,17 @@ const Navbar = () => {
                                 
                             </li>
                             <li className="nav-item dropdown me-1">
-                                <Link className="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                <Link className="nav-link active dropdown-toggle avatar" href="#" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     <i className='bi bi-bell bi-sub fs-4 text-gray-600'></i>
+                                    <span className="avatar-status bg-success"></span>
                                 </Link>
                                 <ul className="dropdown-menu dropdown-menu-end notification-drop text-center" aria-labelledby="dropdownMenuButton">
                                 <h6>You have 3 Notifications</h6>
                                 <hr />
                                 <div className="list-height">
                                     {
-                                        [...Array(5)].map(() => (
+                                        [...Array(7)].map(() => (
                                             <li className="border-bottom"><Link class="dropdown-item text-center d-flex" to="notification-detail"><FaHandshake /><h6 className="notify-name">Deniz Polat</h6><p className="cut-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p><span class="badge bg-success">New</span></Link></li>
 
                                         ))
