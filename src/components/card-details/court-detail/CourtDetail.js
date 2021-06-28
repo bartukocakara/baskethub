@@ -13,6 +13,8 @@ import { TiSocialFacebook } from "@react-icons/all-files/ti/TiSocialFacebook";
 import { AiOutlineWhatsApp } from "@react-icons/all-files/ai/AiOutlineWhatsApp";
 import { GoPerson } from "@react-icons/all-files/go/GoPerson";
 import "./_courtDetail.scss";
+import FullCalendar from '@fullcalendar/react'
+import dayGridPlugin from '@fullcalendar/daygrid'
 
 const FavCourtDetail = () => {
     return (
@@ -224,80 +226,11 @@ const FavCourtDetail = () => {
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                         <h5 className="text-center">2021</h5>
                         <div class="col-md-12">
-
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-3">
-                                            <div class="nav flex-column nav-pills border rounded" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                                {/* <select className="form-control">
-                                                    <option>--Select Month--</option>
-                                                    <option>January</option>
-                                                    <option>February</option>
-                                                    <option>March</option>
-                                                    <option>April</option>
-                                                    <option>May</option>
-                                                    <option>June</option>
-                                                    <option>July</option>
-                                                </select> */}
-                                                <a class="nav-link" id="v-pills-january-tab" data-bs-toggle="pill" href="#v-pills-january" role="tab" aria-controls="v-pills-january" aria-selected="false">January</a>
-                                                <a class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">February</a>
-                                                <a class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">March</a>
-                                                <a class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="true">April</a>
-                                                <a class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="true">May</a>
-                                                <a class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="true">June</a>
-                                                <a class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="true">July</a>
-                                                <a class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="true">August</a>
-                                                <a class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="true">September</a>
-                                                <a class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="true">October</a>
-                                                <a class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="true">November</a>
-                                                <a class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="true">December</a>
-                                            </div>
-                                        </div>
-                                        <div class="col-9">
-                                            <div class="tab-content" id="v-pills-tabContent">
-                                                <div class="tab-pane fade" id="v-pills-january" role="tabpanel" aria-labelledby="v-pills-january-tab">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut
-                                                    nulla neque.
-                                                    Ut hendrerit nulla a euismod pretium.
-                                                    Fusce venenatis sagittis ex efficitur suscipit. In tempor mattis
-                                                    fringilla. Sed
-                                                    id tincidunt orci, et volutpat ligula.
-                                                    Aliquam sollicitudin sagittis ex, a rhoncus nisl feugiat quis. Lorem
-                                                    ipsum dolor
-                                                    sit amet, consectetur adipiscing elit.
-                                                    Nunc ultricies ligula a tempor vulputate. Suspendisse pretium mollis
-                                                    ultrices
-                                                </div>
-                                                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                                                    Integer interdum diam eleifend metus lacinia, quis gravida eros
-                                                    mollis. Fusce
-                                                    non sapien sit amet magna dapibus
-                                                    ultrices. Morbi tincidunt magna ex, eget faucibus sapien bibendum
-                                                    non. Duis a
-                                                    mauris ex. Ut finibus risus sed massa
-                                                    mattis porta. Aliquam sagittis massa et purus efficitur ultricies.
-                                                </div>
-                                                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                                                    Integer pretium dolor at sapien laoreet ultricies. Fusce congue et
-                                                    lorem id
-                                                    convallis. Nulla volutpat tellus nec
-                                                    molestie finibus. In nec odio tincidunt eros finibus ullamcorper. Ut
-                                                    sodales,
-                                                    dui nec posuere finibus, nisl sem aliquam
-                                                    metus, eu accumsan lacus felis at odio.
-                                                </div>
-                                                <div class="tab-pane fade active show" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                                                    Sed lacus quam, convallis quis condimentum ut, accumsan congue
-                                                    massa.
-                                                    Pellentesque et quam vel massa pretium ullamcorper
-                                                    vitae eu tortor.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <FullCalendar
+                            plugins={[ dayGridPlugin ]}
+                            initialView="dayGridMonth"
+                        />
+                           
                         </div>
                         </div>
                         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">

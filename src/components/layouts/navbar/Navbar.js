@@ -22,6 +22,18 @@ const Navbar = () => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0 d-flex">
                             <li className="nav-item dropdown me-1">
+                            <div class="dropdown m-3">
+                                <Link class="btn btn-primary " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Create +
+                                </Link>
+                                <ul class="dropdown-menu mt-2" aria-labelledby="dropdownMenuLink">
+                                    <li className="p-2"><Link  href="#">Create Team</Link></li>
+                                    <li className="p-2"><Link  href="#">Create Court</Link></li>
+                                    <li className="p-2"><Link  href="#">Create Tournament</Link></li>
+                                </ul>
+                                </div>
+                            </li>
+                            <li className="nav-item dropdown me-1">
                                 <Link className="nav-link active  avatar" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     <i className='bi bi-envelope bi-sub fs-4 text-gray-600'></i>
