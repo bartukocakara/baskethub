@@ -14,6 +14,8 @@ import {
     Link
   } from "react-router-dom";
 
+import FullCalendar from '@fullcalendar/react'
+import dayGridPlugin from '@fullcalendar/daygrid'
 import "./_playerDetail.scss";
 import RequestPlayerJoin from '../../modals/request-player-join/RequestPlayerJoin';
 import Teams from "./teams/Teams";
@@ -32,24 +34,32 @@ const PlayerDetail = () => {
                 <div className="row"> 
                     <div class="card">
                         <div class="card-body py-4 px-5">
-                            <div class="d-flex align-items-center row">
+                            <div class="align-items-center row m-0 p-0">
                                 <div class="avatar avatar-xl col-md-1 player-detail-avatar">
                                     <img src="assets/images/faces/1.jpg" className="d-block" alt="Face 1" />
                                     <i class="bi bi-award"></i>
                                     <i class="bi bi-award"></i>
                                     <i class="bi bi-award"></i>
+                                    <div className="d-flex mt-3">
+                                        <GoLocation size={20}/>
+                                        <h6 class="font-bold">İzmir</h6>
+                                    </div>
                                 </div>
-                                <div class="ms-3 name col-md-2">
-                                    <h5 class="font-bold">John Duck</h5>
+                                <div class="col-md-2 text-center">
+                                    <h6 class="font-bold">John Duck</h6>
                                     <h6 class="text-muted mb-0">@johnducky</h6>
                                 </div>
-                                <div class="ms-5 col-1">
-                                    <GoLocation />
-                                    <p class="font-bold">İzmir</p>
-                                </div>
-                                <div class="ms-5 name col-md-2">
-                                    <h5 class="font-bold">Positions</h5>
+                                <div class="col-md-1  text-center">
+                                    <h6 class="font-bold">Pos.</h6>
                                     <h6 class="text-muted mb-0">C, PF, SF </h6>
+                                </div>
+                                <div class="col-md-2  text-center">
+                                    <h6 class="font-bold">Email</h6>
+                                    <p class="text-muted mb-0">bartuu_436@hotmail.com</p>
+                                </div>
+                                <div class="col-md-2  text-center">
+                                    <h6 class="font-bold">Phone</h6>
+                                    <h6 class="text-muted mb-0">+90 555 667 66 80</h6>
                                 </div>
                                 <div className="buttons player-detail-buttons col-md-4">
                                     <div className="d-flex">
@@ -159,18 +169,11 @@ const PlayerDetail = () => {
                                     </li>
                                 </ul>
                                 <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                        <p class="my-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            Nulla ut nulla
-                                            neque. Ut hendrerit nulla a euismod pretium.
-                                            Fusce venenatis sagittis ex efficitur suscipit. In tempor mattis
-                                            fringilla. Sed id
-                                            tincidunt orci, et volutpat ligula.
-                                            Aliquam sollicitudin sagittis ex, a rhoncus nisl feugiat quis. Lorem
-                                            ipsum dolor sit
-                                            amet, consectetur adipiscing elit.
-                                            Nunc ultricies ligula a tempor vulputate. Suspendisse pretium mollis
-                                            ultrices.</p>
+                                    <div class="tab-pane fade show active col-10 m-auto" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                        <FullCalendar
+                                            plugins={[ dayGridPlugin ]}
+                                            initialView="dayGridMonth"
+                                        />
                                     </div>
                                     <div class="tab-pane fade mt-4" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                     {

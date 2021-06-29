@@ -11,6 +11,7 @@ import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
 import "./_profile.scss";
 import RequestList from './partials/request-list/RequestList';
+import Matches from './partials/matches/Matches';
 
 const Profile = () => {
     return (
@@ -31,9 +32,11 @@ const Profile = () => {
                                     <GoLocation />
                                     <p class="font-bold">İzmir</p>
                                 </div>
-                                <div class="col-md-2 ml-auto">
+                                <div class="ms-5 col-md-5">
+                                </div>
+                                <div class="col-md-1 ml-auto">
                                     <Link to="profile-edit">
-                                        <FiEdit />
+                                        <FiEdit size={30} data-toggle="tooltip" data-placement="top" title="Edit"/>
                                     </Link>
                                 </div>
                             </div>
@@ -123,22 +126,20 @@ const Profile = () => {
                             </li>
                         </ul>
                         <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="calendar" role="tabpanel" aria-labelledby="calendar-tab">
+                            <div class="tab-pane fade show active col-10 m-auto" id="calendar" role="tabpanel" aria-labelledby="calendar-tab">
                                 <FullCalendar
                                 plugins={[ dayGridPlugin ]}
                                 initialView="dayGridMonth"
                                 />
                             </div>
-                            <div class="tab-pane fade" id="matches" role="tabpanel" aria-labelledby="matches-tab">
-                                <p class="mt-2">Duis ultrices purus non eros fermentum hendrerit. Aenean
-                                    ornare interdum
-                                    viverra. Sed ut odio velit. Aenean eu diam
-                                    dictum nibh rhoncus mattis quis ac risus. Vivamus eu congue ipsum.
-                                    Maecenas id
-                                    sollicitudin ex. Cras in ex vestibulum,
-                                    posuere orci at, sollicitudin purus. Morbi mollis elementum enim, in
-                                    cursus sem
-                                    placerat ut.</p>
+                            <div class="tab-pane fade col-10 m-auto" id="matches" role="tabpanel" aria-labelledby="matches-tab">
+                            {
+                                        [...Array(5)].map((matchesList) => (
+                                            <>
+                                                <Matches />
+                                            </>
+                                        ))
+                                    }
                             </div>
                             <div class="tab-pane fade" id="requests" role="tabpanel" aria-labelledby="requests-tab">
                                 <RequestList />

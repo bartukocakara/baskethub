@@ -12,15 +12,22 @@ import {
   } from "react-router-dom";
 import "./_favouritePlayer.scss";
 import RequestPlayerJoin from '../../modals/request-player-join/RequestPlayerJoin';
+import RequestTeamJoin from '../../modals/request-team-join/RequestTeamJoin';
 
 const FavouritePlayerCard = () => {
     const [showRequestPlayerJoin, setRequestPJShow] = useState(false);
 
     const handleRequestPlayerJoinClose = () => setRequestPJShow(false);
     const handleRequestPlayerJoinModal = () => setRequestPJShow(true);
+    
+    const [showRequestTeamJoin, setRequestTeamJoinShow] = useState(false);
+
+    const handleRequestTeamJoinClose = () => setRequestTeamJoinShow(false);
+    const handleRequestTeamJoinModal = () => setRequestTeamJoinShow(true);
     return (
         <>
         <RequestPlayerJoin handleRequestPlayerJoinClose={handleRequestPlayerJoinClose} show={showRequestPlayerJoin}  />
+        <RequestTeamJoin handleRequestTeamJoinClose={handleRequestTeamJoinClose} show={showRequestTeamJoin}  />
 
         <div className="col-xl-12 col-md-12 col-sm-12 feed-card feed-my-fav-players-card">
             <div className="card shadow">
@@ -60,15 +67,21 @@ const FavouritePlayerCard = () => {
                         </Link>
                     </div>
                     <div className="footer-right d-flex">
-                    <Link to="message-detail">
+                    <Link class="btn btn-light m-2 p-2 text-primary border" to="message-detail">
                         <AiOutlineMail className="card-footer-icon" />
                     </Link>
-                    <Link onClick={handleRequestPlayerJoinModal}>
-                        <FaHandshake className="card-footer-icon" />
-                    </Link>
                     <div class="dropdown">
-                        <Link class="btn btn-light dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                        <FiShare2 className="card-footer-icon"  />
+                        <button class="btn btn-light m-2 p-2 text-primary border" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <FaHandshake className="card-footer-icon" />
+                        </button>
+                        <ul class="dropdown-menu mt-2" aria-labelledby="dropdownMenuButton1">
+                            <li><Link class="dropdown-item" onClick={handleRequestPlayerJoinModal}><h6 className="p-2">Request join team</h6></Link></li>
+                            <li><Link class="dropdown-item" onClick={handleRequestTeamJoinModal}><h6 className="p-2">Request join match</h6></Link></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <Link class="btn btn-light m-2 p-2 text-primary border" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <FiShare2 className="card-footer-icon"  />
                         </Link>
 
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
