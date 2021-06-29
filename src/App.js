@@ -36,6 +36,8 @@ import MatchDetail from './components/card-details/match-detail/MatchDetail';
 import Trainers from './components/screens/trainer-search/Trainers';
 import Tournaments from './components/screens/tournaments/Tournaments';
 import TrainerDetail from './components/card-details/trainer-detail/TrainerDetail';
+import CreateTeam from './components/screens/create/create-team/CreateTeam';
+import ProfileEdit from './components/screens/profile/ProfileEdit';
 function App() {
   return (
       <>
@@ -75,11 +77,13 @@ function App() {
                             <Route path="/cookies" component={Cookies} />
                             <Route path="/faq" component={Faq} />
                             <Route path="/my-profile" component={Profile} />
+                            <Route path="/profile-edit" component={ProfileEdit} />
                             <Route path="/message-detail" component={MessageDetail} />
                             <Route path="/team-chat" component={TeamMessage} />
                             <Route path="/match-chat" component={MatchMessage} />
                             <Route path="/notifications" component={Notifications} />
                             <Route path="/notification-detail" component={NotificationDetail} />
+                            <Route path="/create-team" component={CreateTeam} />
 
                         </Switch>
         {/* ========== Without Widget Screens ========= */}

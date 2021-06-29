@@ -27,9 +27,9 @@ const Navbar = () => {
                                     Create +
                                 </Link>
                                 <ul class="dropdown-menu mt-2" aria-labelledby="dropdownMenuLink">
-                                    <li className="p-2"><Link  href="#">Create Team</Link></li>
-                                    <li className="p-2"><Link  href="#">Create Court</Link></li>
-                                    <li className="p-2"><Link  href="#">Create Tournament</Link></li>
+                                    <li className="p-2"><Link to="create-team">Create Team</Link></li>
+                                    <li className="p-2"><Link to="">Create Court</Link></li>
+                                    <li className="p-2"><Link to="">Create Tournament</Link></li>
                                 </ul>
                                 </div>
                             </li>
