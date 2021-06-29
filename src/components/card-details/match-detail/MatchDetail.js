@@ -1,34 +1,45 @@
-import React, { useState } from 'react'
+import React from 'react'
 import {
     Link
   } from "react-router-dom";
 import MatchTeamList from '../match-team-list/MatchTeamList';
-import Share from '../../modals/share/Share';
-import {BiShareAlt} from "@react-icons/all-files/bi/BiShareAlt";
+import { FiShare2 } from "@react-icons/all-files/fi/FiShare2";
+import { TiSocialInstagram } from "@react-icons/all-files/ti/TiSocialInstagram";
+import { TiSocialTwitter } from "@react-icons/all-files/ti/TiSocialTwitter";
+import { TiSocialFacebook } from "@react-icons/all-files/ti/TiSocialFacebook";
+import { AiOutlineWhatsApp } from "@react-icons/all-files/ai/AiOutlineWhatsApp";
+import { GoPerson } from "@react-icons/all-files/go/GoPerson";
+import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail";
 
 import "./_matchDetail.scss";
 
 const MatchDetail = () => {
-
-    const [showShareModal, setShareModalShow] = useState(false);
-
-    const handleShareModalClose = () => setShareModalShow(false);
-    const handleShowShareModal = () => setShareModalShow(true);
     
     return (
         <>
-        <Share handleShareModalClose={handleShareModalClose} show={showShareModal} />
         
         <div className="row">
             <div className="d-flex p-2">
             <h5 className="m-auto m-2">Balçova Spor Salonu</h5>
-            
-                <Link to="match-chat" className="btn btn-warning text-light m-1">
-                    <i className='bi bi-envelope bi-sub fs-4 text-light-600'></i>
+
+                <div className="d-flex">
+                <Link to="match-chat" className="p-2 btn btn-warning m-2">
+                    <AiOutlineMail className="card-footer-icon" />
                 </Link>
-                <Link variant="primary" className="btn btn-primary m-1" onClick={handleShowShareModal}>
-                    <BiShareAlt />
-                </Link>
+                <div class="dropdown">
+                        <Link class="btn btn-primary p-2 m-2" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <FiShare2 className="card-footer-icon"  />
+                        </Link>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><Link class="dropdown-item text-center">With Player <GoPerson /></Link></li>
+                            <li><Link class="dropdown-item text-center">Whatsapp <AiOutlineWhatsApp /></Link></li>
+                            <li><Link class="dropdown-item text-center">Facebook <TiSocialFacebook /></Link></li>
+                            <li><Link class="dropdown-item text-center">Twitter <TiSocialTwitter /></Link></li>
+                            <li><Link class="dropdown-item text-center">Instagram <TiSocialInstagram /></Link></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div className="col-lg-6 col-md-12">
                 <div className="card">
