@@ -53,8 +53,27 @@ const Sidebar = () => {
                         <div class="d-flex justify-content-between">
                             <div class="logo">
                                 <Link to="/">
-                                <h1 class="sidebar-app-name">BasketHall</h1>
+                                    <h4 class="sidebar-app-name">BasketHall</h4>
                                 </Link>
+                            </div>
+                            <div class="lang-menu">
+                                <div class="selected-lang">
+                                    EN
+                                </div>
+                                <ul>
+                                    <li>
+                                        <Link class="de">TR</Link>
+                                    </li>
+                                    <li>
+                                        <Link class="en">ES</Link>
+                                    </li>
+                                    <li>
+                                        <Link class="fr">FR</Link>
+                                    </li>
+                                    <li>
+                                        <Link class="ar">AR</Link>
+                                    </li>
+                                </ul>
                             </div>
                             <div class="toggler">
                                 <Link class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></Link>
