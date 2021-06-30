@@ -67,31 +67,31 @@ const FavouritePlayerCard = () => {
                         </Link>
                     </div>
                     <div className="footer-right d-flex">
-                    <Link class="btn btn-light m-2 p-2 text-primary border" to="message-detail">
-                        <AiOutlineMail className="card-footer-icon" />
-                    </Link>
-                    <div class="dropdown">
-                        <button class="btn btn-light m-2 p-2 text-primary border" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                            <FaHandshake className="card-footer-icon" />
-                        </button>
-                        <ul class="dropdown-menu mt-2" aria-labelledby="dropdownMenuButton1">
-                            <li><Link class="dropdown-item" onClick={handleRequestPlayerJoinModal}><h6 className="p-2">Request join team</h6></Link></li>
-                            <li><Link class="dropdown-item" onClick={handleRequestTeamJoinModal}><h6 className="p-2">Request join match</h6></Link></li>
-                        </ul>
-                    </div>
-                    <div class="dropdown">
-                        <Link class="btn btn-light m-2 p-2 text-primary border" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                            <FiShare2 className="card-footer-icon"  />
+                        <Link class="btn btn-light m-2 p-2 text-primary border" to="message-detail">
+                            <AiOutlineMail className="card-footer-icon" />
                         </Link>
+                        <div class="dropdown">
+                            <button class="btn btn-light m-2 p-2 text-primary border" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <FaHandshake className="card-footer-icon" />
+                            </button>
+                            <ul class="dropdown-menu mt-2" aria-labelledby="dropdownMenuButton1">
+                                <li><Link class="dropdown-item" onClick={handleRequestPlayerJoinModal}><h6 className="p-2">Request join team</h6></Link></li>
+                                <li><Link class="dropdown-item" onClick={handleRequestTeamJoinModal}><h6 className="p-2">Request join match</h6></Link></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <Link class="btn btn-light m-2 p-2 text-primary border" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                <FiShare2 className="card-footer-icon"  />
+                            </Link>
 
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <li><Link class="dropdown-item text-center">With Player <GoPerson /></Link></li>
-                            <li><Link class="dropdown-item text-center">Whatsapp <AiOutlineWhatsApp /></Link></li>
-                            <li><Link class="dropdown-item text-center">Facebook <TiSocialFacebook /></Link></li>
-                            <li><Link class="dropdown-item text-center">Twitter <TiSocialTwitter /></Link></li>
-                            <li><Link class="dropdown-item text-center">Instagram <TiSocialInstagram /></Link></li>
-                        </ul>
-                    </div>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><Link class="dropdown-item text-center">With Player <GoPerson /></Link></li>
+                                <li><Link class="dropdown-item text-center">Whatsapp <AiOutlineWhatsApp /></Link></li>
+                                <li><Link class="dropdown-item text-center">Facebook <TiSocialFacebook /></Link></li>
+                                <li><Link class="dropdown-item text-center">Twitter <TiSocialTwitter /></Link></li>
+                                <li><Link class="dropdown-item text-center">Instagram <TiSocialInstagram /></Link></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

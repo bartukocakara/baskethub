@@ -2,7 +2,11 @@ import React from 'react'
 import "./_myMatchesCard.scss";
 import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail";
 import { FiShare2 } from "@react-icons/all-files/fi/FiShare2";
-import {
+import { TiSocialInstagram } from "@react-icons/all-files/ti/TiSocialInstagram";
+import { TiSocialTwitter } from "@react-icons/all-files/ti/TiSocialTwitter";
+import { TiSocialFacebook } from "@react-icons/all-files/ti/TiSocialFacebook";
+import { AiOutlineWhatsApp } from "@react-icons/all-files/ai/AiOutlineWhatsApp";
+import { GoPerson } from "@react-icons/all-files/go/GoPerson";import {
     Link
   } from "react-router-dom";
 const MyMatchesCard = () => {
@@ -42,13 +46,22 @@ const MyMatchesCard = () => {
                             Match Details
                         </Link>
                     </div>
-                    <div className="footer-right">
+                    <div className="footer-right d-flex">
                         <Link to="match-chat">
                             <AiOutlineMail className="card-footer-icon"/>
                         </Link>
-                        <Link>
-                            <FiShare2 className="card-footer-icon" />
-                        </Link>
+                        <div class="dropdown">
+                        <button class="btn btn-light" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <FiShare2 className="card-footer-icon" />
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><Link class="dropdown-item text-center">With Player <GoPerson /></Link></li>
+                            <li><Link class="dropdown-item text-center">Whatsapp <AiOutlineWhatsApp /></Link></li>
+                            <li><Link class="dropdown-item text-center">Facebook <TiSocialFacebook /></Link></li>
+                            <li><Link class="dropdown-item text-center">Twitter <TiSocialTwitter /></Link></li>
+                            <li><Link class="dropdown-item text-center">Instagram <TiSocialInstagram /></Link></li>
+                        </ul>
+                        </div>
                     </div>
                 </div>
             </div>
