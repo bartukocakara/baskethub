@@ -5,23 +5,17 @@ import {
   } from "react-router-dom";
 import "./_playerWidgetCard.scss";
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+  import 'react-toastify/dist/ReactToastify.css';
+
 const PlayerWidgetCard = () => {
+
     const notify = () => toast("Wow so easy!");
-    // 
     return (
         <>
-        <ToastContainer  
-            className="relative flex p-1  rounded-md justify-between overflow-hidden cursor-pointer"
-            bodyClassName={() => "text-sm font-white block p-3"}
-            position="top-right"
-            autoClose={3000}
-            />
-            <Link>
+        <ToastContainer />
+        <Link >
             <div className="card-body border b-primary m-2 widget-player-card d-flex p-3">
-                <button onClick={notify}>
-                <FiPlusSquare className="widget-player-icon" color="#FA8602" />
-                </button>
+                <FiPlusSquare className="widget-player-icon" color="#FA8602" onClick={notify}/>
                 <div className="widget-player-text">
                     <Link to="player-detail">
                     <h6 className="">Bartu Kocakara</h6>
