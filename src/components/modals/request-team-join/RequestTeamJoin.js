@@ -20,8 +20,8 @@ const RequestTeamJoin = ({handleRequestTeamJoinClose, show}) => {
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-            <h6 className="text-center">You can send note to a player</h6>
-            <textarea className="form-control" rows="5" placeholder="Please add note"></textarea>
+                <h6 className="text-center">You can send note to a player</h6>
+                <textarea className="form-control" rows="5" placeholder="Please add note"></textarea>
             </Modal.Body>
             <Modal.Footer>
             <Button variant="danger" onClick={handleRequestTeamJoinClose}>

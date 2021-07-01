@@ -40,6 +40,7 @@ import CreateTeam from './components/screens/create/create-team/CreateTeam';
 import ProfileEdit from './components/screens/profile/ProfileEdit';
 import CreateCourt from './components/screens/create/create-court/CreateCourt';
 import CreateTournament from './components/screens/create/create-tournament/CreateTournament';
+import Matches from './components/screens/matches/Matches';
 function App() {
   return (
       <>
@@ -55,6 +56,7 @@ function App() {
                 <div className="row">
                         <Switch>
                             <Route exact path="/" component={LastActivities} />
+                            <Route path="/matches" component={Matches} />
                             <Route path="/my-matches" component={MyMatches} />
                             <Route path="/match-detail" component={MatchDetail} />
                             <Route path="/ended-match-detail" component={EndedMatch} />

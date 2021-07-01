@@ -91,6 +91,12 @@ const Sidebar = () => {
                                     <li className="submenu-item">
                                         <Link variant="primary" onClick={handleCourtShow}>
                                             <GiBasketballBasket className="sidebar-icon" />
+                                            Match Search
+                                        </Link>
+                                    </li>
+                                    <li className="submenu-item">
+                                        <Link variant="primary" onClick={handleCourtShow}>
+                                            <GiBasketballBasket className="sidebar-icon" />
                                             Court Search
                                         </Link>
                                     </li>
