@@ -1,11 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react'
 import "./_navbar.scss";
 import {
     NavLink,
     Link
   } from "react-router-dom";
 import { FaHandshake } from "@react-icons/all-files/fa/FaHandshake";
+import DarkModeToggle from "react-dark-mode-toggle";
+
 const Navbar = () => {
+    const [isDarkMode, setIsDarkMode] = useState(() => false);
+
     return (
         <>
         <header className='mb-3'>
@@ -96,9 +100,19 @@ const Navbar = () => {
                                     </NavLink>
                                 </li>
                                 <li><Link className="dropdown-item" href="#"><i class="icon-mid bi bi-gear me-2"></i>
-                                        Settings</Link></li>
-                                <li><Link className="dropdown-item" href="#"><i class="icon-mid bi bi-wallet me-2"></i>
-                                        Wallet</Link></li>
+                                        Settings
+                                    </Link>
+                                </li>
+                                <hr />
+                                <li className="m-2 d-flex justify-content-evenly">
+                                    <p>Theme</p>
+                                    <DarkModeToggle
+                                        onChange={setIsDarkMode}
+                                        checked={isDarkMode}
+                                        size={50}
+                                        className="ml-2"
+                                    />
+                                </li>
                                 <li>
                                     <hr className="dropdown-divider" />
                                 </li>

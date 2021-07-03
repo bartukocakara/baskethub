@@ -46,8 +46,7 @@ const FavouriteCourtCard = () => {
 
                     </div>
                     <div className="card-left-image">
-                        <img className="img-fluid w-50 card-image" src="assets/images/samples/hall.jpg"
-                        alt="Card cap" />
+                        <img className="img-fluid w-50 card-image" src="assets/images/samples/hall.jpg" alt="Card cap" />
                     </div>
                 </div>
                 <div className="card-footer">
@@ -57,25 +56,26 @@ const FavouriteCourtCard = () => {
                         </Link>
                     </div>
                     <div className="footer-right d-flex">
-                    <Link to="message-detail">
-                        <AiOutlineMail className="card-footer-icon" />
-                    </Link>
-                    <Link >
-                        <FaHandshake className="card-footer-icon" onClick={handleShowRequestCourtReservationModal}/>
-                    </Link>
-                    <div class="dropdown">
-                        <Link class="btn btn-light dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                        <FiShare2 className="card-footer-icon"  />
+                        <Link class="btn btn-light m-2 p-2 text-primary border" to="message-detail">
+                            <AiOutlineMail className="card-footer-icon" />
                         </Link>
+                        
+                        <Link class="btn btn-light m-2 p-2 text-primary border" onClick={handleShowRequestCourtReservationModal}>
+                            <FaHandshake className="card-footer-icon" />
+                        </Link>
+                        <div class="dropdown">
+                            <Link class="btn btn-light m-2 p-2 text-primary border" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                <FiShare2 className="card-footer-icon"  />
+                            </Link>
 
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <li><Link class="dropdown-item text-center">With Player <GoPerson /></Link></li>
-                            <li><Link class="dropdown-item text-center">Whatsapp <AiOutlineWhatsApp /></Link></li>
-                            <li><Link class="dropdown-item text-center">Facebook <TiSocialFacebook /></Link></li>
-                            <li><Link class="dropdown-item text-center">Twitter <TiSocialTwitter /></Link></li>
-                            <li><Link class="dropdown-item text-center">Instagram <TiSocialInstagram /></Link></li>
-                        </ul>
-                    </div>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><Link class="dropdown-item text-center">With Player <GoPerson /></Link></li>
+                                <li><Link class="dropdown-item text-center">Whatsapp <AiOutlineWhatsApp /></Link></li>
+                                <li><Link class="dropdown-item text-center">Facebook <TiSocialFacebook /></Link></li>
+                                <li><Link class="dropdown-item text-center">Twitter <TiSocialTwitter /></Link></li>
+                                <li><Link class="dropdown-item text-center">Instagram <TiSocialInstagram /></Link></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
