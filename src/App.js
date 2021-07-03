@@ -8,6 +8,7 @@ import MyMatches from './components/screens/my-matches/MyMatches';
 import MyFavCourts from './components/screens/my-fav-courts/MyFavCourts';
 import LastSearch from './components/screens/last-search/LastSearch';
 import MyFavPlayers from './components/screens/my-fav-players/MyFavPlayers';
+import Checkout from './components/screens/checkout/Checkout';
 import MyTeams from './components/screens/my-teams/MyTeams';
 import PlayerDetail from './components/card-details/player-detail/PlayerDetail';
 import CourtDetail from './components/card-details/court-detail/CourtDetail';
@@ -90,6 +91,7 @@ function App() {
                             <Route path="/create-team" component={CreateTeam} />
                             <Route path="/create-court" component={CreateCourt} />
                             <Route path="/create-tournament" component={CreateTournament} />
+                            <Route path="/checkout" component={Checkout} />
 
                         </Switch>
         {/* ========== Without Widget Screens ========= */}

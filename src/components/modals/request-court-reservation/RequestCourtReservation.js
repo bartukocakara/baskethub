@@ -6,6 +6,9 @@ import { GoCreditCard } from "@react-icons/all-files/go/GoCreditCard";
 
 import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
+import {
+    Link,
+  } from "react-router-dom";
 
 const RequestCourtReservation = ({handleRequestCourtReservationModalClose, show}) => {
     return (
@@ -50,7 +53,7 @@ const RequestCourtReservation = ({handleRequestCourtReservationModalClose, show}
             <Button variant="danger" onClick={handleRequestCourtReservationModalClose}>
                 Close
             </Button>
-            <Button variant="primary">Send Join Request</Button>
+            <Link to="checkout" variant="primary">Send Join Request</Link>
             </Modal.Footer>
         </Modal>
     )

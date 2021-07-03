@@ -1,0 +1,7 @@
+.checkout-team{
+    transition: transform .1s;
+    
+    &:hover{
+        transform: scale(1.03);
+    }
+}
