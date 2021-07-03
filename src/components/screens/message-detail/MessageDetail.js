@@ -58,7 +58,7 @@ const MessageDetail = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+                </div>
             </div>
             <MessageWidget />
         </>

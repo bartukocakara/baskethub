@@ -5,3 +5,12 @@
         transform: scale(1.03);
     }
 }
+
+.list-group-item.active{
+    background:#FA8602 !important;
+    border: none !important;
+}
+
+.checkout-calendar{
+    width:15%;
+}
