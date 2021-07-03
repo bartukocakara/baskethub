@@ -4,15 +4,16 @@ import {
     Link
   } from "react-router-dom";
 import "./_playerWidgetCard.scss";
-import { ToastContainer, toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const PlayerWidgetCard = () => {
 
-    const notify = () => toast("Wow so easy!");
+    const notify = () => toast("Player successfully added your favourites", {
+        className: 'warning-background'
+    });
     return (
         <>
-        <ToastContainer />
         <Link >
             <div className="card-body border b-primary m-2 widget-player-card d-flex p-3">
                 <FiPlusSquare className="widget-player-icon" color="#FA8602" onClick={notify}/>

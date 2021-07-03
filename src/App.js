@@ -42,9 +42,12 @@ import ProfileEdit from './components/screens/profile/ProfileEdit';
 import CreateCourt from './components/screens/create/create-court/CreateCourt';
 import CreateTournament from './components/screens/create/create-tournament/CreateTournament';
 import Matches from './components/screens/matches/Matches';
+import { ToastContainer } from 'react-toastify';
+
 function App() {
   return (
       <>
+        <ToastContainer autoClose={2000} toastClassName="dark-toast"/>
 
         {/* navbar */}
         {/* searchbar */}
