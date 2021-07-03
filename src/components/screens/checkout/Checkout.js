@@ -4,12 +4,12 @@ import {
   } from "react-router-dom";
 import Avatar from '@material-ui/core/Avatar';
 import AvatarGroup from '@material-ui/lab/AvatarGroup';
-import "./_checkout.scss";
 import CheckoutTeam from '../../modals/checkout-team/CheckoutTeam';
 import {FaCreditCard} from "@react-icons/all-files/fa/FaCreditCard";
 import {HiOutlineMail} from "@react-icons/all-files/hi/HiOutlineMail";
 import {GiBasketballBasket} from "@react-icons/all-files/gi/GiBasketballBasket";
 import {GiBasketballJersey} from "@react-icons/all-files/gi/GiBasketballJersey";
+import "./_checkout.scss";
 
 const Checkout = () => {
     const [showCheckoutTeam, setCheckoutTeamShow] = useState(false);
@@ -20,11 +20,11 @@ const Checkout = () => {
         <>
         <CheckoutTeam show={showCheckoutTeam} handleCheckoutTeamClose={handleCheckoutTeamClose} />
         <div className="card text-center">
-            <h6>Court Reservation / Complete Payment Page </h6>
+            <h6>Court Reservation </h6>
             <div className="row">
                 <div className="col-8 m-auto mt-2">
                     <div className="progress progress-success progress-sm">
-                        <div className="progress-bar" role="progressbar" style={{ width: "35%" }} aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div className="progress-bar" role="progressbar" style={{ width: "90%" }} aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                 </div>
                 <div className="mt-4 mb-4">
@@ -36,25 +36,24 @@ const Checkout = () => {
             </div>
         </div>
         <section class="list-group-navigation">
-            <div class="row">
-                <div class="col-lg-12">
+            <div class="row ">
+                <div class="col-lg-12 checkout-steps">
                     <div class="card">
                         <div class="card-content">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-12 col-sm-12 col-md-4">
                                         <div class="list-group" role="tablist">
-                                            <a class="list-group-item list-group-item-action text-center" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-selected="false"><GiBasketballJersey/>Teams</a>
-                                            <a class="list-group-item list-group-item-action active text-center" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-selected="false"><GiBasketballBasket/>Court Details</a>
+                                            <a class="list-group-item list-group-item-action text-center active" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-selected="false"><GiBasketballJersey/>Teams</a>
+                                            <a class="list-group-item list-group-item-action text-center" id="list-court-list" data-bs-toggle="list" href="#list-court" role="tab" aria-selected="false"><GiBasketballBasket/>Court Details</a>
                                             <a class="list-group-item list-group-item-action text-center" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-selected="false"><HiOutlineMail/>Messages</a>
-                                            <a class="list-group-item list-group-item-action text-center" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-selected="true"><FaCreditCard/>Payment</a>
+                                            <a class="list-group-item list-group-item-action text-center" id="list-payment-list" data-bs-toggle="list" href="#list-payment" role="tab" aria-selected="true"><FaCreditCard/>Payment</a>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-sm-12 col-md-8 mt-1">
-                                        <div class="tab-content text-justify" id="nav-tabContent">
-                                            <div class="tab-pane show" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-                                            <div className="col-6 mb-3 text-center">
-                                                <h6>Bornova Court</h6>
+                                    <div class="col-12 col-sm-12 col-md-8 mt-1 h-50">
+                                        <div class="tab-content text-justifyx" id="nav-tabContent">
+                                            <div class="tab-pane show active" id="list-court" role="tabpanel" aria-labelledby="list-court-list">
+                                            <h6 className="text-center">Bornova Court</h6>
                                                 <div id="carouselExampleCaptions" className="carousel slide m-auto" style={{ height:"200px", width:"400px" }} data-bs-ride="carousel">
                                                     <ol className="carousel-indicators">
                                                         <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active"></li>
@@ -82,13 +81,14 @@ const Checkout = () => {
                                                         <span className="visually-hidden">Next</span>
                                                     </a>
                                                 </div>
-                                                </div>
                                             </div>
+
                                             <div class="tab-pane" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-                                            <div className="col-lg-5 m-4 text-center">
+                                            
+                                                <div className="col-12 mb-3 text-center">
                                                     <h6>Takımlar</h6>
-                                                    <div className="btn-group m-2">
-                                                        <Link className="btn btn-light m-2 p-4 checkout-team" onClick={handleCheckoutTeamShow}>
+                                                    <div className="">
+                                                        <Link className="btn btn-light m-2 p-4 checkout-team border" onClick={handleCheckoutTeamShow}>
                                                             <h6>Team 1</h6>
                                                             <AvatarGroup max={3} >
                                                                 <Avatar alt="Remy Sharp" src="assets/images/faces/2.jpg" />
@@ -98,7 +98,7 @@ const Checkout = () => {
                                                                 <Avatar alt="Trevor Henderson" src="assets/images/faces/2.jpg" />
                                                             </AvatarGroup>
                                                         </Link>
-                                                        <Link className="btn btn-light m-2 p-4 checkout-team" onClick={handleCheckoutTeamShow}>
+                                                        <Link className="btn btn-light m-2 p-4 checkout-team border" onClick={handleCheckoutTeamShow}>
                                                             <h6>Team 1</h6>
                                                             <AvatarGroup max={3} >
                                                                 <Avatar alt="Remy Sharp" src="assets/images/faces/2.jpg" />
@@ -109,63 +109,59 @@ const Checkout = () => {
                                                             </AvatarGroup>
                                                         </Link>
                                                     </div>
-                                                </div>
+                                            </div>
                                             </div>
                                             <div class="tab-pane" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <div class="media d-flex align-items-center">
-                                                        <div class="avatar me-3">
-                                                            <Link to="my-profile"><img src="assets/images/faces/1.jpg" alt="" srcset="" /></Link>
-                                                            <span class="avatar-status bg-success"></span>
+                                                <div class="d-flex justify-content-center">
+                                                    <h6 className="text-center mr-2">Messages</h6>
+                                                    <Link className="ml-2" to="message-detail">Go to chat</Link>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <div class="media d-flex align-items-center">
+                                                            <div class="avatar me-3">
+                                                                <Link to="my-profile"><img src="assets/images/faces/1.jpg" alt="" srcset="" /></Link>
+                                                                <span class="avatar-status bg-success"></span>
+                                                            </div>
+                                                            <div class="name flex-grow-1">
+                                                                <h6 class="mb-0">Fred</h6>
+                                                                <span class="text-xs">Online</span>
+                                                            </div>
+                                                                <button class="btn btn-sm">
+                                                                    <i data-feather="x"></i>
+                                                                </button>
+                                                            </div>
                                                         </div>
-                                                        <div class="name flex-grow-1">
-                                                            <h6 class="mb-0">Fred</h6>
-                                                            <span class="text-xs">Online</span>
-                                                        </div>
-                                                            <button class="btn btn-sm">
-                                                                <i data-feather="x"></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-body pt-4 bg-grey">
-                                                        <div class="chat-content">
-                                                            <div class="chat">
+                                                        <div class="card-body pt-4 bg-grey">
+                                                            <div class="chat-content">
+                                                                <div class="chat">
+                                                                    <div class="chat-body">
+                                                                        <div class="chat-message">Hi Alfy, how can i help you?</div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="chat chat-left">
+                                                                    <div class="chat-body">
+                                                                        <div class="chat-message">I'm looking for the best admin dashboard
+                                                                            template</div>
+                                                                        <div class="chat-message">With bootstrap certainly</div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="chat">
                                                                 <div class="chat-body">
-                                                                    <div class="chat-message">Hi Alfy, how can i help you?</div>
+                                                                    <div class="chat-message">I recommend you to use Mazer Dashboard</div>
                                                                 </div>
                                                             </div>
                                                             <div class="chat chat-left">
-                                                                <div class="chat-body">
-                                                                    <div class="chat-message">I'm looking for the best admin dashboard
-                                                                        template</div>
-                                                                    <div class="chat-message">With bootstrap certainly</div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="chat">
                                                             <div class="chat-body">
-                                                                <div class="chat-message">I recommend you to use Mazer Dashboard</div>
+                                                                <div class="chat-message">That"s great! I like it so much :)</div>
+                                                            </div>
                                                             </div>
                                                         </div>
-                                                        <div class="chat chat-left">
-                                                        <div class="chat-body">
-                                                            <div class="chat-message">That"s great! I like it so much :)</div>
-                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="card-footer">
-                                                <div class="message-form d-flex flex-direction-column align-items-center">
-                                                    <a href="http://" class="black"><i data-feather="smile"></i></a>
-                                                    <div class="d-flex flex-grow-1 ml-4">
-                                                        <input type="text" class="form-control" placeholder="Type your message.." />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            </div>
-                                                
-                                            </div>
-                                            <div class="tab-pane active" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                                            <div class="tab-pane" id="list-payment" role="tabpanel" aria-labelledby="list-payment-list">
+                                                <h6 className="text-center mb-4">Payment</h6>
                                                 <div className="d-flex mb-5 justify-content-evenly">
                                                     <div className="border rounded text-center p-2 bg-primary">
                                                         <h6 className="text-light">Reservation Price</h6>
