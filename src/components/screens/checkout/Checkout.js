@@ -9,6 +9,9 @@ import {FaCreditCard} from "@react-icons/all-files/fa/FaCreditCard";
 import {HiOutlineMail} from "@react-icons/all-files/hi/HiOutlineMail";
 import {GiBasketballBasket} from "@react-icons/all-files/gi/GiBasketballBasket";
 import {GiBasketballJersey} from "@react-icons/all-files/gi/GiBasketballJersey";
+import {RiCoupon3Line} from "@react-icons/all-files/ri/RiCoupon3Line";
+
+
 import "./_checkout.scss";
 
 const Checkout = () => {
@@ -47,6 +50,7 @@ const Checkout = () => {
                                             <a class="list-group-item list-group-item-action text-center active" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-selected="false"><GiBasketballJersey/>Teams</a>
                                             <a class="list-group-item list-group-item-action text-center" id="list-court-list" data-bs-toggle="list" href="#list-court" role="tab" aria-selected="false"><GiBasketballBasket/>Court Details</a>
                                             <a class="list-group-item list-group-item-action text-center" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-selected="false"><HiOutlineMail/>Messages</a>
+                                            <a class="list-group-item list-group-item-action text-center" id="list-coupon-list" data-bs-toggle="list" href="#list-coupon" role="tab" aria-selected="true"><RiCoupon3Line/>Coupons</a>
                                             <a class="list-group-item list-group-item-action text-center" id="list-payment-list" data-bs-toggle="list" href="#list-payment" role="tab" aria-selected="true"><FaCreditCard/>Payment</a>
                                         </div>
                                     </div>
@@ -160,6 +164,43 @@ const Checkout = () => {
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="tab-pane" id="list-coupon" role="tabpanel" aria-labelledby="list-coupon-list">
+                                                <h6 className="text-center mr-2">Coupons</h6>
+                                                <div class="table-responsive">
+                                                    <table class="table table-hover table-lg">
+                                                        <thead>
+                                                            <tr>
+                                                                <th className="m-auto text-center">Coupon id</th>
+                                                                <th className="m-auto text-center">Amount</th>
+                                                                <th className="m-auto text-center">Expiration</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            {
+                                                                [...Array(5)].map((coupon) => (
+                                                                <tr>
+                                                                    <td class="col-3">
+                                                                        <div class="d-flex align-items-center">
+                                                                            <div class="avatar avatar-md">
+                                                                                <img src="assets/images/faces/5.jpg" alt="checkout-coupon" />
+                                                                            </div>
+                                                                            <p class="font-bold ms-3 mb-0">Si Cantik</p>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="col-auto">
+                                                                        <p class="m-auto text-center">50₺</p>
+                                                                    </td>
+                                                                    <td class="col-auto">
+                                                                        <p class="m-auto text-center">25/06</p>
+                                                                    </td>
+                                                                </tr>
+                                                                ))
+                                                            }
+                                                            
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
                                             <div class="tab-pane" id="list-payment" role="tabpanel" aria-labelledby="list-payment-list">
                                                 <h6 className="text-center mb-4">Payment</h6>
                                                 <div className="d-flex mb-5 justify-content-evenly">
@@ -188,6 +229,7 @@ const Checkout = () => {
                                                     </div>
                                                 </div>  
                                             </div>
+                                            
                                         </div>
                                     </div>
                                 </div>
