@@ -11,7 +11,8 @@ import "./_courtWidgetCard.scss";
 const CourtWidgetCard = () => {
     const notifyFavPlayer = () => toast("Player successfully added your favourites", {
         className: 'warning-background',
-        progressClassName: 'toast-progress'
+        progressClassName: 'toast-progress',
+        id:"courtWidget"
     });
     return (
         <>

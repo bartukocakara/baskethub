@@ -175,7 +175,7 @@ const Checkout = () => {
                                                                 <th className="m-auto text-center">Expiration</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody>
+                                                        <tbody className="coupon-table">
                                                             {
                                                                 [...Array(5)].map((coupon) => (
                                                                 <tr>

@@ -11,7 +11,8 @@ const PlayerWidgetCard = () => {
 
     const notifyFavCourt = () => toast("Court successfully added your favourites", {
         className: 'warning-background',
-        progressClassName: 'toast-progress'
+        progressClassName: 'toast-progress',
+        id:"playerWidget"
     });
     return (
         <>

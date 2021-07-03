@@ -47,6 +47,7 @@ import { ToastContainer } from 'react-toastify';
 function App() {
   return (
       <>
+        {/* <ToastContainer autoClose={2000} toastClassName="dark-toast"/> */}
         <ToastContainer autoClose={2000} toastClassName="dark-toast"/>
 
         {/* navbar */}
@@ -58,45 +59,44 @@ function App() {
             <Navbar />
             <div id="main-content" className="container main-section">
                 <div className="row">
-                        <Switch>
-                            <Route exact path="/" component={LastActivities} />
-                            <Route path="/matches" component={Matches} />
-                            <Route path="/my-matches" component={MyMatches} />
-                            <Route path="/match-detail" component={MatchDetail} />
-                            <Route path="/ended-match-detail" component={EndedMatch} />
-                            <Route path="/favourite-players" component={MyFavPlayers} />
-                            <Route path="/trainers" component={Trainers} />
-                            <Route path="/player-detail" component={PlayerDetail} />
-                            <Route path="/favourite-courts" component={MyFavCourts} />
-                            <Route path="/court-detail" component={CourtDetail} />
-                            <Route path="/last-search" component={LastSearch} />
-                            <Route path="/tournaments" component={Tournaments} />
-                            <Route path="/my-teams" component={MyTeams} />
-                            <Route path="/my-team-detail" component={MyTeamDetail} />
-                            <Route path="/team-detail" component={TeamDetail} />
-                            <Route path="/trainer-detail" component={TrainerDetail} />
-                            <Route path="/team/:name" component={MyTeamDetail} />
-                            <Route path="/player-detail/:name" component={PlayerDetail} />
-                            <Route path="/court-detail/:name" component={CourtDetail} />
-                            <Route path="/service-policies" component={ServicePolicies} />
-                            <Route path="/about-us" component={About} />
-                            <Route path="/secure" component={Secure} />
-                            <Route path="/contact" component={Contact} />
-                            <Route path="/cookies" component={Cookies} />
-                            <Route path="/faq" component={Faq} />
-                            <Route path="/my-profile" component={Profile} />
-                            <Route path="/profile-edit" component={ProfileEdit} />
-                            <Route path="/message-detail" component={MessageDetail} />
-                            <Route path="/team-chat" component={TeamMessage} />
-                            <Route path="/match-chat" component={MatchMessage} />
-                            <Route path="/notifications" component={Notifications} />
-                            <Route path="/notification-detail" component={NotificationDetail} />
-                            <Route path="/create-team" component={CreateTeam} />
-                            <Route path="/create-court" component={CreateCourt} />
-                            <Route path="/create-tournament" component={CreateTournament} />
-                            <Route path="/checkout" component={Checkout} />
-
-                        </Switch>
+                    <Switch>
+                        <Route exact path="/" component={LastActivities} />
+                        <Route path="/matches" component={Matches} />
+                        <Route path="/my-matches" component={MyMatches} />
+                        <Route path="/match-detail" component={MatchDetail} />
+                        <Route path="/ended-match-detail" component={EndedMatch} />
+                        <Route path="/favourite-players" component={MyFavPlayers} />
+                        <Route path="/trainers" component={Trainers} />
+                        <Route path="/player-detail" component={PlayerDetail} />
+                        <Route path="/favourite-courts" component={MyFavCourts} />
+                        <Route path="/court-detail" component={CourtDetail} />
+                        <Route path="/last-search" component={LastSearch} />
+                        <Route path="/tournaments" component={Tournaments} />
+                        <Route path="/my-teams" component={MyTeams} />
+                        <Route path="/my-team-detail" component={MyTeamDetail} />
+                        <Route path="/team-detail" component={TeamDetail} />
+                        <Route path="/trainer-detail" component={TrainerDetail} />
+                        <Route path="/team/:name" component={MyTeamDetail} />
+                        <Route path="/player-detail/:name" component={PlayerDetail} />
+                        <Route path="/court-detail/:name" component={CourtDetail} />
+                        <Route path="/service-policies" component={ServicePolicies} />
+                        <Route path="/about-us" component={About} />
+                        <Route path="/secure" component={Secure} />
+                        <Route path="/contact" component={Contact} />
+                        <Route path="/cookies" component={Cookies} />
+                        <Route path="/faq" component={Faq} />
+                        <Route path="/my-profile" component={Profile} />
+                        <Route path="/profile-edit" component={ProfileEdit} />
+                        <Route path="/message-detail" component={MessageDetail} />
+                        <Route path="/team-chat" component={TeamMessage} />
+                        <Route path="/match-chat" component={MatchMessage} />
+                        <Route path="/notifications" component={Notifications} />
+                        <Route path="/notification-detail" component={NotificationDetail} />
+                        <Route path="/create-team" component={CreateTeam} />
+                        <Route path="/create-court" component={CreateCourt} />
+                        <Route path="/create-tournament" component={CreateTournament} />
+                        <Route path="/checkout" component={Checkout} />
+                    </Switch>
         {/* ========== Without Widget Screens ========= */}
                     {/* PlayerDetail */}
                     {/* FavCourtDetail */}

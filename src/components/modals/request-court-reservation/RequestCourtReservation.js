@@ -10,9 +10,8 @@ import {
     Link,
   } from "react-router-dom";
 import "./_requestCourtReservation.scss";
-import Avatar from '@material-ui/core/Avatar';
-import AvatarGroup from '@material-ui/lab/AvatarGroup';
-import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail";
+import FavPlayers from './fav-players/FavPlayers';
+import FavTeams from './fav-teams/FavTeams';
 
 const RequestCourtReservation = ({handleRequestCourtReservationModalClose, show}) => {
     return (
@@ -40,72 +39,34 @@ const RequestCourtReservation = ({handleRequestCourtReservationModalClose, show}
                         <a className="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Favourite Players</a>
                     </li>
                 </ul>
-                <div className="tab-content" id="myTabContent">
-                    <div className="tab-pane fade active show row" id="home" role="tabpanel" aria-labelledby="home-tab">
-                    <ul className="widget-todo-list-wrapper m-2 row"  id="widget-todo-list">
-                            {
-                                [...Array(5)].map((player) => (
-                                <>
-                                <li className="widget-todo-item p-2 col-12">
-                                    <div className="d-flex mb-1">
-                                        <div className="d-flex align-items-center w-75">
-                                            <i data-feather="list" className="cursor-move"></i>
-                                            <div className="checkbox checkbox-shadow m-2">
-                                                <input type="checkbox" className="form-check-input" id="checkbox1" />
-                                            </div>
-                                            <h6 className="m-2">Bornova Team</h6>
-                                        </div>
-                                        <div className="widget-todo-item-action d-flex align-items-center">
-                                            <AvatarGroup max={3} className="m-2" >
-                                                <Avatar alt="Remy Sharp" src="assets/images/faces/2.jpg" />
-                                                <Avatar alt="Travis Howard" src="assets/images/faces/2.jpg" />
-                                                <Avatar alt="Cindy Baker" src="assets/images/faces/2.jpg" />
-                                                <Avatar alt="Agnes Walker" src="assets/images/faces/2.jpg" />
-                                                <Avatar alt="Trevor Henderson" src="assets/images/faces/2.jpg" />
-                                            </AvatarGroup>
-                                            <Link to="team-chat" className="m-2">
-                                                <AiOutlineMail size={25} />
-                                            </Link>
-                                        </div>
-                                    </div>
-                                </li>
-                                <hr />
-                                </>
-                                ))
-                            }
-                            
-                        </ul>
+                <div className="tab-content m-2 border rounded" id="myTabContent">
+                    <div className="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div className="widget-todo-list-wrapper m-2 row"  id="widget-todo-list">
+                        {
+                                    [...Array(5)].map((player) => (
+                                        <FavTeams />
+                                    ))
+                                }
+                                
+                        </div>
                     </div>
                     <div className="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                    <ul className="widget-todo-list-wrapper m-2 row" id="widget-todo-list">
-                            {
-                                [...Array(5)].map((player) => (
-                                <li className="widget-todo-item p-2 col-6">
-                                    <div className="d-flex mb-1">
-                                        <div className="d-flex align-items-center w-75">
-                                            <i data-feather="list" className="cursor-move"></i>
-                                            <div className="checkbox checkbox-shadow m-2">
-                                                <input type="checkbox" className="form-check-input" id="checkbox1" />
-                                            </div>
-                                            <p>Ata Aksoy</p>
-                                        </div>
-                                        <div className="widget-todo-item-action d-flex align-items-center">
-                                            <div className="badge badge-pill badge-light-success me-1">frontend
-                                            </div>
-                                            <div className="avatar bg-warning">
-                                                <img src="assets/images/faces/1.jpg" alt="" srcset="" />
-                                            </div>
-                                            <i className="bx bx-dots-vertical-rounded font-medium-3 cursor-pointer"></i>
-                                        </div>
-                                    </div>
-                                </li>
-                                ))
-                            }
-                            
-                        </ul>
-                    </div>
+                        <div className="widget-todo-list-wrapper m-2 row" id="widget-todo-list">
+                                
+                                {
+                                    [...Array(5)].map((player) => (
+                                    <>
+                                    <FavPlayers />
+                                    
+                                    </>
+                                    ))
+                                }
+                                
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <hr />
                 <FullCalendar
                     plugins={[ dayGridPlugin ]}
                     initialView="dayGridMonth"
