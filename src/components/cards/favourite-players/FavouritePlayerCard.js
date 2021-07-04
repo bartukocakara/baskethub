@@ -6,6 +6,11 @@ import { TiSocialInstagram } from "@react-icons/all-files/ti/TiSocialInstagram";
 import { TiSocialTwitter } from "@react-icons/all-files/ti/TiSocialTwitter";
 import { TiSocialFacebook } from "@react-icons/all-files/ti/TiSocialFacebook";
 import { AiOutlineWhatsApp } from "@react-icons/all-files/ai/AiOutlineWhatsApp";
+import { GiWeight } from "@react-icons/all-files/gi/GiWeight";
+import { GiBodyHeight } from "@react-icons/all-files/gi/GiBodyHeight";
+import { GoLocation } from "@react-icons/all-files/go/GoLocation";
+import { GiPlayerTime } from "@react-icons/all-files/gi/GiPlayerTime";
+import { GiBasketballJersey } from "@react-icons/all-files/gi/GiBasketballJersey";
 import { GoPerson } from "@react-icons/all-files/go/GoPerson";
 import {
     Link
@@ -33,25 +38,25 @@ const FavouritePlayerCard = () => {
             <div className="card shadow">
                 <h4 className="card-title text-center">Bartu Kocakara</h4>
                 <div className="card-content d-flex card-body card-custom">
-                    <div className="card-middle-text d-flex">
-                        <div class="car-middle-div">
-                            <p className="prop-name w-100 p-2 badge bg-primary">Yaş</p>
+                    <div className="card-middle-text row">
+                        <div class="col-md-2 text-center">
+                            <p className="prop-name w-100 badge bg-primary"><GiPlayerTime size={25}/></p>
                             <p>28</p>
                         </div>
-                        <div class="car-middle-div">
-                            <p className="prop-name w-100 p-2 badge bg-primary">Kilo</p>
+                        <div class="col-md-2 text-center">
+                            <p className="prop-name w-100 badge bg-primary"><GiWeight size={25} /></p>
                             <p>90</p>
                         </div>
-                        <div class="car-middle-div">
-                            <p className="prop-name w-100 p-2 badge bg-primary">Boy</p>
+                        <div class="col-md-2 text-center">
+                            <p className="prop-name w-100 badge bg-primary"><GiBodyHeight size={25}/></p>
                             <p>1.90</p>
                         </div>
-                        <div class="car-middle-div">
-                            <p className="prop-name w-100 p-2 badge bg-primary">Konum</p>
+                        <div class="col-md-3 text-center">
+                            <p className="prop-name w-100 badge bg-primary"><GoLocation size={25}/></p>
                             <p>İstanbul</p>
                         </div>
-                        <div class="car-middle-div">
-                            <p className="prop-name w-100 p-2 badge bg-primary">Posizyon</p>
+                        <div class="col-md-2 text-center">
+                            <p className="prop-name w-100 badge bg-primary"><GiBasketballJersey size={25}/></p>
                             <p>SF</p>
                         </div>
                     </div>

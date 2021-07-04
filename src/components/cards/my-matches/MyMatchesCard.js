@@ -6,7 +6,12 @@ import { TiSocialInstagram } from "@react-icons/all-files/ti/TiSocialInstagram";
 import { TiSocialTwitter } from "@react-icons/all-files/ti/TiSocialTwitter";
 import { TiSocialFacebook } from "@react-icons/all-files/ti/TiSocialFacebook";
 import { AiOutlineWhatsApp } from "@react-icons/all-files/ai/AiOutlineWhatsApp";
-import { GoPerson } from "@react-icons/all-files/go/GoPerson";import {
+import { GoPerson } from "@react-icons/all-files/go/GoPerson";
+import { BsClockFill } from "@react-icons/all-files/bs/BsClockFill";
+import { IoIosPeople } from "@react-icons/all-files/io/IoIosPeople";
+import { FiUserPlus } from "@react-icons/all-files/fi/FiUserPlus";
+
+import {
     Link
   } from "react-router-dom";
 const MyMatchesCard = () => {
@@ -20,17 +25,17 @@ const MyMatchesCard = () => {
                     <div class="avatar avatar-lg me-2 card-avatar">
                         <img src="assets/images/faces/2.jpg" alt="" srcset="" />
                     </div>
-                    <div className="card-middle-text d-flex">
-                        <div class="car-middle-div">
-                            <p className="prop-name">Maç Saati</p>
+                    <div className="card-middle-text row">
+                        <div class="col-lg-4 text-center">
+                            <p className="prop-name badge bg-primary"><BsClockFill size={25}/></p>
                             <p>19:00 - 20:00</p>
                         </div>
-                        <div class="car-middle-div">
-                            <p className="prop-name">Oyuncu sayısı</p>
+                        <div class="col-lg-4 text-center">
+                            <p className="prop-name badge bg-primary"><IoIosPeople size={25}/></p>
                             <p>8</p>
                         </div>
-                        <div class="car-middle-div">
-                            <p className="prop-name">Gerekli oyuncu</p>
+                        <div class="col-lg-4 text-center">
+                            <p className="prop-name badge bg-primary"><FiUserPlus size={25}/></p>
                             <p>1-3</p>
                         </div>
 

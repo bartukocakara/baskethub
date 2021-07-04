@@ -58,14 +58,17 @@ const Sidebar = () => {
                             </div>
                             <div class="lang-menu">
                                 <div class="selected-lang">
-                                    EN
+                                    TR
                                 </div>
                                 <ul>
                                     <li>
-                                        <Link class="de">TR</Link>
+                                        <Link class="en">EN</Link>
                                     </li>
                                     <li>
-                                        <Link class="en">ES</Link>
+                                        <Link class="de">DE</Link>
+                                    </li>
+                                    <li>
+                                        <Link class="es">ES</Link>
                                     </li>
                                     <li>
                                         <Link class="fr">FR</Link>

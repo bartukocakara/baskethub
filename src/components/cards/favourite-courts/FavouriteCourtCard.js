@@ -6,7 +6,12 @@ import { TiSocialInstagram } from "@react-icons/all-files/ti/TiSocialInstagram";
 import { TiSocialTwitter } from "@react-icons/all-files/ti/TiSocialTwitter";
 import { TiSocialFacebook } from "@react-icons/all-files/ti/TiSocialFacebook";
 import { AiOutlineWhatsApp } from "@react-icons/all-files/ai/AiOutlineWhatsApp";
+import { AiOutlineClear } from "@react-icons/all-files/ai/AiOutlineClear";
 import { GoPerson } from "@react-icons/all-files/go/GoPerson";
+import { HiOutlineEmojiHappy } from "@react-icons/all-files/hi/HiOutlineEmojiHappy";
+import { AiOutlineFieldTime } from "@react-icons/all-files/ai/AiOutlineFieldTime";
+import { FaMoneyBill } from "@react-icons/all-files/fa/FaMoneyBill";
+
 import {
     Link
   } from "react-router-dom";
@@ -30,20 +35,23 @@ const FavouriteCourtCard = () => {
                     <div class="avatar avatar-lg me-2 card-avatar">
                         <img src="assets/images/faces/2.jpg" alt="hall" srcset="" />
                     </div>
-                    <div className="card-middle-text d-flex">
-                        <div class="car-middle-div">
-                            <p className="prop-name w-100 p-2 badge bg-primary">Hijyen</p>
+                    <div className="card-middle-text row">
+                        <div class="col-lg-3 text-center">
+                            <p className="prop-name w-100 p-2 badge bg-primary"><AiOutlineClear size={25}/></p>
                             <p>5/10</p>
                         </div>
-                        <div class="car-middle-div">
-                            <p className="prop-name w-100 p-2 badge bg-primary">Güvenilirlik</p>
+                        <div class="col-lg-3 text-center">
+                            <p className="prop-name w-100 p-2 badge bg-primary"><HiOutlineEmojiHappy size={25}/></p>
                             <p>8/10</p>
                         </div>
-                        <div class="car-middle-div">
-                            <p className="prop-name w-100 p-2 badge bg-primary">Cevap Hızı</p>
+                        <div class="col-lg-3 text-center">
+                            <p className="prop-name w-100 p-2 badge bg-primary"><AiOutlineFieldTime size={25}/></p>
                             <p>7/10</p>
                         </div>
-
+                        <div class="col-lg-3 text-center">
+                            <p className="prop-name w-100 p-2 badge bg-primary"><FaMoneyBill size={25}/></p>
+                            <p>125₺</p>
+                        </div>
                     </div>
                     <div className="card-left-image">
                         <img className="img-fluid w-50 card-image" src="assets/images/samples/hall.jpg" alt="Card cap" />
