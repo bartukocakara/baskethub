@@ -139,6 +139,10 @@ const FavCourtDetail = () => {
                                 <h5 class="font-bold">Phone</h5>
                                 <h6 class="text-muted mb-0">+90 555 667 66 80</h6>
                             </div>
+                            <div class="ms-5 name">
+                                <h5 class="font-bold">Address</h5>
+                                <h6 class="text-muted mb-0">Caferağa, Sakız Gülü Sk. No:11 D:No:1, 34710 Kadıköy/İstanbul</h6>
+                            </div>
                         </div>
                     </div>
                 </div>
