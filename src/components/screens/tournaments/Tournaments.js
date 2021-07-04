@@ -1,18 +1,18 @@
 import React from 'react'
-import MyMatchesCard from '../../cards/my-matches/MyMatchesCard'
-import Search from '../../layouts/quick-search/Search';
+import TournamentsCard from '../../cards/tournaments/TournamentsCard';
+import TournamentSarch from '../../layouts/quick-search/tournament-search/TournamentSearch';
 import MatchWidget from '../../layouts/widgets/match-widget/MatchWidget';
 
 const Tournaments = () => {
     return (
         <>
         <div className="col-8">
-            <Search />
+            <TournamentSarch />
             <section id="content-types">
                 <div className="row">
                     {
                         [...Array(10)].map((match) => (
-                            <MyMatchesCard />
+                            <TournamentsCard />
                         ))
                     }
                    

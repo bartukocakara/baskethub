@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TrainerSearch = () => {
+const TournamentSearch = () => {
     return (
         <>
             <div className="col-md-12 col-12">
@@ -14,4 +14,4 @@ const TrainerSearch = () => {
     )
 }
 
-export default TrainerSearch
+export default TournamentSearch

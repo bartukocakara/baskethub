@@ -43,6 +43,7 @@ import CreateCourt from './components/screens/create/create-court/CreateCourt';
 import CreateTournament from './components/screens/create/create-tournament/CreateTournament';
 import Matches from './components/screens/matches/Matches';
 import { ToastContainer } from 'react-toastify';
+import TournamentDetail from './components/card-details/tournament-detail/TournamentDetail';
 
 function App() {
   return (
@@ -79,6 +80,7 @@ function App() {
                         <Route path="/team/:name" component={MyTeamDetail} />
                         <Route path="/player-detail/:name" component={PlayerDetail} />
                         <Route path="/court-detail/:name" component={CourtDetail} />
+                        <Route path="/tournament-detail" component={TournamentDetail} />
                         <Route path="/service-policies" component={ServicePolicies} />
                         <Route path="/about-us" component={About} />
                         <Route path="/secure" component={Secure} />
