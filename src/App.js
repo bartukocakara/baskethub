@@ -34,8 +34,8 @@ import MatchMessage from './components/screens/match-message-detail/MatchMessage
 import NotificationDetail from './components/screens/notification-detail/NotificationDetail';
 import Notifications from './components/screens/notifications/Notifications';
 import MatchDetail from './components/card-details/match-detail/MatchDetail';
-import Trainers from './components/screens/trainer-search/Trainers';
 import Tournaments from './components/screens/tournaments/Tournaments';
+import Trainers from './components/screens/trainers/Trainers';
 import TrainerDetail from './components/card-details/trainer-detail/TrainerDetail';
 import CreateTeam from './components/screens/create/create-team/CreateTeam';
 import ProfileEdit from './components/screens/profile/ProfileEdit';
@@ -74,6 +74,7 @@ function App() {
                         <Route path="/favourite-courts" component={MyFavCourts} />
                         <Route path="/court-detail" component={CourtDetail} />
                         <Route path="/last-search" component={LastSearch} />
+                        <Route path="/trainers" component={Trainers} />
                         <Route path="/tournaments" component={Tournaments} />
                         <Route path="/my-teams" component={MyTeams} />
                         <Route path="/my-team-detail" component={MyTeamDetail} />

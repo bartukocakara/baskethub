@@ -1,13 +1,13 @@
 import React from 'react'
 import TrainerCard from '../../cards/trainers/TrainerCard';
-import Search from '../../layouts/quick-search/Search';
-import PlayerWidget from '../../layouts/widgets/player-widget/PlayerWidget';
+import TrainerSearch from '../../layouts/quick-search/trainer-search/TrainerSearch';
+import TrainerWidget from '../../layouts/widgets/trainer-widget/TrainerWidget';
 
 const Trainers = () => {
     return (
         <>
         <div className="col-8">
-            <Search />
+            <TrainerSearch />
             <section id="content-types">
                 <div className="row">
                     {
@@ -19,7 +19,7 @@ const Trainers = () => {
                 </div>
             </section>
         </div>
-        <PlayerWidget />
+        <TrainerWidget />
         </>
     )
 }

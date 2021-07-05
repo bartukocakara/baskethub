@@ -4,6 +4,7 @@ import { BiCheckDouble } from "@react-icons/all-files/bi/BiCheckDouble";
 import { HiCheck } from "@react-icons/all-files/hi/HiCheck";
 import { GoLocation } from "@react-icons/all-files/go/GoLocation";
 import { FiEdit } from "@react-icons/all-files/fi/FiEdit";
+import { GoVerified } from "@react-icons/all-files/go/GoVerified";
 import {
     Link
   } from "react-router-dom";
@@ -27,6 +28,7 @@ const Profile = () => {
                                 <div class="ms-3 name col-md-2 text-center">
                                     <h5 class="font-bold">John Duck</h5>
                                     <h6 class="text-muted mb-0">@johnducky</h6>
+                                    <span><GoVerified className="text-success" size={20}/></span>
                                 </div>
                                 <div class="ms-5 col-md-1">
                                     <GoLocation />
