@@ -9,7 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import "./_courtWidgetCard.scss";
 
 const CourtWidgetCard = () => {
-    const notifyFavPlayer = () => toast("Player successfully added your favourites", {
+    const notifyFavCourt = () => toast("Court successfully added your favourites", {
         className: 'warning-background',
         progressClassName: 'toast-progress',
         id:"courtWidget"
@@ -18,12 +18,12 @@ const CourtWidgetCard = () => {
         <>
         <Link >
             <div className="card-body border b-primary m-2 widget-player-card d-flex p-3 rounded">
-                <FiPlusSquare className="widget-player-icon" color="#FA8602" onClick={notifyFavPlayer}/>
+                <FiPlusSquare className="widget-player-icon" color="#FA8602" onClick={notifyFavCourt}/>
                 <div className="widget-player-text">
-                    <Link to="player-detail">
-                    <h6 className="">Bartu Kocakara</h6>
+                    <Link to="court-detail">
+                    <h6 className="">Bornova Spor Salonu</h6>
                     </Link>
-                    <p className="text-muted">İstanbul</p>
+                    <p className="text-center">İstanbul</p>
                 </div>
                 <div className="avatar-lg me-2 widget-card-right widget-court-card">
                     <img className="w-100 rounded" src="assets/images/samples/hall.jpg" alt="" srcset="" />

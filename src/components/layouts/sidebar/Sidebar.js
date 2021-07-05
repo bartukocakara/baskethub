@@ -7,6 +7,8 @@ import { AiOutlineFileSearch } from "@react-icons/all-files/ai/AiOutlineFileSear
 import {FaBasketballBall} from "@react-icons/all-files/fa/FaBasketballBall";
 import {BsPeopleFill} from "@react-icons/all-files/bs/BsPeopleFill";
 import {ImTree} from "@react-icons/all-files/im/ImTree";
+import {BsFillCameraVideoFill} from "@react-icons/all-files/bs/BsFillCameraVideoFill";
+
 import CourtSearch from '../../modals/court-search/CourtSearch';
 import PlayerSearch from '../../modals/player-search/PlayerSearch';
 import TeamSearch from '../../modals/team-search/TeamSearch';
@@ -163,6 +165,13 @@ const Sidebar = () => {
                                 <NavLink  to="/tournaments" className="sidebar-link">
                                     <ImTree />
                                     <span>Tournaments</span>
+                                </NavLink >
+                            </li>
+                            <hr />
+                            <li className="sidebar-item">
+                                <NavLink  to="/watch" target="_blank" className="sidebar-link">
+                                    <BsFillCameraVideoFill />
+                                    <span>Watch</span>
                                 </NavLink >
                             </li>
                         </ul>

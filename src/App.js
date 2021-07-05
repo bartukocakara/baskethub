@@ -44,6 +44,8 @@ import CreateTournament from './components/screens/create/create-tournament/Crea
 import Matches from './components/screens/matches/Matches';
 import { ToastContainer } from 'react-toastify';
 import TournamentDetail from './components/card-details/tournament-detail/TournamentDetail';
+import CreateMatch from './components/screens/create/create-match/CreateMatch';
+import Watch from './components/screens/watch/Watch';
 
 function App() {
   return (
@@ -97,6 +99,8 @@ function App() {
                         <Route path="/create-team" component={CreateTeam} />
                         <Route path="/create-court" component={CreateCourt} />
                         <Route path="/create-tournament" component={CreateTournament} />
+                        <Route path="/create-match" component={CreateMatch} />
+                        <Route path="/watch" component={Watch} />
                         <Route path="/checkout" component={Checkout} />
                     </Switch>
         {/* ========== Without Widget Screens ========= */}
