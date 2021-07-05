@@ -64,15 +64,15 @@ const FavouriteCourtCard = () => {
                         </Link>
                     </div>
                     <div className="footer-right d-flex">
-                        <Link class="btn btn-light m-2 p-2 text-primary border" to="message-detail">
-                            <AiOutlineMail className="card-footer-icon" />
+                        <Link class="btn btn-light m-2 p-2 text-primary" to="message-detail">
+                            <AiOutlineMail className="card-footer-icon" size={25} />
                         </Link>
                         
-                        <Link class="btn btn-light m-2 p-2 text-primary border" onClick={handleShowRequestCourtReservationModal}>
+                        <Link class="btn btn-light m-2 p-2 text-primary" onClick={handleShowRequestCourtReservationModal}>
                             <FaHandshake className="card-footer-icon" />
                         </Link>
                         <div class="dropdown">
-                            <Link class="btn btn-light m-2 p-2 text-primary border" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <Link class="btn btn-light m-2 p-2 text-primary" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                 <FiShare2 className="card-footer-icon"  />
                             </Link>
 

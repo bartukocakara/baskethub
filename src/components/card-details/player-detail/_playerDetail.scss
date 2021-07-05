@@ -98,3 +98,11 @@
     padding:12px !important;
     font-size:11px;
 }
+.pd-icon{
+    cursor:pointer;
+        overflow: hidden !important;
+        &:hover {
+        border-radius: 5px;
+        color:#7b79ff !important;
+    }
+}

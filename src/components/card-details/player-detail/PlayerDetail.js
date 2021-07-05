@@ -10,10 +10,13 @@ import { TiSocialTwitter } from "@react-icons/all-files/ti/TiSocialTwitter";
 import { TiSocialFacebook } from "@react-icons/all-files/ti/TiSocialFacebook";
 import { AiOutlineWhatsApp } from "@react-icons/all-files/ai/AiOutlineWhatsApp";
 import { GoPerson } from "@react-icons/all-files/go/GoPerson";
+import { GoVerified } from "@react-icons/all-files/go/GoVerified";
+import { FiPlusSquare } from "@react-icons/all-files/fi/FiPlusSquare";
+import { FiMail } from "@react-icons/all-files/fi/FiMail";
+
 import {
     Link
   } from "react-router-dom";
-
 import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
 import "./_playerDetail.scss";
@@ -21,12 +24,21 @@ import RequestPlayerJoin from '../../modals/request-player-join/RequestPlayerJoi
 import Teams from "./teams/Teams";
 import Matches from './matches/Matches';
 
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const PlayerDetail = () => {
 
     const [showRequestPlayerJoin, setRequestPJShow] = useState(false);
 
     const handleRequestPlayerJoinClose = () => setRequestPJShow(false);
     const handleRequestPlayerJoinModal = () => setRequestPJShow(true);
+
+    const notifyFavPlayer = () => toast("Player successfully added your favourites", {
+        className: 'warning-background',
+        progressClassName: 'toast-progress',
+        id:"playerWidget"
+    });
     return (
         <>
         <RequestPlayerJoin handleRequestPlayerJoinClose={handleRequestPlayerJoinClose} show={showRequestPlayerJoin}  />
@@ -48,12 +60,14 @@ const PlayerDetail = () => {
                                 <div class="col-md-2 text-center">
                                     <h6 class="font-bold">John Duck</h6>
                                     <h6 class="text-muted mb-0">@johnducky</h6>
+                                    <span><GoVerified className="text-success" size={20}/></span>
+
                                 </div>
                                 <div class="col-md-1  text-center">
                                     <h6 class="font-bold">Pos.</h6>
                                     <h6 class="text-muted mb-0">C, PF, SF </h6>
                                 </div>
-                                <div class="col-md-2  text-center">
+                                <div class="col-md-3  text-center">
                                     <h6 class="font-bold">Email</h6>
                                     <p class="text-muted mb-0">bartuu_436@hotmail.com</p>
                                 </div>
@@ -61,27 +75,26 @@ const PlayerDetail = () => {
                                     <h6 class="font-bold">Phone</h6>
                                     <h6 class="text-muted mb-0">+90 555 667 66 80</h6>
                                 </div>
-                                <div className="buttons player-detail-buttons col-md-4">
-                                    <div className="d-flex">
-
-                                    <button className="btn btn-warning">Add to favourite +</button>
-                                    <Link to="message-detail" className="btn btn-primary">
-                                        <i className='bi bi-envelope bi-sub fs-5 '></i>
-                                    </Link>
-                                    <div class="dropdown">
-                                    <Link className="btn btn-primary share-button" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <FiShare2 />
-                                    </Link>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                        <li><Link class="dropdown-item text-center">With Player <GoPerson /></Link></li>
-                                        <li><Link class="dropdown-item text-center">Whatsapp <AiOutlineWhatsApp /></Link></li>
-                                        <li><Link class="dropdown-item text-center">Facebook <TiSocialFacebook /></Link></li>
-                                        <li><Link class="dropdown-item text-center">Twitter <TiSocialTwitter /></Link></li>
-                                        <li><Link class="dropdown-item text-center">Instagram <TiSocialInstagram /></Link></li>
-                                    </ul>
+                                <div className="buttons col-md-3">
+                                    <div className="d-flex justify-content-center">
+                                        <FiPlusSquare className="pd-icon m-2 text-primary" size={29} onClick={notifyFavPlayer}/>
+                                        <Link to="message-detail" className="">
+                                            <FiMail className="m-2 pd-icon" size={27} />
+                                        </Link>
+                                        <div class="dropdown">
+                                            <Link className=" " role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <FiShare2 className="m-2 pd-icon" size={27}/>
+                                            </Link>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                <li><Link class="dropdown-item text-center">With Player <GoPerson /></Link></li>
+                                                <li><Link class="dropdown-item text-center">Whatsapp <AiOutlineWhatsApp /></Link></li>
+                                                <li><Link class="dropdown-item text-center">Facebook <TiSocialFacebook /></Link></li>
+                                                <li><Link class="dropdown-item text-center">Twitter <TiSocialTwitter /></Link></li>
+                                                <li><Link class="dropdown-item text-center">Instagram <TiSocialInstagram /></Link></li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
-                                <button className="btn btn-warning request-join m-auto" onClick={handleRequestPlayerJoinModal}><FaHandshake className="player-detail-handshake" />Request Join Match </button>
+                                    <button className="btn btn-warning m-auto " onClick={handleRequestPlayerJoinModal}><FaHandshake className="player-detail-handshake" />Request Join Match </button>
                                 </div>
                             </div>
                         </div>

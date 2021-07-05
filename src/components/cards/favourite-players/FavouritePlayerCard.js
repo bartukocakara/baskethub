@@ -72,11 +72,11 @@ const FavouritePlayerCard = () => {
                         </Link>
                     </div>
                     <div className="footer-right d-flex">
-                        <Link class="btn btn-light m-2 p-2 text-primary border" to="message-detail">
+                        <Link class="btn btn-light m-2 p-2 text-primary" to="message-detail">
                             <AiOutlineMail className="card-footer-icon" />
                         </Link>
                         <div class="dropdown">
-                            <button class="btn btn-light m-2 p-2 text-primary border" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btn btn-light m-2 p-2 text-primary " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                 <FaHandshake className="card-footer-icon" />
                             </button>
                             <ul class="dropdown-menu mt-2" aria-labelledby="dropdownMenuButton1">
@@ -85,7 +85,7 @@ const FavouritePlayerCard = () => {
                             </ul>
                         </div>
                         <div class="dropdown">
-                            <Link class="btn btn-light m-2 p-2 text-primary border" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <Link class="btn btn-light m-2 p-2 text-primary " role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                 <FiShare2 className="card-footer-icon"  />
                             </Link>
 

@@ -52,20 +52,20 @@ const MyMatchesCard = () => {
                         </Link>
                     </div>
                     <div className="footer-right d-flex">
-                        <Link to="match-chat">
+                        <Link to="match-chat" className="btn btn-light text-primary">
                             <AiOutlineMail className="card-footer-icon"/>
                         </Link>
                         <div class="dropdown">
-                        <button class="btn btn-light" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <FiShare2 className="card-footer-icon" />
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><Link class="dropdown-item text-center">With Player <GoPerson /></Link></li>
-                            <li><Link class="dropdown-item text-center">Whatsapp <AiOutlineWhatsApp /></Link></li>
-                            <li><Link class="dropdown-item text-center">Facebook <TiSocialFacebook /></Link></li>
-                            <li><Link class="dropdown-item text-center">Twitter <TiSocialTwitter /></Link></li>
-                            <li><Link class="dropdown-item text-center">Instagram <TiSocialInstagram /></Link></li>
-                        </ul>
+                            <button class="btn btn-light text-primary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <FiShare2 className="card-footer-icon" />
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><Link class="dropdown-item text-center">With Player <GoPerson /></Link></li>
+                                <li><Link class="dropdown-item text-center">Whatsapp <AiOutlineWhatsApp /></Link></li>
+                                <li><Link class="dropdown-item text-center">Facebook <TiSocialFacebook /></Link></li>
+                                <li><Link class="dropdown-item text-center">Twitter <TiSocialTwitter /></Link></li>
+                                <li><Link class="dropdown-item text-center">Instagram <TiSocialInstagram /></Link></li>
+                            </ul>
                         </div>
                     </div>
                 </div>

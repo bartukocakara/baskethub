@@ -138,6 +138,12 @@ const Sidebar = () => {
                                     <span>My Teams</span>
                                 </NavLink >
                             </li>
+                            <li className="sidebar-item">
+                                <NavLink  to="/my-trainers" className="sidebar-link">
+                                <GiStrong />
+                                    <span>My Trainers</span>
+                                </NavLink >
+                            </li>
                             <li className="sidebar-item has-sub">
                                 <Link  to="/my-matches" className="sidebar-link">
                                     <AiFillStar />

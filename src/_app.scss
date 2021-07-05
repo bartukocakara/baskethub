@@ -57,3 +57,11 @@
       background-color:#f8f9fa
   }
 }
+.card-footer-icon{
+  cursor:pointer;
+      overflow: hidden !important;
+      &:hover {
+      border-radius: 5px;
+      color:#7b79ff !important;
+  }
+}

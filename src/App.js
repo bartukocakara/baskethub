@@ -48,6 +48,7 @@ import CreateMatch from './components/screens/create/create-match/CreateMatch';
 import Watch from './components/screens/watch/Watch';
 import Sponsors from './components/screens/sponsors/Sponsors';
 import MyFavTrainers from './components/screens/my-fav-trainers/MyFavTrainers';
+import MyTrainers from './components/screens/my-trainers/MyTrainers';
 
 function App() {
   return (
@@ -68,6 +69,7 @@ function App() {
                         <Route exact path="/" component={LastActivities} />
                         <Route path="/matches" component={Matches} />
                         <Route path="/my-matches" component={MyMatches} />
+                        <Route path="/my-trainers" component={MyTrainers} />
                         <Route path="/match-detail" component={MatchDetail} />
                         <Route path="/ended-match-detail" component={EndedMatch} />
                         <Route path="/favourite-players" component={MyFavPlayers} />
