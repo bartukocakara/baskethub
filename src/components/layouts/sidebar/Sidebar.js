@@ -10,10 +10,10 @@ import {ImTree} from "@react-icons/all-files/im/ImTree";
 import {GiStrong} from "@react-icons/all-files/gi/GiStrong";
 import {BsFillCameraVideoFill} from "@react-icons/all-files/bs/BsFillCameraVideoFill";
 
-import CourtSearch from '../../modals/court-search/CourtSearch';
-import PlayerSearch from '../../modals/player-search/PlayerSearch';
-import TeamSearch from '../../modals/team-search/TeamSearch';
-import TrainerSearch from '../../modals/trainer-search/TrainerSearch';
+import CourtSearchModal from '../../modals/court-search/CourtSearchModal';
+import PlayerSearchModal from '../../modals/player-search/PlayerSearchModal';
+import TeamSearchModal from '../../modals/team-search/TeamSearchModal';
+import TrainerSearchModal from '../../modals/trainer-search/TrainerSearchModal';
 
 
 import {
@@ -46,10 +46,10 @@ const Sidebar = () => {
 
     return (
         <>
-        <CourtSearch handleCourtClose={handleCourtClose} show={showCourtSearch} />
-        <PlayerSearch handlePlayerClose={handlePlayerClose} show={showPlayerSearch} />
-        <TeamSearch handleTeamClose={handleTeamClose} show={showTeamSearch} />
-        <TrainerSearch handleTrainerClose={handleTrainerClose} show={showTrainerSearch}/>
+        <CourtSearchModal handleCourtClose={handleCourtClose} show={showCourtSearch} />
+        <PlayerSearchModal handlePlayerClose={handlePlayerClose} show={showPlayerSearch} />
+        <TeamSearchModal handleTeamClose={handleTeamClose} show={showTeamSearch} />
+        <TrainerSearchModal handleTrainerClose={handleTrainerClose} show={showTrainerSearch}/>
             <div id="sidebar" className="active">
                 <div className="sidebar-wrapper active ps ps--active-y">
                     <div class="sidebar-header">
@@ -96,31 +96,31 @@ const Sidebar = () => {
                                 <ul className="submenu" style={{display: "none"}}>
                                     <li className="submenu-item">
                                         <Link variant="primary" onClick={handleCourtShow}>
-                                            <GiBasketballBasket className="sidebar-icon" />
+                                            <FaBasketballBall className="m-1" size={18} />
                                             Match Search
                                         </Link>
                                     </li>
                                     <li className="submenu-item">
                                         <Link variant="primary" onClick={handleCourtShow}>
-                                            <GiBasketballBasket className="sidebar-icon" />
+                                            <GiBasketballBasket className="m-1" size={18} />
                                             Court Search
                                         </Link>
                                     </li>
                                     <li className="submenu-item">
                                         <Link variant="primary" onClick={handleTeamShow}>
-                                            <RiTeamLine className="sidebar-icon"/>
+                                            <RiTeamLine className="m-1" size={18}/>
                                             Team Search
                                         </Link>
                                     </li>
                                     <li className="submenu-item">
                                         <Link variant="primary" onClick={handlePlayerShow}>
-                                            <GoPerson className="sidebar-icon" />
+                                            <GoPerson className="m-1" size={18} />
                                             Player Search
                                         </Link>
                                     </li>
                                     <li className="submenu-item">
                                         <Link variant="primary" onClick={handleTrainerShow}>
-                                            <GoPerson className="sidebar-icon" />
+                                            <GiStrong className="m-1" size={18} />
                                             Trainer Search
                                         </Link>
                                     </li>
@@ -154,13 +154,12 @@ const Sidebar = () => {
                                         Favourite Courts
                                         </NavLink >
                                     </li>
+                                    <li className="submenu-item">
+                                        <NavLink  to="/favourite-trainers" className="sidebar-link">
+                                        Favourite Trainers
+                                        </NavLink >
+                                    </li>
                                 </ul>
-                            </li>
-                            <li className="sidebar-item">
-                                <NavLink  to="/trainers" className="sidebar-link">
-                                    <GiStrong />
-                                    <span>Trainers</span>
-                                </NavLink >
                             </li>
                             <li className="sidebar-item">
                                 <NavLink  to="/last-search" className="sidebar-link">
@@ -198,6 +197,9 @@ const Sidebar = () => {
                                 </NavLink>                                
                                 <NavLink to="/about-us" target="_blank" className="sidebar-link info">
                                     <span class="badge sidebar-badge">Hakkımızda</span>
+                                </NavLink>
+                                <NavLink to="/sponsors" className="sidebar-link info">
+                                    <span class="badge sidebar-badge">Sponsorlar</span>
                                 </NavLink>
                                 <NavLink to="/contact" target="_blank" className="sidebar-link info">
                                     <span class="badge sidebar-badge">İletişim</span>

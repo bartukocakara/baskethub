@@ -1,15 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
+import MatchSearchModal from "../../../modals/match-search/MatchSearchModal";
 
 const MatchSearch = () => {
+    const [showMatchSearch, setMatchShow] = useState(false);
+  
+    const handleMatchClose = () => setMatchShow(false);
+    const handleMatchShow = () => setMatchShow(true);
     return (
         <>
-                <div className="col-md-12 col-12">
-                    <nav className=" row mb-4">
-                        <h4 className="col-md-6 m-2 text-center">İstanbul</h4>
-                        <button className="btn btn-primary col-md-2 m-2">Edit Search</button>
-                        <input className="form-control w-25 col-md-4 m-2 text-center" placeholder="Hızlı ara"  />
-                    </nav>
-                </div>
+            <MatchSearchModal handleMatchClose={handleMatchClose} show={showMatchSearch}/>
+            <div className="col-md-12 col-12">
+                <nav className=" row mb-4">
+                    <h4 className="col-md-6 m-2 text-center">İstanbul</h4>
+                    <button className="btn btn-primary col-md-2 m-2" onClick={handleMatchShow}>Edit Search</button>
+                    <input className="form-control w-25 col-md-4 m-2 text-center" placeholder="Hızlı ara"  />
+                </nav>
+            </div>
         </>
     )
 }

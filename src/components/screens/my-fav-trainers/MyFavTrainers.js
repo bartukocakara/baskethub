@@ -1,9 +1,9 @@
 import React from 'react'
-import TrainerCard from '../../cards/trainers/TrainerCard';
+import FavouriteTrainerCard from '../../cards/favourite-trainers/FavouriteTrainerCard'
 import TrainerSearch from '../../layouts/quick-search/trainer-search/TrainerSearch';
 import TrainerWidget from '../../layouts/widgets/trainer-widget/TrainerWidget';
 
-const Trainers = () => {
+const MyFavTrainers = () => {
     return (
         <>
         <div className="col-8">
@@ -12,7 +12,7 @@ const Trainers = () => {
                 <div className="row">
                     {
                         [...Array(10)].map((match) => (
-                            <TrainerCard />
+                            <FavouriteTrainerCard />
                         ))
                     }
                    
@@ -24,4 +24,4 @@ const Trainers = () => {
     )
 }
 
-export default Trainers
+export default MyFavTrainers

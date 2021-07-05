@@ -1,5 +1,5 @@
 import React from 'react'
-import WidgetPlayerCard from '../../cards/widget-cards/WidgetPlayerCard';
+import PlayerWidgetCard from '../../cards/widget-cards/player-widget-card/PlayerWidgetCard';
 import "./_widget.scss";
 
 const Widgets = () => {
@@ -9,9 +9,9 @@ const Widgets = () => {
                 <div class="card-header widget-header">
                     <h4>Recommended Players</h4>
                 </div>
-                <WidgetPlayerCard />
-                <WidgetPlayerCard />
-                <WidgetPlayerCard />
+                <PlayerWidgetCard />
+                <PlayerWidgetCard />
+                <PlayerWidgetCard />
             </div>
         </div>
     )

@@ -1,4 +1,5 @@
 import './_app.scss';
+import "./_index.scss";
 
 import Sidebar from "./components/layouts/sidebar/Sidebar";
 import Navbar from "./components/layouts/navbar/Navbar";
@@ -35,7 +36,6 @@ import NotificationDetail from './components/screens/notification-detail/Notific
 import Notifications from './components/screens/notifications/Notifications';
 import MatchDetail from './components/card-details/match-detail/MatchDetail';
 import Tournaments from './components/screens/tournaments/Tournaments';
-import Trainers from './components/screens/trainers/Trainers';
 import TrainerDetail from './components/card-details/trainer-detail/TrainerDetail';
 import CreateTeam from './components/screens/create/create-team/CreateTeam';
 import ProfileEdit from './components/screens/profile/ProfileEdit';
@@ -46,6 +46,8 @@ import { ToastContainer } from 'react-toastify';
 import TournamentDetail from './components/card-details/tournament-detail/TournamentDetail';
 import CreateMatch from './components/screens/create/create-match/CreateMatch';
 import Watch from './components/screens/watch/Watch';
+import Sponsors from './components/screens/sponsors/Sponsors';
+import MyFavTrainers from './components/screens/my-fav-trainers/MyFavTrainers';
 
 function App() {
   return (
@@ -69,12 +71,11 @@ function App() {
                         <Route path="/match-detail" component={MatchDetail} />
                         <Route path="/ended-match-detail" component={EndedMatch} />
                         <Route path="/favourite-players" component={MyFavPlayers} />
-                        <Route path="/trainers" component={Trainers} />
+                        <Route path="/favourite-trainers" component={MyFavTrainers} />
                         <Route path="/player-detail" component={PlayerDetail} />
                         <Route path="/favourite-courts" component={MyFavCourts} />
                         <Route path="/court-detail" component={CourtDetail} />
                         <Route path="/last-search" component={LastSearch} />
-                        <Route path="/trainers" component={Trainers} />
                         <Route path="/tournaments" component={Tournaments} />
                         <Route path="/my-teams" component={MyTeams} />
                         <Route path="/my-team-detail" component={MyTeamDetail} />
@@ -86,6 +87,7 @@ function App() {
                         <Route path="/tournament-detail" component={TournamentDetail} />
                         <Route path="/service-policies" component={ServicePolicies} />
                         <Route path="/about-us" component={About} />
+                        <Route path="/sponsors" component={Sponsors} />
                         <Route path="/secure" component={Secure} />
                         <Route path="/contact" component={Contact} />
                         <Route path="/cookies" component={Cookies} />
@@ -104,18 +106,6 @@ function App() {
                         <Route path="/watch" component={Watch} />
                         <Route path="/checkout" component={Checkout} />
                     </Switch>
-        {/* ========== Without Widget Screens ========= */}
-                    {/* PlayerDetail */}
-                    {/* FavCourtDetail */}
-                    {/* MatchDetail */}
-                    {/* FavPlayerDetail */}
-                    {/* MyProfile */}
-                    {/* Contact */}
-                    {/* Hizmet Şartları */}
-                    {/* Gizlilik politikası */}
-                    {/* Çerez Politikası */}
-                    {/* Hakkımızda */}
-                    {/* S.S.S */}
 
                 </div>
 

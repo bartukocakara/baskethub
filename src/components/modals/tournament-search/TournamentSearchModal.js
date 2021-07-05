@@ -3,32 +3,32 @@ import { Modal } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import { RiTeamLine } from "@react-icons/all-files/ri/RiTeamLine";
 
-const TeamSearch = ({handleTeamClose, show}) => {
+const TournamentSearchModal = ({handleTournamentClose, show}) => {
     return (
-        <Modal show={show} onHide={handleTeamClose}>
+        <Modal show={show} onHide={handleTournamentClose}>
             <Modal.Header>
             <RiTeamLine className="sidebar-icon"/>
 
-                <Modal.Title>Team Search</Modal.Title>
+                <Modal.Title>Tournament Search</Modal.Title>
             </Modal.Header>
             <form action="#">
                 <div className="modal-body">
-                <h6 className="text-center">Search by Name : </h6>
+                <h6 className="text-center">Search by name</h6>
                     <div className="form-group">
                         <input type="text" placeholder="Write Name" className="form-control" />
                     </div>
                 </div>
             </form>
-            <div className="text-center">
-                <Button variant="secondary m-2" onClick={handleTeamClose}>
+            <Modal.Footer>
+                <Button variant="secondary" onClick={handleTournamentClose}>
                     Close
                 </Button>
-                <Button variant="warning m-2" onClick={handleTeamClose}>
+                <Button variant="primary" onClick={handleTournamentClose}>
                     Start search
                 </Button>
-            </div>
+                </Modal.Footer>
         </Modal>
     )
 }
 
-export default TeamSearch
+export default TournamentSearchModal

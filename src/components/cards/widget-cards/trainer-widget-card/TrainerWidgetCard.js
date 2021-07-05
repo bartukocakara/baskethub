@@ -9,19 +9,19 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const TrainerWidgetCard = () => {
 
-    const notifyFavPlayer = () => toast("Player successfully added your favourites", {
+    const notifyFavTrainer = () => toast("Trainer successfully added your favourites", {
         className: 'warning-background',
         progressClassName: 'toast-progress',
-        id:"playerWidget"
+        id:"trainerWidget"
     });
     return (
         <>
             <Link >
                 <div className="card-body border b-primary m-2 widget-player-card d-flex p-3 rounded">
-                    <FiPlusSquare className="widget-player-icon" color="#FA8602" onClick={notifyFavPlayer}/>
+                    <FiPlusSquare className="widget-player-icon" color="#FA8602" onClick={notifyFavTrainer}/>
                     <div className="widget-player-text">
                         <Link to="player-detail">
-                        <h6 className="">Bartu Kocakara</h6>
+                        <h6 className="">Bartu Kocakara sadsad</h6>
                         </Link>
                         <p className="text-muted">İstanbul</p>
                     </div>

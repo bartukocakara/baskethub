@@ -1,19 +1,21 @@
-.feed-my-fav-players-card {
+.feed-my-players-card {
+
 
     .card-custom {
 
+        .card-avatar {
+        }
         .card-middle-text {
             width: 70%;
             justify-content:space-between;
             padding:2px;
 
             .car-middle-div {
-                width:20%;
+                width:30%;
                 justify-content:center;
                 text-align: center;
                 align-items:center;
                 justify-content:space-between;
-                margin-left:5px;
                 .prop-name{
                     border-bottom:1px solid rgb(221, 221, 238);
                     line-height: 17px;
@@ -34,20 +36,14 @@
             width:45%;
 
             img{
-                border-radius: 50% !important;
-                width:40% !important;
-                height:100% !important;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width: 50%;
+                width:70% !important;
             }
 
         }
     }
     .card-footer {
         display: flex;
-        padding: 0.5rem !important;
+
         .footer-left{
             float: left;
         }

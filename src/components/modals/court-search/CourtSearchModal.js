@@ -1,24 +1,20 @@
 import React from 'react'
 import { Modal } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
-import { GoPerson } from "@react-icons/all-files/go/GoPerson";
+import { GiBasketballBasket } from "@react-icons/all-files/gi/GiBasketballBasket";
 
-const PlayerSearch = ({handlePlayerClose, show}) => {
+const CourtSearchModal = ({handleCourtClose, show}) => {
     return (
-        <Modal show={show} onHide={handlePlayerClose}>
+        <>
+        <Modal show={show} onHide={handleCourtClose}>
             <Modal.Header>
-                <GoPerson className="sidebar-icon"/>
-                <Modal.Title>Player Search</Modal.Title>
+                <GiBasketballBasket />
+                <Modal.Title>Court Search</Modal.Title>
             </Modal.Header>
             <form action="#">
-                <div className="modal-body">
-                    <h6>Search by Name: </h6>
-                    <div className="form-group">
-                        <input type="text" placeholder="Write Name" className="form-control" />
-                    </div>
-                    <hr />
-                    <h6 className="text-center">City</h6>
-                    <div className="form-group">
+                <div class="modal-body">
+                <h6 className="text-center">City</h6>
+                    <div class="form-group">
                         <select class="form-control">
                             <option>İstanbul</option>
                             <option>İzmir</option>
@@ -33,17 +29,6 @@ const PlayerSearch = ({handlePlayerClose, show}) => {
                             <option>Kızılay</option>
                         </select>
                     </div>
-                    <h6 className="text-center">Position</h6>
-                    <div className="form-group">
-                        <select className="form-control">
-                            <option>PointGuard</option>
-                            <option>ShootingGuard</option>
-                            <option>SmallForward</option>
-                            <option>PowerForward</option>
-                            <option>Center</option>
-                        </select>
-                    </div>
-                    <hr />
                     <h6 className="text-center">Date</h6>
                     <div className="form-group">
                         <input type="date" className="form-control" />
@@ -59,15 +44,16 @@ const PlayerSearch = ({handlePlayerClose, show}) => {
                 </div>
             </form>
             <div className="text-center">
-                <Button variant="secondary m-2" onClick={handlePlayerClose}>
+                <Button className="" variant="secondary m-2" onClick={handleCourtClose}>
                     Close
                 </Button>
-                <Button variant="warning m-2" onClick={handlePlayerClose}>
+                <Button className="" variant="warning m-2" onClick={handleCourtClose}>
                     Start search
                 </Button>
             </div>
         </Modal>
+        </>
     )
 }
 
-export default PlayerSearch
+export default CourtSearchModal
