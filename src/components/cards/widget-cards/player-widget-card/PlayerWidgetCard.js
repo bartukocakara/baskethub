@@ -9,7 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const PlayerWidgetCard = () => {
 
-    const notifyFavPlayer = () => toast("Court successfully added your favourites", {
+    const notifyFavPlayer = () => toast("Player successfully added your favourites", {
         className: 'warning-background',
         progressClassName: 'toast-progress',
         id:"playerWidget"
