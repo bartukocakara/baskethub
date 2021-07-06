@@ -1,25 +1,25 @@
 import React from 'react'
-import FavouritePlayerCard from '../../cards/favourite-players/FavouritePlayerCard'
-import PlayerSearch from '../../layouts/quick-search/player-search/PlayerSearch';
-import PlayerWidget from '../../layouts/widgets/player-widget/PlayerWidget';
+import FavouriteTrainerCard from '../../cards/favourite-trainers/FavouriteTrainerCard'
+import TrainerSearch from '../../layouts/quick-search/trainer-search/TrainerSearch';
+import TrainerWidget from '../../layouts/widgets/trainer-widget/TrainerWidget';
 
 const MyTrainers = () => {
     return (
         <>
         <div className="col-8">
-            <PlayerSearch />
+            <TrainerSearch />
             <section id="content-types">
                 <div className="row">
                     {
                         [...Array(10)].map((match) => (
-                            <FavouritePlayerCard />
+                            <FavouriteTrainerCard />
                         ))
                     }
                    
                 </div>
             </section>
         </div>
-        <PlayerWidget />
+        <TrainerWidget />
         </>
     )
 }

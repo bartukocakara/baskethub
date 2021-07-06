@@ -86,7 +86,7 @@ const FavouritePlayerCard = () => {
                         </div>
                         <div class="dropdown">
                             <Link class="btn btn-light m-2 p-2 text-primary " role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                <FiShare2 className="card-footer-icon"  />
+                                <FiShare2 className="card-footer-icon" size={26}  />
                             </Link>
 
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">

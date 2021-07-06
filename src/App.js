@@ -50,6 +50,7 @@ import Sponsors from './components/screens/sponsors/Sponsors';
 import MyFavTrainers from './components/screens/my-fav-trainers/MyFavTrainers';
 import MyTrainers from './components/screens/my-trainers/MyTrainers';
 import CourtListMap from './components/screens/courts/court-list-map/CourtListMap';
+import MatchRequestResult from './components/screens/profile/partials/match-request-result/MatchRequestResult';
 
 function App() {
   return (
@@ -109,6 +110,7 @@ function App() {
                         <Route path="/create-match" component={CreateMatch} />
                         <Route path="/watch" component={Watch} />
                         <Route path="/checkout" component={Checkout} />
+                        <Route path="/match-request-result" component={MatchRequestResult} />
                     </Switch>
 
                 </div>

@@ -1,5 +1,8 @@
 import React from 'react'
-
+import { TiInfoLarge } from "@react-icons/all-files/ti/TiInfoLarge";
+import {
+    Link,
+  } from "react-router-dom";
 const RequestList = () => {
     return (
         <div class="col-12 col-xl-12">
@@ -9,9 +12,10 @@ const RequestList = () => {
                         <table class="table table-hover table-lg">
                             <thead>
                                 <tr>
-                                    <th>Name</th>
-                                    <th>Comment</th>
-                                    <th>Status</th>
+                                    <th className="w-25 text-center">Name</th>
+                                    <th className="w-25 text-center">Comment</th>
+                                    <th className="w-25 text-center">Request Type</th>
+                                    <th className="w-25 text-center">Status</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -26,11 +30,19 @@ const RequestList = () => {
                                             <p class="font-bold ms-3 mb-0">Si Cantik</p>
                                         </div>
                                     </td>
-                                    <td class="col-auto">
+                                    <td class="col-auto text-center">
                                         <p class=" mb-0">Congratulations on your graduation!</p>
                                     </td>
-                                    <td class="col-auto">
+                                    <td class="col-auto text-center">
+                                        <p class=" mb-0">Match</p>
+                                    </td>
+                                    <td class="col-auto text-center">
                                         <span className="badge bg-warning">Waiting</span>
+                                    </td>
+                                    <td>
+                                        <Link to="match-request-result" className="btn btn-primary p-1 w-0 h-0">
+                                            <TiInfoLarge />
+                                        </Link>
                                     </td>
                                     </tr>
                                     ))
@@ -44,10 +56,13 @@ const RequestList = () => {
                                             <p class="font-bold ms-3 mb-0">Si Cantik</p>
                                         </div>
                                     </td>
-                                    <td class="col-auto">
+                                    <td class="col-auto text-center">
                                         <p class=" mb-0">Congratulations on your graduation!</p>
                                     </td>
-                                    <td class="col-auto">
+                                    <td class="col-auto text-center">
+                                        <p class=" mb-0">Add Team</p>
+                                    </td>
+                                    <td class="col-auto text-center">
                                         <span className="badge bg-warning">Waiting</span>
                                     </td>
                                 </tr>
@@ -60,10 +75,13 @@ const RequestList = () => {
                                             <p class="font-bold ms-3 mb-0">Si Ganteng</p>
                                         </div>
                                     </td>
-                                    <td class="col-auto">
+                                    <td class="col-auto text-center">
                                         <p class=" mb-0">Congratulations on your graduation!</p>
                                     </td>
-                                    <td class="col-auto">
+                                    <td class="col-auto text-center">
+                                        <p class=" mb-0">Match</p>
+                                    </td>
+                                    <td class="col-auto text-center">
                                     <span className="badge bg-success">Accepted</span> 
                                     </td>
                                 </tr>

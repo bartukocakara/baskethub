@@ -2,9 +2,14 @@ import React from 'react';
 import { GiPalmTree } from "@react-icons/all-files/gi/GiPalmTree";
 import { GiHealthNormal } from "@react-icons/all-files/gi/GiHealthNormal";
 import { FaCalendarCheck } from "@react-icons/all-files/fa/FaCalendarCheck";
-import { FiShare2 } from "@react-icons/all-files/fi/FiShare2";
 import { FiMail } from "@react-icons/all-files/fi/FiMail";
 import { FaHandshake } from "@react-icons/all-files/fa/FaHandshake";
+import { FiShare2 } from "@react-icons/all-files/fi/FiShare2";
+import { TiSocialInstagram } from "@react-icons/all-files/ti/TiSocialInstagram";
+import { TiSocialTwitter } from "@react-icons/all-files/ti/TiSocialTwitter";
+import { TiSocialFacebook } from "@react-icons/all-files/ti/TiSocialFacebook";
+import { AiOutlineWhatsApp } from "@react-icons/all-files/ai/AiOutlineWhatsApp";
+import { GoPerson } from "@react-icons/all-files/go/GoPerson";
 import {
     Link
   } from "react-router-dom";
@@ -13,8 +18,9 @@ const MyTeamDetail = () => {
         <>
             <div class="col-10 m-auto">
                 <div class="card">
-                    <div class="card-header">
-                        <h4 className="text-center">Bornova Team Detail</h4>
+                    <div class="card-header d-flex">
+                        <h4 className="w-75">Bornova Team Detail</h4>
+                        <input type="search" className="form-control w-25 text-center" placeholder="Quick search"/>
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
@@ -56,8 +62,19 @@ const MyTeamDetail = () => {
                                             <td>
                                                 <div className="btn-group">
                                                     <button className="btn btn-success"><FaHandshake/></button>
-                                                    <button className="btn btn-warning"><FiMail/></button>
-                                                    <button className="btn btn-primary"><FiShare2/></button>
+                                                    <Link to="team-chat" className="btn btn-warning"><FiMail/></Link>
+                                                    <div class="dropdown btn btn-primary p-1">
+                                                        <Link className="text-light" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <FiShare2 className="m-2" size={27}/>
+                                                        </Link>
+                                                        <ul class="dropdown-menu mt-3" aria-labelledby="dropdownMenuLink">
+                                                            <li><Link class="dropdown-item text-center">With Player <GoPerson /></Link></li>
+                                                            <li><Link class="dropdown-item text-center">Whatsapp <AiOutlineWhatsApp /></Link></li>
+                                                            <li><Link class="dropdown-item text-center">Facebook <TiSocialFacebook /></Link></li>
+                                                            <li><Link class="dropdown-item text-center">Twitter <TiSocialTwitter /></Link></li>
+                                                            <li><Link class="dropdown-item text-center">Instagram <TiSocialInstagram /></Link></li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </td>
                                         </tr>

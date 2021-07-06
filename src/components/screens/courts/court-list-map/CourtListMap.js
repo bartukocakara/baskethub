@@ -4,17 +4,18 @@ import React from 'react';
 const CourtListMap = () => {
 
     return (
-        <div>
-            <iframe
+        <>
+            <img src="assets/images/samples/googlemaps.jpg" alt="google maps" className="rounded p-3"  />
+            {/* <iframe
             width="600"
             height="450"
             style={{ border:0 }}
             loading="lazy"
             allowfullscreen
-            src="https://www.google.com/maps/embed/v1/place?key=API_KEY
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAVvHYjerqSiThf5wK4gCwb3qW5i98Lngg
                 &q=Space+Needle,Seattle+WA" title="court list map">
-            </iframe>
-        </div>
+            </iframe> */}
+        </>
     )
 }
 
