@@ -49,6 +49,7 @@ import Watch from './components/screens/watch/Watch';
 import Sponsors from './components/screens/sponsors/Sponsors';
 import MyFavTrainers from './components/screens/my-fav-trainers/MyFavTrainers';
 import MyTrainers from './components/screens/my-trainers/MyTrainers';
+import CourtListMap from './components/screens/courts/court-list-map/CourtListMap';
 
 function App() {
   return (
@@ -76,6 +77,7 @@ function App() {
                         <Route path="/favourite-trainers" component={MyFavTrainers} />
                         <Route path="/player-detail" component={PlayerDetail} />
                         <Route path="/favourite-courts" component={MyFavCourts} />
+                        <Route path="/courts-map" component={CourtListMap} />
                         <Route path="/court-detail" component={CourtDetail} />
                         <Route path="/last-search" component={LastSearch} />
                         <Route path="/tournaments" component={Tournaments} />
