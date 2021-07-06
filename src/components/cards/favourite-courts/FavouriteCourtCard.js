@@ -36,19 +36,19 @@ const FavouriteCourtCard = () => {
                         <img src="assets/images/faces/2.jpg" alt="hall" srcset="" />
                     </div>
                     <div className="card-middle-text row">
-                        <div class="col-lg-3 text-center">
+                        <div class="col-lg-2 text-center">
                             <p className="prop-name w-100 p-2 badge bg-primary"><AiOutlineClear size={25}/></p>
                             <p>5/10</p>
                         </div>
-                        <div class="col-lg-3 text-center">
+                        <div class="col-lg-2 text-center">
                             <p className="prop-name w-100 p-2 badge bg-primary"><HiOutlineEmojiHappy size={25}/></p>
                             <p>8/10</p>
                         </div>
-                        <div class="col-lg-3 text-center">
+                        <div class="col-lg-2 text-center">
                             <p className="prop-name w-100 p-2 badge bg-primary"><AiOutlineFieldTime size={25}/></p>
                             <p>7/10</p>
                         </div>
-                        <div class="col-lg-3 text-center">
+                        <div class="col-lg-2 text-center">
                             <p className="prop-name w-100 p-2 badge bg-primary"><FaMoneyBill size={25}/></p>
                             <p>125₺</p>
                         </div>

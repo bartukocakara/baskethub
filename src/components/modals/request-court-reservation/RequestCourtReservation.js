@@ -93,7 +93,7 @@ const RequestCourtReservation = ({handleRequestCourtReservationModalClose, show}
             <Button variant="danger" onClick={handleRequestCourtReservationModalClose}>
                 Close
             </Button>
-            <Link to="checkout" variant="primary">Send Join Request</Link>
+            <Link to="checkout" className="btn btn-primary">Send Join Request</Link>
             </Modal.Footer>
         </Modal>
     )
