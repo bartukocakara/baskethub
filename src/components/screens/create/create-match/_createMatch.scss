@@ -14,3 +14,13 @@
 .player-list {
     height:53vh
 }
+.craete-match-card{
+    cursor: pointer;
+    transition: transform .2s; 
+
+    &:hover{
+        background-color: #eeeeee !important;
+        transform: scale(1.03);
+
+    }
+}
