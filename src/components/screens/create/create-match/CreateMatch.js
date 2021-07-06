@@ -17,9 +17,9 @@ const CreateMatch = () => {
                         <div class="card-body w-50 m-auto">
                             <form class="">
                                     <div class="row">
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group text-center">
-                                                <label for="first-name-icon" className="mb-2">Payment Type</label>
+                                                <label for="first-name-icon">Pay Option - 1</label>
                                                 <FcMoneyTransfer size={25} className="m-2" />
                                             </div>
                                             <select className="form-control m-1" name="" >
@@ -28,15 +28,24 @@ const CreateMatch = () => {
                                                 <option>Sipay</option>
                                             </select>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group text-center">
-                                                <label for="first-name-icon" className="m-2">Payment Options</label>
+                                                <label for="first-name-icon" >Pay Option - 2</label>
                                                 <FcMoneyTransfer size={25} className="m-2" />
                                             </div>
                                             <select className="form-control m-1" name="" >
                                                 <option>Seperate Payment</option>
                                                 <option>Only by me</option>
-                                                <option>Pre-paid</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="form-group text-center">
+                                                <label for="first-name-icon" >Pay Option - 3</label>
+                                                <FcMoneyTransfer size={25} className="m-2" />
+                                            </div>
+                                            <select className="form-control m-1" name="" >
+                                                <option>Pre-paid</option>,
+                                                <option>Pay at check-in</option>
                                             </select>
                                         </div>
                                         <div class="col-6">
