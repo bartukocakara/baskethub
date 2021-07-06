@@ -134,7 +134,7 @@ const Profile = () => {
                                 initialView="dayGridMonth"
                                 />
                             </div>
-                            <div class="tab-pane fade col-10 m-auto" id="matches" role="tabpanel" aria-labelledby="matches-tab">
+                            <div class="tab-pane fade col-11 m-auto" id="matches" role="tabpanel" aria-labelledby="matches-tab">
                             {
                                         [...Array(5)].map((matchesList) => (
                                             <>

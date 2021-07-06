@@ -9,13 +9,16 @@ import {
 
 const Matches = () => {
     return (
-        <div class="card component-card_8">
+        <>
+        <div>
+        <h6 className="text-center">14 Haziran</h6>
+        <div class="card component-card_8 m-auto mb-3">
             <div class="card-body p-3">
                 <div class="progress-order">
                     <div class="progress-order-body">
                         <div class="row mt-4">
                             <div class="col-md-12 row">
-                                <ul class="list-inline col-md-4 badge-collapsed-img mb-0 mb-3">
+                                <ul class="list-inline col-md-3 badge-collapsed-img mb-0 mb-3">
                                 <h6 className="text-dark"><Link to="ended-match-detail">Details</Link></h6>
 
                                     <li class="list-inline-item">
@@ -25,18 +28,21 @@ const Matches = () => {
                                         <Link to="team-detail">Team 2</Link>
                                     </li>
                                 </ul>
-                                <div className="col-5 col-md-4 court-name">
-                                <span class="badge badge-info">IN PROGRESS</span>
+                                <div className=" col-md-3 court-name">
+                                <span class="badge bg-primary m-3">IN PROGRESS</span>
 
                                     <h6 className="ml-3">Alsancak Spor salonu</h6>
                                 </div>
-                                <AvatarGroup max={4} className="col-md-4">
+                                <AvatarGroup max={4} className="col-md-3">
                                     <Avatar alt="Remy Sharp" src="assets/images/faces/2.jpg" />
                                     <Avatar alt="Travis Howard" src="assets/images/faces/2.jpg" />
                                     <Avatar alt="Cindy Baker" src="assets/images/faces/2.jpg" />
                                     <Avatar alt="Agnes Walker" src="assets/images/faces/2.jpg" />
                                     <Avatar alt="Trevor Henderson" src="assets/images/faces/2.jpg" />
                                 </AvatarGroup>
+                                <button class="btn btn-sm btn-primary col-md-3 p-0 m-0 h-50">
+                                    Değerlendir
+                                </button>
                             </div>
                             <div class="col-md-12 text-right">
                                 <span class=" p-o-percentage mr-4">60%</span>
@@ -49,6 +55,8 @@ const Matches = () => {
                 </div>
             </div>
         </div>
+        </div>
+        </>
     )
 }
 
