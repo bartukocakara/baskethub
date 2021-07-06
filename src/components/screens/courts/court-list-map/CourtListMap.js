@@ -12,7 +12,7 @@ const CourtListMap = () => {
             style={{ border:0 }}
             loading="lazy"
             allowfullscreen
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAVvHYjerqSiThf5wK4gCwb3qW5i98Lngg
+            src="https://www.google.com/maps/embed/v1/place?key=
                 &q=Space+Needle,Seattle+WA" title="court list map">
             </iframe> */}
         </>

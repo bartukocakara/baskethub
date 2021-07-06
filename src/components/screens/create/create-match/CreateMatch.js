@@ -17,7 +17,7 @@ const CreateMatch = () => {
                         <div class="card-body w-50 m-auto">
                             <form class="">
                                     <div class="row">
-                                        <div class="col-12">
+                                        <div class="col-6">
                                             <div class="form-group text-center">
                                                 <label for="first-name-icon" className="mb-2">Payment Type</label>
                                                 <FcMoneyTransfer size={25} className="m-2" />
@@ -28,7 +28,7 @@ const CreateMatch = () => {
                                                 <option>Sipay</option>
                                             </select>
                                         </div>
-                                        <div class="col-12">
+                                        <div class="col-6">
                                             <div class="form-group text-center">
                                                 <label for="first-name-icon" className="m-2">Payment Options</label>
                                                 <FcMoneyTransfer size={25} className="m-2" />
@@ -39,26 +39,26 @@ const CreateMatch = () => {
                                                 <option>Pre-paid</option>
                                             </select>
                                         </div>
-                                        <div class="col-12">
+                                        <div class="col-6">
                                             <div class="form-group text-center">
                                                 <label for="first-name-icon" className="m-2">Date</label>
                                                 <FcCalendar size={25} className="m-2" />
                                             </div>
                                             <input type="date" className="form-control m-2" />
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-3 mt-3">
                                             <div class="form-group text-center">
                                                 <label for="first-name-icon">Start</label>
                                             </div>
                                             <input type="time" className="form-control m-2" />
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-3 mt-3">
                                             <div class="form-group text-center">
                                                 <label for="first-name-icon">End</label>
                                             </div>
                                             <input type="time" className="form-control m-2" />
                                         </div>
-                                        <div class="col-12">
+                                        <div class="col-auto">
                                             <div class="form-check">
                                                 <div class="checkbox mt-2">
                                                     <input type="checkbox" id="remember-me-v" class="form-check-input" checked="" />
