@@ -4,6 +4,11 @@ import FavTeams from '../../../modals/request-court-reservation/fav-teams/FavTea
 import Courts from './courts/Courts';
 import { FcMoneyTransfer } from "@react-icons/all-files/fc/FcMoneyTransfer";
 import { FcCalendar } from "@react-icons/all-files/fc/FcCalendar";
+import { RiUserStarLine } from "@react-icons/all-files/ri/RiUserStarLine";
+import { BsPeopleFill } from "@react-icons/all-files/bs/BsPeopleFill";
+import { AiFillStar } from "@react-icons/all-files/ai/AiFillStar";
+import { AiTwotoneAppstore } from "@react-icons/all-files/ai/AiTwotoneAppstore";
+
 import Avatar from '@material-ui/core/Avatar';
 import AvatarGroup from '@material-ui/lab/AvatarGroup';
 import "./_createMatch.scss";
@@ -15,16 +20,14 @@ const CreateMatch = () => {
             <div class="col-md-12">
 
                             <div class="card">
-                                <div class="card-header">
-                                    <h4 class="card-title">Please select option</h4>
-                                </div>
+                                <h5 class="card-title m-3 w-25">Please select option</h5>
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-3">
                                             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                                <a class="nav-link" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="false">Call all fav players</a>
-                                                <a class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Call all fav teams</a>
-                                                <a class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Call by played matches</a>
+                                                <a class="nav-link" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="false">Call all fav players <RiUserStarLine/></a>
+                                                <a class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Call all fav teams <BsPeopleFill /> <AiFillStar size={10}/></a>
+                                                <a class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Call by played matches <AiTwotoneAppstore/></a>
                                                 <a class="nav-link active" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="true">Create without option +</a>
                                             </div>
                                         </div>
