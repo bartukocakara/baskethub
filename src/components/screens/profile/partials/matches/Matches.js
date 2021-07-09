@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import Avatar from '@material-ui/core/Avatar';
 import AvatarGroup from '@material-ui/lab/AvatarGroup';
@@ -6,10 +6,17 @@ import AvatarGroup from '@material-ui/lab/AvatarGroup';
 import {
     Link
   } from "react-router-dom";
+import RateMatchModal from '../../../../modals/rate-match/RateMatchModal';
 
 const Matches = () => {
+    const [showRating, setRatingShow] = useState(false);
+  
+    const handleRatingClose = () => setRatingShow(false);
+    const handleRatingShow = () => setRatingShow(true);
     return (
         <>
+        <RateMatchModal handleRatingClose={handleRatingClose} showRating={showRating} />
+
         <div>
         <h6 className="text-center">14 Haziran</h6>
         <div class="card component-card_8 m-auto mb-3">
@@ -40,7 +47,7 @@ const Matches = () => {
                                     <Avatar alt="Agnes Walker" src="assets/images/faces/2.jpg" />
                                     <Avatar alt="Trevor Henderson" src="assets/images/faces/2.jpg" />
                                 </AvatarGroup>
-                                <button class="btn btn-sm btn-primary col-md-3 p-0 m-0 h-50">
+                                <button class="btn btn-sm btn-primary col-md-3 p-0 m-0 h-50" onClick={handleRatingShow}>
                                     Değerlendir
                                 </button>
                             </div>
