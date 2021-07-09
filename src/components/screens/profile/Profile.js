@@ -13,6 +13,7 @@ import dayGridPlugin from '@fullcalendar/daygrid'
 import "./_profile.scss";
 import RequestList from './partials/request-list/RequestList';
 import Matches from './partials/matches/Matches';
+import MatchOptions from './partials/match-options/MatchOptions';
 
 const Profile = () => {
     return (
@@ -126,6 +127,9 @@ const Profile = () => {
                             <li class="nav-item" role="presentation">
                                 <a class="nav-link" id="requests-tab" data-bs-toggle="tab" href="#requests" role="tab" aria-controls="requests" aria-selected="false">Requests List</a>
                             </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="matchOptions-tab" data-bs-toggle="tab" href="#matchOptions" role="tab" aria-controls="matchOptions" aria-selected="false">Create Match Options</a>
+                            </li>
                         </ul>
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active col-10 m-auto" id="calendar" role="tabpanel" aria-labelledby="calendar-tab">
@@ -145,6 +149,9 @@ const Profile = () => {
                             </div>
                             <div class="tab-pane fade" id="requests" role="tabpanel" aria-labelledby="requests-tab">
                                 <RequestList />
+                            </div>
+                            <div class="tab-pane fade" id="matchOptions" role="tabpanel" aria-labelledby="matchOptions-tab">
+                                <MatchOptions />
                             </div>
                         </div>
                     </div>

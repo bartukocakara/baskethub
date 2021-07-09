@@ -10,7 +10,8 @@ import {HiOutlineMail} from "@react-icons/all-files/hi/HiOutlineMail";
 import {GiBasketballBasket} from "@react-icons/all-files/gi/GiBasketballBasket";
 import {GiBasketballJersey} from "@react-icons/all-files/gi/GiBasketballJersey";
 import {RiCoupon3Line} from "@react-icons/all-files/ri/RiCoupon3Line";
-
+import {FaRegCheckCircle} from "@react-icons/all-files/fa/FaRegCheckCircle";
+import {AiFillQuestionCircle} from "@react-icons/all-files/ai/AiFillQuestionCircle";
 
 import "./_checkout.scss";
 
@@ -26,8 +27,15 @@ const Checkout = () => {
             <h6>Court Reservation </h6>
             <div className="row">
                 <div className="col-8 m-auto mt-2">
+                <ul class="progressbar">
+                    <li class="d-flex active"><FaRegCheckCircle size={20}/><h6>Teams</h6></li>
+                    <li class="d-flex active"><FaRegCheckCircle size={20}/><h6>Court</h6></li>
+                    <li><AiFillQuestionCircle size={20} className="text-danger"/>Payment</li>
+                </ul>
+                </div>
+                <div className="col-8 m-auto mt-2">
                     <div className="progress progress-success progress-sm">
-                        <div className="progress-bar" role="progressbar" style={{ width: "90%" }} aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div className="progress-bar" role="progressbar" style={{ width: "70%" }} aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                 </div>
                 <div className="mt-4 mb-4">

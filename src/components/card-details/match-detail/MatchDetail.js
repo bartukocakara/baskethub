@@ -20,7 +20,7 @@ const MatchDetail = () => {
         
         <div className="row">
             <div className="d-flex p-2">
-            <h5 className="m-auto m-2">Balçova Spor Salonu</h5>
+                <h5 className="m-auto m-2"><Link to="court-detail">Balçova Spor Salonu</Link></h5>
 
                 <div className="d-flex">
                 <Link to="match-chat" className="p-2 btn btn-warning m-2">
@@ -76,20 +76,21 @@ const MatchDetail = () => {
             </div>
             <div className="col-lg-6 col-md-12">
                 <div class="card text-center p-2">
-                            <h4 class="card-title ">Match Details</h4>
-                            <hr />
-                            <label class="btn-light text-dark p-2">
-                                Date - Time : <span class="badge text-dark">21/06/2021 | 12:00 - 13:00</span>
-                            </label>
-                            <hr />
-                            <label class="btn-light text-dark p-2">
-                                Player Count <span class="badge text-dark">8</span>
-                            </label>
-                            <hr />
-                            <label class="btn-light text-dark p-2">
-                                Player Need <span class="badge text-dark">1-3</span>
-                            </label>
-                    </div>
+                    <h4 class="card-title ">Match Details</h4>
+                    <hr />
+                    <label class="btn-light text-dark p-2">
+                        Date - Time : <span class="badge text-dark">21/06/2021 | 12:00 - 13:00</span>
+                    </label>
+                    <label class="btn-light text-dark p-2">
+                        Player Count <span class="badge text-dark">8</span>
+                    </label>
+                    <label class="btn-light text-dark p-2">
+                        Player Need <span class="badge text-dark">1-3</span>
+                    </label>
+                    <label class="btn-light text-dark p-2">
+                        Court field <span class="badge text-dark">Half Court</span>
+                    </label>
+                </div>
             </div>
             <MatchTeamList />
         </div>

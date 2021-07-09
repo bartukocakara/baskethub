@@ -12,6 +12,8 @@ import { TiSocialTwitter } from "@react-icons/all-files/ti/TiSocialTwitter";
 import { TiSocialFacebook } from "@react-icons/all-files/ti/TiSocialFacebook";
 import { AiOutlineWhatsApp } from "@react-icons/all-files/ai/AiOutlineWhatsApp";
 import { GoPerson } from "@react-icons/all-files/go/GoPerson";
+import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail";
+
 import "./_courtDetail.scss";
 import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
@@ -25,24 +27,26 @@ const FavCourtDetail = () => {
                 <GoLocation />
                 <p class="font-bold">İzmir</p>
             </div>
-            <div className="buttons text-center d-flex">
-                <Link to="message-detail" className="btn btn-warning message">
-                    <i className='bi bi-envelope bi-sub fs-4 text-light-600'></i>
+
+                <div className="d-flex">
+                <Link to="message-detail" className="p-2 btn btn-warning m-2">
+                    <AiOutlineMail className="card-footer-icon" />
                 </Link>
                 <div class="dropdown">
-                    <Link className="btn btn-primary share-button" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                    <FiShare2 />
-                    </Link>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <li><Link class="dropdown-item text-center">With Player <GoPerson /></Link></li>
-                        <li><Link class="dropdown-item text-center">Whatsapp <AiOutlineWhatsApp /></Link></li>
-                        <li><Link class="dropdown-item text-center">Facebook <TiSocialFacebook /></Link></li>
-                        <li><Link class="dropdown-item text-center">Twitter <TiSocialTwitter /></Link></li>
-                        <li><Link class="dropdown-item text-center">Instagram <TiSocialInstagram /></Link></li>
-                    </ul>
+                        <Link class="btn btn-primary p-2 m-2" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <FiShare2 className="card-footer-icon"  />
+                        </Link>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><Link class="dropdown-item text-center">With Player <GoPerson /></Link></li>
+                            <li><Link class="dropdown-item text-center">Whatsapp <AiOutlineWhatsApp /></Link></li>
+                            <li><Link class="dropdown-item text-center">Facebook <TiSocialFacebook /></Link></li>
+                            <li><Link class="dropdown-item text-center">Twitter <TiSocialTwitter /></Link></li>
+                            <li><Link class="dropdown-item text-center">Instagram <TiSocialInstagram /></Link></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
         
             <div className="col-6">
                 <div className="card">
@@ -147,74 +151,7 @@ const FavCourtDetail = () => {
                     </div>
                 </div>
             </div>
-            <div className="col-6 col-lg-3 col-md-6">
-                <div className="card">
-                    <div className="card-body px-3 py-4-5 profile-widget">
-                        <div className="row">
-                            <div className="col-md-4">
-                                <div className="stats-icon purple">
-                                    <AiFillEye style={{ color:"#fff", fontSize:"30px", }}/>
-                                </div>
-                            </div>
-                            <div className="col-md-8">
-                                <h6 className="text-muted font-semibold">Court Views</h6>
-                                <h6 className="font-extrabold mb-0">112.000</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="col-6 col-lg-3 col-md-6">
-                <div className="card">
-                    <div className="card-body px-3 py-4-5 profile-widget">
-                        <div className="row">
-                            <div className="col-md-4">
-                                <div className="stats-icon blue">
-                                <AiFillEye style={{ color:"#fff", fontSize:"30px", }}/>
-                                </div>
-                            </div>
-                            <div className="col-md-8">
-                                <h6 className="text-muted font-semibold">Likes</h6>
-                                <h6 className="font-extrabold mb-0">183.000</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="col-6 col-lg-3 col-md-6">
-                <div className="card">
-                    <div className="card-body px-3 py-4-5 profile-widget">
-                        <div className="row">
-                            <div className="col-md-4">
-                                <div className="stats-icon green">
-                                <BiCheckDouble style={{ color:"#fff", fontSize:"30px" }}/>
-                                </div>
-                            </div>
-                            <div className="col-md-8">
-                                <h6 className="text-muted font-semibold">Matches Played</h6>
-                                <h6 className="font-extrabold mb-0">80.000</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="col-6 col-lg-3 col-md-6">
-                <div className="card">
-                    <div className="card-body px-3 py-4-5 profile-widget">
-                        <div className="row">
-                            <div className="col-md-4">
-                                <div className="stats-icon green">
-                                <HiCheck style={{ color:"#fff", fontSize:"30px", }}/>
-                                </div>
-                            </div>
-                            <div className="col-md-8">
-                                <h6 className="text-muted font-semibold">Matches Created</h6>
-                                <h6 className="font-extrabold mb-0">112</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
             <div classNames="col-12">
                 <div className="card">
                     <div class="card-body">
@@ -224,6 +161,9 @@ const FavCourtDetail = () => {
                             </li>
                             <li class="nav-item" role="presentation">
                                 <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Comments</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="properties-tab" data-bs-toggle="tab" href="#properties" role="tab" aria-controls="properties" aria-selected="false">Properties</a>
                             </li>
                         </ul>
                         <div class="tab-content" id="myTabContent">
@@ -238,29 +178,90 @@ const FavCourtDetail = () => {
                         </div>
                         </div>
                         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                        {
-                            [...Array(5)].map((teamDetail) => (
-                                <>
-                                    <div className="media fav-court-detail-comment d-flex align-items-center">
-                                        <div className="avatar me-3">
-                                            <img src="assets/images/faces/1.jpg" alt="" srcset="" />
-                                            <span className="avatar-status bg-success"></span>
-                                        </div>
-                                        <div className="name flex-grow-1">
-                                            <h6 className="mb-0">Fred</h6>
-                                            <span className="text-xs">Online</span>
-                                        </div>
-                                        <div className="name flex-grow-1 p-4">
-                                            <p>Basketball quotes are terrific for motivating and inspiring coaches and athletes. Countless times I’ve recited various quotes to my players or fellow coaches and they always have a positive effect.</p>
-                                        </div>
-                                        <div className="name flex-grow-1">
-                                            <div id="basic" class="star-rating" style={{ width: "160px", height: "32px", backgroundSize: "32px" }} title="5/5"><div class="star-value" style={{ backgroundSize: "32px", width: "0%" }}></div></div>
+                        <div className="row m-5">
+                            {
+                                [...Array(5)].map((property) => (
+                                    <div className="col-md-4 border rounded p-2 mb-2">
+                                        <div className="">
+                                            <div className="avatar me-3">
+                                                <img src="assets/images/faces/1.jpg" alt="" srcset="" />
+                                                <span className="avatar-status bg-success"></span>
+                                            </div>
+                                            <div className="name flex-grow-1">
+                                                <h6 className="mb-0">Fred</h6>
+                                                <span className="text-xs">Online</span>
+                                            </div>
+                                            <div className="name flex-grow-1 p-4">
+                                                <p>Basketball quotes are terrific for motivating and inspiring coaches and athletes. Countless times I’ve recited various quotes to my players or fellow coaches and they always have a positive effect.</p>
+                                            </div>
+                                            <div className="name flex-grow-1">
+                                                <div id="basic" class="star-rating" style={{ width: "160px", height: "32px", backgroundSize: "32px" }} title="5/5"><div class="star-value" style={{ backgroundSize: "32px", width: "0%" }}></div></div>
+                                            </div>
                                         </div>
                                     </div>
-                                <hr />
-                                </>
-                            ))
-                        }
+                                ))
+                            }
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="properties" role="tabpanel" aria-labelledby="properties-tab">
+                            <div className="row">
+                                {
+                                    [...Array(5)].map((property) => (
+                                        <div className="col-6 col-lg-3 col-md-6 border rounded">
+                                    <div className="card">
+                                        <div className="card-body px-3 py-4-5 profile-widget">
+                                            <div className="row">
+                                                <div className="col-md-4">
+                                                    <div className="stats-icon purple">
+                                                        <AiFillEye style={{ color:"#fff", fontSize:"30px", }}/>
+                                                    </div>
+                                                </div>
+                                                <div className="col-md-8">
+                                                    <h6 className="text-muted font-semibold">Court Views</h6>
+                                                    <h6 className="font-extrabold mb-0">112.000</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                    ))
+                                }
+                                
+                                <div className="col-6 col-lg-3 col-md-6 border rounded">
+                                    <div className="card">
+                                        <div className="card-body px-3 py-4-5 profile-widget">
+                                            <div className="row">
+                                                <div className="col-md-4">
+                                                    <div className="stats-icon green">
+                                                    <HiCheck style={{ color:"#fff", fontSize:"30px", }}/>
+                                                    </div>
+                                                </div>
+                                                <div className="col-md-8">
+                                                    <h6 className="text-muted font-semibold">Matches Created</h6>
+                                                    <h6 className="font-extrabold mb-0">112</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-6 col-lg-3 col-md-6 border rounded">
+                                    <div className="card">
+                                        <div className="card-body px-3 py-4-5 profile-widget">
+                                            <div className="row">
+                                                <div className="col-md-4">
+                                                    <div className="stats-icon green">
+                                                    <BiCheckDouble style={{ color:"#fff", fontSize:"30px", }}/>
+                                                    </div>
+                                                </div>
+                                                <div className="col-md-8">
+                                                    <h6 className="text-muted font-semibold">Matches Created</h6>
+                                                    <h6 className="font-extrabold mb-0">112</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

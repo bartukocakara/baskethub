@@ -8,7 +8,14 @@ import { RiUserStarLine } from "@react-icons/all-files/ri/RiUserStarLine";
 import { BsPeopleFill } from "@react-icons/all-files/bs/BsPeopleFill";
 import { AiFillStar } from "@react-icons/all-files/ai/AiFillStar";
 import { AiTwotoneAppstore } from "@react-icons/all-files/ai/AiTwotoneAppstore";
+import { GoLocation } from "@react-icons/all-files/go/GoLocation";
+import { GiPayMoney } from "@react-icons/all-files/gi/GiPayMoney";
+import { GiTakeMyMoney } from "@react-icons/all-files/gi/GiTakeMyMoney";
+import { FcInfo } from "@react-icons/all-files/fc/FcInfo";
 
+import {
+    Link,
+  } from "react-router-dom";
 import Avatar from '@material-ui/core/Avatar';
 import AvatarGroup from '@material-ui/lab/AvatarGroup';
 import "./_createMatch.scss";
@@ -20,20 +27,19 @@ const CreateMatch = () => {
             <div class="col-md-12">
 
                             <div class="card">
-                                <h5 class="card-title m-3 w-25">Please select option</h5>
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-3">
                                             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                                <a class="nav-link" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="false">Call all fav players <RiUserStarLine/></a>
-                                                <a class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Call all fav teams <BsPeopleFill /> <AiFillStar size={10}/></a>
+                                                <a class="nav-link" id="v-pills-team-tab" data-bs-toggle="pill" href="#v-pills-team" role="tab" aria-controls="v-pills-team" aria-selected="false">Call all fav players <RiUserStarLine/></a>
+                                                <a class="nav-link" id="v-pills-player-tab" data-bs-toggle="pill" href="#v-pills-player" role="tab" aria-controls="v-pills-player" aria-selected="false">Call all fav teams <BsPeopleFill /> <AiFillStar size={10}/></a>
                                                 <a class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Call by played matches <AiTwotoneAppstore/></a>
                                                 <a class="nav-link active" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="true">Create without option +</a>
                                             </div>
                                         </div>
                                         <div class="col-9">
                                             <div class="tab-content" id="v-pills-tabContent">
-                                                <div class="tab-pane fade" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                                <div class="tab-pane fade" id="v-pills-team" role="tabpanel" aria-labelledby="v-pills-team-tab">
                                                     <div class="form-check">
                                                         <div className="checkbox checkbox-shadow m-2">
                                                             <input type="checkbox" className="form-check-input m-2" id="checkbox1" />
@@ -43,7 +49,7 @@ const CreateMatch = () => {
                                                     </div>
                                                 </div>
                                                
-                                                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                                <div class="tab-pane fade" id="v-pills-player" role="tabpanel" aria-labelledby="v-pills-player-tab">
                                                     <div class="form-check">
                                                         <div className="checkbox checkbox-shadow m-2">
                                                             <input type="checkbox" className="form-check-input m-2" id="checkbox1" />
@@ -76,6 +82,12 @@ const CreateMatch = () => {
                                                 <div class="tab-pane fade active show" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
                                                     <form class="">
                                                         <div class="row">
+                                                            <div className="col-12">
+                                                                <div className="form-group w-50 m-auto pb-3 text-center">
+                                                                    <label className="w-50 fw-bold text-primary">Give this match a name:</label>
+                                                                    <input className="form-control" placeholder="Write name..." />
+                                                                </div>
+                                                            </div>
                                                             <div class="col-4">
                                                                 <div class="form-group text-center">
                                                                     <label for="first-name-icon">Pay Option - 1</label>
@@ -126,6 +138,131 @@ const CreateMatch = () => {
                                                                 </div>
                                                                 <input type="time" className="form-control m-2" />
                                                             </div>
+                                                            <div className="col-6 m-auto text-center mt-3 mb-3">
+                                                                <div className="d-flex m-2">
+                                                                <h6 className=" m-2">Field use</h6><FcInfo size={25}/>
+                                                                </div>
+                                                                <select className="form-control fw-bold">
+                                                                    <option>Full Court</option>
+                                                                    <option>Half Court</option>
+                                                                </select>
+                                                            </div>
+                                                            <div className="card col-md-12 m-auto">
+                                                                <div className="card-body">
+                                                                    <h6 className="text-center">Call List</h6>
+                                                                    <ul className="nav nav-tabs create-match-player-list" id="myTab" role="tablist">
+                                                                        <li className="nav-item" role="presentation">
+                                                                            <a className="nav-link active" id="team-tab" data-bs-toggle="tab" href="#team" role="tab" aria-controls="team" aria-selected="true">Favourite Teams</a>
+                                                                        </li>
+                                                                        <li className="nav-item" role="presentation">
+                                                                            <a className="nav-link" id="player-tab" data-bs-toggle="tab" href="#player" role="tab" aria-controls="player" aria-selected="false">Favourite Players</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <div className="tab-content player-list  m-2 border rounded" id="myTabContent">
+                                                                        <div className="tab-pane fade active show" id="team" role="tabpanel" aria-labelledby="team-tab">
+                                                                            <div className="list-select m-2 row"  id="widget-todo-list">
+                                                                            {
+                                                                                        [...Array(5)].map((player) => (
+                                                                                            <FavTeams />
+                                                                                        ))
+                                                                                    }
+                                                                                    
+                                                                            </div>
+                                                                        </div>
+                                                                        <div className="tab-pane fade" id="player" role="tabpanel" aria-labelledby="player-tab">
+                                                                            <div className="list-select m-2 row" id="widget-todo-list">
+                                                                                    
+                                                                                    {
+                                                                                        [...Array(5)].map((player) => (
+                                                                                        <>
+                                                                                        <FavPlayers />
+                                                                                        
+                                                                                        </>
+                                                                                        ))
+                                                                                    }
+                                                                                    
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div className="card col-md-12 m-auto border">
+                                                                <div className="card-body text-center">
+                                                                    <h6>Court Search</h6>
+                                                                    <div className="header form">
+                                                                        <form className="row">
+                                                                            <div className="col-md-4 text-center">
+                                                                                <GoLocation size={20} className="m-2 text-primary"/>
+                                                                                <select className="form-control">
+                                                                                    <option>İzmir</option>
+                                                                                    <option>İstanbul</option>
+                                                                                    <option>Ankara</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <div className="col-md-4  text-center">
+                                                                                <GiPayMoney size={20} className="m-2 text-primary"/>
+                                                                                <select className="form-control">
+                                                                                    <option>75-100 ₺</option>
+                                                                                    <option>100-125 ₺</option>
+                                                                                    <option>125-150 ₺</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <div className="col-md-4  text-center">
+                                                                                <AiFillStar className="m-2 text-primary"/>
+                                                                                <div class="dropdown dropdown-color-icon">
+                                                                                    <button class="btn border rounded btn-lg dropdown-toggle show" type="button" id="dropdownMenuButtonEmoji" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                                                        <span class="me-50"></span>Rating
+                                                                                    </button>
+                                                                                    <div class="dropdown-menu show" aria-labelledby="dropdownMenuButtonEmoji" style={{ margin: "0px", position: "absolute", inset: "0px auto auto 0px", transform: "translate(0px, 38.4px)" }} data-popper-placement="bottom-start">
+                                                                                        <Link class="dropdown-item"><span class="dropdown-item-emoji">{ [...Array(1)].map((star) => (<AiFillStar/>))}</span>
+                                                                                            </Link>
+                                                                                        <Link class="dropdown-item"><span class="dropdown-item-emoji">{ [...Array(2)].map((star) => (<AiFillStar/>))}</span>
+                                                                                            </Link>
+                                                                                        <Link class="dropdown-item"><span class="dropdown-item-emoji">{ [...Array(3)].map((star) => (<AiFillStar/>))}</span>
+                                                                                            </Link>
+                                                                                        <Link class="dropdown-item"><span class="dropdown-item-emoji">{ [...Array(4)].map((star) => (<AiFillStar/>))}</span>
+                                                                                             </Link>
+                                                                                        <Link class="dropdown-item"><span class="dropdown-item-emoji">{ [...Array(5)].map((star) => (<AiFillStar/>))}</span>
+                                                                                            </Link>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </form>
+                                                                    </div>
+                                                                    <div className="list-select m-2 row border rounded"  id="widget-todo-list">
+                                                                        {
+                                                                            [...Array(5)].map((player) => (
+                                                                                <Courts />
+                                                                            ))
+                                                                        }
+                                                                    </div>
+                                                                    </div>
+                                                                </div>
+                                                            <div class="col-12 mt-3">
+                                                                <div class="form-group text-center">
+                                                                    <label className="w-50 fw-bold text-primary">You can write some note for this event:</label>
+                                                                </div>
+                                                                <textarea className="form-control" rows="3" placeholder="Write something..."></textarea>
+                                                            </div>
+                                                            <div class="col-12 mt-3 text-center">
+
+                                                                <div class="dropdown dropdown-color-icon">
+                                                                    <button class="btn btn-primary btn-lg dropdown-toggle show" type="button" id="dropdownMenuButtonEmoji" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                                        <span class="me-50"><GiTakeMyMoney/></span>Reward Options
+                                                                    </button>
+                                                                    <div class="dropdown-menu show" aria-labelledby="dropdownMenuButtonEmoji" style={{ margin: "0px", position: "absolute", inset: "0px auto auto 0px", transform: "translate(0px, 38.4px)" }} data-popper-placement="bottom-start">
+                                                                        <Link class="dropdown-item"><span class="dropdown-item-emoji">😆</span>
+                                                                            Baklava
+                                                                            1</Link>
+                                                                        <Link class="dropdown-item"><span class="dropdown-item-emoji">😎</span>
+                                                                            Saha ücreti
+                                                                            2 </Link>
+                                                                        <Link class="dropdown-item"><span class="dropdown-item-emoji">🤩</span>
+                                                                            Option
+                                                                            3</Link>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                             <div class="col-auto">
                                                                 <div class="form-check">
                                                                     <div class="checkbox mt-2">
@@ -134,11 +271,14 @@ const CreateMatch = () => {
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-12 d-flex justify-content-end">
-                                                                <button type="submit" class="btn btn-primary me-1 mb-1">Submit</button>
-                                                                <button type="reset" class="btn btn-light-secondary me-1 mb-1">Reset</button>
+                                                            <div class="btn-group mb-1">
+                                                            
                                                             </div>
-                                                        </div>
+                                                                <div class="col-12 d-flex justify-content-end">
+                                                                    <button type="submit" class="btn btn-primary me-1 mb-1">Create Match</button>
+                                                                    <button type="reset" class="btn btn-light-secondary me-1 mb-1">Reset</button>
+                                                                </div>
+                                                            </div>
                                                     </form>
                                                 </div>
                                             </div>
@@ -147,64 +287,7 @@ const CreateMatch = () => {
                                 </div>
                             </div>
                         </div>
-            <div className="row">
-                <div className="card col-md-6 m-auto">
-                    <div className="card-body">
-                        <h6 className="text-center">Call List</h6>
-                        <ul className="nav nav-tabs create-match-player-list" id="myTab" role="tablist">
-                            <li className="nav-item" role="presentation">
-                                <a className="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Favourite Teams</a>
-                            </li>
-                            <li className="nav-item" role="presentation">
-                                <a className="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Favourite Players</a>
-                            </li>
-                        </ul>
-                        <div className="tab-content player-list  m-2 border rounded" id="myTabContent">
-                            <div className="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                <div className="list-select m-2 row"  id="widget-todo-list">
-                                {
-                                            [...Array(5)].map((player) => (
-                                                <FavTeams />
-                                            ))
-                                        }
-                                        
-                                </div>
-                            </div>
-                            <div className="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                <div className="list-select m-2 row" id="widget-todo-list">
-                                        
-                                        {
-                                            [...Array(5)].map((player) => (
-                                            <>
-                                            <FavPlayers />
-                                            
-                                            </>
-                                            ))
-                                        }
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="card col-md-6 m-auto">
-                    <div className="card-body">
-                        <h6 className="text-center">Court List</h6>
-                        <div className=" border rounded">
-                            <div >
-                                <div className="court-list m-2 row"  id="widget-todo-list">
-                                {
-                                            [...Array(5)].map((player) => (
-                                                <Courts />
-                                            ))
-                                        }
-                                        
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     )
 }

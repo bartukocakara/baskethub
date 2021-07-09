@@ -2,6 +2,7 @@ import React from 'react'
 import FavouritePlayerCard from '../../cards/favourite-players/FavouritePlayerCard'
 import PlayerSearch from '../../layouts/quick-search/player-search/PlayerSearch';
 import PlayerWidget from '../../layouts/widgets/player-widget/PlayerWidget';
+import "./_myFavPlayers.scss";
 
 const MyFavPlayers = () => {
     return (
@@ -15,7 +16,7 @@ const MyFavPlayers = () => {
                             <FavouritePlayerCard />
                         ))
                     }
-                   
+            
                 </div>
             </section>
         </div>

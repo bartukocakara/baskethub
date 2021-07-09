@@ -37,19 +37,19 @@ const FavouriteCourtCard = () => {
                     </div>
                     <div className="card-middle-text row">
                         <div class="col-lg-2 text-center">
-                            <p className="prop-name w-100 p-2 badge bg-primary"><AiOutlineClear size={25}/></p>
+                        <AiOutlineClear size={25} className="text-primary"/>
                             <p>5/10</p>
                         </div>
                         <div class="col-lg-2 text-center">
-                            <p className="prop-name w-100 p-2 badge bg-primary"><HiOutlineEmojiHappy size={25}/></p>
+                            <HiOutlineEmojiHappy size={25}  className="text-primary"/>
                             <p>8/10</p>
                         </div>
                         <div class="col-lg-2 text-center">
-                            <p className="prop-name w-100 p-2 badge bg-primary"><AiOutlineFieldTime size={25}/></p>
+                            <AiOutlineFieldTime size={25}  className="text-primary"/>
                             <p>7/10</p>
                         </div>
                         <div class="col-lg-2 text-center">
-                            <p className="prop-name w-100 p-2 badge bg-primary"><FaMoneyBill size={25}/></p>
+                            <FaMoneyBill size={25}  className="text-primary"/>
                             <p>125₺</p>
                         </div>
                     </div>
