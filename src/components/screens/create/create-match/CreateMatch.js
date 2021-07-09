@@ -12,6 +12,7 @@ import { GoLocation } from "@react-icons/all-files/go/GoLocation";
 import { GiPayMoney } from "@react-icons/all-files/gi/GiPayMoney";
 import { GiTakeMyMoney } from "@react-icons/all-files/gi/GiTakeMyMoney";
 import { FcInfo } from "@react-icons/all-files/fc/FcInfo";
+import { GiBugleCall } from "@react-icons/all-files/gi/GiBugleCall";
 
 import {
     Link,
@@ -88,10 +89,13 @@ const CreateMatch = () => {
                                                                     <input className="form-control" placeholder="Write name..." />
                                                                 </div>
                                                             </div>
+                                                            <hr className="m-3 border border-light" />
+
+                                                            <FcMoneyTransfer className="col-md-12" size={50}/>
+
                                                             <div class="col-4">
                                                                 <div class="form-group text-center">
                                                                     <label for="first-name-icon">Pay Option - 1</label>
-                                                                    <FcMoneyTransfer size={25} className="m-2" />
                                                                 </div>
                                                                 <select className="form-control m-1" name="" >
                                                                     <option>Bank Card</option>
@@ -102,7 +106,6 @@ const CreateMatch = () => {
                                                             <div class="col-4">
                                                                 <div class="form-group text-center">
                                                                     <label for="first-name-icon" >Pay Option - 2</label>
-                                                                    <FcMoneyTransfer size={25} className="m-2" />
                                                                 </div>
                                                                 <select className="form-control m-1" name="" >
                                                                     <option>Seperate Payment</option>
@@ -112,33 +115,37 @@ const CreateMatch = () => {
                                                             <div class="col-4">
                                                                 <div class="form-group text-center">
                                                                     <label for="first-name-icon" >Pay Option - 3</label>
-                                                                    <FcMoneyTransfer size={25} className="m-2" />
                                                                 </div>
                                                                 <select className="form-control m-1" name="" >
                                                                     <option>Pre-paid</option>,
                                                                     <option>Pay at check-in</option>
                                                                 </select>
                                                             </div>
-                                                            <div class="col-6">
-                                                                <div class="form-group text-center">
+                                                            <hr className="m-3 border border-light" />
+                                                            <FcCalendar className="col-md-12" size={50}/>
+                                                            <div className="col-6">
+                                                                <div className="form-group text-center">
                                                                     <label for="first-name-icon" className="m-2">Date</label>
-                                                                    <FcCalendar size={25} className="m-2" />
                                                                 </div>
                                                                 <input type="date" className="form-control m-2" />
                                                             </div>
-                                                            <div class="col-3 mt-3">
+                                                            <div className="col-3 mt-3">
                                                                 <div class="form-group text-center">
                                                                     <label for="first-name-icon">Start</label>
                                                                 </div>
                                                                 <input type="time" className="form-control m-2" />
                                                             </div>
-                                                            <div class="col-3 mt-3">
-                                                                <div class="form-group text-center">
+                                                            <div className="col-3 mt-3">
+                                                                <div className="form-group text-center">
                                                                     <label for="first-name-icon">End</label>
                                                                 </div>
                                                                 <input type="time" className="form-control m-2" />
                                                             </div>
-                                                            <div className="col-6 m-auto text-center mt-3 mb-3">
+                                                            <hr className="m-3 border border-light" />
+                                                            <div className="col-md-12 text-center">
+                                                                <img className="court-field margin-auto" src="assets/images/logo/basketball-court.svg" alt="court-field"/>
+                                                            </div>
+                                                            <div className="col-md-6 m-auto text-center mt-3 mb-3">
                                                                 <div className="d-flex m-2">
                                                                 <h6 className=" m-2">Field use</h6><FcInfo size={25}/>
                                                                 </div>
@@ -147,7 +154,9 @@ const CreateMatch = () => {
                                                                     <option>Half Court</option>
                                                                 </select>
                                                             </div>
-                                                            <div className="card col-md-12 m-auto">
+                                                            <hr className="m-3 border border-light" />
+                                                            <GiBugleCall size={50} className="text-primary" />
+                                                            <div className="col-md-12 m-auto">
                                                                 <div className="card-body">
                                                                     <h6 className="text-center">Call List</h6>
                                                                     <ul className="nav nav-tabs create-match-player-list" id="myTab" role="tablist">
@@ -186,7 +195,7 @@ const CreateMatch = () => {
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div className="card col-md-12 m-auto border">
+                                                                <div className=" m-auto border">
                                                                 <div className="card-body text-center">
                                                                     <h6>Court Search</h6>
                                                                     <div className="header form">
