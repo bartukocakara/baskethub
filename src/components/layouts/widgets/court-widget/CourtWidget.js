@@ -4,7 +4,7 @@ import "./_courtWidget.scss";
 
 const CourtWidget = () => {
     return (
-        <div className="col-4">
+        <div className="col-md-4">
             <div class="card w-100 courts-widget" >
                 
             <h5 className="text-center m-3">Recommended Courts</h5>

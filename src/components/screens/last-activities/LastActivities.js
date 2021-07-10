@@ -6,7 +6,7 @@ import MatchWidget from '../../layouts/widgets/match-widget/MatchWidget';
 const LastActivities = () => {
     return (
         <>
-        <div className="col-8">
+        <div className="col-md-8">
             <h5>Last Activities</h5>
             <Search />
             <section id="content-types">

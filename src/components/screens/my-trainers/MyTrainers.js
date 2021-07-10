@@ -6,7 +6,7 @@ import TrainerWidget from '../../layouts/widgets/trainer-widget/TrainerWidget';
 const MyTrainers = () => {
     return (
         <>
-        <div className="col-8">
+        <div className="col-md-8">
             <TrainerSearch />
             <section id="content-types">
                 <div className="row">

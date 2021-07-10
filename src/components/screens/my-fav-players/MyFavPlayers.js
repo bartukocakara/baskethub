@@ -7,7 +7,7 @@ import "./_myFavPlayers.scss";
 const MyFavPlayers = () => {
     return (
         <>
-        <div className="col-8">
+        <div className="col-md-8">
             <PlayerSearch />
             <section id="content-types">
                 <div className="row">

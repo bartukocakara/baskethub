@@ -7,7 +7,7 @@ import "./_myTeams.scss";
 const MyTeams = () => {
     return (
         <>
-        <div className="col-8">
+        <div className="col-md-8">
             <TeamSearch />
             <section id="content-types">
                 <div className="row">

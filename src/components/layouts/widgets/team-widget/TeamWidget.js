@@ -4,7 +4,7 @@ import "./_teamWidget.scss";
 
 const TeamWidget = () => {
     return (
-        <div className="col-4">
+        <div className="col-md-4">
             <div class="card team-messages w-100" >
                 <h4 className="text-center m-2">Recommended Teams</h4>
                 <div className="card-teams p-2">

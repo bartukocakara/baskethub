@@ -6,7 +6,7 @@ import MatchWidget from '../../layouts/widgets/match-widget/MatchWidget';
 const MyMatches = () => {
     return (
         <>
-        <div className="col-8">
+        <div className="col-md-8">
             <MatchSearch />
             <section id="content-types">
                 <div className="row">

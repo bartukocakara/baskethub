@@ -9,7 +9,7 @@ import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail";
   import AvatarGroup from '@material-ui/lab/AvatarGroup';
 const MyTeamsCard = () => {
     return (
-        <div className="col-4 feed-card feed-my-teams-card">
+        <div className="col-md-4 feed-card feed-my-teams-card">
             <div className="card shadow">
                 <h4 className="card-title text-center">Bornova Team</h4>
                 <div className="card-content card-body">

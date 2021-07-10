@@ -7,7 +7,7 @@ import CourtWidget from '../../layouts/widgets/court-widget/CourtWidget';
 const MyFavCourts = () => {
     return (
         <>
-        <div className="col-8">
+        <div className="col-md-8">
             <CourtSearch />
 
             <section id="content-types">
