@@ -33,8 +33,8 @@ const Navbar = () => {
                                 <ul class="dropdown-menu mt-2" aria-labelledby="dropdownMenuLink">
                                     <li className="p-2"><Link to="create-team">Create Team</Link></li>
                                     <li className="p-2"><Link to="create-court">Create Court</Link></li>
-                                    <li className="p-2"><Link to="create-tournament">Create Tournament</Link></li>
-                                    <li className="p-2"><Link to="create-match">Create Match</Link></li>
+                                    <li className="p-2"><Link to="create-tournament">Create Tournament Event</Link></li>
+                                    <li className="p-2"><Link to="create-match">Create Match Event</Link></li>
                                 </ul>
                                 </div>
                             </li>
