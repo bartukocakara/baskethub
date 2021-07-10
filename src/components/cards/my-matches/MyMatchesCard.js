@@ -27,15 +27,15 @@ const MyMatchesCard = () => {
                     </div>
                     <div className="card-middle-text row">
                         <div class="col-lg-4 text-center">
-                            <p className="prop-name badge bg-primary"><BsClockFill size={25}/></p>
+                            <BsClockFill size={25} className="text-primary"/>
                             <p>19:00 - 20:00</p>
                         </div>
                         <div class="col-lg-4 text-center">
-                            <p className="prop-name badge bg-primary"><IoIosPeople size={25}/></p>
+                            <IoIosPeople size={25} className="text-primary"/>
                             <p>8</p>
                         </div>
                         <div class="col-lg-4 text-center">
-                            <p className="prop-name badge bg-primary"><FiUserPlus size={25}/></p>
+                            <FiUserPlus size={25} className="text-primary"/>
                             <p>1-3</p>
                         </div>
 
