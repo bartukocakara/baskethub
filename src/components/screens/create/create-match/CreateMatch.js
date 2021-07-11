@@ -10,10 +10,10 @@ import { AiFillStar } from "@react-icons/all-files/ai/AiFillStar";
 import { AiTwotoneAppstore } from "@react-icons/all-files/ai/AiTwotoneAppstore";
 import { GoLocation } from "@react-icons/all-files/go/GoLocation";
 import { GiPayMoney } from "@react-icons/all-files/gi/GiPayMoney";
-import { GiTakeMyMoney } from "@react-icons/all-files/gi/GiTakeMyMoney";
 import { FcInfo } from "@react-icons/all-files/fc/FcInfo";
 import { GiBugleCall } from "@react-icons/all-files/gi/GiBugleCall";
 import { FcEditImage } from "@react-icons/all-files/fc/FcEditImage";
+import { GiTrophyCup } from "@react-icons/all-files/gi/GiTrophyCup";
 
 import {
     Link,
@@ -125,17 +125,22 @@ const CreateMatch = () => {
                                         <div className="row">
                                             {
                                                 [...Array(5)].map((matchTeam) => (
-                                                <div className="d-flex p-2 col-md-4 col-xs-12 ml-1 mb-2 border rounded craete-match-card">
-                                                    <AvatarGroup max={3} className="m-2" >
-                                                        <Avatar alt="Remy Sharp" src="assets/images/faces/2.jpg" />
-                                                        <Avatar alt="Travis Howard" src="assets/images/faces/2.jpg" />
-                                                        <Avatar alt="Cindy Baker" src="assets/images/faces/2.jpg" />
-                                                        <Avatar alt="Agnes Walker" src="assets/images/faces/2.jpg" />
-                                                        <Avatar alt="Trevor Henderson" src="assets/images/faces/2.jpg" />
-                                                    </AvatarGroup>
-                                                    <div className="name ms-4">
+                                                <div className=" p-2 col-md-4 col-xs-12 ml-1 mb-2 text-center">
+                                                    <label className="fw-bold m-2">Karşıyaka spor salonu</label>
+                                                    <Link to="ended-match-detail">
+                                                    <div className="border rounded w-100 craete-match-card d-flex p-2">
+                                                        <AvatarGroup max={3} className="m-2" >
+                                                            <Avatar alt="Remy Sharp" src="assets/images/faces/2.jpg" />
+                                                            <Avatar alt="Travis Howard" src="assets/images/faces/2.jpg" />
+                                                            <Avatar alt="Cindy Baker" src="assets/images/faces/2.jpg" />
+                                                            <Avatar alt="Agnes Walker" src="assets/images/faces/2.jpg" />
+                                                            <Avatar alt="Trevor Henderson" src="assets/images/faces/2.jpg" />
+                                                        </AvatarGroup>
+                                                        <div className="name ms-4">
                                                         <h6 className="text-muted mt-2 m-auto">12/06-2021</h6>
-                                                    </div>
+                                                        </div>
+                                                        </div>
+                                                    </Link>
                                                 </div>
                                                 ))
                                             }
@@ -276,23 +281,14 @@ const CreateMatch = () => {
                                                                 </div>
                                                                 <div className="col-md-4  text-center">
                                                                     <AiFillStar className="m-2 text-primary"/>
-                                                                    <div class="dropdown dropdown-color-icon">
-                                                                        <button class="btn border rounded btn-lg dropdown-toggle show" type="button" id="dropdownMenuButtonEmoji" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                                            <span class="me-50"></span>Rating
-                                                                        </button>
-                                                                        <div class="dropdown-menu show" aria-labelledby="dropdownMenuButtonEmoji" style={{ margin: "0px", position: "absolute", inset: "0px auto auto 0px", transform: "translate(0px, 38.4px)" }} data-popper-placement="bottom-start">
-                                                                            <Link class="dropdown-item"><span class="dropdown-item-emoji">{ [...Array(1)].map((star) => (<AiFillStar/>))}</span>
-                                                                                </Link>
-                                                                            <Link class="dropdown-item"><span class="dropdown-item-emoji">{ [...Array(2)].map((star) => (<AiFillStar/>))}</span>
-                                                                                </Link>
-                                                                            <Link class="dropdown-item"><span class="dropdown-item-emoji">{ [...Array(3)].map((star) => (<AiFillStar/>))}</span>
-                                                                                </Link>
-                                                                            <Link class="dropdown-item"><span class="dropdown-item-emoji">{ [...Array(4)].map((star) => (<AiFillStar/>))}</span>
-                                                                                 </Link>
-                                                                            <Link class="dropdown-item"><span class="dropdown-item-emoji">{ [...Array(5)].map((star) => (<AiFillStar/>))}</span>
-                                                                                </Link>
-                                                                        </div>
-                                                                    </div>
+                                                                    <select className="form-control m-1" name="" >
+                                                                        <option>1 Star</option>,
+                                                                        <option>2 Star</option>
+                                                                        <option>3 Star</option>
+                                                                        <option>4 Star</option>
+                                                                        <option>5 Star</option>
+                                                                    </select>
+                                                                    
                                                                 </div>
                                                             </form>
                                                         </div>
@@ -311,23 +307,15 @@ const CreateMatch = () => {
                                                     </div>
                                                     <textarea className="form-control" rows="3" placeholder="Write something..."></textarea>
                                                 </div>
-                                                <div class="col-12 mt-3 text-center">
-                                                    <div class="dropdown dropdown-color-icon">
-                                                        <button class="btn btn-primary btn-lg dropdown-toggle show" type="button" id="dropdownMenuButtonEmoji" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                            <span class="me-50"><GiTakeMyMoney/></span>Reward Options
-                                                        </button>
-                                                        <div class="dropdown-menu show" aria-labelledby="dropdownMenuButtonEmoji" style={{ margin: "0px", position: "absolute", inset: "0px auto auto 0px", transform: "translate(0px, 38.4px)" }} data-popper-placement="bottom-start">
-                                                            <Link class="dropdown-item"><span class="dropdown-item-emoji">😆</span>
-                                                                Baklava
-                                                                1</Link>
-                                                            <Link class="dropdown-item"><span class="dropdown-item-emoji">😎</span>
-                                                                Saha ücreti
-                                                                2 </Link>
-                                                            <Link class="dropdown-item"><span class="dropdown-item-emoji">🤩</span>
-                                                                Option
-                                                                3</Link>
-                                                        </div>
-                                                    </div>
+                                                <div class="col-12 mt-3 text-center ">
+                                                    <GiTrophyCup size={40} className="text-success m-2"/>
+                                                    <select className="form-control m-1 bg-primary m-auto w-25 p-3 text-light" name="" >
+                                                        <option>Prize x</option>,
+                                                        <option>Prize x</option>
+                                                        <option>Prize x</option>
+                                                        <option>Prize x</option>
+                                                        <option>No Prize</option>
+                                                    </select>
                                                 </div>
                                                 <div class="col-auto">
                                                     <div class="form-check">

@@ -120,8 +120,8 @@ const Navbar = () => {
                                 <li>
                                     <ExampleComponent />
                                 </li>
-                                <li><Link className="dropdown-item" href="#"><i
-                                            cclassNameass="icon-mid bi bi-box-arrow-left me-2"></i> Logout</Link></li>
+                                <li><a className="dropdown-item" href="auth/login.html"><i
+                                            cclassNameass="icon-mid bi bi-box-arrow-left me-2"></i> Logout</a></li>
                             </ul>
                         </div>
                     </div>

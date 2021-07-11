@@ -48,7 +48,7 @@ const Matches = () => {
                                     <Avatar alt="Trevor Henderson" src="assets/images/faces/2.jpg" />
                                 </AvatarGroup>
                                 <button class="btn btn-sm btn-primary col-md-3 p-0 m-0 h-50" onClick={handleRatingShow}>
-                                    Değerlendir
+                                    Rate this match
                                 </button>
                             </div>
                             <div class="col-md-12 text-right">

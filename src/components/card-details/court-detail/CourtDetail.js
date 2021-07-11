@@ -3,8 +3,6 @@ import {
     Link
   } from "react-router-dom";
 import { AiFillEye } from "@react-icons/all-files/ai/AiFillEye";
-import { BiCheckDouble } from "@react-icons/all-files/bi/BiCheckDouble";
-import { HiCheck } from "@react-icons/all-files/hi/HiCheck";
 import { GoLocation } from "@react-icons/all-files/go/GoLocation";
 import { FiShare2 } from "@react-icons/all-files/fi/FiShare2";
 import { TiSocialInstagram } from "@react-icons/all-files/ti/TiSocialInstagram";
@@ -181,8 +179,8 @@ const FavCourtDetail = () => {
                         <div className="row m-5">
                             {
                                 [...Array(5)].map((property) => (
-                                    <div className="col-md-4 border rounded p-2 mb-2">
-                                        <div className="">
+                                    <div className="col-md-4  p-2 mb-2">
+                                        <div className="border rounded m-2 p-2">
                                             <div className="avatar me-3">
                                                 <img src="assets/images/faces/1.jpg" alt="" srcset="" />
                                                 <span className="avatar-status bg-success"></span>
@@ -194,7 +192,7 @@ const FavCourtDetail = () => {
                                             <div className="name flex-grow-1 p-4">
                                                 <p>Basketball quotes are terrific for motivating and inspiring coaches and athletes. Countless times I’ve recited various quotes to my players or fellow coaches and they always have a positive effect.</p>
                                             </div>
-                                            <div className="name flex-grow-1">
+                                            <div className="name flex-grow-1 text-center">
                                                 <div id="basic" class="star-rating" style={{ width: "160px", height: "32px", backgroundSize: "32px" }} title="5/5"><div class="star-value" style={{ backgroundSize: "32px", width: "0%" }}></div></div>
                                             </div>
                                         </div>
@@ -207,60 +205,44 @@ const FavCourtDetail = () => {
                             <div className="row">
                                 {
                                     [...Array(5)].map((property) => (
-                                        <div className="col-6 col-lg-3 col-md-6 border rounded">
-                                    <div className="card">
-                                        <div className="card-body px-3 py-4-5 profile-widget">
-                                            <div className="row">
-                                                <div className="col-md-4">
-                                                    <div className="stats-icon purple">
-                                                        <AiFillEye style={{ color:"#fff", fontSize:"30px", }}/>
+                                        <div className="col-6 col-lg-3 col-md-6">
+                                            <div className="card border rounded">
+                                                <div className="card-body px-3 py-4-5 profile-widget">
+                                                    <div className="row">
+                                                        <div className="col-md-4">
+                                                            <div className="stats-icon purple">
+                                                                <AiFillEye style={{ color:"#fff", fontSize:"30px", }}/>
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-md-8">
+                                                            <h6 className="text-muted font-semibold">Court Views</h6>
+                                                            <h6 className="font-extrabold mb-0">112.000</h6>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div className="col-md-8">
-                                                    <h6 className="text-muted font-semibold">Court Views</h6>
-                                                    <h6 className="font-extrabold mb-0">112.000</h6>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
                                     ))
                                 }
+                                <ul>
+                                    <li>parquet slickness</li>
+                                    <li>ball quality</li>
+                                    <li>ball quantity</li>
+                                    <li>basket quality</li>
+                                    <li>clock status</li>
+                                    <li>shower enclosures</li>
+                                    <li>buffet status</li>
+                                    <li>changing rooms</li>
+                                    <li>parking ride</li>
+                                    <li>basket height</li>
+                                    <li>field length</li>
+                                    <li>basket height</li>
+                                    <li>personal number</li>
+                                    <li>emergency kit</li>
+                                    <li>cleaning the court items</li>
+                                    <li>rental shoes status</li>
+                                </ul>
                                 
-                                <div className="col-6 col-lg-3 col-md-6 border rounded">
-                                    <div className="card">
-                                        <div className="card-body px-3 py-4-5 profile-widget">
-                                            <div className="row">
-                                                <div className="col-md-4">
-                                                    <div className="stats-icon green">
-                                                    <HiCheck style={{ color:"#fff", fontSize:"30px", }}/>
-                                                    </div>
-                                                </div>
-                                                <div className="col-md-8">
-                                                    <h6 className="text-muted font-semibold">Matches Created</h6>
-                                                    <h6 className="font-extrabold mb-0">112</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-6 col-lg-3 col-md-6 border rounded">
-                                    <div className="card">
-                                        <div className="card-body px-3 py-4-5 profile-widget">
-                                            <div className="row">
-                                                <div className="col-md-4">
-                                                    <div className="stats-icon green">
-                                                    <BiCheckDouble style={{ color:"#fff", fontSize:"30px", }}/>
-                                                    </div>
-                                                </div>
-                                                <div className="col-md-8">
-                                                    <h6 className="text-muted font-semibold">Matches Created</h6>
-                                                    <h6 className="font-extrabold mb-0">112</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>

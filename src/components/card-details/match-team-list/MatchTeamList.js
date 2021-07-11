@@ -21,12 +21,10 @@ const MatchTeamList = () => {
                                         <i class="bi bi-gear"></i> Make changes
                                     </Link>
 
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <ul class="dropdown-menu mt-2" aria-labelledby="dropdownMenuLink">
                                         <li><Link class="dropdown-item text-center">Player change </Link></li>
-                                        <li><Link class="dropdown-item text-center">Whatsapp </Link></li>
-                                        <li><Link class="dropdown-item text-center">Facebook </Link></li>
-                                        <li><Link class="dropdown-item text-center">Twitter </Link></li>
-                                        <li><Link class="dropdown-item text-center">Instagram </Link></li>
+                                        <li><Link class="dropdown-item text-center">Exit Player </Link></li>
+                                        <li><Link class="dropdown-item text-center">Cancel Match <span class="badge bg-danger"> x </span> </Link></li>
                                     </ul>
                                 </div>
                             </li>

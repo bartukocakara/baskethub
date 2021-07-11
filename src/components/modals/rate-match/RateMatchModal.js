@@ -33,8 +33,8 @@ const RateMatchModal = ({showRating, handleRatingClose}) => {
                 <Button variant="secondary m-2" onClick={handleRatingClose}>
                     Close
                 </Button>
-                <Button variant="warning m-2" onClick={handleRatingClose}>
-                    Start search
+                <Button variant="success m-2" onClick={handleRatingClose}>
+                    Save rating
                 </Button>
             </div>
         </Modal>

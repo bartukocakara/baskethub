@@ -27,7 +27,7 @@ const MyMatchesCard = () => {
                     </div>
                     <div className="card-middle-text row">
                         <div class="col-lg-4 text-center">
-                            <BsClockFill size={25} className="text-primary"/>
+                            <BsClockFill size={20} className="text-primary"/>
                             <p>19:00 - 20:00</p>
                         </div>
                         <div class="col-lg-4 text-center">
@@ -35,7 +35,7 @@ const MyMatchesCard = () => {
                             <p>8</p>
                         </div>
                         <div class="col-lg-4 text-center">
-                            <FiUserPlus size={25} className="text-primary"/>
+                            <FiUserPlus size={20} className="text-primary"/>
                             <p>1-3</p>
                         </div>
 
@@ -45,7 +45,7 @@ const MyMatchesCard = () => {
                         alt="Card cap" />
                     </div>
                 </div>
-                <div className="card-footer">
+                <div className="card-footer p-2">
                     <div className="footer-left">
                         <Link to="match-detail" className="btn btn-light">
                             Match Details

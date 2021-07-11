@@ -10,6 +10,10 @@ import { TiSocialFacebook } from "@react-icons/all-files/ti/TiSocialFacebook";
 import { AiOutlineWhatsApp } from "@react-icons/all-files/ai/AiOutlineWhatsApp";
 import { GoPerson } from "@react-icons/all-files/go/GoPerson";
 import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail";
+import { FcCalendar } from "@react-icons/all-files/fc/FcCalendar";
+import { BsFillPeopleFill } from "@react-icons/all-files/bs/BsFillPeopleFill";
+import { FcMoneyTransfer } from "@react-icons/all-files/fc/FcMoneyTransfer";
+import { GiTrophyCup } from "@react-icons/all-files/gi/GiTrophyCup";
 
 import "./_matchDetail.scss";
 
@@ -75,21 +79,51 @@ const MatchDetail = () => {
                 </div>
             </div>
             <div className="col-lg-6 col-md-12">
-                <div class="card text-center p-2">
-                    <h4 class="card-title ">Match Details</h4>
-                    <hr />
-                    <label class="btn-light text-dark p-2">
-                        Date - Time : <span class="badge text-dark">21/06/2021 | 12:00 - 13:00</span>
-                    </label>
-                    <label class="btn-light text-dark p-2">
-                        Player Count <span class="badge text-dark">8</span>
-                    </label>
-                    <label class="btn-light text-dark p-2">
-                        Player Need <span class="badge text-dark">1-3</span>
-                    </label>
-                    <label class="btn-light text-dark p-2">
-                        Court field <span class="badge text-dark">Half Court</span>
-                    </label>
+                <div class=" text-center p-2 row">
+                    <h6 class="d-inline">Match Details </h6>
+                        <span className="badge bg-success w-75  p-1 m-auto">
+                            <GiTrophyCup size={25} className="text-light m-2"/>
+                            Reward is : Match Payment
+                        </span>
+                    <div className="col-md-6 row mt-3">
+                        <div className="col-md-12">
+                            <label class="btn-light text-dark p-2 w-100 d-flex">
+                            <FcCalendar size={30}/> <span class="badge text-dark">21/06/2021 | 12:00 - 13:00</span>
+                            </label>
+                        </div>
+                        <div className="col-md-12">
+                            <label class="btn-light text-dark p-2 w-100">
+                            <BsFillPeopleFill size={30} className="text-success"/> Player Count <span class="badge text-dark">8</span>
+                            </label>
+                        </div>
+                        <div className="col-md-12">
+                        <label class="btn-light text-dark p-2 w-100">
+                        <BsFillPeopleFill size={30} className="text-warning"/> Player Need <span class="badge text-dark">1-3</span>
+                        </label>
+                        </div>
+                        <div className="col-md-12">
+                            <label class="btn-light text-dark p-2 w-100">
+                            <img className="match-detail-court-icon margin-auto" src="assets/images/logo/basketball-court.svg" alt="court-field"/>Court field <span class="badge text-dark">Half Court</span>
+                        </label>
+                        </div>
+                    </div>
+                    <div className="col-md-6 row  mt-3">
+                        <div className="col-md-12 ">
+                            <label class="btn-light text-dark p-2 w-100">
+                                <FcMoneyTransfer size={30}/>Ödeme Türü <span class="badge text-dark d-block">Credit Card</span>
+                            </label>
+                        </div>
+                        <div className="col-md-12">
+                            <label class="btn-light text-dark p-2 w-100">
+                                Ödeme Dağılımı <span class="badge text-dark">Seperate Payment</span>
+                            </label>
+                        </div>
+                        <div className="col-md-12">
+                            <label class="btn-light text-dark p-2 w-100">
+                                Ön ödeme durumu <span class="badge text-dark d-block">Pre-paid</span>
+                            </label>
+                        </div>
+                    </div>
                 </div>
             </div>
             <MatchTeamList />

@@ -36,7 +36,7 @@
       align-items: center;
       margin:auto;
       font-size:2em;
-      color:1px solid #FA8602;
+      color: #FA8602;
       cursor: pointer;
 
       &:hover {
@@ -64,4 +64,7 @@
       border-radius: 5px;
       color:#7b79ff !important;
   }
+}
+.text-warning{
+  color:#FA8602 !important;
 }
