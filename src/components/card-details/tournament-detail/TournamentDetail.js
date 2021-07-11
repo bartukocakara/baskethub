@@ -24,6 +24,12 @@ const TournamentDetail = () => {
                         <li class="nav-item" role="presentation">
                             <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Rules</a>
                         </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="teams-tab" data-bs-toggle="tab" href="#teams" role="tab" aria-controls="teams" aria-selected="false">Teams</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="my-team-tab" data-bs-toggle="tab" href="#my-team" role="tab" aria-controls="my-team" aria-selected="false">My Team</a>
+                        </li>
                     </ul>
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -34,6 +40,12 @@ const TournamentDetail = () => {
                         </div>
                         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                             <Rules />
+                        </div>
+                        <div class="tab-pane fade" id="teams" role="tabpanel" aria-labelledby="teams-tab">
+                            <h6>Teams</h6>
+                        </div>
+                        <div class="tab-pane fade" id="my-team" role="tabpanel" aria-labelledby="my-team-tab">
+                            <h6>My Team</h6>
                         </div>
                     </div>
                 </div>

@@ -1,9 +1,5 @@
 
 .tournament-dropdown{
-    z-index: 5;
+    z-index: 99999999999 !important;
     position: absolute;
-}
-
-.tournament-card{
-    z-index:2;
 }
