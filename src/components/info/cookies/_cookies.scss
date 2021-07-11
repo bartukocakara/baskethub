@@ -39,24 +39,6 @@
     align-items: center;
     justify-content: center;
   }
-  .buttons button{
-    padding: 10px 20px;
-    border: none;
-    outline: none;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 5px;
-    background: #FCBA7F;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  .buttons button:hover{
-    transform: scale(0.97);
-  }
   .buttons .item{
     margin: 0 10px;
-  }
-  .buttons a{
-    color: #FCBA7F;
   }
