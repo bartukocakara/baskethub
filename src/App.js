@@ -49,6 +49,7 @@ import MyFavTrainers from './components/screens/my-fav-trainers/MyFavTrainers';
 import MyTrainers from './components/screens/my-trainers/MyTrainers';
 import CourtListMap from './components/screens/courts/court-list-map/CourtListMap';
 import MatchRequestResult from './components/screens/profile/partials/match-request-result/MatchRequestResult';
+import CreateSubscription from './components/screens/create/create-subscription/CreateSubscription';
 
 function App() {
   return (
@@ -104,7 +105,8 @@ function App() {
                               <Route path="/create-team" component={CreateTeam} />
                               <Route path="/create-court" component={CreateCourt} />
                               <Route path="/create-tournament" component={CreateTournament} />
-                              <Route path="/create-match" component={CreateMatch} />
+                              <Route path="/create-match-event" component={CreateMatch} />
+                              <Route path="/create-subscription" component={CreateSubscription} />
                               <Route path="/watch" component={Watch} />
                               <Route path="/checkout" component={Checkout} />
                               <Route path="/match-request-result" component={MatchRequestResult} />

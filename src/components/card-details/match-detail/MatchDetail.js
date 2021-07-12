@@ -24,8 +24,8 @@ const MatchDetail = () => {
         
         <div className="row">
             <div className="d-flex p-2">
-                <h5 className="m-auto m-2"><Link to="court-detail">Balçova Spor Salonu</Link></h5>
-
+                <h6 className="m-auto m-2"><Link to="court-detail">Balçova Spor Salonu</Link></h6>
+                
                 <div className="d-flex">
                 <Link to="match-chat" className="p-2 btn btn-warning m-2">
                     <AiOutlineMail className="card-footer-icon" />
@@ -47,7 +47,7 @@ const MatchDetail = () => {
             </div>
             <div className="col-lg-6 col-md-12">
                 <div className="card">
-                    <div class="card-body">
+                    <div class="card-body p-0 h-auto">
                         <div id="carouselExampleCaptions" class="carousel slide" style={{ height:"200px" }} data-bs-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
@@ -85,27 +85,37 @@ const MatchDetail = () => {
                             <GiTrophyCup size={25} className="text-light m-2"/>
                             Reward is : Match Payment
                         </span>
-                    <div className="col-md-6 row mt-3">
-                        <div className="col-md-12">
-                            <label class="btn-light text-dark p-2 w-100 d-flex">
-                            <FcCalendar size={30}/> <span class="badge text-dark">21/06/2021 | 12:00 - 13:00</span>
+                        <div className="col-md-6 row mt-3">
+                            <div className="col-md-3">
+                            <FcCalendar size={30}/> 
+                            </div>
+                            <div className="col-md-9">
+                            <span class="badge text-dark"> 21/06/2021 | 12:00 - 13:00</span>
+                            </div>
+                            <div className="col-md-3">
+                            <BsFillPeopleFill size={30} className="text-success m-1"/>
+                            </div>
+                            <div className="col-md-9">
+                                <label class=" p-2">
+                                 Player Count : <span class="badge text-dark">8</span>
+                                </label>
+                            </div>
+                            <div className="col-md-3">
+                                <BsFillPeopleFill size={30} className="text-warning m-1"/>
+                            </div>
+                            <div className="col-md-9">
+                                <label class=" p-2 w-100">
+                                Player Need <span class="badge text-dark">1-3</span>
+                                </label>
+                            </div>
+                            <div className="col-md-3 mt-2">
+                                <img className=" w-100" src="assets/images/logo/basketball-court.svg" alt="court-field"/>
+                            </div>
+                            <div className="col-md-9">
+                                <label class=" p-2 w-100">
+                                Court field <span class="badge text-dark">Half Court</span>
                             </label>
-                        </div>
-                        <div className="col-md-12">
-                            <label class="btn-light text-dark p-2 w-100">
-                            <BsFillPeopleFill size={30} className="text-success"/> Player Count <span class="badge text-dark">8</span>
-                            </label>
-                        </div>
-                        <div className="col-md-12">
-                        <label class="btn-light text-dark p-2 w-100">
-                        <BsFillPeopleFill size={30} className="text-warning"/> Player Need <span class="badge text-dark">1-3</span>
-                        </label>
-                        </div>
-                        <div className="col-md-12">
-                            <label class="btn-light text-dark p-2 w-100">
-                            <img className="match-detail-court-icon margin-auto" src="assets/images/logo/basketball-court.svg" alt="court-field"/>Court field <span class="badge text-dark">Half Court</span>
-                        </label>
-                        </div>
+                            </div>
                     </div>
                     <div className="col-md-6 row  mt-3">
                         <div className="col-md-12 ">
