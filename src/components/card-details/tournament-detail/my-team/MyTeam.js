@@ -3,9 +3,9 @@ import React from 'react'
 const MyTeam = () => {
     return (
         <div class="col-12 col-xl-12 mt-4">
-        <div class="card text-center">
+        <div class="card text-center p-1">
             <h6>My Team</h6>
-            <div class="card-body">
+            <div class="card-body p-1">
                 <div class="table-responsive">
                     <table class="table table-hover table-lg">
                         <thead>
@@ -19,7 +19,7 @@ const MyTeam = () => {
                                 <td class="col-3">
                                     <div class="d-flex align-items-center">
                                         <div class="avatar avatar-md">
-                                            <img src="assets/images/faces/5.jpg" />
+                                            <img src="assets/images/faces/5.jpg"  alt="my-team"/>
                                         </div>
                                         <p class="font-bold ms-3 mb-0">Si Cantik</p>
                                     </div>
@@ -32,7 +32,7 @@ const MyTeam = () => {
                                 <td class="col-3">
                                     <div class="d-flex align-items-center">
                                         <div class="avatar avatar-md">
-                                            <img src="assets/images/faces/2.jpg" />
+                                            <img src="assets/images/faces/2.jpg" alt="my-team"/>
                                         </div>
                                         <p class="font-bold ms-3 mb-0">Si Ganteng</p>
                                     </div>

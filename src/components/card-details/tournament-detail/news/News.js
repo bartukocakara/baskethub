@@ -1,7 +1,6 @@
 import React from 'react'
-import "./_rules.scss";
 
-const Rules = () => {
+const News = () => {
     return (
         <div class="card-content">
             <div class="card-body">
@@ -45,4 +44,4 @@ const Rules = () => {
     )
 }
 
-export default Rules
+export default News

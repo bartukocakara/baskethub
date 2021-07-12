@@ -20,7 +20,7 @@ const Referees = () => {
                                     <td class="col-3">
                                         <div class="d-flex align-items-center">
                                             <div class="avatar avatar-md">
-                                                <img src="assets/images/faces/5.jpg" />
+                                                <img src="assets/images/faces/5.jpg" alt="referee" />
                                             </div>
                                             <p class="font-bold ms-3 mb-0">Si Cantik</p>
                                         </div>
@@ -33,7 +33,7 @@ const Referees = () => {
                                     <td class="col-3">
                                         <div class="d-flex align-items-center">
                                             <div class="avatar avatar-md">
-                                                <img src="assets/images/faces/2.jpg" />
+                                                <img src="assets/images/faces/2.jpg" alt="referee"/>
                                             </div>
                                             <p class="font-bold ms-3 mb-0">Si Ganteng</p>
                                         </div>

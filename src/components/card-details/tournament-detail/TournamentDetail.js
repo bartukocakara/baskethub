@@ -8,7 +8,7 @@ import { GiTargetPrize } from "@react-icons/all-files/gi/GiTargetPrize";
 import { GoListOrdered } from "@react-icons/all-files/go/GoListOrdered";
 import { AiOutlineApartment } from "@react-icons/all-files/ai/AiOutlineApartment";
 import { AiFillAppstore } from "@react-icons/all-files/ai/AiFillAppstore";
-
+import { FaHandPeace } from "@react-icons/all-files/fa/FaHandPeace";
 
 import Schema from './schema/Schema';
 import Calendar from './calendar/Calendar';
@@ -18,16 +18,23 @@ import Teams from './teams/Teams';
 import MyTeam from './my-team/MyTeam';
 import Prize from './prize/Prize';
 import ParticipantGift from './participant-gift/ParticipantGift';
+import "./_tournamentDetail.scss";
+import CourtGallery from './court-gallery/CourtGallery';
+import News from './news/News';
 const TournamentDetail = () => {
     return (
         <>
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">
-                    <h5 class="card-title">İzmir Tournament</h5>
-                </div>
+            <h5 class="card-title text-center">İzmir Tournament</h5>
+                
+        
+                
                 <div class="card-body">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="news-tab" data-bs-toggle="tab" href="#news" role="tab" aria-controls="news" aria-selected="false">News<FaHandPeace className="m-1"/></a>
+                        </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">Schema<AiOutlineApartment className="m-1"/></a>
                         </li>
@@ -52,6 +59,10 @@ const TournamentDetail = () => {
                         <li class="nav-item" role="presentation">
                             <a class="nav-link" id="my-team-tab" data-bs-toggle="tab" href="#my-team" role="tab" aria-controls="my-team" aria-selected="false">Participant Gift<AiFillGift className="m-1"/></a>
                         </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="court-gallery-tab" data-bs-toggle="tab" href="#court-gallery" role="tab" aria-controls="court-gallery" aria-selected="false">Court Gallery<AiFillGift className="m-1"/></a>
+                        </li>
+                        
                     </ul>
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -64,10 +75,10 @@ const TournamentDetail = () => {
                             <Rules />
                         </div>
                         <div class="tab-pane fade" id="referees" role="tabpanel" aria-labelledby="referees-tab">
-                            <h6><Referees /></h6>
+                            <Referees />
                         </div>
                         <div class="tab-pane fade" id="teams" role="tabpanel" aria-labelledby="teams-tab">
-                            <h6><Teams/></h6>
+                            <Teams/>
                         </div>
                         <div class="tab-pane fade" id="my-team" role="tabpanel" aria-labelledby="my-team-tab">
                             <h6><MyTeam/></h6>
@@ -77,6 +88,12 @@ const TournamentDetail = () => {
                         </div>
                         <div class="tab-pane fade" id="my-team" role="tabpanel" aria-labelledby="my-team-tab">
                             <h6><ParticipantGift/></h6>
+                        </div>
+                        <div class="tab-pane fade" id="court-gallery" role="tabpanel" aria-labelledby="court-gallery-tab">
+                            <CourtGallery/>
+                        </div>
+                        <div class="tab-pane fade" id="news" role="tabpanel" aria-labelledby="news-tab">
+                            <News/>
                         </div>
                     </div>
                 </div>
