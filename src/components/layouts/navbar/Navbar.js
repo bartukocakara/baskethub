@@ -35,7 +35,6 @@ const Navbar = () => {
                                     <li className="p-2"><Link to="create-court">Create Court</Link></li>
                                     <li className="p-2"><Link to="create-tournament">Create Tournament Event</Link></li>
                                     <li className="p-2"><Link to="create-match-event">Create Match Event</Link></li>
-                                    <li className="p-2"><Link to="create-subscription">Create Subscription</Link></li>
                                 </ul>
                                 </div>
                             </li>

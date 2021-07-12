@@ -11,6 +11,7 @@ import { TiSocialFacebook } from "@react-icons/all-files/ti/TiSocialFacebook";
 import { AiOutlineWhatsApp } from "@react-icons/all-files/ai/AiOutlineWhatsApp";
 import { GoPerson } from "@react-icons/all-files/go/GoPerson";
 import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail";
+import { BsFillBookmarksFill } from "@react-icons/all-files/bs/BsFillBookmarksFill";
 
 import "./_courtDetail.scss";
 import FullCalendar from '@fullcalendar/react'
@@ -27,12 +28,16 @@ const FavCourtDetail = () => {
             </div>
 
                 <div className="d-flex">
+                
+                <Link to="create-subscription" className="p-2 btn btn-warning m-2">
+                    Start subscription<BsFillBookmarksFill className="" />
+                </Link>
                 <Link to="message-detail" className="p-2 btn btn-warning m-2">
-                    <AiOutlineMail className="card-footer-icon" />
+                    <AiOutlineMail />
                 </Link>
                 <div class="dropdown">
                         <Link class="btn btn-primary p-2 m-2" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                            <FiShare2 className="card-footer-icon"  />
+                            <FiShare2   />
                         </Link>
 
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
