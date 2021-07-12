@@ -15,8 +15,7 @@ import {
   } from "react-router-dom";
 const TournamentsCard = () => {
     return (
-        <>
-        <div className="tournament-card col-xl-9 col-md-9 col-sm-10 h-25 m-auto">
+        <div className="tournament-card col-xl-9 col-md-9 col-sm-12 h-25 m-auto">
             <div className="d-flex m-2 p-2">
                 <h6 className="m-1">İzmir Turnuvası</h6>
                 <AvatarGroup max={3} className="m-1" >
@@ -30,24 +29,21 @@ const TournamentsCard = () => {
             </div>
             <div className="card shadow feed-tournament-card">
                 <h4 className="card-title text-center m-2 text-light">Dr. Cavit Spor Salonu - İzmir/Bornova</h4>
-                <div className="card-content d-flex card-body card-custom">
-                    <div className="card-middle-text row">
-                        <div class="col-lg-4 text-center">
-                        <BsClockFill size={20} className="text-light"/>
-                            <p className="prop-name badge "></p>
+                <div className="card-content d-flex card-custom justify-content-between">
+                        <div class="col-lg-4 text-center text-light">
+                            <BsClockFill size={20} />
                             <p>4 x 10</p>
                         </div>
-                        <div class="col-lg-4 text-center">
-                            <IoIosPeople size={25} className="text-light"/>
+                        <div class="col-lg-4 text-center text-light">
+                            <IoIosPeople size={25} />
                             <p>8</p>
                         </div>
-                        <div class="col-lg-4 text-center">
-                            <IoIosPeople size={25} className="text-light"/>
+                        <div class="col-lg-4 text-center text-light">
+                            <IoIosPeople size={25} />
                             <p>1-3</p>
                         </div>
-                    </div>
                 </div>
-                <div className="card-footer d-flex  p-2">
+                <div className="card-footer bg-transparent d-flex justify-content-between p-2">
                     <div className="footer-left">
                         <Link to="tournament-detail" className="btn btn-light">
                             Details
@@ -70,7 +66,6 @@ const TournamentsCard = () => {
                 </div>
             </div>
         </div>
-        </>
     )
 }
 
