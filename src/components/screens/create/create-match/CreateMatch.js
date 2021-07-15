@@ -14,6 +14,7 @@ import { FcInfo } from "@react-icons/all-files/fc/FcInfo";
 import { GiBugleCall } from "@react-icons/all-files/gi/GiBugleCall";
 import { FcEditImage } from "@react-icons/all-files/fc/FcEditImage";
 import { GiTrophyCup } from "@react-icons/all-files/gi/GiTrophyCup";
+import { RiCoupon3Line } from "@react-icons/all-files/ri/RiCoupon3Line";
 
 import {
     Link,
@@ -207,17 +208,33 @@ const CreateMatch = () => {
                                                     <input type="time" className="form-control m-2" />
                                                 </div>
                                                 <hr className="m-3 border border-light" />
-                                                <div className="col-md-12 text-center">
-                                                    <img className="court-field margin-auto" src="assets/images/logo/basketball-court.svg" alt="court-field"/>
-                                                </div>
-                                                <div className="col-md-6 m-auto text-center mt-3 mb-3">
-                                                    <div className="d-flex m-2">
-                                                    <h6 className=" m-2">Field use</h6><FcInfo size={25}/>
+                                                
+                                                <div className="row col-md-12">
+                                                    <div className="col-md-6">
+                                                        <div className="col-md-12 text-center">
+                                                            <img className="court-field margin-auto" src="assets/images/logo/basketball-court.svg" alt="court-field"/>
+                                                        </div>
+                                                        <div className="col-md-6 m-auto text-center mt-3 mb-3">
+                                                            <div className="d-flex m-2">
+                                                                <h6 className="m-auto m-2">Field use<FcInfo size={25}/></h6>
+                                                            </div>
+                                                            <select className="form-control fw-bold">
+                                                                <option>Full Court</option>
+                                                                <option>Half Court</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
-                                                    <select className="form-control fw-bold">
-                                                        <option>Full Court</option>
-                                                        <option>Half Court</option>
-                                                    </select>
+                                                    <div className="col-md-6 mt-4">
+                                                        <div className="col-md-12 text-center">
+                                                            <RiCoupon3Line size={50} className="text-primary"/>
+                                                        </div>
+                                                        <div className="col-md-6 m-auto text-center mt-3">
+                                                            <label>Coupon code :</label>
+                                                            <div className="d-flex m-2">
+                                                                <input type="text" className="form-control w-100" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <hr className="m-3 border border-light" />
                                                 <GiBugleCall size={50} className="text-primary" />
@@ -292,7 +309,7 @@ const CreateMatch = () => {
                                                                 </div>
                                                             </form>
                                                         </div>
-                                                        <div className="list-select m-2 row border rounded"  id="widget-todo-list">
+                                                        <div className="list-select m-2 w-75 m-auto border rounded"  id="widget-todo-list">
                                                             {
                                                                 [...Array(5)].map((player) => (
                                                                     <Courts />

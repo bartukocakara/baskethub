@@ -11,7 +11,7 @@ import { AiFillAppstore } from "@react-icons/all-files/ai/AiFillAppstore";
 import { FaHandPeace } from "@react-icons/all-files/fa/FaHandPeace";
 
 import Schema from './schema/Schema';
-import Calendar from './calendar/Calendar';
+import TournamentCalendar from './calendar/Calendar';
 import Rules from './rules/Rules';
 import Referees from './referees/Referees';
 import Teams from './teams/Teams';
@@ -33,16 +33,16 @@ const TournamentDetail = () => {
                 <div class="card-body">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="calendar-tab" data-bs-toggle="tab" href="#calendar" role="tab" aria-controls="calendar" aria-selected="true">Calendar<FaCalendarAlt className="m-1"/> </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="schema-tab" data-bs-toggle="tab" href="#schema" role="tab" aria-controls="schema" aria-selected="false">Schema<AiOutlineApartment className="m-1"/></a>
+                        </li>
+                        <li class="nav-item" role="presentation">
                             <a class="nav-link" id="news-tab" data-bs-toggle="tab" href="#news" role="tab" aria-controls="news" aria-selected="false">News<FaHandPeace className="m-1"/></a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">Schema<AiOutlineApartment className="m-1"/></a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link active" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">Calendar<FaCalendarAlt className="m-1"/></a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Rules<FaBook className="m-1"/></a>
+                            <a class="nav-link" id="rules-tab" data-bs-toggle="tab" href="#rules" role="tab" aria-controls="rules" aria-selected="false">Rules<FaBook className="m-1"/></a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link" id="referees-tab" data-bs-toggle="tab" href="#referees" role="tab" aria-controls="referees" aria-selected="false">Referees <GiWhistle className="m-1"/></a>
@@ -65,13 +65,16 @@ const TournamentDetail = () => {
                         
                     </ul>
                     <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="tab-pane fade" id="news" role="tabpanel" aria-labelledby="news-tab">
+                            <News/>
+                        </div>
+                        <div class="tab-pane fade" id="schema" role="tabpanel" aria-labelledby="schema-tab">
                             <Schema />
                         </div>
-                        <div class="tab-pane fade active show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                            <Calendar />
+                        <div class="tab-pane active show" id="calendar" role="tabpanel" aria-labelledby="calendar-tab">
+                            <TournamentCalendar />
                         </div>
-                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="tab-pane fade" id="rules" role="tabpanel" aria-labelledby="rules-tab">
                             <Rules />
                         </div>
                         <div class="tab-pane fade" id="referees" role="tabpanel" aria-labelledby="referees-tab">
@@ -91,9 +94,6 @@ const TournamentDetail = () => {
                         </div>
                         <div class="tab-pane fade" id="court-gallery" role="tabpanel" aria-labelledby="court-gallery-tab">
                             <CourtGallery/>
-                        </div>
-                        <div class="tab-pane fade" id="news" role="tabpanel" aria-labelledby="news-tab">
-                            <News/>
                         </div>
                     </div>
                 </div>

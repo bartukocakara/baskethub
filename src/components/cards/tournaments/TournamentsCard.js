@@ -16,8 +16,11 @@ import {
 const TournamentsCard = () => {
     return (
         <div className="tournament-card col-xl-9 col-md-9 col-sm-12 h-25 m-auto">
-            <div className="d-flex m-2 p-2">
+            <div className="d-flex m-2 p-2 row">
+                <div className="col-md-3">
                 <h6 className="m-1">İzmir Turnuvası</h6>
+                </div>
+                <div className="col-md-6 d-flex">
                 <AvatarGroup max={3} className="m-1" >
                     <Avatar alt="Remy Sharp" src="assets/images/faces/2.jpg" />
                     <Avatar alt="Travis Howard" src="assets/images/faces/2.jpg" />
@@ -26,7 +29,12 @@ const TournamentsCard = () => {
                     <Avatar alt="Trevor Henderson" src="assets/images/faces/2.jpg" />
                 </AvatarGroup>
                 <span className="m-1">kişi katılıyor...</span>
+                </div>
+                <div className="col-md-2">
+                <span className="d-inline m-1 badge bg-success float-right">İlk maça son 3 gün</span>
+                </div>
             </div>
+            
             <div className="card shadow feed-tournament-card">
                 <h4 className="card-title text-center m-2 text-light">Dr. Cavit Spor Salonu - İzmir/Bornova</h4>
                 <div className="card-content d-flex card-custom justify-content-between">

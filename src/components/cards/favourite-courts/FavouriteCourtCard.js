@@ -11,26 +11,38 @@ import { GoPerson } from "@react-icons/all-files/go/GoPerson";
 import { HiOutlineEmojiHappy } from "@react-icons/all-files/hi/HiOutlineEmojiHappy";
 import { AiOutlineFieldTime } from "@react-icons/all-files/ai/AiOutlineFieldTime";
 import { FaMoneyBill } from "@react-icons/all-files/fa/FaMoneyBill";
+import { FaComments } from "@react-icons/all-files/fa/FaComments";
 
 import {
     Link
   } from "react-router-dom";
 import "./_favouriteCourt.scss";
 import RequestCourtReservation from '../../modals/request-court-reservation/RequestCourtReservation';
+import CourtCommentsModal from '../../modals/court-comments/CourtCommentsModal';
      
 
 const FavouriteCourtCard = () => {
     const [showRequestCourtReservationModal, setRequestCourtReservationModalShow] = useState(false);
 
     const handleRequestCourtReservationModalClose = () => setRequestCourtReservationModalShow(false);
-    const handleShowRequestCourtReservationModal = () => setRequestCourtReservationModalShow(true); 
+    const handleShowRequestCourtReservationModal = () => setRequestCourtReservationModalShow(true);
+
+    const [showCommentsModal, setCommentsModalShow] = useState(false);
+
+    const handleCommentsModalClose = () => setCommentsModalShow(false);
+    const handleShowCommentsModal = () => setCommentsModalShow(true); 
     return (
         <>
         <RequestCourtReservation handleRequestCourtReservationModalClose={handleRequestCourtReservationModalClose}
                                  show={showRequestCourtReservationModal}/>
+        <CourtCommentsModal handleCommentsModalClose={handleCommentsModalClose}
+                                 show={showCommentsModal}/>
         <div className="col-xl-12 col-md-12 col-sm-12 feed-card feed-my-fav-courts-card">
             <div className="card shadow">
-                <h4 className="card-title text-center">Dr. Cavit Spor Salonu - İzmir/Bornova</h4>
+                <div className="row m-2">
+                    <h4 className="col-md-9 card-title text-center">Dr. Cavit Spor Salonu - İzmir/Bornova</h4>
+                    <span className="d-inline m-1 badge bg-success float-right col-md-2">Ücretsiz iptal</span>
+                </div>
                 <div className="card-content d-flex card-body card-custom">
                     <div class="avatar avatar-lg me-2 card-avatar">
                         <img src="assets/images/faces/2.jpg" alt="hall" srcset="" />
@@ -59,11 +71,14 @@ const FavouriteCourtCard = () => {
                 </div>
                 <div className="card-footer">
                     <div className="footer-left">
-                        <Link to="court-detail" className="btn btn-light">
+                        <Link className="btn btn-light" to="court-detail">
                             Court Details
                         </Link>
                     </div>
                     <div className="footer-right d-flex">
+                        <Link class="btn btn-light m-2 p-2 text-primary">
+                            <FaComments className="card-footer-icon" size={25} onClick={handleShowCommentsModal} />
+                        </Link>
                         <Link class="btn btn-light m-2 p-2 text-primary" to="message-detail">
                             <AiOutlineMail className="card-footer-icon" size={25} />
                         </Link>

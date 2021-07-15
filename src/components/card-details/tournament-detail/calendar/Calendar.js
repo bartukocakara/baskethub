@@ -3,7 +3,8 @@ import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
 import "./_calendar.scss";
 
-const Calendar = () => {
+const TournamentCalendar = () => {
+
     return (
         <div className="row">
             <FullCalendar
@@ -15,4 +16,4 @@ const Calendar = () => {
     )
 }
 
-export default Calendar
+export default TournamentCalendar

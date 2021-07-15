@@ -9,6 +9,8 @@ import { AiOutlineWhatsApp } from "@react-icons/all-files/ai/AiOutlineWhatsApp";
 import { GoLocation } from "@react-icons/all-files/go/GoLocation";
 import { GiPlayerTime } from "@react-icons/all-files/gi/GiPlayerTime";
 import { GoPerson } from "@react-icons/all-files/go/GoPerson";
+import { FaComments } from "@react-icons/all-files/fa/FaComments";
+
 import Avatar from '@material-ui/core/Avatar';
 import AvatarGroup from '@material-ui/lab/AvatarGroup';
 import {
@@ -17,6 +19,7 @@ import {
 import "./_favouriteTrainer.scss";
 import RequestPlayerJoin from '../../modals/request-player-join/RequestPlayerJoin';
 import RequestTeamJoin from '../../modals/request-team-join/RequestTeamJoin';
+import CourtCommentsModal from '../../modals/court-comments/CourtCommentsModal';
 
 const FavouriteTrainerCard = () => {
     const [showRequestPlayerJoin, setRequestPJShow] = useState(false);
@@ -28,11 +31,16 @@ const FavouriteTrainerCard = () => {
 
     const handleRequestTeamJoinClose = () => setRequestTeamJoinShow(false);
     const handleRequestTeamJoinModal = () => setRequestTeamJoinShow(true);
+    
+    const [showCommentsModal, setCommentsModalShow] = useState(false);
+
+    const handleCommentsModalClose = () => setCommentsModalShow(false);
+    const handleShowCommentsModal = () => setCommentsModalShow(true); 
     return (
         <>
         <RequestPlayerJoin handleRequestPlayerJoinClose={handleRequestPlayerJoinClose} show={showRequestPlayerJoin}  />
         <RequestTeamJoin handleRequestTeamJoinClose={handleRequestTeamJoinClose} show={showRequestTeamJoin}  />
-
+        <CourtCommentsModal handleCommentsModalClose={handleCommentsModalClose} show={showCommentsModal}/>
         <div className="col-xl-12 col-md-12 col-sm-12 feed-card feed-my-fav-players-card">
             <div className="card shadow">
                 <h4 className="card-title text-center">Bartu Kocakara</h4>
@@ -71,6 +79,9 @@ const FavouriteTrainerCard = () => {
                         </Link>
                     </div>
                     <div className="footer-right d-flex">
+                        <Link class="btn btn-light m-2 p-2 text-primary">
+                            <FaComments className="card-footer-icon" size={25} onClick={handleShowCommentsModal} />
+                        </Link>
                         <Link class="btn btn-light m-2 p-2 text-primary " to="message-detail">
                             <AiOutlineMail className="card-footer-icon" />
                         </Link>
