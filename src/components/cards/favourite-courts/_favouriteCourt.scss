@@ -17,7 +17,9 @@
                 .prop-name{
                     border-bottom:1px solid rgb(221, 221, 238);
                     line-height: 17px;
+                    
                 }
+                
                 p{
                     font-weight: bold;
                     text-align: center;
@@ -28,6 +30,12 @@
             }
 
             
+        }
+        .court-prices{
+            list-style-type: none;
+            .court-price-li{
+                justify-content:space-between
+            }
         }
     
         .card-left-image {

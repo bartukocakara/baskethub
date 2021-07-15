@@ -12,6 +12,7 @@ import { HiOutlineEmojiHappy } from "@react-icons/all-files/hi/HiOutlineEmojiHap
 import { AiOutlineFieldTime } from "@react-icons/all-files/ai/AiOutlineFieldTime";
 import { FaMoneyBill } from "@react-icons/all-files/fa/FaMoneyBill";
 import { FaComments } from "@react-icons/all-files/fa/FaComments";
+import { GiPathDistance } from "@react-icons/all-files/gi/GiPathDistance";
 
 import {
     Link
@@ -60,9 +61,12 @@ const FavouriteCourtCard = () => {
                             <AiOutlineFieldTime size={25}  className="text-primary"/>
                             <p>7/10</p>
                         </div>
-                        <div class="col-lg-2 text-center">
+                        <div class="col-lg-4 text-center">
                             <FaMoneyBill size={25}  className="text-primary"/>
-                            <p>125₺</p>
+                            <div className="court-prices w-100">
+                                <label className="court-price-li d-flex"><span>1 saat </span> <p>: 125₺</p></label>
+                                <label className="court-price-li d-flex"><span>1.30 saat </span> <p>: 150₺</p></label>
+                            </div>
                         </div>
                     </div>
                     <div className="card-left-image">
@@ -70,10 +74,14 @@ const FavouriteCourtCard = () => {
                     </div>
                 </div>
                 <div className="card-footer">
-                    <div className="footer-left">
+                    <div className="footer-left mt-2">
                         <Link className="btn btn-light" to="court-detail">
                             Court Details
                         </Link>
+                    </div>
+                    <div className="m-auto fw-bold d-flex">
+                        <GiPathDistance size={30} className="m-1"/>
+                        <label className="m-1">15km uzaklıkta</label>
                     </div>
                     <div className="footer-right d-flex">
                         <Link class="btn btn-light m-2 p-2 text-primary">

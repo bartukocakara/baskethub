@@ -3,6 +3,13 @@
 
     .card-custom {
 
+        .match-teams{
+            list-style-type: none;
+            .match-team-li{
+                justify-content:space-between
+            }
+        }
+
         .card-middle-text {
             padding:2px;
 

@@ -30,7 +30,7 @@ const MyMatchesCard = () => {
             </div>
             <div className="col-xl-12 col-md-12 col-sm-12 feed-card feed-my-matches-card">
                 <div className="card shadow">
-                    <div className=" m-2 p-2 d-flex">
+                    <div className="m-2 p-2 d-flex">
                         <div className="col-lg-9 col-sm-6 p-1">
                             <h6 >İzmir Turnuvası</h6>
                         </div>
@@ -39,21 +39,25 @@ const MyMatchesCard = () => {
                         </div>
                     </div>
                     <div className="card-content d-flex card-body card-custom row">
-                        <div className="col-lg-9 row col-sm-6 text-center">
+                        <div className="col-lg-8 row col-sm-6 text-center">
                             <div class="col-4 text-center">
                                 <BsClockFill size={20} className="text-primary"/>
                                 <p>19:00 - 20:00</p>
                             </div>
-                            <div class="col-7">
+                            <div class="col-6">
                                 <h6 className="text-center">Teams</h6>
-                                <ul className="d-flex ul-team">
-                                    <li className="p-2">X Team</li>
-                                    <li className=" p-2">Y Team</li>
-                                </ul>
+                                <div className="match-teams w-100">
+                                    <label className="match-team-li p-2">
+                                        <Link to="team-detail">Team 1</Link>
+                                    </label>
+                                    <label className="match-team-li p-2">
+                                        <Link to="team-detail">Team 2</Link>
+                                    </label>
+                                </div>
                             </div>
                         </div>
                         
-                        <div className="card-right-image col-lg-3 col-sm-9">
+                        <div className="card-right-image col-lg-4 col-sm-9">
                             <img className="img-fluid w-100 card-image" src="assets/images/samples/hall.jpg"
                             alt="Card cap" />
                         </div>
