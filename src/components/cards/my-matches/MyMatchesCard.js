@@ -30,11 +30,11 @@ const MyMatchesCard = () => {
             </div>
             <div className="col-xl-12 col-md-12 col-sm-12 feed-card feed-my-matches-card">
                 <div className="card shadow">
-                    <div className=" m-2 p-2 row">
-                        <div className="col-lg-9 col-sm-6">
-                            <h6 className="m-1">İzmir Turnuvası</h6>
+                    <div className=" m-2 p-2 d-flex">
+                        <div className="col-lg-9 col-sm-6 p-1">
+                            <h6 >İzmir Turnuvası</h6>
                         </div>
-                        <div className="col-lg-2 col-sm-6">
+                        <div className="col-lg-3 col-sm-6 p-1">
                             <span className="d-inline m-1 badge bg-success">3 kişi aranıyor</span>
                         </div>
                     </div>
