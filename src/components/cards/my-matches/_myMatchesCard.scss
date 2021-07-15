@@ -4,8 +4,6 @@
     .card-custom {
 
         .card-middle-text {
-            width: 70%;
-            justify-content:space-between;
             padding:2px;
 
             .car-middle-div {
@@ -28,8 +26,13 @@
             }
 
             
+
+            
         }
-    
+        .ul-team{
+
+            list-style-type: none;
+        }
         .card-left-image {
             width:45%;
 
