@@ -11,7 +11,6 @@ import { TiSocialFacebook } from "@react-icons/all-files/ti/TiSocialFacebook";
 import { AiOutlineWhatsApp } from "@react-icons/all-files/ai/AiOutlineWhatsApp";
 import { GoPerson } from "@react-icons/all-files/go/GoPerson";
 import { GoVerified } from "@react-icons/all-files/go/GoVerified";
-import { FiPlusSquare } from "@react-icons/all-files/fi/FiPlusSquare";
 import { FiMail } from "@react-icons/all-files/fi/FiMail";
 
 import {
@@ -71,18 +70,20 @@ const PlayerDetail = () => {
                                     <h6 class="font-bold">Email</h6>
                                     <p class="text-muted mb-0">bartuu_436@hotmail.com</p>
                                 </div>
-                                <div class="col-md-2  text-center">
+                                <div class="col-md-2 text-center">
                                     <h6 class="font-bold">Phone</h6>
                                     <h6 class="text-muted mb-0">+90 555 667 66 80</h6>
                                 </div>
                                 <div className="buttons col-md-3">
                                     <div className="d-flex justify-content-center">
-                                        <FiPlusSquare className="pd-icon m-2 text-primary" size={29} onClick={notifyFavPlayer}/>
-                                        <Link to="message-detail" className="">
+                                        <Link className="d-flex p-2 m-2 text-light bg-warning rounded" onClick={notifyFavPlayer}>
+                                            Add favourites <span className="fw-bold"> + </span>
+                                        </Link>
+                                        <Link to="message-detail" className="m-2">
                                             <FiMail className="m-2 pd-icon" size={27} />
                                         </Link>
-                                        <div class="dropdown">
-                                            <Link className=" " role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <div class="dropdown m-2">
+                                            <Link role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                                 <FiShare2 className="m-2 pd-icon" size={27}/>
                                             </Link>
                                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">

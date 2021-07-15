@@ -28,11 +28,11 @@ const Matches = () => {
                                     </li>
                                 </ul>
                                 <div className=" col-md-3 text-center">
-                                    <span class="badge bg-primary m-3">IN PROGRESS</span>
                                     <h6 className="ml-3">Alsancak Spor salonu</h6>
                                 </div>
-                                <div className=" col-md-3  text-center">
-                                    <p className="prop-name w-25 p-2 badge bg-primary"><AiOutlineFieldTime size={25}/></p>
+                                <div className=" col-md-3 text-center">
+                                <AiOutlineFieldTime size={25} className="text-primary m-1"/>
+                                    <p className="prop-name w-25 p-2 badge "></p>
                                     <h6 className="ml-3">15:00 - 16:00</h6>
                                 </div>
                                 <AvatarGroup max={4} className="col-md-4 text-center">
@@ -44,7 +44,7 @@ const Matches = () => {
                                 </AvatarGroup>
                             </div>
                             <div class="col-md-12 text-right">
-                                <span class=" p-o-percentage mr-4">60%</span>
+                                <span class="p-o-percentage mr-4 text-primary">60%</span>
                                 <div class="progress p-o-progress mt-2">
                                     <div class="progress-bar bg-primary" role="progressbar" style={{ width: "60%" }} aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
