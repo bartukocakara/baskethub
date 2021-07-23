@@ -11,12 +11,11 @@ import {
   import {BiShareAlt} from "@react-icons/all-files/bi/BiShareAlt";
 
 import "./_trainerDetail.scss";
-import Widgets from '../../layouts/widgets/Widgets';
 
 const TrainerDetail = () => {
     return (
         <>
-            <div class="col-8">
+            <div class="col-12">
                 <div className="row"> 
                     <div class="card">
                         <div class="card-body py-4 px-5">
@@ -155,7 +154,6 @@ const TrainerDetail = () => {
                     </div> 
                 </div>
             </div>
-            <Widgets />
         </>
     )
 }

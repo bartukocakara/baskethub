@@ -52,6 +52,7 @@ import MatchRequestResult from './components/screens/profile/partials/match-requ
 import CreateSubscription from './components/screens/create/create-subscription/CreateSubscription';
 import CreateTraining from './components/screens/create/create-training/CreateTraining';
 import AllStar from './components/screens/all-star/AllStar';
+import TrainerSendOffer from './components/screens/trainer-send-offer/TrainerSendOffer';
 
 function App() {
   return (
@@ -114,6 +115,7 @@ function App() {
                               <Route path="/watch" component={Watch} />
                               <Route path="/checkout" component={Checkout} />
                               <Route path="/match-request-result" component={MatchRequestResult} />
+                              <Route path="/trainer-offer" component={TrainerSendOffer} />
                           </Switch>
                           </div>
                     </div>

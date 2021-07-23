@@ -38,7 +38,7 @@ const MyMatchesCard = () => {
                             <span className="d-inline m-1 badge bg-success">3 kişi aranıyor</span>
                         </div>
                     </div>
-                    <div className="card-content d-flex card-body card-custom row">
+                    <div className="d-flex card-custom row p-2">
                         <div className="col-lg-8 row col-sm-6 text-center">
                             <div class="col-4 text-center">
                                 <BsClockFill size={20} className="text-primary"/>
