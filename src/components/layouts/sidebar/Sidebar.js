@@ -9,12 +9,12 @@ import {BsPeopleFill} from "@react-icons/all-files/bs/BsPeopleFill";
 import {ImTree} from "@react-icons/all-files/im/ImTree";
 import {GiStrong} from "@react-icons/all-files/gi/GiStrong";
 import {BsFillCameraVideoFill} from "@react-icons/all-files/bs/BsFillCameraVideoFill";
+import {GiRainbowStar} from "@react-icons/all-files/gi/GiRainbowStar";
 
 import CourtSearchModal from '../../modals/court-search/CourtSearchModal';
 import PlayerSearchModal from '../../modals/player-search/PlayerSearchModal';
 import TeamSearchModal from '../../modals/team-search/TeamSearchModal';
 import TrainerSearchModal from '../../modals/trainer-search/TrainerSearchModal';
-
 
 import {
     NavLink,
@@ -177,6 +177,12 @@ const Sidebar = () => {
                                 <NavLink  to="/tournaments" className="sidebar-link">
                                     <ImTree />
                                     <span>Tournaments</span>
+                                </NavLink >
+                            </li>
+                            <li className="sidebar-item">
+                                <NavLink  to="/all-star" className="sidebar-link">
+                                    <GiRainbowStar />
+                                    <span>All Star</span>
                                 </NavLink >
                             </li>
                             <hr />

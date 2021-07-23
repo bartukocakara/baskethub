@@ -51,6 +51,7 @@ import CourtListMap from './components/screens/courts/court-list-map/CourtListMa
 import MatchRequestResult from './components/screens/profile/partials/match-request-result/MatchRequestResult';
 import CreateSubscription from './components/screens/create/create-subscription/CreateSubscription';
 import CreateTraining from './components/screens/create/create-training/CreateTraining';
+import AllStar from './components/screens/all-star/AllStar';
 
 function App() {
   return (
@@ -81,6 +82,7 @@ function App() {
                               <Route path="/court-detail" component={CourtDetail} />
                               <Route path="/last-search" component={LastSearch} />
                               <Route path="/tournaments" component={Tournaments} />
+                              <Route path="/all-star" component={AllStar} />
                               <Route path="/my-teams" component={MyTeams} />
                               <Route path="/my-team-detail" component={MyTeamDetail} />
                               <Route path="/team-detail" component={TeamDetail} />
