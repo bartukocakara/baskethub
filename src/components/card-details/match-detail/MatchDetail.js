@@ -85,7 +85,7 @@ const MatchDetail = () => {
                             <GiTrophyCup size={25} className="text-light m-2"/>
                             Reward is : Match Payment
                         </span>
-                        <div className="col-md-6 row mt-3">
+                        <div className="col-md-6 bg-light row mt-3 p-0">
                             <div className="col-md-3">
                             <FcCalendar size={30}/> 
                             </div>
@@ -117,7 +117,7 @@ const MatchDetail = () => {
                             </label>
                             </div>
                     </div>
-                    <div className="col-md-6 row  mt-3">
+                    <div className="col-md-6 row mt-3">
                         <div className="col-md-12 ">
                             <label class="btn-light text-dark p-2 w-100">
                                 <FcMoneyTransfer size={30}/>Ödeme Türü <span class="badge text-dark d-block">Credit Card</span>

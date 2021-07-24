@@ -27,7 +27,7 @@ const Navbar = () => {
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0 d-flex">
                             <li className="nav-item dropdown me-1">
                             <div class="dropdown m-3">
-                                <Link class="btn btn-primary " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                <Link class="btn btn-primary fw-bold" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                     Create +
                                 </Link>
                                 <ul class="dropdown-menu mt-2" aria-labelledby="dropdownMenuLink">

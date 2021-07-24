@@ -47,7 +47,7 @@ const FavouriteTrainerCard = () => {
                                 <Avatar alt="Agnes Walker" src="assets/images/faces/2.jpg" />
                                 <Avatar alt="Trevor Henderson" src="assets/images/faces/2.jpg" />
                             </AvatarGroup>
-                            <span>kişi bu antremana katılıyor</span>
+                            <span>people working-out with this trainer</span>
                         </div>
                         <div class="col-md-4 text-center row">
                             <div className="d-flex"><h6 className="m-1">W :</h6><span className="m-1">500$</span></div>

@@ -19,9 +19,9 @@ const CreateTraining = () => {
     const [selected, setSelected] = useState([]);
 
     return (
-        <div className="card">
-            <h3>Create training</h3>
-            <div class="container">
+        <div>
+            <h5 className="text-center">Create training</h5>
+            <div class="container card">
 
                 <div class="card">
                     <div class="card-body">
