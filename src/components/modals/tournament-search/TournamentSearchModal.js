@@ -11,12 +11,26 @@ const TournamentSearchModal = ({handleTournamentClose, show}) => {
 
                 <Modal.Title>Tournament Search</Modal.Title>
             </Modal.Header>
-            <form action="#">
-                <div className="modal-body">
-                <h6 className="text-center">Search by name</h6>
-                    <div className="form-group">
-                        <input type="text" placeholder="Write Name" className="form-control" />
-                    </div>
+            <form action="#" className="m-2 p-2">
+                <div className="form-group">
+                    <h6 className="text-center">Select Country</h6>
+                    <select className="form-control m-2">
+                        <option>Germany</option>
+                        <option>Netherlands</option>
+                        <option>Spain</option>
+                        <option>Italy</option>
+                        <option>Turkey</option>
+                    </select>
+                </div>
+                <div className="form-group">
+                    <h6 className="text-center">Select City</h6>
+                    <select className="form-control m-2">
+                        <option>Berlin</option>
+                        <option>Amsterdam</option>
+                        <option>Barcelona</option>
+                        <option>Roma</option>
+                        <option>Istanbul</option>
+                    </select>
                 </div>
             </form>
             <Modal.Footer>

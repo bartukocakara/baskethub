@@ -29,31 +29,30 @@ const FavouriteTrainerCard = () => {
         <CourtCommentsModal handleCommentsModalClose={handleCommentsModalClose} show={showCommentsModal}/>
         <div className="col-xl-9 col-md-9 m-auto col-sm-12 feed-card feed-my-fav-players-card">
             <div className="card shadow">
-                
-                <div class=" d-flex justify-content-between p-2">
+                <div class="d-flex justify-content-between p-2">
                     <h4 className="card-title text-center">Bartu Kocakara</h4>
                     <p><GoLocation size={25} className="text-primary"/>İstanbul</p>
                 </div>
-                <div className="d-flex p-2 card-custom">
+                <div className="d-flex card-custom">
                     <div className="row">
+                        <div class="col-md-4 avatar avatar-xl me-3">
+                            <img className="m-auto" src="assets/images/samples/player.jpg"
+                            alt="Card cap" />
+                        </div>
                         <div class="col-md-4 text-center">
-                        <AvatarGroup max={4} className="m-3">
-                            <Avatar alt="Remy Sharp" src="assets/images/faces/2.jpg" />
-                            <Avatar alt="Travis Howard" src="assets/images/faces/2.jpg" />
-                            <Avatar alt="Cindy Baker" src="assets/images/faces/2.jpg" />
-                            <Avatar alt="Agnes Walker" src="assets/images/faces/2.jpg" />
-                            <Avatar alt="Trevor Henderson" src="assets/images/faces/2.jpg" />
-                        </AvatarGroup>
-                        <span>kişi bu antremana katılıyor</span>
+                            <AvatarGroup max={4} className="m-auto">
+                                <Avatar alt="Remy Sharp" src="assets/images/faces/2.jpg" />
+                                <Avatar alt="Travis Howard" src="assets/images/faces/2.jpg" />
+                                <Avatar alt="Cindy Baker" src="assets/images/faces/2.jpg" />
+                                <Avatar alt="Agnes Walker" src="assets/images/faces/2.jpg" />
+                                <Avatar alt="Trevor Henderson" src="assets/images/faces/2.jpg" />
+                            </AvatarGroup>
+                            <span>kişi bu antremana katılıyor</span>
                         </div>
                         <div class="col-md-4 text-center row">
                             <div className="d-flex"><h6 className="m-1">W :</h6><span className="m-1">500$</span></div>
                             <div className="d-flex"><h6 className="m-1">M :</h6><span className="m-1">3000$</span></div>
                             <div className="d-flex"><h6 className="m-1">Y :</h6><span className="m-1">5500$</span></div>
-                        </div>
-                        <div class="col-md-3 m-auto text-center">
-                            <img className="img-fluid w-100 card-image" src="assets/images/samples/player.jpg"
-                            alt="Card cap" />
                         </div>
                     </div>
                     

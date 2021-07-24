@@ -21,6 +21,7 @@ import {
     Link,
   } from "react-router-dom";
 import "./_sidebar.scss";
+import TournamentSearchModal from '../../modals/tournament-search/TournamentSearchModal';
 
 const Sidebar = () => {
 
@@ -44,12 +45,18 @@ const Sidebar = () => {
     const handleTrainerClose = () => setTrainerShow(false);
     const handleTrainerShow = () => setTrainerShow(true);
 
+    const [showTournamentSearch, setTournamentShow] = useState(false);
+  
+    const handleTournamentClose = () => setTournamentShow(false);
+    const handleTournamentShow = () => setTournamentShow(true);
+
     return (
         <>
         <CourtSearchModal handleCourtClose={handleCourtClose} show={showCourtSearch} />
         <PlayerSearchModal handlePlayerClose={handlePlayerClose} show={showPlayerSearch} />
         <TeamSearchModal handleTeamClose={handleTeamClose} show={showTeamSearch} />
         <TrainerSearchModal handleTrainerClose={handleTrainerClose} show={showTrainerSearch}/>
+        <TournamentSearchModal handleTournamentClose={handleTournamentClose} show={showTournamentSearch}/>
             <div id="sidebar" className="active">
                 <div className="sidebar-wrapper active ps ps--active-y">
                     <div class="sidebar-header">
@@ -116,6 +123,14 @@ const Sidebar = () => {
                                         <Link variant="primary" onClick={handlePlayerShow}>
                                             <GoPerson className="m-1" size={18} />
                                             Player Search
+                                        </Link>
+                                    </li>
+                                    <li className="submenu-item">
+                                        <Link variant="primary" className="d-flex" onClick={handleTournamentShow}>
+                                            <ImTree className="m-1" size={18} />
+                                            <span>
+                                            Tournament Search
+                                            </span>
                                         </Link>
                                     </li>
                                     <li className="submenu-item">

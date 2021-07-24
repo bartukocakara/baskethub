@@ -22,10 +22,10 @@ const RequestMatchJoin = ({handleRequestMatchJoinModalClose, show}) => {
             </Modal.Header>
             <Modal.Body>
             <form className="p-4">
-            <div class="avatar avatar-lg m-4 widget-card-right">
-                <img src="assets/images/faces/2.jpg" alt="" srcset="" />
-                <h6 className="text-center">Please select match you want to ask for join Bartu</h6>
-            </div>
+                <div class="avatar avatar-lg m-4 widget-card-right">
+                    <img src="assets/images/faces/2.jpg" alt="" srcset="" />
+                    <h6 className="text-center">Please select match you want to ask for join Bartu</h6>
+                </div>
                 <select className="form-control m-2">
                     <option>Game 1</option>
                     <option>Game 2</option>
@@ -35,7 +35,6 @@ const RequestMatchJoin = ({handleRequestMatchJoinModalClose, show}) => {
                 </select>
                 <h6 className="text-center">You can send note to a player</h6>
                 <textarea className="form-control m-2" rows="5">Write here...</textarea>
-            {/* <Modal.Footer> */}
                 <div className="text-center">
                 <Button variant="danger m-2" onClick={handleRequestMatchJoinModalClose}>
                     Close
@@ -44,7 +43,6 @@ const RequestMatchJoin = ({handleRequestMatchJoinModalClose, show}) => {
                     Send Request
                 </Button>
                 </div>
-            {/* </Modal.Footer> */}
             </form>
             </Modal.Body>
         </Modal>
