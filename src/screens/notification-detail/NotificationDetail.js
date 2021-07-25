@@ -1,11 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./_notificationDetail.scss";
 import {
     Link
   } from "react-router-dom";
+import Confirm from '../../components/modals/confirm/Confirm';
 
 const NotificationDetail = () => {
+
+    const [showConfirm, setConfirmShow] = useState(false);
+  
+    const handleConfirmClose = () => setConfirmShow(false);
+    const handleConfirmShow = () => setConfirmShow(true);
+    
     return (
+        <>
+        <Confirm handleConfirmClose={handleConfirmClose} show={showConfirm} />
+
         <div class="row">
             <div class="card">
                 <div class="card-header">
@@ -27,7 +37,7 @@ const NotificationDetail = () => {
                     </div>
                     <div className="name flex-grow-1">
                         <div className="buttons text-center">
-                            <button className="btn btn-success">Katıl +</button>
+                            <button className="btn btn-success" onClick={handleConfirmShow}>Katıl +</button>
                             <Link to="message-detail" className="btn btn-primary">Mesaj</Link>
                             <button className="btn btn-warning">Paylaş</button>
                         </div>
@@ -39,6 +49,7 @@ const NotificationDetail = () => {
                 </div>
             </div>
         </div>
+        </>
     )
 }
 
