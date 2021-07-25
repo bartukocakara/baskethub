@@ -3,13 +3,13 @@ import "./_index.scss";
 
 import Sidebar from "./components/layouts/sidebar/Sidebar";
 import Navbar from "./components/layouts/navbar/Navbar";
-import LastActivities from './components/screens/last-activities/LastActivities';
-import MyMatches from './components/screens/my-matches/MyMatches';
-import MyFavCourts from './components/screens/my-fav-courts/MyFavCourts';
-import LastSearch from './components/screens/last-search/LastSearch';
-import MyFavPlayers from './components/screens/my-fav-players/MyFavPlayers';
-import Checkout from './components/screens/checkout/Checkout';
-import MyTeams from './components/screens/my-teams/MyTeams';
+import LastActivities from './screens/last-activities/LastActivities';
+import MyMatches from './screens/my-matches/MyMatches';
+import MyFavCourts from './screens/my-fav-courts/MyFavCourts';
+import LastSearch from './screens/last-search/LastSearch';
+import MyFavPlayers from './screens/my-fav-players/MyFavPlayers';
+import Checkout from './screens/checkout/Checkout';
+import MyTeams from './screens/my-teams/MyTeams';
 import PlayerDetail from './components/card-details/player-detail/PlayerDetail';
 import CourtDetail from './components/card-details/court-detail/CourtDetail';
 import MyTeamDetail from './components/card-details/my-team-detail/MyTeamDetail';
@@ -26,33 +26,33 @@ import {
   Route,
   Switch,
 } from "react-router-dom";
-import Profile from './components/screens/profile/Profile';
-import MessageDetail from './components/screens/message-detail/MessageDetail';
-import TeamMessage from './components/screens/team-message-detail/TeamMessage';
-import MatchMessage from './components/screens/match-message-detail/MatchMessage';
-import NotificationDetail from './components/screens/notification-detail/NotificationDetail';
-import Notifications from './components/screens/notifications/Notifications';
+import Profile from './screens/profile/Profile';
+import MessageDetail from './screens/message-detail/MessageDetail';
+import TeamMessage from './screens/team-message-detail/TeamMessage';
+import MatchMessage from './screens/match-message-detail/MatchMessage';
+import NotificationDetail from './screens/notification-detail/NotificationDetail';
+import Notifications from './screens/notifications/Notifications';
 import MatchDetail from './components/card-details/match-detail/MatchDetail';
-import Tournaments from './components/screens/tournaments/Tournaments';
+import Tournaments from './screens/tournaments/Tournaments';
 import TrainerDetail from './components/card-details/trainer-detail/TrainerDetail';
-import CreateTeam from './components/screens/create/create-team/CreateTeam';
-import ProfileEdit from './components/screens/profile/ProfileEdit';
-import CreateCourt from './components/screens/create/create-court/CreateCourt';
-import CreateTournament from './components/screens/create/create-tournament/CreateTournament';
-import Matches from './components/screens/matches/Matches';
+import CreateTeam from './screens/create/create-team/CreateTeam';
+import ProfileEdit from './screens/profile/ProfileEdit';
+import CreateCourt from './screens/create/create-court/CreateCourt';
+import CreateTournament from './screens/create/create-tournament/CreateTournament';
+import Matches from './screens/matches/Matches';
 import { ToastContainer } from 'react-toastify';
 import TournamentDetail from './components/card-details/tournament-detail/TournamentDetail';
-import CreateMatch from './components/screens/create/create-match/CreateMatch';
-import Watch from './components/screens/watch/Watch';
-import Sponsors from './components/screens/sponsors/Sponsors';
-import MyFavTrainers from './components/screens/my-fav-trainers/MyFavTrainers';
-import MyTrainers from './components/screens/my-trainers/MyTrainers';
-import CourtListMap from './components/screens/courts/court-list-map/CourtListMap';
-import MatchRequestResult from './components/screens/profile/partials/match-request-result/MatchRequestResult';
-import CreateSubscription from './components/screens/create/create-subscription/CreateSubscription';
-import CreateTraining from './components/screens/create/create-training/CreateTraining';
-import AllStar from './components/screens/all-star/AllStar';
-import TrainerSendOffer from './components/screens/trainer-send-offer/TrainerSendOffer';
+import CreateMatch from './screens/create/create-match/CreateMatch';
+import Watch from './screens/watch/Watch';
+import Sponsors from './screens/sponsors/Sponsors';
+import MyFavTrainers from './screens/my-fav-trainers/MyFavTrainers';
+import MyTrainers from './screens/my-trainers/MyTrainers';
+import CourtListMap from './screens/courts/court-list-map/CourtListMap';
+import MatchRequestResult from './screens/profile/partials/match-request-result/MatchRequestResult';
+import CreateSubscription from './screens/create/create-subscription/CreateSubscription';
+import CreateTraining from './screens/create/create-training/CreateTraining';
+import AllStar from './screens/all-star/AllStar';
+import TrainerSendOffer from './screens/trainer-send-offer/TrainerSendOffer';
 
 function App() {
   return (

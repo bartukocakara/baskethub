@@ -1,5 +1,5 @@
 import React from 'react'
-import TournamentWidgetCard from '../../../cards/widget-cards/tournament-widget-card/TournamentWidgetCard'
+import TournamentWidgetCard from './components/cards/widget-cards/tournament-widget-card/TournamentWidgetCard'
 
 const TournamentWidget = () => {
     return (

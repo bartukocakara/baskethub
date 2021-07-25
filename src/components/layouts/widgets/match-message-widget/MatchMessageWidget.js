@@ -1,5 +1,5 @@
 import React from 'react'
-import MatchMessageWidgetCard from '../../../cards/widget-cards/match-message-widget-card/MatchMessageWidgetCard'
+import MatchMessageWidgetCard from "../../../cards/widget-cards/match-message-widget-card/MatchMessageWidgetCard"
 
 const MatchMessageWidget = () => {
     return (

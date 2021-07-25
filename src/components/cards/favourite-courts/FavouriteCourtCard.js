@@ -18,7 +18,7 @@ import {
     Link
   } from "react-router-dom";
 import "./_favouriteCourt.scss";
-import RequestCourtReservation from '../../modals/request-court-reservation/RequestCourtReservation';
+import RequestCourtReservation from './../../../components/modals/request-court-reservation/RequestCourtReservation';
 import CourtCommentsModal from '../../modals/court-comments/CourtCommentsModal';
      
 

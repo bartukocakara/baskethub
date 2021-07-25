@@ -1,5 +1,5 @@
 import React from 'react'
-import PlayerWidgetCard from '../../cards/widget-cards/player-widget-card/PlayerWidgetCard';
+import PlayerWidgetCard from './components/cards/widget-cards/player-widget-card/PlayerWidgetCard';
 import "./_widget.scss";
 
 const Widgets = () => {

@@ -19,7 +19,7 @@ import {
 import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
 import "./_playerDetail.scss";
-import RequestPlayerJoin from '../../modals/request-player-join/RequestPlayerJoin';
+import RequestPlayerJoin from '../../../components/modals/request-player-join/RequestPlayerJoin';
 import Teams from "./teams/Teams";
 import Matches from './matches/Matches';
 

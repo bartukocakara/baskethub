@@ -16,8 +16,8 @@ import {
   } from "react-router-dom";
   
 import "./_favouritePlayer.scss";
-import RequestPlayerJoin from '../../modals/request-player-join/RequestPlayerJoin';
-import RequestTeamJoin from '../../modals/request-team-join/RequestTeamJoin';
+import RequestPlayerJoin from '../../../components/modals/request-player-join/RequestPlayerJoin';
+import RequestTeamJoin from '../../../components/modals/request-team-join/RequestTeamJoin';
 
 const FavouritePlayerCard = () => {
     const [showRequestPlayerJoin, setRequestPJShow] = useState(false);

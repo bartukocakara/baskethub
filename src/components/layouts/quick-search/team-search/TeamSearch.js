@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import TeamSearchModal from "../../../modals/team-search/TeamSearchModal";
+import TeamSearchModal from "../../../../components/modals/team-search/TeamSearchModal";
 
 const TeamSearch = () => {
     const [showTeamSearch, setTeamShow] = useState(false);
