@@ -3,6 +3,8 @@ import React from 'react'
 import { GoLocation } from "@react-icons/all-files/go/GoLocation";
 import { GiPayMoney } from "@react-icons/all-files/gi/GiPayMoney";
 import { AiFillStar } from "@react-icons/all-files/ai/AiFillStar";
+import { BiWorld } from "@react-icons/all-files/bi/BiWorld";
+
 import {
     Link
   } from "react-router-dom";
@@ -20,25 +22,33 @@ const Courts = () => {
                 </div>
                 <div className="header form m-2 p-3">
                     <form className="row">
-                        <div className="col-md-4 text-center">
-                            <GoLocation size={20} className="m-2 text-primary"/>
-                            <select className="form-control">
-                                <option>İzmir</option>
-                                <option>İstanbul</option>
-                                <option>Ankara</option>
+                        <div className="col-md-6 text-center">
+                            <BiWorld size={20} className="m-2 text-primary"/>
+                            <select className="form-control w-50 m-auto">
+                                <option>Netherlands</option>
+                                <option>Germany</option>
+                                <option>Turkey</option>
                             </select>
                         </div>
-                        <div className="col-md-4  text-center">
+                        <div className="col-md-6 text-center">
+                            <GoLocation size={20} className="m-2 text-primary"/>
+                            <select className="form-control w-50 m-auto">
+                                <option>Amsterdam</option>
+                                <option>Berlin</option>
+                                <option>İzmir</option>
+                            </select>
+                        </div>
+                        <div className="col-md-6 text-center">
                             <GiPayMoney size={20} className="m-2 text-primary"/>
-                            <select className="form-control">
+                            <select className="form-control w-75 m-auto">
                                 <option>75-100 ₺</option>
                                 <option>100-125 ₺</option>
                                 <option>125-150 ₺</option>
                             </select>
                         </div>
-                        <div className="col-md-4  text-center">
+                        <div className="col-md-6 text-center">
                             <AiFillStar className="m-2 text-primary"/>
-                            <select className="form-control m-1" name="" >
+                            <select className="form-control w-75 m-auto" name="" >
                                 <option>1 Star</option>,
                                 <option>2 Star</option>
                                 <option>3 Star</option>
