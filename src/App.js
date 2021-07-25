@@ -53,6 +53,7 @@ import CreateSubscription from './screens/create/create-subscription/CreateSubsc
 import CreateTraining from './screens/create/create-training/CreateTraining';
 import AllStar from './screens/all-star/AllStar';
 import TrainerSendOffer from './screens/trainer-send-offer/TrainerSendOffer';
+import Trainings from './screens/trainings/Trainings';
 
 function App() {
   return (
@@ -73,6 +74,7 @@ function App() {
                               <Route path="/matches" component={Matches} />
                               <Route path="/my-matches" component={MyMatches} />
                               <Route path="/my-trainers" component={MyTrainers} />
+                              <Route path="/trainings" component={Trainings} />
                               <Route path="/match-detail" component={MatchDetail} />
                               <Route path="/ended-match-detail" component={EndedMatch} />
                               <Route path="/favourite-players" component={MyFavPlayers} />

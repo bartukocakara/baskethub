@@ -10,6 +10,7 @@ import {ImTree} from "@react-icons/all-files/im/ImTree";
 import {GiStrong} from "@react-icons/all-files/gi/GiStrong";
 import {BsFillCameraVideoFill} from "@react-icons/all-files/bs/BsFillCameraVideoFill";
 import {GiRainbowStar} from "@react-icons/all-files/gi/GiRainbowStar";
+import {FaRunning} from "@react-icons/all-files/fa/FaRunning";
 
 import CourtSearchModal from '../../modals/court-search/CourtSearchModal';
 import PlayerSearchModal from '../../modals/player-search/PlayerSearchModal';
@@ -22,6 +23,7 @@ import {
   } from "react-router-dom";
 import "./_sidebar.scss";
 import TournamentSearchModal from '../../modals/tournament-search/TournamentSearchModal';
+import TrainingSearchModal from '../../modals/training-search/TrainingSearchModal';
 
 const Sidebar = () => {
 
@@ -50,6 +52,11 @@ const Sidebar = () => {
     const handleTournamentClose = () => setTournamentShow(false);
     const handleTournamentShow = () => setTournamentShow(true);
 
+    const [showTrainingSearch, setTrainingShow] = useState(false);
+  
+    const handleTrainingClose = () => setTrainingShow(false);
+    const handleTrainingShow = () => setTrainingShow(true);
+
     return (
         <>
         <CourtSearchModal handleCourtClose={handleCourtClose} show={showCourtSearch} />
@@ -57,6 +64,7 @@ const Sidebar = () => {
         <TeamSearchModal handleTeamClose={handleTeamClose} show={showTeamSearch} />
         <TrainerSearchModal handleTrainerClose={handleTrainerClose} show={showTrainerSearch}/>
         <TournamentSearchModal handleTournamentClose={handleTournamentClose} show={showTournamentSearch}/>
+        <TrainingSearchModal handleTrainingClose={handleTrainingClose} show={showTrainingSearch}/>
             <div id="sidebar" className="active">
                 <div className="sidebar-wrapper active ps ps--active-y">
                     <div class="sidebar-header">
@@ -126,6 +134,12 @@ const Sidebar = () => {
                                         </Link>
                                     </li>
                                     <li className="submenu-item">
+                                        <Link variant="primary" onClick={handleTrainingShow}>
+                                            <FaRunning className="m-1" size={18} />
+                                            Training Search
+                                        </Link>
+                                    </li>
+                                    <li className="submenu-item">
                                         <Link variant="primary" className="d-flex" onClick={handleTournamentShow}>
                                             <ImTree className="m-1" size={18} />
                                             <span>
@@ -186,6 +200,12 @@ const Sidebar = () => {
                                 <NavLink  to="/last-search" className="sidebar-link">
                                     <AiOutlineFileSearch />
                                     <span>Last Search</span>
+                                </NavLink >
+                            </li>
+                            <li className="sidebar-item">
+                                <NavLink  to="/trainings" className="sidebar-link">
+                                    <FaRunning />
+                                    <span>Trainings</span>
                                 </NavLink >
                             </li>
                             <li className="sidebar-item">

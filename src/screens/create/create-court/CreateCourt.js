@@ -52,7 +52,7 @@ const CreateCourt = () => {
                         <textarea type="text" className="form-control" placeholder="Enter Address" rows="3"></textarea>
                     </div>
                     <div className="form-group col-md-12 p-2 text-center p-4">
-                        <input type="button" className="btn btn-primary btn-lg w-25 fw-bold" id="helpInputTop" value="Complete" />
+                        <input type="button" className="btn btn-primary btn-lg w-25 fw-bold" id="helpInputTop" value="Create" />
                     </div>
                 </div>
             </div>

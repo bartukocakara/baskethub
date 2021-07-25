@@ -1,20 +1,11 @@
 import React, { useState } from 'react'
-import FavPlayers from '../../../components/modals/request-court-reservation/fav-players/FavPlayers';
-import FavTeams from '../../../components/modals/request-court-reservation/fav-teams/FavTeams';
-import Courts from './courts/Courts';
 import { FcMoneyTransfer } from "@react-icons/all-files/fc/FcMoneyTransfer";
 import { FcCalendar } from "@react-icons/all-files/fc/FcCalendar";
 import { RiUserStarLine } from "@react-icons/all-files/ri/RiUserStarLine";
 import { BsPeopleFill } from "@react-icons/all-files/bs/BsPeopleFill";
 import { AiFillStar } from "@react-icons/all-files/ai/AiFillStar";
 import { AiTwotoneAppstore } from "@react-icons/all-files/ai/AiTwotoneAppstore";
-import { GoLocation } from "@react-icons/all-files/go/GoLocation";
-import { GiPayMoney } from "@react-icons/all-files/gi/GiPayMoney";
-import { FcInfo } from "@react-icons/all-files/fc/FcInfo";
-import { GiBugleCall } from "@react-icons/all-files/gi/GiBugleCall";
 import { FcEditImage } from "@react-icons/all-files/fc/FcEditImage";
-import { GiTrophyCup } from "@react-icons/all-files/gi/GiTrophyCup";
-import { RiCoupon3Line } from "@react-icons/all-files/ri/RiCoupon3Line";
 
 import {
     Link,
@@ -23,6 +14,16 @@ import Avatar from '@material-ui/core/Avatar';
 import AvatarGroup from '@material-ui/lab/AvatarGroup';
 import "./_createMatch.scss";
 import EditMatchEventPayment from '../../../components/modals/edit-match-event-payment/EditMatchEventPayment';
+import Name from './tabs/Name';
+import Payment from './tabs/Payment';
+import Date from './tabs/Date';
+import CourtUsage from './tabs/CourtUsage';
+import Coupon from './tabs/Coupon';
+import Players from './tabs/Players';
+import Teams from './tabs/Teams';
+import Prizes from './tabs/Prizes';
+import Notes from './tabs/Notes';
+import Courts from './tabs/Courts';
 
 const CreateMatch = () => {
 
@@ -149,208 +150,87 @@ const CreateMatch = () => {
                                         </div>
                                     </div>
                                     <div class="tab-pane fade active show" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                                        <form class="">
-                                            <div class="row">
-                                                <div className="col-12">
-                                                    <div className="form-group w-50 m-auto pb-3 text-center">
-                                                        <label className="w-50 fw-bold text-primary">Give this match a name:</label>
-                                                        <input className="form-control" placeholder="Write name..." />
+                                        <div class="card-body">
+                                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <a class="nav-link active" id="name-tab" data-bs-toggle="tab" href="#name" role="tab" aria-controls="name" aria-selected="true">Name</a>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <a class="nav-link" id="payment-tab" data-bs-toggle="tab" href="#payment" role="tab" aria-controls="payment" aria-selected="false">Payment</a>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <a class="nav-link" id="date-tab" data-bs-toggle="tab" href="#date" role="tab" aria-controls="date" aria-selected="false">Date</a>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <a class="nav-link" id="court-usage-tab" data-bs-toggle="tab" href="#court-usage" role="tab" aria-controls="court-usage" aria-selected="false">Court usage</a>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <a class="nav-link" id="coupon-tab" data-bs-toggle="tab" href="#coupon" role="tab" aria-controls="coupon" aria-selected="false">Coupon</a>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <a class="nav-link" id="players-tab" data-bs-toggle="tab" href="#players" role="tab" aria-controls="players" aria-selected="false">Players</a>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <a class="nav-link" id="teams-tab" data-bs-toggle="tab" href="#teams" role="tab" aria-controls="teams" aria-selected="false">Teams</a>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <a class="nav-link" id="courts-tab" data-bs-toggle="tab" href="#courts" role="tab" aria-controls="courts" aria-selected="false">Courts</a>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <a class="nav-link" id="prizes-tab" data-bs-toggle="tab" href="#prizes" role="tab" aria-controls="prizes" aria-selected="false">Prizes</a>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <a class="nav-link" id="notes-tab" data-bs-toggle="tab" href="#notes" role="tab" aria-controls="notes" aria-selected="false">Notes</a>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content" id="myTabContent">
+                                                <div class="tab-pane fade show active" id="name" role="tabpanel" aria-labelledby="name-tab">
+                                                    <Name />
+                                                </div> 
+                                                <div class="tab-pane fade" id="payment" role="tabpanel" aria-labelledby="payment-tab">
+                                                   <Payment />
+                                                </div>
+                                                <div class="tab-pane fade" id="date" role="tabpanel" aria-labelledby="date-tab">
+                                                    <Date />
+                                                </div>
+                                                <div class="tab-pane fade" id="court-usage" role="tabpanel" aria-labelledby="court-usage-tab">
+                                                    <CourtUsage />
+                                                </div>
+                                                <div class="tab-pane fade" id="coupon" role="tabpanel" aria-labelledby="coupon-tab">
+                                                    <Coupon />
+                                                </div> 
+                                                <div class="tab-pane fade" id="players" role="tabpanel" aria-labelledby="players-tab">
+                                                    <Players />
+                                                </div> 
+                                                <div class="tab-pane fade" id="teams" role="tabpanel" aria-labelledby="teams-tab">
+                                                    <Teams />  
+                                                </div>
+                                                <div class="tab-pane fade" id="courts" role="tabpanel" aria-labelledby="courts-tab">
+                                                    <Courts />
+                                                </div>
+                                                <div class="tab-pane fade" id="prizes" role="tabpanel" aria-labelledby="prizes-tab">
+                                                    <Prizes />
+                                                </div>
+                                                <div class="tab-pane fade" id="notes" role="tabpanel" aria-labelledby="notes-tab">
+                                                    <Notes />
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-auto d-flex m-auto">
+                                                <div class="form-check m-2">
+                                                    <div class="checkbox mt-2">
+                                                        <input type="checkbox" class="form-check-input"/>
+                                                        <label for="remember-me-v " class="fw-bold">Save this option</label>
                                                     </div>
                                                 </div>
-                                                <hr className="m-3 border border-light" />
-                                                <FcMoneyTransfer className="col-md-12" size={50}/>
-                                                <div class="col-4">
-                                                    <div class="form-group text-center">
-                                                        <label for="first-name-icon">Pay Option - 1</label>
-                                                    </div>
-                                                    <select className="form-control m-1" name="" >
-                                                        <option>Bank Card</option>
-                                                        <option>Credit Card</option>
-                                                        <option>Sipay</option>
-                                                    </select>
+                                                <div class="d-flex m-2">
+                                                    <button type="submit" class="btn btn-primary me-1 mb-1">Create Match</button>
+                                                    <a href="/" class="btn btn-light-secondary me-1 mb-1" >Reset</a>
                                                 </div>
-                                                <div class="col-4">
-                                                    <div class="form-group text-center">
-                                                        <label for="first-name-icon" >Pay Option - 2</label>
-                                                    </div>
-                                                    <select className="form-control m-1" name="" >
-                                                        <option>Seperate Payment</option>
-                                                        <option>Only by me</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-4">
-                                                    <div class="form-group text-center">
-                                                        <label for="first-name-icon" >Pay Option - 3</label>
-                                                    </div>
-                                                    <select className="form-control m-1" name="" >
-                                                        <option>Pre-paid</option>,
-                                                        <option>Pay at check-in</option>
-                                                    </select>
-                                                </div>
-                                                <hr className="m-3 border border-light" />
-                                                <FcCalendar className="col-md-12" size={50}/>
-                                                <div className="col-6">
-                                                    <div className="form-group text-center">
-                                                        <label for="first-name-icon" className="m-2">Date</label>
-                                                    </div>
-                                                    <input type="date" className="form-control m-2" />
-                                                </div>
-                                                <div className="col-3 mt-3">
-                                                    <div class="form-group text-center">
-                                                        <label for="first-name-icon">Start</label>
-                                                    </div>
-                                                    <input type="time" className="form-control m-2" />
-                                                </div>
-                                                <div className="col-3 mt-3">
-                                                    <div className="form-group text-center">
-                                                        <label for="first-name-icon">End</label>
-                                                    </div>
-                                                    <input type="time" className="form-control m-2" />
-                                                </div>
-                                                <hr className="m-3 border border-light" />
+                                            </div>
                                                 
-                                                <div className="row col-md-12">
-                                                    <div className="col-md-6">
-                                                        <div className="col-md-12 text-center">
-                                                            <img className="court-field margin-auto" src="assets/images/logo/basketball-court.svg" alt="court-field"/>
-                                                        </div>
-                                                        <div className="col-md-6 m-auto text-center mt-3 mb-3">
-                                                            <div className="d-flex m-2">
-                                                                <h6 className="m-auto m-2">Field use<FcInfo size={25}/></h6>
-                                                            </div>
-                                                            <select className="form-control fw-bold">
-                                                                <option>Full Court</option>
-                                                                <option>Half Court</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div className="col-md-6 mt-4">
-                                                        <div className="col-md-12 text-center">
-                                                            <RiCoupon3Line size={50} className="text-primary"/>
-                                                        </div>
-                                                        <div className="col-md-6 m-auto text-center mt-3">
-                                                            <label>Coupon code :</label>
-                                                            <div className="d-flex m-2">
-                                                                <input type="text" className="form-control w-100" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <hr className="m-3 border border-light" />
-                                                <GiBugleCall size={50} className="text-primary" />
-                                                <div className="col-md-12 m-auto">
-                                                    <div className="card-body">
-                                                        <h6 className="text-center">Call List</h6>
-                                                        <ul className="nav nav-tabs create-match-player-list" id="myTab" role="tablist">
-                                                            <li className="nav-item" role="presentation">
-                                                                <a className="nav-link active" id="team-tab" data-bs-toggle="tab" href="#team" role="tab" aria-controls="team" aria-selected="true">Favourite Teams</a>
-                                                            </li>
-                                                            <li className="nav-item" role="presentation">
-                                                                <a className="nav-link" id="player-tab" data-bs-toggle="tab" href="#player" role="tab" aria-controls="player" aria-selected="false">Favourite Players</a>
-                                                            </li>
-                                                        </ul>
-                                                        <div className="tab-content player-list  m-2 border rounded" id="myTabContent">
-                                                            <div className="tab-pane fade active show" id="team" role="tabpanel" aria-labelledby="team-tab">
-                                                                <div className="list-select m-2 row"  id="widget-todo-list">
-                                                                {
-                                                                            [...Array(5)].map((player) => (
-                                                                                <FavTeams />
-                                                                            ))
-                                                                        }
-                                                                        
-                                                                </div>
-                                                            </div>
-                                                            <div className="tab-pane fade" id="player" role="tabpanel" aria-labelledby="player-tab">
-                                                                <div className="list-select m-2 row" id="widget-todo-list">
-                                                                        {
-                                                                            [...Array(5)].map((player) => (
-                                                                            <>
-                                                                            <FavPlayers />
-                                                                            
-                                                                            </>
-                                                                            ))
-                                                                        }
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div className=" m-auto border">
-                                                    <div className="card-body text-center">
-                                                        <h6>Court Search</h6>
-                                                        <div className="header form">
-                                                            <form className="row">
-                                                                <div className="col-md-4 text-center">
-                                                                    <GoLocation size={20} className="m-2 text-primary"/>
-                                                                    <select className="form-control">
-                                                                        <option>İzmir</option>
-                                                                        <option>İstanbul</option>
-                                                                        <option>Ankara</option>
-                                                                    </select>
-                                                                </div>
-                                                                <div className="col-md-4  text-center">
-                                                                    <GiPayMoney size={20} className="m-2 text-primary"/>
-                                                                    <select className="form-control">
-                                                                        <option>75-100 ₺</option>
-                                                                        <option>100-125 ₺</option>
-                                                                        <option>125-150 ₺</option>
-                                                                    </select>
-                                                                </div>
-                                                                <div className="col-md-4  text-center">
-                                                                    <AiFillStar className="m-2 text-primary"/>
-                                                                    <select className="form-control m-1" name="" >
-                                                                        <option>1 Star</option>,
-                                                                        <option>2 Star</option>
-                                                                        <option>3 Star</option>
-                                                                        <option>4 Star</option>
-                                                                        <option>5 Star</option>
-                                                                    </select>
-                                                                    
-                                                                </div>
-                                                            </form>
-                                                        </div>
-                                                        <div className="list-select m-2 w-75 m-auto border rounded"  id="widget-todo-list">
-                                                            {
-                                                                [...Array(5)].map((player) => (
-                                                                    <Courts />
-                                                                ))
-                                                            }
-                                                        </div>
-                                                        </div>
-                                                    </div>
-                                                <div class="col-12 mt-3">
-                                                    <div class="form-group text-center">
-                                                        <label className="w-50 fw-bold text-primary">You can write some note for this event:</label>
-                                                    </div>
-                                                    <textarea className="form-control" rows="3" placeholder="Write something..."></textarea>
-                                                </div>
-                                                <div class="col-12 mt-3 text-center ">
-                                                    <GiTrophyCup size={40} className="text-success m-2"/>
-                                                    <select className="form-control m-1 bg-primary m-auto w-25 p-3 text-light" name="" >
-                                                        <option>Prize x</option>,
-                                                        <option>Prize x</option>
-                                                        <option>Prize x</option>
-                                                        <option>Prize x</option>
-                                                        <option>No Prize</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-auto">
-                                                    <div class="form-check">
-                                                        <div class="checkbox mt-2">
-                                                            <input type="checkbox" id="remember-me-v" class="form-check-input" checked="" />
-                                                            <label for="remember-me-v">Remember this option</label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="btn-group mb-1">
-                                                
-                                                </div>
-                                                    <div class="col-12 d-flex justify-content-end">
-                                                        <button type="submit" class="btn btn-primary me-1 mb-1">Create Match</button>
-                                                        <button type="reset" class="btn btn-light-secondary me-1 mb-1">Reset</button>
-                                                    </div>
-                                                </div>
-                                        </form>
+                                            </div>
                                     </div>
                                 </div>
                             </div>
