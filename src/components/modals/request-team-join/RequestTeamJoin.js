@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useState } from "react";
 import { Modal } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
+import MultiSelect from "react-multi-select-component";
 
 const RequestTeamJoin = ({handleRequestTeamJoinClose, show}) => {
+
+    const options = [
+        { label: "Team 1", value: "grapes", },
+        { label: "Team 2", value: "mango" },
+        { label: "Oşbo Team", value: "strawberry", disabled: true },
+        { label: "Saturday", value: "apple" },
+        { label: "Sunday 🍊", value: "tangerine" },
+      ];
+      const [selected, setSelected] = useState([]);
+
     return (
         <Modal
             show={show}
@@ -15,7 +26,14 @@ const RequestTeamJoin = ({handleRequestTeamJoinClose, show}) => {
                 <div class="avatar">
                     <img src="assets/images/faces/1.jpg" alt="" srcset="" />
                     <span class="avatar-status bg-success"></span>
-                </div><h5>Ata Aksoy</h5>
+                </div>
+                <h5>Ata Aksoy</h5>
+                <MultiSelect
+                    options={options}
+                    value={selected}
+                    onChange={setSelected}
+                    labelledBy="Select" className="w-100 m-auto"
+                />
                 <h6 className="text-center">Select Team</h6>
                 <select className="form-control m-2">
                     <option>Team 1</option>

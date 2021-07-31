@@ -45,7 +45,7 @@ const CreateTraining = () => {
                                                     options={options}
                                                     value={selected}
                                                     onChange={setSelected}
-                                                    labelledBy="Select"
+                                                    labelledBy="Select" className="w-50 m-auto"
                                                 />
                                             </div>
                                             <div className="col-md-6 p-3">
@@ -81,6 +81,9 @@ const CreateTraining = () => {
                                     <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
                                        <Trainers />
                                     </div>
+                                </div>
+                                <div className="col-md-12 text-center">
+                                    <button className="btn btn-success btn-md w-25 py-2">Create</button>
                                 </div>
                                 </form>
                             </div>

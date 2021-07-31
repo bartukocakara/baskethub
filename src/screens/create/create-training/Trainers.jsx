@@ -3,7 +3,10 @@ import React from 'react'
 const Trainers = () => {
     return (
         <div className="container">
-            <h6 className="text-center">Pick your favourite trainers you want to train with</h6>
+            <div className="d-flex justify-content-between">
+                <h6 className="text-center">Pick your favourite trainers you want to train with</h6>
+                <input type="text" className="form-control w-25 m-auto" placeholder="Search" />
+            </div>
             <div className="players m-3 overflow-x">
 
             {
@@ -16,7 +19,6 @@ const Trainers = () => {
                             <img src="assets/images/faces/2.jpg" alt="train player" />
                             <div class="custom-control custom-checkbox m-2">
                                 <input type="checkbox" class="form-check-input form-check-primary" />
-                                <label>Select Trainer</label>
                             </div>
                         </div>
                         </div>
