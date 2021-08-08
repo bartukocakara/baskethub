@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import MatchSearchModal from "../../../modals/match-search/MatchSearchModal";
+import MatchSearchModal from "../../../modals/search/match-search/MatchSearchModal";
 
 const MatchSearch = () => {
     const [showMatchSearch, setMatchShow] = useState(false);

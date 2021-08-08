@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import TrainingSearchModal from "../../../modals/training-search/TrainingSearchModal";
+import TrainingSearchModal from "../../../modals/search/training-search/TrainingSearchModal";
 
 const TrainingSearch = () => {
 

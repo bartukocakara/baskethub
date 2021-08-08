@@ -11,19 +11,20 @@ import {GiStrong} from "@react-icons/all-files/gi/GiStrong";
 import {BsFillCameraVideoFill} from "@react-icons/all-files/bs/BsFillCameraVideoFill";
 import {GiRainbowStar} from "@react-icons/all-files/gi/GiRainbowStar";
 import {FaRunning} from "@react-icons/all-files/fa/FaRunning";
+import {FaUserTie} from "@react-icons/all-files/fa/FaUserTie";
 
-import CourtSearchModal from '../../modals/court-search/CourtSearchModal';
-import PlayerSearchModal from '../../modals/player-search/PlayerSearchModal';
-import TeamSearchModal from '../../modals/team-search/TeamSearchModal';
-import TrainerSearchModal from '../../modals/trainer-search/TrainerSearchModal';
+import CourtSearchModal from '../../modals/search/court-search/CourtSearchModal';
+import PlayerSearchModal from '../../modals/search/player-search/PlayerSearchModal';
+import TeamSearchModal from '../../modals/search/team-search/TeamSearchModal';
+import TrainerSearchModal from '../../modals/search/trainer-search/TrainerSearchModal';
 
 import {
     NavLink,
     Link,
   } from "react-router-dom";
 import "./_sidebar.scss";
-import TournamentSearchModal from '../../modals/tournament-search/TournamentSearchModal';
-import TrainingSearchModal from '../../modals/training-search/TrainingSearchModal';
+import TournamentSearchModal from '../../modals/search/tournament-search/TournamentSearchModal';
+import TrainingSearchModal from '../../modals/search/training-search/TrainingSearchModal';
 
 const Sidebar = () => {
 
@@ -140,6 +141,18 @@ const Sidebar = () => {
                                         </Link>
                                     </li>
                                     <li className="submenu-item">
+                                        <Link variant="primary" onClick={handleTrainingShow}>
+                                            <FaUserTie className="m-1" size={18} />
+                                            Coach Search
+                                        </Link>
+                                    </li>
+                                    <li className="submenu-item">
+                                        <Link variant="primary" onClick={handleTrainingShow}>
+                                            <FaUserTie className="m-1" size={18} />
+                                            Manager Search
+                                        </Link>
+                                    </li>
+                                    <li className="submenu-item">
                                         <Link variant="primary" className="d-flex" onClick={handleTournamentShow}>
                                             <ImTree className="m-1" size={18} />
                                             <span>
@@ -171,6 +184,18 @@ const Sidebar = () => {
                                 <NavLink  to="/my-trainers" className="sidebar-link">
                                 <GiStrong />
                                     <span>My Trainers</span>
+                                </NavLink >
+                            </li>
+                            <li className="sidebar-item">
+                                <NavLink  to="/coaches" className="sidebar-link">
+                                    <FaUserTie />
+                                    <span>Coaches</span>
+                                </NavLink >
+                            </li>
+                            <li className="sidebar-item">
+                                <NavLink  to="/managers" className="sidebar-link">
+                                    <FaUserTie />
+                                    <span>Managers</span>
                                 </NavLink >
                             </li>
                             <li className="sidebar-item has-sub">

@@ -54,6 +54,8 @@ import CreateTraining from './screens/create/create-training/CreateTraining';
 import AllStar from './screens/all-star/AllStar';
 import TrainerSendOffer from './screens/trainer-send-offer/TrainerSendOffer';
 import Trainings from './screens/trainings/Trainings';
+import Coaches from './screens/coaches/Coaches';
+import Managers from './screens/managers/Managers';
 
 function App() {
   return (
@@ -84,6 +86,8 @@ function App() {
                               <Route path="/courts-map" component={CourtListMap} />
                               <Route path="/court-detail" component={CourtDetail} />
                               <Route path="/last-search" component={LastSearch} />
+                              <Route path="/coaches" component={Coaches} />
+                              <Route path="/managers" component={Managers} />
                               <Route path="/tournaments" component={Tournaments} />
                               <Route path="/all-star" component={AllStar} />
                               <Route path="/my-teams" component={MyTeams} />

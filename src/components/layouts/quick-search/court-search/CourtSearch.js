@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import CourtSearchModal from "../../../modals/court-search/CourtSearchModal";
+import CourtSearchModal from "../../../modals/search/court-search/CourtSearchModal";
 
 const CourtSearch = () => {
     const [showCourtSearch, setCourtShow] = useState(false);

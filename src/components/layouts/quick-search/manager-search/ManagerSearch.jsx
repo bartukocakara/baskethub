@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import PlayerSearchModal from "../../../modals/search/player-search/PlayerSearchModal";
 
-const PlayerSearch = () => {
+const ManagerSearch = () => {
     const [showPlayerSearch, setPlayerShow] = useState(false);
   
     const handlePlayerClose = () => setPlayerShow(false);
@@ -25,4 +25,4 @@ const PlayerSearch = () => {
     )
 }
 
-export default PlayerSearch
+export default ManagerSearch

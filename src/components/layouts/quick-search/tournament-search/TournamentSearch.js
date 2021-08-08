@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import TournamentSearchModal from "../../../modals/tournament-search/TournamentSearchModal";
+import TournamentSearchModal from "../../../modals/search/tournament-search/TournamentSearchModal";
 
 const TournamentSearch = () => {
     const [showTournamentSearch, setTournamentShow] = useState(false);
