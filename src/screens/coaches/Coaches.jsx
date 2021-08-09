@@ -1,6 +1,7 @@
 import React from 'react'
 import CoachesCard from '../../components/cards/coaches/CoachesCard';
 import TrainerSearch from '../../components/layouts/quick-search/trainer-search/TrainerSearch';
+import CoachWidget from '../../components/layouts/widgets/coach-widget/CoachWidget';
 import TrainerWidget from '../../components/layouts/widgets/trainer-widget/TrainerWidget';
 
 const Coaches = () => {
@@ -19,7 +20,7 @@ const Coaches = () => {
                 </div>
             </section>
         </div>
-        <TrainerWidget />
+        <CoachWidget />
         </>
     )
 }

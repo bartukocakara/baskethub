@@ -12,6 +12,7 @@ import {BsFillCameraVideoFill} from "@react-icons/all-files/bs/BsFillCameraVideo
 import {GiRainbowStar} from "@react-icons/all-files/gi/GiRainbowStar";
 import {FaRunning} from "@react-icons/all-files/fa/FaRunning";
 import {FaUserTie} from "@react-icons/all-files/fa/FaUserTie";
+import {BsFillBriefcaseFill} from "@react-icons/all-files/bs/BsFillBriefcaseFill";
 
 import CourtSearchModal from '../../modals/search/court-search/CourtSearchModal';
 import PlayerSearchModal from '../../modals/search/player-search/PlayerSearchModal';
@@ -189,12 +190,14 @@ const Sidebar = () => {
                             <li className="sidebar-item">
                                 <NavLink  to="/coaches" className="sidebar-link">
                                     <FaUserTie />
+                                    <FaBasketballBall  size={13} className="mt-2"/>
                                     <span>Coaches</span>
                                 </NavLink >
                             </li>
                             <li className="sidebar-item">
                                 <NavLink  to="/managers" className="sidebar-link">
                                     <FaUserTie />
+                                    <BsFillBriefcaseFill size={13} className="mt-2"/>
                                     <span>Managers</span>
                                 </NavLink >
                             </li>
