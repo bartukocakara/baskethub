@@ -56,6 +56,8 @@ import TrainerSendOffer from './screens/trainer-send-offer/TrainerSendOffer';
 import Trainings from './screens/trainings/Trainings';
 import Coaches from './screens/coaches/Coaches';
 import Managers from './screens/managers/Managers';
+import CoachDetail from './components/card-details/coach-detail/CoachDetail';
+import ManagerDetail from './components/card-details/manager-detail/ManagerDetail';
 
 function App() {
   return (
@@ -94,6 +96,8 @@ function App() {
                               <Route path="/my-team-detail" component={MyTeamDetail} />
                               <Route path="/team-detail" component={TeamDetail} />
                               <Route path="/trainer-detail" component={TrainerDetail} />
+                              <Route path="/coach-detail" component={CoachDetail} />
+                              <Route path="/manager-detail" component={ManagerDetail} />
                               <Route path="/team/:name" component={MyTeamDetail} />
                               <Route path="/player-detail/:name" component={PlayerDetail} />
                               <Route path="/court-detail/:name" component={CourtDetail} />
