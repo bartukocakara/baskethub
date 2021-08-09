@@ -11,7 +11,7 @@ const CoachWidgetCard = () => {
             <Link >
                 <div className="card-body border b-primary m-2 widget-player-card d-flex p-3 rounded">
                     <div className="">
-                        <Link to="player-detail">
+                        <Link to="coach-detail">
                         <h6 className="">Bartu Kocakara</h6>
                         </Link>
                         <p className="text-center">İstanbul</p>

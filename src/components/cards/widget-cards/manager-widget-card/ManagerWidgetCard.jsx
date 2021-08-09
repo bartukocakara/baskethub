@@ -20,7 +20,7 @@ const ManagerWidgetCard = () => {
                 <div className="card-body border b-primary m-2 widget-player-card d-flex p-3 rounded">
                     <FiPlusSquare className="widget-player-icon" color="#FA8602" onClick={notifyFavTrainer}/>
                     <div className="">
-                        <Link to="player-detail">
+                        <Link to="manager-detail">
                         <h6 className="">Bartu Kocakara</h6>
                         </Link>
                         <p className="text-center">İstanbul</p>
