@@ -36,7 +36,7 @@ const TournamentsCard = () => {
             </div>
             
             <div className="card shadow feed-tournament-card">
-                <h4 className="card-title text-center m-2 text-light">Dr. Cavit Spor Salonu - İzmir/Bornova</h4>
+                <h4 className="card-title text-center text-light w-75 m-auto rounded">Dr. Cavit Spor Salonu - İzmir/Bornova</h4>
                 <div style={{ height: "60px" }} height="100"></div>
                 <div className="card-footer bg-transparent d-flex p-2 justify-content-between">
                     <div className="footer-left">

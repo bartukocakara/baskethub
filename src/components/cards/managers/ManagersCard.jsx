@@ -16,17 +16,18 @@ import {
     Link
   } from "react-router-dom";
 import "./_managersCard.scss";
-import CourtCommentsModal from '../../modals/court-comments/CourtCommentsModal';
+import CourtCommentsModal from '../../modals/comments/court-comments/CourtCommentsModal';
+import ManagerCommentsModal from '../../modals/comments/manager-comments/ManagerCommentsModal';
 
 const ManagersCard = () => {
     
-    const [showCommentsModal, setCommentsModalShow] = useState(false);
+    const [showManagerCommentsModal, setManagerCommentsModalShow] = useState(false);
 
-    const handleCommentsModalClose = () => setCommentsModalShow(false);
-    const handleShowCommentsModal = () => setCommentsModalShow(true); 
+    const handleManagerCommentsModalClose = () => setManagerCommentsModalShow(false);
+    const handleShowManagerCommentsModal = () => setManagerCommentsModalShow(true); 
     return (
         <>
-        <CourtCommentsModal handleCommentsModalClose={handleCommentsModalClose} show={showCommentsModal}/>
+        <ManagerCommentsModal handleManagerCommentsModalClose={handleManagerCommentsModalClose} show={showManagerCommentsModal}/>
         <div className="col-xl-9 col-md-9 m-auto col-sm-12 feed-card feed-my-fav-players-card">
             <div className="card shadow">
                 <div class="d-flex justify-content-between p-2">
@@ -64,7 +65,7 @@ const ManagersCard = () => {
                     </div>
                     <div className="footer-right d-flex">
                         <Link class="btn btn-light m-2 p-2 text-primary">
-                            <FaComments className="card-footer-icon" size={25} onClick={handleShowCommentsModal} />
+                            <FaComments className="card-footer-icon" size={25} onClick={handleShowManagerCommentsModal} />
                         </Link>
                         <Link class="btn btn-light m-2 p-2 text-primary " to="message-detail">
                             <AiOutlineMail className="card-footer-icon" />

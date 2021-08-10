@@ -51,7 +51,7 @@ const Navbar = () => {
                                     <div className="list-height">
                                     {
                                         [...Array(7)].map(() => (
-                                            <li className="border-bottom"><Link class="dropdown-item text-center d-flex" to="message-detail"><h6>Buse Yüksekkaya</h6><p className="cut-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p><span class="badge bg-success notify-name">New</span></Link></li>
+                                            <li className="border-bottom"><Link class="dropdown-item text-center d-flex" to="message-detail"><h6>Ogün Aycan</h6><p className="cut-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p><span class="badge bg-success notify-name">New</span></Link></li>
 
                                         ))
                                     }
@@ -101,7 +101,7 @@ const Navbar = () => {
                                         My Profile
                                     </NavLink>
                                 </li>
-                                <li><Link className="dropdown-item" href="#"><i class="icon-mid bi bi-gear me-2"></i>
+                                <li><Link to="profile-settings" className="dropdown-item" href="#"><i class="icon-mid bi bi-gear me-2"></i>
                                         Settings
                                     </Link>
                                 </li>

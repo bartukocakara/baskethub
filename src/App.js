@@ -58,6 +58,10 @@ import Coaches from './screens/coaches/Coaches';
 import Managers from './screens/managers/Managers';
 import CoachDetail from './components/card-details/coach-detail/CoachDetail';
 import ManagerDetail from './components/card-details/manager-detail/ManagerDetail';
+import ProfileSettings from './screens/profile/settings/ProfileSettings';
+import CourtComments from './screens/comments/court-comments/CourtComments';
+import ManagerComments from './screens/comments/manager-comments/ManagerComments';
+import TrainerComments from './screens/comments/trainer-comments/TrainerComments';
 
 function App() {
   return (
@@ -111,6 +115,7 @@ function App() {
                               <Route path="/faq" component={Faq} />
                               <Route path="/my-profile" component={Profile} />
                               <Route path="/profile-edit" component={ProfileEdit} />
+                              <Route path="/profile-settings" component={ProfileSettings} />
                               <Route path="/message-detail" component={MessageDetail} />
                               <Route path="/team-chat" component={TeamMessage} />
                               <Route path="/match-chat" component={MatchMessage} />
@@ -122,6 +127,9 @@ function App() {
                               <Route path="/create-tournament" component={CreateTournament} />
                               <Route path="/create-match-event" component={CreateMatch} />
                               <Route path="/create-subscription" component={CreateSubscription} />
+                              <Route path="/court-comments" component={CourtComments} />
+                              <Route path="/manager-comments" component={ManagerComments} />
+                              <Route path="/trainer-comments" component={TrainerComments} />
                               <Route path="/watch" component={Watch} />
                               <Route path="/checkout" component={Checkout} />
                               <Route path="/match-request-result" component={MatchRequestResult} />

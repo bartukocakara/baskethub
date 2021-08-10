@@ -1,4 +1,12 @@
-
+.feed-tournament-card{
+    position:relative;
+    .card-title{
+        background-image: linear-gradient(
+    180deg
+    ,rgba(185, 169, 169, 0),rgb(24, 23, 23));
+    }
+    
+}
 .tournament-dropdown{
     z-index: 99999999999 !important;
     position: absolute;

@@ -1,12 +1,13 @@
 import React from 'react'
 import { Modal } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 
-const CourtCommentsModal = ({handleCommentsModalClose, show}) => {
+const ManagerCommentsModal = ({handleManagerCommentsModalClose, show}) => {
     return (
         <>
-        <Modal show={show} onHide={handleCommentsModalClose}>
-            <Modal.Title className="text-center">Comments</Modal.Title>
+        <Modal show={show} onHide={handleManagerCommentsModalClose}>
+            <Modal.Title className="text-center">Manager Comments</Modal.Title>
             <Modal.Body>
                 <div class="col-12">
                     <div class="card">
@@ -44,16 +45,16 @@ const CourtCommentsModal = ({handleCommentsModalClose, show}) => {
                 </div>
             </Modal.Body>
             <div className="text-center">
-                <Button className="" variant="secondary m-2" onClick={handleCommentsModalClose}>
+                <Button className="" variant="secondary m-2" onClick={handleManagerCommentsModalClose}>
                     Close
                 </Button>
-                <Button className="" variant="warning m-2">
-                    Start search
-                </Button>
+                <Link to="manager-comments" variant="warning m-2">
+                    See all
+                </Link>
             </div>
         </Modal>
         </>
     )
 }
 
-export default CourtCommentsModal
+export default ManagerCommentsModal

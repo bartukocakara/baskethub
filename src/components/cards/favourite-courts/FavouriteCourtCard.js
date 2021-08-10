@@ -19,7 +19,7 @@ import {
   } from "react-router-dom";
 import "./_favouriteCourt.scss";
 import RequestCourtReservation from './../../../components/modals/request-court-reservation/RequestCourtReservation';
-import CourtCommentsModal from '../../modals/court-comments/CourtCommentsModal';
+import CourtCommentsModal from '../../modals/comments/court-comments/CourtCommentsModal';
      
 
 const FavouriteCourtCard = () => {
@@ -28,16 +28,16 @@ const FavouriteCourtCard = () => {
     const handleRequestCourtReservationModalClose = () => setRequestCourtReservationModalShow(false);
     const handleShowRequestCourtReservationModal = () => setRequestCourtReservationModalShow(true);
 
-    const [showCommentsModal, setCommentsModalShow] = useState(false);
+    const [showCourtCommentsModal, setCourtCommentsModalShow] = useState(false);
 
-    const handleCommentsModalClose = () => setCommentsModalShow(false);
-    const handleShowCommentsModal = () => setCommentsModalShow(true); 
+    const handleCourtCommentsModalClose = () => setCourtCommentsModalShow(false);
+    const handleShowCourtCommentsModal = () => setCourtCommentsModalShow(true); 
     return (
         <>
         <RequestCourtReservation handleRequestCourtReservationModalClose={handleRequestCourtReservationModalClose}
                                  show={showRequestCourtReservationModal}/>
-        <CourtCommentsModal handleCommentsModalClose={handleCommentsModalClose}
-                                 show={showCommentsModal}/>
+        <CourtCommentsModal handleCourtCommentsModalClose={handleCourtCommentsModalClose}
+                                 show={showCourtCommentsModal}/>
         <div className="col-xl-12 col-md-12 col-sm-12 feed-card feed-my-fav-courts-card">
             <div className="card shadow">
                 <div className="row m-2">
@@ -85,7 +85,7 @@ const FavouriteCourtCard = () => {
                     </div>
                     <div className="footer-right d-flex">
                         <Link class="btn btn-light m-2 p-2 text-primary">
-                            <FaComments className="card-footer-icon" size={25} onClick={handleShowCommentsModal} />
+                            <FaComments className="card-footer-icon" size={25} onClick={handleShowCourtCommentsModal} />
                         </Link>
                         <Link class="btn btn-light m-2 p-2 text-primary" to="message-detail">
                             <AiOutlineMail className="card-footer-icon" size={25} />
