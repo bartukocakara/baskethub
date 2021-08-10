@@ -73,20 +73,20 @@ const FavouritePlayerCard = () => {
                         <div class="col-md-4 co-lg-4">
                             <div class="description-block text-center">
                             <h6 class="description-header">3,200</h6>
-                            <span class="description-text"><GiBasketballJersey size={25} className="text-primary"/></span>
+                            <span class="description-text"><GiBasketballJersey size={25} className="text-warning"/></span>
                             </div>
                         
                         </div>
                         <div class="col-md-4 co-lg-4">
                             <div class="description-block text-center">
                             <h6 class="description-header">35</h6>
-                            <span class="description-text"><FiAward size={25} className="text-primary"/></span>
+                            <span class="description-text"><FiAward size={25} className="text-success"/></span>
                         </div>
                         </div>
                         <div class="col-md-4 co-lg-4">
                             <div class="description-block text-center">
                             <h6 class="description-header">İstanbul</h6>
-                            <span class="description-text"><GiPositionMarker size={25} className="text-primary"/></span>
+                            <span class="description-text"><GiPositionMarker size={25} className="text-info"/></span>
                             </div>
                         </div>
                     </div>

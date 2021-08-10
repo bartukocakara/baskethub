@@ -2,7 +2,6 @@ import React from 'react'
 import ManagersCard from '../../components/cards/managers/ManagersCard';
 import TrainerSearch from '../../components/layouts/quick-search/trainer-search/TrainerSearch';
 import ManagerWidget from '../../components/layouts/widgets/manager-widget/ManagerWidget';
-import TrainerWidget from '../../components/layouts/widgets/trainer-widget/TrainerWidget';
 
 const Managers = () => {
     return (

@@ -31,12 +31,12 @@ const CoachesCard = () => {
             <div className="card shadow">
                 <div class="d-flex justify-content-between p-2">
                     <h4 className="card-title text-center">Bartu Kocakara</h4>
-                    <p><GoLocation size={25} className="text-primary"/>İstanbul</p>
+                    <p><GoLocation size={25} className="text-primary"/>İstanbul <span>/ TR</span></p>
                 </div>
                 <div className="d-flex card-custom">
-                    <div className="row">
-                        <div class="col-md-4 avatar avatar-xl me-3">
-                            <img className="m-auto" src="assets/images/samples/player.jpg"
+                    <div className="row coach">
+                        <div class="col-md-4 avatar avatar-xl">
+                            <img className="coach-img" src="assets/images/samples/player.jpg"
                             alt="Card cap" />
                         </div>
                         <div class="col-md-4 text-center">
@@ -57,9 +57,9 @@ const CoachesCard = () => {
                     </div>
                     
                 </div>
-                <div className="card-footer p-2">
+                <div className="card-footer p-1">
                     <div className="footer-left">
-                        <Link to="coach-detail" className="btn btn-light">
+                        <Link to="coach-detail" className="btn btn-light mt-2">
                             Details
                         </Link>
                     </div>
