@@ -24,6 +24,7 @@ import Teams from './tabs/Teams';
 import Prizes from './tabs/Prizes';
 import Notes from './tabs/Notes';
 import Courts from './tabs/Courts';
+import Privacy from './tabs/Privacy';
 
 const CreateMatch = () => {
 
@@ -182,6 +183,9 @@ const CreateMatch = () => {
                                                 <li class="nav-item" role="presentation">
                                                     <a class="nav-link" id="notes-tab" data-bs-toggle="tab" href="#notes" role="tab" aria-controls="notes" aria-selected="false">Notes</a>
                                                 </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <a class="nav-link" id="privacy-tab" data-bs-toggle="tab" href="#privacy" role="tab" aria-controls="privacy" aria-selected="false">Privacy</a>
+                                                </li>
                                             </ul>
                                             <div class="tab-content" id="myTabContent">
                                                 <div class="tab-pane fade show active" id="name" role="tabpanel" aria-labelledby="name-tab">
@@ -213,7 +217,10 @@ const CreateMatch = () => {
                                                 </div>
                                                 <div class="tab-pane fade" id="notes" role="tabpanel" aria-labelledby="notes-tab">
                                                     <Notes />
-                                                </div> 
+                                                </div>
+                                                <div class="tab-pane fade" id="privacy" role="tabpanel" aria-labelledby="privacy-tab">
+                                                    <Privacy />
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="row">

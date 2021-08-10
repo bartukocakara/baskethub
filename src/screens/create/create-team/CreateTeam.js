@@ -72,8 +72,12 @@ const CreateTeam = () => {
                                 </ul>
                             </nav>
                         </div>
+                        <div className="col-md-2 py-4 m-auto form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
+                            <h6 class="form-check-label" for="flexSwitchCheckDefault">Privacy Status</h6>
+                        </div>
                         <div className="col-md-12 row m-2 p-2">
-                                <button className="btn btn-primary w-25 fw-bold m-auto">Create</button>
+                            <button className="btn btn-primary w-25 fw-bold m-auto">Create</button>
                         </div>
                    </div>
                </div>
