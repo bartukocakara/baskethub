@@ -5,7 +5,6 @@ import { RiUserStarLine } from "@react-icons/all-files/ri/RiUserStarLine";
 import { BsPeopleFill } from "@react-icons/all-files/bs/BsPeopleFill";
 import { AiFillStar } from "@react-icons/all-files/ai/AiFillStar";
 import { AiTwotoneAppstore } from "@react-icons/all-files/ai/AiTwotoneAppstore";
-import { FcEditImage } from "@react-icons/all-files/fc/FcEditImage";
 
 import {
     Link,
