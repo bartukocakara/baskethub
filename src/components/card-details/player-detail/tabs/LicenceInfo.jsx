@@ -1,12 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const TrainerComments = () => {
+const LicenceInfo = () => {
     return (
-        <div class="card">
-            <div class="card-header">
-                <h4 class="card-title">Trainer Comments</h4>
-            </div>
+        <div className="col-md-10 col-sm-12 m-auto">
             <div class="card-content">
                 <div class="card-body">
                     <div class="list-group">
@@ -50,4 +47,4 @@ const TrainerComments = () => {
     )
 }
 
-export default TrainerComments
+export default LicenceInfo

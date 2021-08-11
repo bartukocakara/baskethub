@@ -16,7 +16,6 @@ import {
     Link
   } from "react-router-dom";
 import "./_favouriteTrainer.scss";
-import CourtCommentsModal from '../../modals/comments/court-comments/CourtCommentsModal';
 import TrainerCommentsModal from '../../modals/comments/trainer-comments/TrainerCommentsModal';
 
 const FavouriteTrainerCard = () => {

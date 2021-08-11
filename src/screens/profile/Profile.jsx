@@ -14,6 +14,7 @@ import "./_profile.scss";
 import RequestList from './partials/request-list/RequestList';
 import Matches from './partials/matches/Matches';
 import MatchOptions from './partials/match-options/MatchOptions';
+import Licence from './partials/licence/Licence';
 
 const Profile = () => {
     return (
@@ -23,19 +24,27 @@ const Profile = () => {
                     <div class="card">
                         <div class="card-body py-4 px-5">
                             <div class="align-items-center row">
-                                <div class="avatar avatar-xl col-md-1">
-                                    <img src="assets/images/faces/1.jpg" alt="Face 1" />
+                                <div class="avatar avatar-xl col-md-1 player-detail-avatar">
+                                    <img src="assets/images/faces/1.jpg" className="d-block" alt="Face 1" />
+                                    <i className="bi bi-award"></i>
+                                    <i className="bi bi-award"></i>
+                                    <i className="bi bi-award"></i>
+                                    <div className="d-flex mt-3">
+                                        <GoLocation size={20}/>
+                                        <h6 class="font-bold">İzmir</h6>
+                                    </div>
                                 </div>
                                 <div class="ms-3 name col-md-2 text-center">
-                                    <h5 class="font-bold">John Duck</h5>
-                                    <h6 class="text-muted mb-0">@johnducky</h6>
+                                    <h6 class="font-bold">John Duck, <span>28</span></h6>
                                     <span><GoVerified className="text-success" size={20}/></span>
                                 </div>
-                                <div class="ms-5 col-md-1">
-                                    <GoLocation />
-                                    <p class="font-bold">İzmir</p>
+                                <div class="col-md-3  text-center">
+                                    <h6 class="font-bold">Email</h6>
+                                    <p class="text-muted mb-0">bartuu_436@hotmail.com</p>
                                 </div>
-                                <div class="ms-5 col-md-5">
+                                <div class="col-md-2 text-center">
+                                    <h6 class="font-bold">Phone</h6>
+                                    <h6 class="text-muted mb-0">+90 555 667 66 80</h6>
                                 </div>
                                 <div class="col-md-1 ml-auto">
                                     <Link to="profile-edit">
@@ -130,6 +139,9 @@ const Profile = () => {
                             <li class="nav-item" role="presentation">
                                 <a class="nav-link" id="matchOptions-tab" data-bs-toggle="tab" href="#matchOptions" role="tab" aria-controls="matchOptions" aria-selected="false">Create Match Options</a>
                             </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="licence-tab" data-bs-toggle="tab" href="#licence" role="tab" aria-controls="licence" aria-selected="false">Licence</a>
+                            </li>
                         </ul>
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active col-10 m-auto" id="calendar" role="tabpanel" aria-labelledby="calendar-tab">
@@ -152,6 +164,9 @@ const Profile = () => {
                             </div>
                             <div class="tab-pane fade" id="matchOptions" role="tabpanel" aria-labelledby="matchOptions-tab">
                                 <MatchOptions />
+                            </div>
+                            <div class="tab-pane fade" id="licence" role="tabpanel" aria-labelledby="licence-tab">
+                                <Licence />
                             </div>
                         </div>
                     </div>

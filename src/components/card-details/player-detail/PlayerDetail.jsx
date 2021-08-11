@@ -19,9 +19,10 @@ import {
 import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
 import "./_playerDetail.scss";
-import RequestPlayerJoin from '../../../components/modals/request-player-join/RequestPlayerJoin';
-import Teams from "./teams/Teams";
-import Matches from './matches/Matches';
+import RequestPlayerJoin from '../../modals/request-player-join/RequestPlayerJoin';
+import Teams from "./tabs/Teams";
+import Matches from './tabs/Matches';
+import LicenceInfo from './tabs/LicenceInfo';
 
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -48,23 +49,18 @@ const PlayerDetail = () => {
                             <div class="align-items-center row m-0 p-0">
                                 <div class="avatar avatar-xl col-md-1 player-detail-avatar">
                                     <img src="assets/images/faces/1.jpg" className="d-block" alt="Face 1" />
-                                    <i class="bi bi-award"></i>
-                                    <i class="bi bi-award"></i>
-                                    <i class="bi bi-award"></i>
+                                    <i className="bi bi-award"></i>
+                                    <i className="bi bi-award"></i>
+                                    <i className="bi bi-award"></i>
                                     <div className="d-flex mt-3">
                                         <GoLocation size={20}/>
                                         <h6 class="font-bold">İzmir</h6>
                                     </div>
                                 </div>
                                 <div class="col-md-2 text-center">
-                                    <h6 class="font-bold">John Duck</h6>
-                                    <h6 class="text-muted mb-0">@johnducky</h6>
+                                    <h6 class="font-bold">John Duck, <span>26</span></h6>
                                     <span><GoVerified className="text-success" size={20}/></span>
 
-                                </div>
-                                <div class="col-md-1  text-center">
-                                    <h6 class="font-bold">Pos.</h6>
-                                    <h6 class="text-muted mb-0">C, PF, SF </h6>
                                 </div>
                                 <div class="col-md-3  text-center">
                                     <h6 class="font-bold">Email</h6>
@@ -181,6 +177,9 @@ const PlayerDetail = () => {
                                     <li class="nav-item" role="presentation">
                                         <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Teams</a>
                                     </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="licence-tab" data-bs-toggle="tab" href="#licence" role="tab" aria-controls="licence" aria-selected="false">Licence</a>
+                                    </li>
                                 </ul>
                                 <div class="tab-content" id="myTabContent">
                                     <div class="tab-pane fade show active col-10 m-auto" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -190,31 +189,35 @@ const PlayerDetail = () => {
                                         />
                                     </div>
                                     <div class="tab-pane fade mt-4" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                    {
-                                        [...Array(5)].map((matchesList) => (
-                                            <>
-                                                <Matches />
-                                            </>
-                                        ))
-                                    }
-                                    <nav aria-label="Page navigation example ">
-                                        <ul className="pagination pagination-primary match-pagination">
-                                            <li className="page-item"><Link class="page-link">Prev</Link></li>
-                                            <li className="page-item"><Link class="page-link">1</Link></li>
-                                            <li className="page-item active"><Link class="page-link">2</Link></li>
-                                            <li className="page-item"><Link class="page-link">3</Link></li>
-                                            <li className="page-item"><Link class="page-link">Next</Link></li>
-                                        </ul>
-                                    </nav>
+                                        {
+                                            [...Array(5)].map((matchesList) => (
+                                                <>
+                                                    <Matches />
+                                                </>
+                                            ))
+                                        }
+                                        <nav aria-label="Page navigation example ">
+                                            <ul className="pagination pagination-primary match-pagination">
+                                                <li className="page-item"><Link class="page-link">Prev</Link></li>
+                                                <li className="page-item"><Link class="page-link">1</Link></li>
+                                                <li className="page-item active"><Link class="page-link">2</Link></li>
+                                                <li className="page-item"><Link class="page-link">3</Link></li>
+                                                <li className="page-item"><Link class="page-link">Next</Link></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="tab-pane fade" id="licence" role="tabpanel" aria-labelledby="licence-tab">
+                                       <LicenceInfo />
                                     </div>
                                     <div class="tab-pane fade player-teams row mt-4" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                                    {
+                                        {
                                         [...Array(10)].map((teamsList) => (
                                             <Teams />
                                         ))
                                         }
                                     </div>
-                                </div>
+                                    
+                                    </div>
                                 </div>
                             </div>
                         </div> 

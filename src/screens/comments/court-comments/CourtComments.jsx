@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const CourtComments = () => {
     return (
@@ -9,7 +10,7 @@ const CourtComments = () => {
             <div class="card-content">
                 <div class="card-body">
                     <div class="list-group">
-                        <a href="#" class="list-group-item list-group-item-action active">
+                        <Link class="list-group-item list-group-item-action active">
                             <div class="d-flex w-100 justify-content-between">
                                 <h5 class="mb-1 text-white">List group item heading</h5>
                                 <small>3 days ago</small>
@@ -19,8 +20,8 @@ const CourtComments = () => {
                                 diam eget risus varius blandit.
                             </p>
                             <small>Donec id elit non mi porta.</small>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action">
+                        </Link>
+                        <Link class="list-group-item list-group-item-action">
                             <div class="d-flex w-100 justify-content-between">
                                 <h5 class="mb-1">List group item heading</h5>
                                 <small>3 days ago</small>
@@ -30,8 +31,8 @@ const CourtComments = () => {
                                 diam eget risus varius blandit.
                             </p>
                             <small>Donec id elit non mi porta.</small>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action">
+                        </Link>
+                        <Link class="list-group-item list-group-item-action">
                             <div class="d-flex w-100 justify-content-between">
                                 <h5 class="mb-1">List group item heading</h5>
                                 <small>3 days ago</small>
@@ -41,7 +42,7 @@ const CourtComments = () => {
                                 diam eget risus varius blandit.
                             </p>
                             <small>Donec id elit non mi porta.</small>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

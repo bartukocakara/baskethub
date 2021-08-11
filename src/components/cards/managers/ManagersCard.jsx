@@ -16,7 +16,6 @@ import {
     Link
   } from "react-router-dom";
 import "./_managersCard.scss";
-import CourtCommentsModal from '../../modals/comments/court-comments/CourtCommentsModal';
 import ManagerCommentsModal from '../../modals/comments/manager-comments/ManagerCommentsModal';
 
 const ManagersCard = () => {
