@@ -69,7 +69,7 @@ const CreateMatch = () => {
                                                     <li><label>Payment option 2</label><h6>Seperate Payment</h6></li>
                                                     <li><label>Payment option 3</label><h6>Pre-paid</h6></li>
                                                 </ul>
-                                                <Link onClick={handleEditPaymentShow}><FcEditImage size={30} /></Link>
+                                                <button className="btn btn-primary"onClick={handleEditPaymentShow}>Edit</button>
                                             </div>
                                             <div className="col-md-8 row text-center">
                                                 <FcCalendar size={50}/>
