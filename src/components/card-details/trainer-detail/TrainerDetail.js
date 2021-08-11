@@ -11,6 +11,7 @@ import {
   import {BiShareAlt} from "@react-icons/all-files/bi/BiShareAlt";
 
 import "./_trainerDetail.scss";
+import Licence from './tabs/Licence';
 
 const TrainerDetail = () => {
     return (
@@ -127,6 +128,9 @@ const TrainerDetail = () => {
                                 <li class="nav-item" role="presentation">
                                     <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Teams</a>
                                 </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="licence-tab" data-bs-toggle="tab" href="#licence" role="tab" aria-controls="licence" aria-selected="false">Licence</a>
+                                </li>
                             </ul>
                             <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -143,10 +147,13 @@ const TrainerDetail = () => {
                                         ultrices.</p>
                                 </div>
                                 <div class="tab-pane fade mt-4" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                <h1>LABEL</h1>
+                                    <h1>LABEL</h1>
                                 </div>
-                                <div class="tab-pane fade player-teams row mt-4" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                                <h1>LABEL</h1>
+                                <div class="tab-pane fade row mt-4" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                    <h1>LABEL</h1>
+                                </div>
+                                <div class="tab-pane fade row mt-4" id="licence" role="tabpanel" aria-labelledby="licence-tab">
+                                    <Licence />
                                 </div>
                             </div>
                             </div>
