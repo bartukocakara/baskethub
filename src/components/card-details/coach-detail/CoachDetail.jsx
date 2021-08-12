@@ -21,8 +21,9 @@ import Licence from './tabs/Licence';
 const CoachDetail = () => {
     return (
         <>
-            <div class="col-12">
-                <div class="card">
+             <div class="col-12">
+                <div className="row"> 
+                    <div class="card">
                         <div class="card-body py-4 px-5">
                             <div class="align-items-center row m-0 p-0">
                                 <div class="avatar avatar-xl col-md-1 player-detail-avatar">
@@ -50,6 +51,9 @@ const CoachDetail = () => {
                                 </div>
                                 <div className="buttons col-md-3">
                                     <div className="d-flex justify-content-center">
+                                        <Link className="d-flex p-2 m-2 text-light bg-warning rounded">
+                                            Add favourites <span className="fw-bold"> + </span>
+                                        </Link>
                                         <Link to="message-detail" className="m-2">
                                             <FiMail className="m-2 pd-icon" size={27} />
                                         </Link>
@@ -66,55 +70,116 @@ const CoachDetail = () => {
                                             </ul>
                                         </div>
                                     </div>
+                                    <button className="btn btn-warning m-auto" ><FaHandshake className="player-detail-handshake" />Request Join Match </button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Available Times</a>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Matches Played</a>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Teams</a>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <a class="nav-link" id="licence-tab" data-bs-toggle="tab" href="#licence" role="tab" aria-controls="licence" aria-selected="false">Licence</a>
-                                </li>
-                            </ul>
-                            <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                    <p class="my-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Nulla ut nulla
-                                        neque. Ut hendrerit nulla a euismod pretium.
-                                        Fusce venenatis sagittis ex efficitur suscipit. In tempor mattis
-                                        fringilla. Sed id
-                                        tincidunt orci, et volutpat ligula.
-                                        Aliquam sollicitudin sagittis ex, a rhoncus nisl feugiat quis. Lorem
-                                        ipsum dolor sit
-                                        amet, consectetur adipiscing elit.
-                                        Nunc ultricies ligula a tempor vulputate. Suspendisse pretium mollis
-                                        ultrices.</p>
+                    <div className="col-12 col-lg-3 col-md-6">
+                        <div className="card">
+                            <div className="card-body px-3 py-4-5 profile-widget">
+                                <div className="row">
+                                    <div className="col-md-4">
+                                        <div className="stats-icon purple">
+                                            <AiFillEye style={{ color:"#fff", fontSize:"30px", }}/>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-8">
+                                        <h6 className="text-muted font-semibold">Profile Views</h6>
+                                        <h6 className="font-extrabold mb-0">112.000</h6>
+                                    </div>
                                 </div>
-                                <div class="tab-pane fade mt-4" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                    <h1>LABEL</h1>
-                                </div>
-                                <div class="tab-pane fade row mt-4" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                                    <h1>LABEL</h1>
-                                </div>
-                                <div class="tab-pane fade row mt-4" id="licence" role="tabpanel" aria-labelledby="licence-tab">
-                                    <Licence />
-                                </div>
-                            </div>
                             </div>
                         </div>
-                    </div> 
+                    </div>
+                    <div className="col-12 col-lg-3 col-md-6">
+                        <div className="card">
+                            <div className="card-body px-3 py-4-5 profile-widget">
+                                <div className="row">
+                                    <div className="col-md-4">
+                                        <div className="stats-icon blue">
+                                        <AiFillEye style={{ color:"#fff", fontSize:"30px", }}/>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-8">
+                                        <h6 className="text-muted font-semibold">Followers</h6>
+                                        <h6 className="font-extrabold mb-0">183.000</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-12 col-lg-3 col-md-6">
+                        <div className="card">
+                            <div className="card-body px-3 py-4-5 profile-widget">
+                                <div className="row">
+                                    <div className="col-md-4">
+                                        <div className="stats-icon green">
+                                        <BiCheckDouble style={{ color:"#fff", fontSize:"30px" }}/>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-8">
+                                        <h6 className="text-muted font-semibold">Match Joined</h6>
+                                        <h6 className="font-extrabold mb-0">80.000</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-12 col-lg-3 col-md-6">
+                        <div className="card">
+                            <div className="card-body px-3 py-4-5 profile-widget">
+                                <div className="row">
+                                    <div className="col-md-4">
+                                        <div className="stats-icon green">
+                                        <HiCheck style={{ color:"#fff", fontSize:"30px", }}/>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-8">
+                                        <h6 className="text-muted font-semibold">Match Accepted</h6>
+                                        <h6 className="font-extrabold mb-0">112</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Available Times</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Matches Played</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Teams</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="licence-tab" data-bs-toggle="tab" href="#licence" role="tab" aria-controls="licence" aria-selected="false">Licence</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active col-10 m-auto" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                       
+                                    </div>
+                                    <div class="tab-pane fade mt-4" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                       
+                                    </div>
+                                    <div class="tab-pane fade" id="licence" role="tabpanel" aria-labelledby="licence-tab">
+
+                                    </div>
+                                    <div class="tab-pane fade player-teams row mt-4" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                        
+                                    </div>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
         </>
     )
 }
