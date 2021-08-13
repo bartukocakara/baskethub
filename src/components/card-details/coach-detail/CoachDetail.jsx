@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import { AiFillEye } from "@react-icons/all-files/ai/AiFillEye";
 import { BiCheckDouble } from "@react-icons/all-files/bi/BiCheckDouble";
 import { HiCheck } from "@react-icons/all-files/hi/HiCheck";
@@ -171,7 +170,7 @@ const CoachDetail = () => {
 
                                     </div>
                                     <div class="tab-pane fade player-teams row mt-4" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                                        
+                                        <Licence/>
                                     </div>
                                     
                                     </div>

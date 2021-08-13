@@ -4,14 +4,17 @@ import {
     Link
   } from "react-router-dom";
 import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail";
-
-  import Avatar from '@material-ui/core/Avatar';
-  import AvatarGroup from '@material-ui/lab/AvatarGroup';
+import { BsFillLockFill } from "@react-icons/all-files/bs/BsFillLockFill";
+import Avatar from '@material-ui/core/Avatar';
+import AvatarGroup from '@material-ui/lab/AvatarGroup';
 const MyTeamsCard = () => {
     return (
         <div className="col-md-4 feed-card feed-my-teams-card">
             <div className="card shadow">
-                <h4 className="card-title text-center">Bornova Team</h4>
+                <div className="d-flex m-auto">
+                    <h4 className="card-title text-center">Bornova Team</h4>
+                    <BsFillLockFill className="m-1"/>
+                </div>
                 <div className="card-content card-body">
                     <AvatarGroup max={3} >
                         <Avatar alt="Remy Sharp" src="assets/images/faces/2.jpg" />

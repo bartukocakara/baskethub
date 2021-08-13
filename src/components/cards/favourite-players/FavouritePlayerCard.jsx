@@ -10,6 +10,7 @@ import { GiPositionMarker } from "@react-icons/all-files/gi/GiPositionMarker";
 import { GiBasketballJersey } from "@react-icons/all-files/gi/GiBasketballJersey";
 import { GoPerson } from "@react-icons/all-files/go/GoPerson";
 import { FiAward } from "@react-icons/all-files/fi/FiAward";
+import { BsFillLockFill } from "@react-icons/all-files/bs/BsFillLockFill";
 
 import {
     Link
@@ -36,8 +37,9 @@ const FavouritePlayerCard = () => {
 
         <div className="col-md-6">
             <div class="card card-widget widget-user shadow">
-                <div class="widget-user-header">
+                <div class="widget-user-header d-flex">
                     <h6 class="float-left"><Link to="player-detail">Eray Kaptan</Link></h6>
+                    <BsFillLockFill/>
                 </div>
                 <div className="player-share d-flex btn-group">
                     <Link class="btn btn-light mt-2" to="message-detail">
