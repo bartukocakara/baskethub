@@ -101,9 +101,9 @@ const Navbar = () => {
                                         My Profile
                                     </NavLink>
                                 </li>
-                                <li><Link to="profile-settings" className="dropdown-item" href="#"><i class="icon-mid bi bi-gear me-2"></i>
+                                <li><NavLink to="profile-settings" className="dropdown-item" href="#"><i class="icon-mid bi bi-gear me-2"></i>
                                         Settings
-                                    </Link>
+                                    </NavLink>
                                 </li>
                                 <hr />
                                 <li className="m-2 d-flex justify-content-evenly">

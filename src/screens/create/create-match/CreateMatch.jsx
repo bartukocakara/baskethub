@@ -34,7 +34,7 @@ const CreateMatch = () => {
     return (
         <>
         <EditMatchEventPayment handleEditPaymentClose={handleEditPaymentClose} show={showEditPayment}  />
-            <h5 className="text-center">Create Match Event</h5>
+            <h5 className="text-center screen-title">Create Match Event</h5>
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-body">

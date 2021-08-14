@@ -7,7 +7,7 @@ const LastActivities = () => {
     return (
         <>
         <div className="col-md-8">
-            <h5>Last Activities</h5>
+            <h5 className="card-title screen-tile">Last Activities</h5>
             <Search />
             <section id="content-types">
                 <div className="row">

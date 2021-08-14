@@ -8,7 +8,7 @@ import Subscription from './tabs/Subscription'
 const CreateCourt = () => {
     return (
         <div>
-        <h6 class=" text-center">Create Court</h6>
+        <h6 class=" text-center screen-title">Create Court</h6>
         <div class="card">
             <div class="card-body">
                 <div class="row">

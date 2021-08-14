@@ -17,8 +17,8 @@ const MyMatchesCard = () => {
     return (
         <>
         <div className="col-lg-10 col-sm-12 m-auto">
-            <div className="col-md-12 d-flex p-1">
-                <h6 className="m-2">HAZ 13, PAZAR</h6>
+            <div className="col-md-12 d-flex p-1 match-card-up">
+                <h6 className="m-2 match-card-date">HAZ 13, PAZAR</h6>
                 <AvatarGroup max={3} className="m-2" >
                     <Avatar alt="Remy Sharp" src="assets/images/faces/2.jpg" />
                     <Avatar alt="Travis Howard" src="assets/images/faces/2.jpg" />

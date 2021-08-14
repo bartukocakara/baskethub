@@ -7,7 +7,7 @@ import {
 const CreateTeam = () => {
     return (
         <div>
-            <h5 className="text-center">Create Team</h5>
+            <h5 className="text-center screen-title">Create Team</h5>
             <div className="card">
                 <div className="card-body">
                     <h6 className="text-center">Fiil the blanks <BsPencilSquare /></h6>

@@ -3,11 +3,9 @@ import SearchWidgetCard from '../../../cards/widget-cards/search-widget-card/Sea
 
 const LastSearch = () => {
     return (
-        <div className="col-4">
-            <div class="card w-100" >
-                <div class="card-header widget-header">
-                    <h4>Recommended Players</h4>
-                </div>
+        <div className="col-4 ">
+            <div class="card w-100 players-widget" >
+                <h5  className="text-center m-3">Recommended Players</h5>
                 <SearchWidgetCard />
                 <SearchWidgetCard />
                 <SearchWidgetCard />
