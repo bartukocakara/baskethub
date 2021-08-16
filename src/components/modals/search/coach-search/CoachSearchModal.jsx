@@ -33,17 +33,6 @@ const CoachSearchModal = ({handleCoachClose, show}) => {
                             <option>Kızılay</option>
                         </select>
                     </div>
-                    <h6 className="text-center">Position</h6>
-                    <div className="form-group">
-                        <select className="form-control">
-                            <option>PointGuard</option>
-                            <option>ShootingGuard</option>
-                            <option>SmallForward</option>
-                            <option>PowerForward</option>
-                            <option>Center</option>
-                        </select>
-                    </div>
-                    <hr />
                     <h6 className="text-center">Date</h6>
                     <div className="form-group">
                         <input type="date" className="form-control" />
