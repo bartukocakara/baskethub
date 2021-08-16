@@ -1,4 +1,9 @@
 import React from 'react'
+import Courts from './tabs/Courts'
+import Dates from './tabs/Dates'
+import Players from './tabs/Players'
+import Privacy from './tabs/Privacy'
+import Teams from './tabs/Teams'
 
 const CreateTournament = () => {
     return (
@@ -9,60 +14,36 @@ const CreateTournament = () => {
                 <div class="row">
                     <div class="col-3">
                         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                            <a class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Teams</a>
-                            <a class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Courts</a>
-                            <a class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Dates</a>
-                            <a class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Players</a>
+                            <a class="nav-link active" id="v-pills-teams-tab" data-bs-toggle="pill" href="#v-pills-teams" role="tab" aria-controls="v-pills-teams" aria-selected="true">Teams</a>
+                            <a class="nav-link" id="v-pills-courts-tab" data-bs-toggle="pill" href="#v-pills-courts" role="tab" aria-controls="v-pills-courts" aria-selected="false">Courts</a>
+                            <a class="nav-link" id="v-pills-dates-tab" data-bs-toggle="pill" href="#v-pills-dates" role="tab" aria-controls="v-pills-dates" aria-selected="false">Dates</a>
+                            <a class="nav-link" id="v-pills-players-tab" data-bs-toggle="pill" href="#v-pills-players" role="tab" aria-controls="v-pills-players" aria-selected="false">Players</a>
                             <a class="nav-link" id="v-pills-privacy-tab" data-bs-toggle="pill" href="#v-pills-privacy" role="tab" aria-controls="v-pills-privacy" aria-selected="false">Privacy</a>
                         </div>
                     </div>
                     <div class="col-9">
                         <div class="tab-content" id="v-pills-tabContent">
-                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut
-                                nulla neque.
-                                Ut hendrerit nulla a euismod pretium.
-                                Fusce venenatis sagittis ex efficitur suscipit. In tempor mattis
-                                fringilla. Sed
-                                id tincidunt orci, et volutpat ligula.
-                                Aliquam sollicitudin sagittis ex, a rhoncus nisl feugiat quis. Lorem
-                                ipsum dolor
-                                sit amet, consectetur adipiscing elit.
-                                Nunc ultricies ligula a tempor vulputate. Suspendisse pretium mollis
-                                ultrices
+                            <div class="tab-pane fade show active" id="v-pills-teams" role="tabpanel" aria-labelledby="v-pills-teams-tab">
+                               <Teams/>
                             </div>
-                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                                Integer interdum diam eleifend metus lacinia, quis gravida eros
-                                mollis. Fusce
-                                non sapien sit amet magna dapibus
-                                ultrices. Morbi tincidunt magna ex, eget faucibus sapien bibendum
-                                non. Duis a
-                                mauris ex. Ut finibus risus sed massa
-                                mattis porta. Aliquam sagittis massa et purus efficitur ultricies.
+                            <div class="tab-pane fade" id="v-pills-courts" role="tabpanel" aria-labelledby="v-pills-courts-tab">
+                                <Courts/>
                             </div>
-                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                                Integer pretium dolor at sapien laoreet ultricies. Fusce congue et
-                                lorem id
-                                convallis. Nulla volutpat tellus nec
-                                molestie finibus. In nec odio tincidunt eros finibus ullamcorper. Ut
-                                sodales,
-                                dui nec posuere finibus, nisl sem aliquam
-                                metus, eu accumsan lacus felis at odio.
+                            <div class="tab-pane fade" id="v-pills-dates" role="tabpanel" aria-labelledby="v-pills-dates-tab">
+                               <Dates/>
                             </div>
-                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                                Sed lacus quam, convallis quis condimentum ut, accumsan congue
-                                massa.
-                                Pellentesque et quam vel massa pretium ullamcorper
-                                vitae eu tortor.
+                            <div class="tab-pane fade" id="v-pills-players" role="tabpanel" aria-labelledby="v-pills-players-tab">
+                               <Players/>
                             </div>
                             <div class="tab-pane fade" id="v-pills-privacy" role="tabpanel" aria-labelledby="v-pills-privacy-tab">
-                                Sed lacus quam, convallis quis condimentum ut, accumsan congue
-                                massa.
-                                Pellentesque et quam vel massa pretium ullamcorper
-                                vitae eu tortor.
+                               <Privacy/>
                             </div>
                         </div>
+                        <div class="col-md-12 text-center">
+                            <button class="btn btn-success btn-md w-25 py-2">Create</button>
+                        </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
