@@ -1,5 +1,6 @@
 import Avatar from '@material-ui/core/Avatar';
 import AvatarGroup from '@material-ui/lab/AvatarGroup';
+import { Link } from 'react-router-dom';
 
 const Teams = () => {
     return (
@@ -22,7 +23,7 @@ const Teams = () => {
                                 <Avatar alt="Trevor Henderson" src="assets/images/faces/2.jpg" />
                             </AvatarGroup>
                         </div>
-                        <h6 className="my-3">Team name, <span className="text-muted">İzmir</span></h6>
+                        <h6 className="my-3"><Link to="team-detail"> Team name</Link>, <span className="text-muted">İzmir</span></h6>
                         <input type="checkbox" className="m-auto form-check-input"/>
                     </div>
                 </div>
