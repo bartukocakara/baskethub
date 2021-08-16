@@ -3,7 +3,7 @@ import React from 'react'
 const CreateTournament = () => {
     return (
         <>
-        <h6 class="card-title text-center">Create Tournament</h6>
+        <h6 class="text-center screen-title">Create Tournament</h6>
         <div class="card">
             <div class="card-body">
                 <div class="row">

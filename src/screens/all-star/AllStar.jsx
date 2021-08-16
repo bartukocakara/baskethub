@@ -3,7 +3,7 @@ import React from 'react'
 const AllStar = () => {
     return (
         <>
-        <h6 className="text-center">All star</h6>
+        <h6 className="text-center screen-title">All star</h6>
         <div class="row">
             <div class="col-12">
                 <div class="card">

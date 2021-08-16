@@ -1,8 +1,8 @@
 .App {
   text-align: center;
-
   .main-section {
     max-width: 1150px; 
+
   }
 
   .widgets{
@@ -79,3 +79,81 @@
 ::-webkit-scrollbar-thumb{
   background-color: gray;
 }
+
+
+
+
+
+
+
+// DARK THEME CSS
+// body, .sidebar-wrapper{
+//   background-color: #13254d;
+//   h6, h5, h4, h3, .burger-btn{
+//     color:#fff;
+//   }
+// }
+// .sidebar-item{
+//   a{
+//     color: #fff !important;
+//     &:hover{
+//       color:#15202B !important;
+//     }
+//   }
+  
+// }
+
+// .match-card-up{
+
+//   .match-card-date, span{
+//     color:#fff;
+//   }
+// }
+// .feed-my-matches-card{
+//   color:#fff;
+//   h6{
+//     color:#fff;
+//   }
+//   .match-team-li>a{
+//     color:#fff;
+//   }
+// }
+// .feed-card{
+  
+//   .card{
+//     background-color: #2b3957;
+//     .card-title, h4{
+//       color:#fff;
+//     }
+//     .card-custom{
+//       *{
+//         color:#fff;
+//       }
+//     }
+//     .card-footer{
+//       background-color: #2b3957;
+//     }
+//   }
+// }
+
+// .players-widget, .matches-widget, .courts-widget, .team-messages{
+//   background-color: #0b1427;
+//   *{
+//     color:#fff;
+    
+//   }
+// }
+// .widget-player-card{
+//   background-color: #2b3957;
+//   &:hover{
+//   background-color: #2b3957;
+
+//   }
+// }
+// .widget-user{
+//       background-color: #2b3957;
+// }
+// .card-footer{
+//   background-color: #2b3957;
+
+// }

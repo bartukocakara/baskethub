@@ -1,6 +1,8 @@
 import React from 'react'
 import ManagerWidgetCard from '../../../cards/widget-cards/manager-widget-card/ManagerWidgetCard'
 import "./_managerWidget.scss";
+import { BsArrowRight } from "@react-icons/all-files/bs/BsArrowRight";
+import { Link } from 'react-router-dom';
 
 const ManagerWidget = () => {
     return (
@@ -15,6 +17,9 @@ const ManagerWidget = () => {
                 }
                 </div>
             </div>
+            <h6 className="text-center">
+                <Link className="btn btn-primary">See more <BsArrowRight/></Link>
+            </h6>
         </div>
     )
 }
