@@ -169,26 +169,26 @@ const PlayerDetail = () => {
                             <div class="card-body">
                                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                                     <li class="nav-item" role="presentation">
-                                        <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Available Times</a>
+                                        <a class="nav-link active" id="times-tab" data-bs-toggle="tab" href="#times" role="tab" aria-controls="times" aria-selected="true">Available Times <span className="badge bg-primary">15 H</span></a>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Matches Played</a>
+                                        <a class="nav-link" id="matches-tab" data-bs-toggle="tab" href="#matches" role="tab" aria-controls="matches" aria-selected="false">Matches Played <span className="badge bg-primary">100</span></a>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Teams</a>
+                                        <a class="nav-link" id="teams-tab" data-bs-toggle="tab" href="#teams" role="tab" aria-controls="teams" aria-selected="false">Teams <span className="badge bg-primary">20</span> </a>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <a class="nav-link" id="licence-tab" data-bs-toggle="tab" href="#licence" role="tab" aria-controls="licence" aria-selected="false">Licence</a>
+                                        <a class="nav-link" id="licence-tab" data-bs-toggle="tab" href="#licence" role="tab" aria-controls="licence" aria-selected="false">Licence <span className="badge bg-primary">2</span></a>
                                     </li>
                                 </ul>
                                 <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane fade show active col-10 m-auto" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="tab-pane fade show active col-10 m-auto" id="times" role="tabpanel" aria-labelledby="times-tab">
                                         <FullCalendar
                                             plugins={[ dayGridPlugin ]}
                                             initialView="dayGridMonth"
                                         />
                                     </div>
-                                    <div class="tab-pane fade mt-4" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    <div class="tab-pane fade mt-4" id="matches" role="tabpanel" aria-labelledby="matches-tab">
                                         {
                                             [...Array(5)].map((matchesList) => (
                                                 <>
@@ -196,7 +196,7 @@ const PlayerDetail = () => {
                                                 </>
                                             ))
                                         }
-                                        <nav aria-label="Page navigation example ">
+                                        <nav aria-label="Page navigation ">
                                             <ul className="pagination pagination-primary match-pagination">
                                                 <li className="page-item"><Link class="page-link">Prev</Link></li>
                                                 <li className="page-item"><Link class="page-link">1</Link></li>
@@ -207,14 +207,17 @@ const PlayerDetail = () => {
                                         </nav>
                                     </div>
                                     <div class="tab-pane fade" id="licence" role="tabpanel" aria-labelledby="licence-tab">
-                                       <LicenceInfo />
+                                        <LicenceInfo />
                                     </div>
-                                    <div class="tab-pane fade player-teams row mt-4" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                                        {
-                                        [...Array(10)].map((teamsList) => (
-                                            <Teams />
-                                        ))
-                                        }
+                                    <div class="tab-pane fade mt-4" id="teams" role="tabpanel" aria-labelledby="teams-tab">
+                                        <div className="row">
+                                            {
+                                            [...Array(10)].map((teamsList) => (
+                                                <Teams />
+                                            ))
+                                            }
+                                        </div>
+
                                     </div>
                                     
                                     </div>

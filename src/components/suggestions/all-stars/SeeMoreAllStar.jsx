@@ -1,4 +1,4 @@
-const TeamRoutes = () => {
+const SeeMoreAllStar = () => {
     return (
         <div>
             
@@ -6,4 +6,4 @@ const TeamRoutes = () => {
     )
 }
 
-export default TeamRoutes
+export default SeeMoreAllStar

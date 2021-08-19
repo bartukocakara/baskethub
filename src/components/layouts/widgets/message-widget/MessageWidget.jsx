@@ -1,6 +1,4 @@
-import { BsArrowRight } from '@react-icons/all-files/bs/BsArrowRight';
 import React from 'react'
-import { Link } from 'react-router-dom';
 import MessageWidgetCard from '../../../cards/widget-cards/message-widget-card/MessageWidgetCard'
 import "./_messageWidget.scss";
 
@@ -17,9 +15,6 @@ const MessageWidget = () => {
                 }
                 </div>
             </div>
-            <h6 className="text-center">
-                <Link className="btn btn-primary">See more <BsArrowRight/></Link>
-            </h6>
         </div>
     )
 }

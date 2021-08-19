@@ -1,4 +1,4 @@
-const TeamRoutes = () => {
+const SeeMoreCourts = () => {
     return (
         <div>
             
@@ -6,4 +6,4 @@ const TeamRoutes = () => {
     )
 }
 
-export default TeamRoutes
+export default SeeMoreCourts

@@ -6,10 +6,10 @@ import {
   } from "react-router-dom";
 const Teams = () => {
     return (
-        <div className="col-3 feed-card player-details-teams m-auto border rounded shadow">
-            <div className="card m-0">
+        <div className="col-3 mt-2">
+            <div className="card m-1 border rounded shadow text-center">
                 <h4 className="card-title text-center mt-2">Bornova Team</h4>
-                <div className="card-content card-body p-0">
+                <div className="card-content card-body p-0 m-auto">
                     <AvatarGroup max={3} >
                         <Avatar alt="Remy Sharp" src="assets/images/faces/2.jpg" />
                         <Avatar alt="Travis Howard" src="assets/images/faces/2.jpg" />

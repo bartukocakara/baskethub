@@ -62,6 +62,8 @@ import ProfileSettings from './screens/profile/settings/ProfileSettings';
 import CourtComments from './screens/comments/court-comments/CourtComments';
 import ManagerComments from './screens/comments/manager-comments/ManagerComments';
 import TrainerComments from './screens/comments/trainer-comments/TrainerComments';
+import SeeMorePlayers from './components/suggestions/players/SeeMorePlayers';
+import SeeMoreTeams from './components/suggestions/teams/SeeMoreTeams';
 
 function App() {
   return (
@@ -134,6 +136,23 @@ function App() {
                               <Route path="/checkout" component={Checkout} />
                               <Route path="/match-request-result" component={MatchRequestResult} />
                               <Route path="/trainer-offer" component={TrainerSendOffer} />
+
+                              {/* Profile */}
+                              {/* Player */}
+                              {/* Team */}
+                              {/* Court */}
+                              {/* Match */}
+                              {/* Trainer */}
+                              {/* Training */}
+                              {/* Trainer */}
+                              {/* Tournament */}
+                              {/* All-Star */}
+
+                              {/* Suggestion */}
+
+                              <Route path="/suggestion/player" component={SeeMorePlayers} />
+                              <Route path="/suggestion/team" component={SeeMoreTeams} />
+
                           </Switch>
                           </div>
                     </div>
