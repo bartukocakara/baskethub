@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import AllStarCard from '../../components/cards/all-stars/AllStarCard'
 
 const AllStar = () => {
