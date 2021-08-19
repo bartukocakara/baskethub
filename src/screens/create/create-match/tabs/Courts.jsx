@@ -22,7 +22,7 @@ const Courts = () => {
                 </div>
                 <div className="header form m-2 p-3">
                     <form className="row">
-                        <div className="col-md-6 text-center">
+                        <div className="col-md-6 text-center my-2">
                             <BiWorld size={20} className="m-2 text-primary"/>
                             <select className="form-control w-50 m-auto">
                                 <option>Netherlands</option>
@@ -30,7 +30,7 @@ const Courts = () => {
                                 <option>Turkey</option>
                             </select>
                         </div>
-                        <div className="col-md-6 text-center">
+                        <div className="col-md-6 text-center my-2">
                             <GoLocation size={20} className="m-2 text-primary"/>
                             <select className="form-control w-50 m-auto">
                                 <option>Amsterdam</option>
@@ -38,17 +38,17 @@ const Courts = () => {
                                 <option>İzmir</option>
                             </select>
                         </div>
-                        <div className="col-md-6 text-center">
+                        <div className="col-md-6 text-center my-2">
                             <GiPayMoney size={20} className="m-2 text-primary"/>
-                            <select className="form-control w-75 m-auto">
+                            <select className="form-control w-50 m-auto">
                                 <option>75-100 ₺</option>
                                 <option>100-125 ₺</option>
                                 <option>125-150 ₺</option>
                             </select>
                         </div>
-                        <div className="col-md-6 text-center">
+                        <div className="col-md-6 text-center my-2">
                             <AiFillStar className="m-2 text-primary"/>
-                            <select className="form-control w-75 m-auto" name="" >
+                            <select className="form-control w-50 m-auto" name="" >
                                 <option>1 Star</option>,
                                 <option>2 Star</option>
                                 <option>3 Star</option>
@@ -70,7 +70,12 @@ const Courts = () => {
                                             <div className="checkbox checkbox-shadow m-1 m-auto">
                                                 <input type="checkbox" className="form-check-input" id="checkbox1" />
                                             </div>
-                                            <h6 className="m-2 m-auto"><Link to="court-detail">Bornova Spor Salonu</Link> <p>İstanbul</p></h6>
+                                            <h6 className="m-2 m-auto">
+                                                <Link to="court-detail">Bornova Spor Salonu</Link>
+                                                <p>İstanbul</p>
+                                                <span className="badge bg-success">Ücretsiz İptal</span>
+                                            </h6>
+                                            
                                             
                                         </div>
                                         <div className=" d-flex ">

@@ -64,6 +64,7 @@ import ManagerComments from './screens/comments/manager-comments/ManagerComments
 import TrainerComments from './screens/comments/trainer-comments/TrainerComments';
 import SeeMorePlayers from './components/suggestions/players/SeeMorePlayers';
 import SeeMoreTeams from './components/suggestions/teams/SeeMoreTeams';
+import AllStarDetail from './components/card-details/all-star-detail/AllStarDetail';
 
 function App() {
   return (
@@ -123,6 +124,7 @@ function App() {
                               <Route path="/match-chat" component={MatchMessage} />
                               <Route path="/notifications" component={Notifications} />
                               <Route path="/notification-detail" component={NotificationDetail} />
+                              <Route path="/all-star-detail" component={AllStarDetail} />
                               <Route path="/create-team" component={CreateTeam} />
                               <Route path="/create-court" component={CreateCourt} />
                               <Route path="/create-training-event" component={CreateTraining} />
