@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import AllStarCard from '../../components/cards/all-stars/AllStarCard'
 
 const AllStar = () => {
     return (
@@ -41,25 +42,7 @@ const AllStar = () => {
         <div className="row">
             {
                 [...Array(5)].map((allStarCard) => (
-                    <div className="col-xl-4 col-md-6 col-sm-12">
-                        <Link to="all-star-detail">
-                        <div className="card">
-                            <div className="card-content">
-                                <img src="assets/images/samples/basket-salon2.jpg" className="card-img-top img-fluid" style={{ height:"100px" }} alt="singleminded" />
-                                <div className="card-body">
-                                    
-                                    <h6>Amsterdam, <span classNameName="fw-bold">Netherlands</span></h6>
-                                    <p className="card-text">
-                                        Chocolate sesame snaps apple pie danish cupcake sweet roll jujubes
-                                        tiramisu.Gummies
-                                        bonbon apple pie fruitcake icing biscuit apple pie jelly-o sweet roll.
-                                    </p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        </Link>
-                    </div>
+                    <AllStarCard/>
                 ))
             }
             
