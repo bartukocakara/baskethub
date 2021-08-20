@@ -1,7 +1,13 @@
+import SugTournamentCard from "../../cards/suggestions/sug-tournament-card/SugTournamentCard"
+
 const SeeMoreTournaments = () => {
     return (
-        <div>
-            
+        <div className="row">
+            {
+                [...Array(5)].map((sugCoach) => (
+                    <SugTournamentCard/>
+                ))
+            }
         </div>
     )
 }

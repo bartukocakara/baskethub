@@ -1,7 +1,13 @@
+import SugManagerCard from "../../cards/suggestions/sug-manager-card/SugManagerCard"
+
 const SeeMoreMatches = () => {
     return (
-        <div>
-            
+        <div className="row">
+            {
+                [...Array(5)].map((sugCoach) => (
+                    <SugManagerCard/>
+                ))
+            }
         </div>
     )
 }

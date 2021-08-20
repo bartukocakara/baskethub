@@ -19,7 +19,7 @@ const CourtWidget = () => {
                 </div>
             </div>
             <h6 className="text-center">
-                <Link className="btn btn-primary">See more <BsArrowRight/></Link>
+                <Link to="suggestion-courts" className="btn btn-primary">See more <BsArrowRight/></Link>
             </h6>
         </div>
     )

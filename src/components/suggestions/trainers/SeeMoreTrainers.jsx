@@ -1,7 +1,13 @@
+import SugTrainerCard from "../../cards/suggestions/sug-trainer-card/SugTrainerCard"
+
 const SeeMoreTrainers = () => {
     return (
-        <div>
-            
+        <div className="row">
+            {
+                [...Array(5)].map((sugCoach) => (
+                    <SugTrainerCard/>
+                ))
+            }
         </div>
     )
 }

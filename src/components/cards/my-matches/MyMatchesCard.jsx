@@ -65,7 +65,7 @@ const MyMatchesCard = () => {
                     <div className="card-footer p-2">
                         <div className="footer-left">
                             <Link to="match-detail" className="btn btn-light">
-                                Match Details
+                                Details
                             </Link>
                         </div>
                         <div className="footer-right d-flex">
