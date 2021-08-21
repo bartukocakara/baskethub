@@ -1,67 +1,74 @@
-import React from 'react'
+import React, { useState } from 'react';
+import DateRangePicker from '@wojtekmaj/react-daterange-picker';
+import MultiSelect from "react-multi-select-component";
 
 const RequestPermissions = () => {
+
+    const [value, onChange] = useState([new Date(), new Date()]);
+
+    const options = [
+        { label: "Team 1", value: "grapes", },
+        { label: "Team 2", value: "mango" },
+        { label: "Oşbo Team", value: "strawberry", disabled: true },
+        { label: "Saturday", value: "apple" },
+        { label: "Sunday 🍊", value: "tangerine" },
+      ];
+      const [selected, setSelected] = useState([]);
     return (
         <div class="card">
             <div class="card-content">
                 <div class="card-body">
                     <form class="form form-vertical">
                         <div class="form-body">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="form-group has-icon-left">
-                                        <label for="first-name-icon">First Name</label>
-                                        <div class="position-relative">
-                                            <input type="text" class="form-control" placeholder="Input with icon left" id="first-name-icon" />
-                                            <div class="form-control-icon">
-                                                <i class="bi bi-person"></i>
-                                            </div>
+                        <div class="row">
+                                <div class="col-6">
+                                    <label htmlFor="">Pick Date Range</label>
+                                <DateRangePicker
+                                    className="d-block rounded"
+                                    onChange={onChange}
+                                    value={value}
+                                />
+                                </div>
+                                <div className="col-md-4">
+                                <label for="first-name-icon">Week Days</label>
+                                    <MultiSelect
+                                        options={options}
+                                        value={selected}
+                                        onChange={setSelected}
+                                        labelledBy="Select" className="w-100 m-auto"
+                                    />
+                                </div>
+                                <div className="col-md-12-center">
+                                    <div class="card-body text-center">
+                                        <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked="true" />
+                                        <label class="btn btn-outline-success m-2" for="success-outlined">Enable all requests</label>
+
+                                        <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off" />
+                                        <label class="btn btn-outline-danger m-2" for="danger-outlined">Disable all requests</label>
+                                    </div>
+                                </div>
+                                <div className="col-md-6">
+                                    <div class="card-body">
+                                    
+                                        <div class="form-check form-switch m-3">
+                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
+                                            <label class="form-check-label" for="flexSwitchCheckDefault">Disable match requests</label>
+                                        </div>
+                                        <div class="form-check form-switch m-3">
+                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked="" />
+                                            <label class="form-check-label" for="flexSwitchCheckChecked">Disable team join requests</label>
+                                        </div>
+                                        <div class="form-check form-switch m-3">
+                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled="" />
+                                            <label class="form-check-label" for="flexSwitchCheckDisabled">Disable message requests</label>
+                                        </div>
+                                        <div class="form-check form-switch m-3">
+                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked="" disabled="" />
+                                            <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disable training requests</label>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12">
-                                    <div class="form-group has-icon-left">
-                                        <label for="email-id-icon">Email</label>
-                                        <div class="position-relative">
-                                            <input type="text" class="form-control" placeholder="Email" id="email-id-icon" />
-                                            <div class="form-control-icon">
-                                                <i class="bi bi-envelope"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-group has-icon-left">
-                                        <label for="mobile-id-icon">Mobile</label>
-                                        <div class="position-relative">
-                                            <input type="text" class="form-control" placeholder="Mobile" id="mobile-id-icon" />
-                                            <div class="form-control-icon">
-                                                <i class="bi bi-phone"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-group has-icon-left">
-                                        <label for="password-id-icon">Password</label>
-                                        <div class="position-relative">
-                                            <input type="password" class="form-control" placeholder="Password" id="password-id-icon" />
-                                            <div class="form-control-icon">
-                                                <i class="bi bi-lock"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-check">
-                                        <div class="checkbox mt-2">
-                                            <input type="checkbox" id="remember-me-v" class="form-check-input" checked="" />
-                                            <label for="remember-me-v">Remember Me</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 d-flex justify-content-end">
-                                    <button type="submit" class="btn btn-primary me-1 mb-1">Submit</button>
+                                <div class="col-12 text-center">
                                     <button type="reset" class="btn btn-light-secondary me-1 mb-1">Reset</button>
                                 </div>
                             </div>

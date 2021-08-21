@@ -3,7 +3,7 @@ import { FcMoneyTransfer } from "@react-icons/all-files/fc/FcMoneyTransfer";
 
 const Payment = () => {
     return (
-        <div className="row">
+        <div className="row mt-2">
             <FcMoneyTransfer className="col-md-12" size={50}/>
             <div class="col-4">
                 <div class="form-group text-center">

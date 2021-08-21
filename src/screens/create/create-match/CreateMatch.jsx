@@ -47,7 +47,7 @@ const CreateMatch = () => {
                                     <a class="nav-link active" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="true">Create without option +</a>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-md-9 ">
+                            <div class="col-sm-12 col-md-9 mt-2">
                                 <div class="tab-content" id="v-pills-tabContent">
                                     <div class="tab-pane fade" id="v-pills-team" role="tabpanel" aria-labelledby="v-pills-team-tab">
                                         <div className="row">

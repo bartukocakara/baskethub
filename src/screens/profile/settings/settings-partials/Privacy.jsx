@@ -8,49 +8,25 @@ const Privacy = () => {
                     <form class="form form-vertical">
                         <div class="form-body">
                             <div class="row">
-                                <div class="col-12">
-                                    <div class="form-group has-icon-left">
-                                        <label for="first-name-icon">First Name</label>
-                                        <div class="position-relative">
-                                            <input type="text" class="form-control" placeholder="Input with icon left" id="first-name-icon" />
-                                            <div class="form-control-icon">
-                                                <i class="bi bi-person"></i>
-                                            </div>
-                                        </div>
+                            <div className="col-md-6">
+                                <div class="card-body">                                    
+                                    <div class="form-check form-switch m-3">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Disable match requests</label>
+                                    </div>
+                                    <div class="form-check form-switch m-3">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked="" />
+                                        <label class="form-check-label" for="flexSwitchCheckChecked">Disable team join requests</label>
+                                    </div>
+                                    <div class="form-check form-switch m-3">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled="" />
+                                        <label class="form-check-label" for="flexSwitchCheckDisabled">Disable message requests</label>
+                                    </div>
+                                    <div class="form-check form-switch m-3">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked="" disabled="" />
+                                        <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disable training requests</label>
                                     </div>
                                 </div>
-                                <div class="col-12">
-                                    <div class="form-group has-icon-left">
-                                        <label for="email-id-icon">Email</label>
-                                        <div class="position-relative">
-                                            <input type="text" class="form-control" placeholder="Email" id="email-id-icon" />
-                                            <div class="form-control-icon">
-                                                <i class="bi bi-envelope"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-group has-icon-left">
-                                        <label for="mobile-id-icon">Mobile</label>
-                                        <div class="position-relative">
-                                            <input type="text" class="form-control" placeholder="Mobile" id="mobile-id-icon" />
-                                            <div class="form-control-icon">
-                                                <i class="bi bi-phone"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-group has-icon-left">
-                                        <label for="password-id-icon">Password</label>
-                                        <div class="position-relative">
-                                            <input type="password" class="form-control" placeholder="Password" id="password-id-icon" />
-                                            <div class="form-control-icon">
-                                                <i class="bi bi-lock"></i>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-check">
