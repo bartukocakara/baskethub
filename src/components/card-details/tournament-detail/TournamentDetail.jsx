@@ -21,15 +21,13 @@ import ParticipantGift from './participant-gift/ParticipantGift';
 import "./_tournamentDetail.scss";
 import CourtGallery from './court-gallery/CourtGallery';
 import News from './news/News';
+
 const TournamentDetail = () => {
     return (
         <>
         <div class="col-md-12">
             <div class="card">
             <h5 class="card-title text-center">İzmir Tournament</h5>
-                
-        
-                
                 <div class="card-body">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
