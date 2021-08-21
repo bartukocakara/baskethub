@@ -20,31 +20,33 @@ const TeamDetail = () => {
         <>
             <div class="col-10 m-auto">
                 <div class="card">
-                    <div class="card-header d-flex justify-content-center">
-                        <h4 className="text-center">Bornova Team Detail</h4>
-                        <div class="dropdown">
-                            <Link class="btn btn-light m-2 p-2 text-primary border" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                            <FiSettings/>                            
-                            </Link>
+                    <div class="card-header d-flex justify-content-center align-items-center">
+                    <span className="badge bg-primary mb-1 mr-2">12</span><h4 className="text-center">Bornova Team Detail</h4>
+                        <div className="d-flex">
+                            <div class="dropdown">
+                                <Link class="btn btn-light m-2 p-2 text-primary border" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                <FiSettings/>                            
+                                </Link>
 
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <li><Link class="dropdown-item text-center">Edit Team <GoPerson /></Link></li>
-                                <li><Link class="dropdown-item text-center">Exit Player -</Link></li>
-                                <li><Link class="dropdown-item text-center">Warn Player !</Link></li>
-                            </ul>
-                        </div>
-                        <div class="dropdown">
-                            <Link class="btn btn-light m-2 p-2 text-primary border" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                <FiShare2 />
-                            </Link>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li><Link class="dropdown-item text-center">Edit Team <GoPerson /></Link></li>
+                                    <li><Link class="dropdown-item text-center">Exit Player -</Link></li>
+                                    <li><Link class="dropdown-item text-center">Warn Player !</Link></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <Link class="btn btn-light m-2 p-2 text-primary border" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <FiShare2 />
+                                </Link>
 
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <li><Link class="dropdown-item text-center">With Player <GoPerson /></Link></li>
-                                <li><Link class="dropdown-item text-center">Whatsapp <AiOutlineWhatsApp /></Link></li>
-                                <li><Link class="dropdown-item text-center">Facebook <TiSocialFacebook /></Link></li>
-                                <li><Link class="dropdown-item text-center">Twitter <TiSocialTwitter /></Link></li>
-                                <li><Link class="dropdown-item text-center">Instagram <TiSocialInstagram /></Link></li>
-                            </ul>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li><Link class="dropdown-item text-center">With Player <GoPerson /></Link></li>
+                                    <li><Link class="dropdown-item text-center">Whatsapp <AiOutlineWhatsApp /></Link></li>
+                                    <li><Link class="dropdown-item text-center">Facebook <TiSocialFacebook /></Link></li>
+                                    <li><Link class="dropdown-item text-center">Twitter <TiSocialTwitter /></Link></li>
+                                    <li><Link class="dropdown-item text-center">Instagram <TiSocialInstagram /></Link></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div class="card-body">
