@@ -70,7 +70,7 @@ const TeamDetail = () => {
                                                     <div class="avatar avatar-lg">
                                                         <img src="assets/images/faces/5.jpg" alt="team-detail" />
                                                     </div>
-                                                    <Link to="player-detail text-center"><p class="font-bold ms-4 mb-0">Si Cantik</p></Link>
+                                                    <Link to="player-detail"><p class="font-bold ms-4 mb-0">Si Cantik</p></Link>
                                                 </div>
                                             </td>
                                             <td class="col-auto">

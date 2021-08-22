@@ -40,7 +40,7 @@ const TrainingCard = () => {
                 <div style={{ height: "60px" }} height="100"></div>
                 <div className="card-footer bg-transparent d-flex p-2 justify-content-between">
                     <div className="footer-left">
-                        <Link to="tournament-detail" className="btn btn-light">
+                        <Link to="training-detail" className="btn btn-light">
                             Details
                         </Link>
                     </div>

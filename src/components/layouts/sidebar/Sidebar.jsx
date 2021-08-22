@@ -186,19 +186,22 @@ const Sidebar = () => {
                             <li className="sidebar-item">
                                 <NavLink  to="/my-matches" className="sidebar-link">
                                     <FaBasketballBall />
-                                    <span>My Matches</span>
+                                    <span>My Matches </span>
+                                    <span className="badge bg-warning">4</span>
                                 </NavLink >
                             </li>
                             <li className="sidebar-item">
                                 <NavLink  to="/my-teams" className="sidebar-link">
                                     <BsPeopleFill />
-                                    <span>My Teams</span>
+                                    <span>My Teams </span>
+                                    <span className="badge bg-warning">4</span>
                                 </NavLink >
                             </li>
                             <li className="sidebar-item">
                                 <NavLink  to="/my-trainers" className="sidebar-link">
                                 <GiStrong />
-                                    <span>My Trainers</span>
+                                    <span>My Trainers </span>
+                                    <span className="badge bg-warning">4</span>
                                 </NavLink >
                             </li>
                             <li className="sidebar-item">
@@ -221,8 +224,8 @@ const Sidebar = () => {
                                     <span >Favourite</span>
                                 </Link >
                                 <ul className="submenu" style={{display: "none"}}>
-                                    <li className="submenu-item">
-                                        <NavLink  to="/favourite-players" className="sidebar-link">
+                                    <li className="submenu-item ">
+                                        <NavLink  to="/favourite-players" className="sidebar-link fav-sidebar">
                                             Favorite Players
                                         </NavLink>
                                     </li>
