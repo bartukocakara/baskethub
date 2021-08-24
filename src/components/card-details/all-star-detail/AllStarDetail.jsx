@@ -1,5 +1,6 @@
 import React from 'react'
 import EventCalendar from './tabs/EventCalendar'
+import News from './tabs/News';
 import Players from './tabs/Players'
 import Prizes from './tabs/Prizes'
 
@@ -51,6 +52,9 @@ const AllStarDetail = () => {
                                     <li class="nav-item" role="presentation">
                                         <a class="nav-link" id="prizes-tab" data-bs-toggle="tab" href="#prizes" role="tab" aria-controls="prizes" aria-selected="false">Prizes</a>
                                     </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="news-tab" data-bs-toggle="tab" href="#news" role="tab" aria-controls="news" aria-selected="false">News</a>
+                                    </li>
                                 </ul>
                                 <div class="tab-content" id="myTabContent">
                                     <div class="tab-pane fade show active" id="event-calendar" role="tabpanel" aria-labelledby="event-calendar-tab">
@@ -61,6 +65,9 @@ const AllStarDetail = () => {
                                     </div>
                                     <div class="tab-pane fade" id="prizes" role="tabpanel" aria-labelledby="prizes-tab">
                                         <Prizes/>
+                                    </div>
+                                    <div class="tab-pane fade" id="news" role="tabpanel" aria-labelledby="news-tab">
+                                        <News/>
                                     </div>
                                 </div>
                             </div>

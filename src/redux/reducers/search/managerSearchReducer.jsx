@@ -1,4 +1,4 @@
-const managerReducer = (state = false, action) => {
+const managerSearchReducer = (state = false, action) => {
     switch (action.type) {
         case "PLAY":
             return !state;
@@ -9,4 +9,4 @@ const managerReducer = (state = false, action) => {
     }
 }
 
-export default managerReducer;
+export default managerSearchReducer;

@@ -1,4 +1,4 @@
-const courtReducer = (state = false, action) => {
+const courtSearchReducer = (state = false, action) => {
     switch (action.type) {
         case "PLAY":
             return !state;
@@ -9,4 +9,4 @@ const courtReducer = (state = false, action) => {
     }
 }
 
-export default courtReducer;
+export default courtSearchReducer;

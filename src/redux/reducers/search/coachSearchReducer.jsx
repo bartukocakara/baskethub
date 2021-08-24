@@ -1,4 +1,4 @@
-const coachReducer = (state = false, action) => {
+const coachSearchReducer = (state = false, action) => {
     switch (action.type) {
         case "PLAY":
             return !state;
@@ -9,4 +9,4 @@ const coachReducer = (state = false, action) => {
     }
 }
 
-export default coachReducer;
+export default coachSearchReducer;

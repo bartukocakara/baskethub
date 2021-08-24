@@ -72,6 +72,7 @@ import SeeMoreManagers from './components/suggestions/managers/SeeMoreManagers';
 import SeeMoreTournaments from './components/suggestions/tournaments/SeeMoreTournaments';
 import SeeMoreTrainings from './components/suggestions/trainings/SeeMoreTrainings';
 import SeeMoreTrainers from './components/suggestions/trainers/SeeMoreTrainers';
+import PrizeDetail from './screens/prize/PrizeDetail';
 
 function App() {
   return (
@@ -145,6 +146,7 @@ function App() {
                               <Route path="/checkout" component={Checkout} />
                               <Route path="/match-request-result" component={MatchRequestResult} />
                               <Route path="/trainer-offer" component={TrainerSendOffer} />
+                              <Route path="/prize-detail" component={PrizeDetail} />
 
                               {/* Profile */}
                               {/* Player */}

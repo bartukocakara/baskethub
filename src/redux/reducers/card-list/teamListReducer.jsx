@@ -1,4 +1,4 @@
-const tournamentSearchReducer = (state = false, action) => {
+const teamListReducer = (state = false, action) => {
     switch (action.type) {
         case "PLAY":
             return !state;
@@ -9,4 +9,4 @@ const tournamentSearchReducer = (state = false, action) => {
     }
 }
 
-export default tournamentSearchReducer;
+export default teamListReducer;

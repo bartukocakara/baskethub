@@ -32,6 +32,15 @@
             color: #fff;
         }
     }
+    .sidebar-item .badge.bg-warning{
+        margin-left:auto;
+
+    }
+    .sidebar-link.active{
+        .badge.bg-warning{
+            border:1px solid #fff;
+        }
+    }
 }
 
 .logo {
