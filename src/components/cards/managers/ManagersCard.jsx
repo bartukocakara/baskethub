@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail";
-import { FaHandshake } from "@react-icons/all-files/fa/FaHandshake";
 import { FiShare2 } from "@react-icons/all-files/fi/FiShare2";
 import { TiSocialInstagram } from "@react-icons/all-files/ti/TiSocialInstagram";
 import { TiSocialTwitter } from "@react-icons/all-files/ti/TiSocialTwitter";
@@ -68,9 +67,6 @@ const ManagersCard = () => {
                         </Link>
                         <Link class="btn btn-light m-2 p-2 text-primary " to="message-detail">
                             <AiOutlineMail className="card-footer-icon" />
-                        </Link>
-                        <Link class="btn btn-light m-2 p-2 text-primary " to="trainer-offer">
-                            <FaHandshake className="card-footer-icon" />
                         </Link>
                         <div class="dropdown">
                             <Link class="btn btn-light m-2 p-2 text-primary " role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
