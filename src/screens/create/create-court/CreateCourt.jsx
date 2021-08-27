@@ -4,6 +4,7 @@ import HostInfo from './tabs/HostInfo'
 import Images from './tabs/Images'
 import Price from './tabs/Price'
 import Subscription from './tabs/Subscription'
+import "./_createCourt.scss";
 
 const CreateCourt = () => {
     return (
@@ -22,7 +23,7 @@ const CreateCourt = () => {
                         </div>
                     </div>
                     <div class="col-9">
-                        <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-content create-court" id="v-pills-tabContent">
                             <div class="tab-pane fade show active" id="v-pills-host-info" role="tabpanel" aria-labelledby="v-pills-host-info-tab">
                                <HostInfo />
                             </div>
@@ -40,7 +41,7 @@ const CreateCourt = () => {
                             </div>
                         </div>
                         <div className="form-group col-md-12 p-2 text-center p-4">
-                            <input type="button" className="btn btn-primary btn-lg w-25 fw-bold" id="helpInputTop" value="Create" />
+                            <input type="button" className="btn btn-success btn-lg w-25 fw-bold" id="helpInputTop" value="Create" />
                         </div>
                     </div>
                 </div>

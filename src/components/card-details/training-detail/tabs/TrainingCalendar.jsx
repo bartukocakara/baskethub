@@ -5,7 +5,7 @@ import dayGridPlugin from '@fullcalendar/daygrid'
 const TrainingCalendar = () => {
 
     return (
-        <div className="row">
+        <div className="row mt-3">
             <FullCalendar
                 plugins={[ dayGridPlugin ]}
                 initialView="dayGridMonth"

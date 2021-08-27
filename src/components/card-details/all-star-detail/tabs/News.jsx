@@ -1,4 +1,3 @@
-// .email-application .content-area-wrapper .content-right .email-app-list-wrapper .email-app-list .email-user-list .users-list-wrapper li .user-details .list-group-item-text
 const News = () => {
     return (
         <div class="page-heading email-application">

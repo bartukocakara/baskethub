@@ -10,17 +10,13 @@ import { TiSocialTwitter } from "@react-icons/all-files/ti/TiSocialTwitter";
 import { TiSocialFacebook } from "@react-icons/all-files/ti/TiSocialFacebook";
 import { AiOutlineWhatsApp } from "@react-icons/all-files/ai/AiOutlineWhatsApp";
 import { GoPerson } from "@react-icons/all-files/go/GoPerson";
-import { SiVlcmediaplayer } from "@react-icons/all-files/si/SiVlcmediaplayer";
-import { FaBasketballBall } from "@react-icons/all-files/fa/FaBasketballBall";
-import { RiMentalHealthFill } from "@react-icons/all-files/ri/RiMentalHealthFill";
-
 import {
     Link
   } from "react-router-dom";
 import RequestPlayerJoin from '../../../../components/modals/request-player-join/RequestPlayerJoin';
 import RequestTeamJoin from '../../../../components/modals/request-team-join/RequestTeamJoin';
 import RequestTrainingJoin from '../../../../components/modals/request-training-join/RequestTrainingJoin';
-const Trainers = () => {
+const Players = () => {
 
     const [showRequestPlayerJoin, setRequestPJShow] = useState(false);
 
@@ -53,10 +49,9 @@ const Trainers = () => {
                             <table class="table table-hover table-lg">
                                 <thead>
                                     <tr>
-                                        <th className="text-center"></th>
                                         <th className="text-center">Name</th>
                                         <th className="text-center">City</th>
-                                        <th className="text-center">Licences</th>
+                                        <th className="text-center">Position</th>
                                         <th className="text-center">Status</th>
                                         <th className="text-center">Actions</th>
                                     </tr>
@@ -65,24 +60,22 @@ const Trainers = () => {
                                     {
                                         [...Array(5)].map((teamDetail) => (
                                             <tr>
-                                            <td class="">
+                                            <td class="col-3">
                                                 <div class="d-flex align-items-center">
                                                     <div class="avatar avatar-lg">
-                                                        <img src="assets/images/avatars/trainers/trainer1.jpg" alt="trainer-avatar" />
+                                                        <img src="assets/images/avatars/players/player1.jpg" alt="team-detail" />
                                                     </div>
+                                                    <Link to="player-detail"><p class="font-bold ms-4 mb-0">Si Cantik</p></Link>
                                                 </div>
-                                            </td>
-                                            <td>
-                                                <Link to="trainer-detail"> Bartu</Link>
                                             </td>
                                             <td class="col-auto">
                                                 <p class="mb-0 text-center">İzmir, İstanbul, Ankara</p>
                                             </td>
                                             <td class="col-auto  text-center">
                                                 <p class="mb-0 d-flex ">
-                                                    <span className="badge w-25 bg-success m-1"><SiVlcmediaplayer size={22}/></span>
-                                                    <span className="badge w-25 bg-success m-1"><FaBasketballBall size={22}/></span>
-                                                    <span className="badge w-25 bg-success m-1"><RiMentalHealthFill size={22}/></span>
+                                                    <span className="badge w-25 bg-success m-1">G</span>
+                                                    <span className="badge w-25 bg-success m-1">SG</span>
+                                                    <span className="badge w-25 bg-success m-1">SF</span>
                                                 </p>
                                             </td>
                                             <td class="col-auto">
@@ -100,7 +93,7 @@ const Trainers = () => {
                                                             <li><Link class="dropdown-item text-center" onClick={handleRequestTrainingJoinModal}>Request join trainig </Link></li>
                                                         </ul>
                                                     </div>
-                                                    <Link to="trainer-chat" className="btn btn-warning"><FiMail/></Link>
+                                                    <Link to="team-chat" className="btn btn-warning"><FiMail/></Link>
                                                     <div class="dropdown btn btn-primary p-1">
                                                         <Link className="text-light" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                                             <FiShare2 className="m-2" size={27}/>
@@ -128,4 +121,4 @@ const Trainers = () => {
     )
 }
 
-export default Trainers
+export default Players

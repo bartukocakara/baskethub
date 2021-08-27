@@ -3,7 +3,7 @@ import "./_messageDetail.scss";
 import {
     Link
   } from "react-router-dom";
-import MessageWidget from '../../components/layouts/widgets/message-widget/MessageWidget';
+import MessageWidget from '../../../components/layouts/widgets/message-widget/MessageWidget';
 const MessageDetail = () => {
     return (
         <>

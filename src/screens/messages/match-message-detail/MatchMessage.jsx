@@ -2,9 +2,8 @@ import React from 'react'
 import {
     Link
   } from "react-router-dom";
-import TeamMessageWidget from '../../components/layouts/widgets/team-message-widget/TeamMessageWidget';
-  
-const TeamMessage = () => {
+  import MatchMessageWidget from '../../../components/layouts/widgets/match-message-widget/MatchMessageWidget';
+  const MatchMessage = () => {
     return (
         <>
             <div class="col-md-8">
@@ -60,9 +59,9 @@ const TeamMessage = () => {
                 </div>
             </div>
             </div>
-            <TeamMessageWidget />
+            <MatchMessageWidget />
         </>
     )
 }
 
-export default TeamMessage
+export default MatchMessage

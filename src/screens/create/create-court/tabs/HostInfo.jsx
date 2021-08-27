@@ -2,7 +2,7 @@ import React from 'react'
 
 const HostInfo = () => {
     return (
-        <>
+        <div className="row">
             <div className="form-group col-md-6 p-2">
                 <label for="basicInput" className="p-2">Host Name</label>
                 <input type="text" className="form-control w-75 p-2" id="basicInput" placeholder="Enter name" />
@@ -26,7 +26,7 @@ const HostInfo = () => {
                     <option>Female</option>
                 </select>
             </div>
-        </>
+        </div>
     )
 }
 

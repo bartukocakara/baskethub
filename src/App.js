@@ -27,9 +27,9 @@ import {
   Switch,
 } from "react-router-dom";
 import Profile from './screens/profile/Profile';
-import MessageDetail from './screens/message-detail/MessageDetail';
-import TeamMessage from './screens/team-message-detail/TeamMessage';
-import MatchMessage from './screens/match-message-detail/MatchMessage';
+import MessageDetail from './screens/messages/message-detail/MessageDetail';
+import TeamMessage from './screens/messages/team-message-detail/TeamMessage';
+import MatchMessage from './screens/messages/match-message-detail/MatchMessage';
 import NotificationDetail from './screens/notification-detail/NotificationDetail';
 import Notifications from './screens/notifications/Notifications';
 import MatchDetail from './components/card-details/match-detail/MatchDetail';
