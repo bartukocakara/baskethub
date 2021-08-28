@@ -187,21 +187,21 @@ const Sidebar = () => {
                                 <NavLink  to="/my-matches" className="sidebar-link">
                                     <FaBasketballBall />
                                     <span>My Matches </span>
-                                    <span className="badge bg-warning">4</span>
+                                    <span className="badge bg-warning side-shadow">4</span>
                                 </NavLink >
                             </li>
                             <li className="sidebar-item">
                                 <NavLink  to="/my-teams" className="sidebar-link">
                                     <BsPeopleFill />
                                     <span>My Teams </span>
-                                    <span className="badge bg-warning">4</span>
+                                    <span className="badge bg-warning side-shadow">4</span>
                                 </NavLink >
                             </li>
                             <li className="sidebar-item">
                                 <NavLink  to="/my-trainers" className="sidebar-link">
                                 <GiStrong />
                                     <span>My Trainers </span>
-                                    <span className="badge bg-warning">4</span>
+                                    <span className="badge bg-warning side-shadow">4</span>
                                 </NavLink >
                             </li>
                             <li className="sidebar-item">

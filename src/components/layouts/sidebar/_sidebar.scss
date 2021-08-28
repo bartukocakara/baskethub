@@ -36,11 +36,6 @@
         margin-left:auto;
 
     }
-    .sidebar-link.active{
-        .badge.bg-warning{
-            border:1px solid #fff;
-        }
-    }
 }
 
 .logo {
@@ -149,4 +144,8 @@
 
 .lang-menu:hover ul {
     display: block;
+}
+.side-shadow{
+    border-radius: 50%;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
