@@ -77,7 +77,7 @@ const CreateTeam = () => {
                             <h6 class="form-check-label" for="flexSwitchCheckDefault">Privacy Status</h6>
                         </div>
                         <div className="col-md-12 row m-2 p-2">
-                            <button className="btn btn-primary w-25 fw-bold m-auto">Create</button>
+                            <button className="btn btn-success w-25 fw-bold m-auto">Create</button>
                         </div>
                    </div>
                </div>

@@ -10,17 +10,17 @@ import { AiOutlineApartment } from "@react-icons/all-files/ai/AiOutlineApartment
 import { AiFillAppstore } from "@react-icons/all-files/ai/AiFillAppstore";
 import { FaHandPeace } from "@react-icons/all-files/fa/FaHandPeace";
 
-import Schema from './schema/Schema';
-import TournamentCalendar from './calendar/Calendar';
-import Rules from './rules/Rules';
-import Referees from './referees/Referees';
-import Teams from './teams/Teams';
-import MyTeam from './my-team/MyTeam';
-import Prize from './prize/Prize';
-import ParticipantGift from './participant-gift/ParticipantGift';
+import Schema from './tabs/Schema';
+import TournamentCalendar from './tabs/Calendar';
+import Rules from './tabs/Rules';
+import Referees from './tabs/Referees';
+import Teams from './tabs/Teams';
+import MyTeam from './tabs/MyTeam';
+import Prize from './tabs/Prize';
+import ParticipantGift from './tabs/ParticipantGift';
 import "./_tournamentDetail.scss";
-import CourtGallery from './court-gallery/CourtGallery';
-import News from './news/News';
+import CourtGallery from './tabs/CourtGallery';
+import News from './tabs/News';
 
 const TournamentDetail = () => {
     return (
@@ -52,10 +52,10 @@ const TournamentDetail = () => {
                             <a class="nav-link" id="my-team-tab" data-bs-toggle="tab" href="#my-team" role="tab" aria-controls="my-team" aria-selected="false">My Team<GoListOrdered className="m-1"/></a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link" id="my-team-tab" data-bs-toggle="tab" href="#my-team" role="tab" aria-controls="my-team" aria-selected="false">Prize<GiTargetPrize className="m-1"/></a>
+                            <a class="nav-link" id="prizes-tab" data-bs-toggle="tab" href="#prizes" role="tab" aria-controls="prizes" aria-selected="false">Prize<GiTargetPrize className="m-1"/></a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link" id="my-team-tab" data-bs-toggle="tab" href="#my-team" role="tab" aria-controls="my-team" aria-selected="false">Participant Gift<AiFillGift className="m-1"/></a>
+                            <a class="nav-link" id="gifts-tab" data-bs-toggle="tab" href="#gifts" role="tab" aria-controls="gifts" aria-selected="false">Participant Gift<AiFillGift className="m-1"/></a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link" id="court-gallery-tab" data-bs-toggle="tab" href="#court-gallery" role="tab" aria-controls="court-gallery" aria-selected="false">Court Gallery<AiFillGift className="m-1"/></a>
@@ -84,10 +84,10 @@ const TournamentDetail = () => {
                         <div class="tab-pane fade" id="my-team" role="tabpanel" aria-labelledby="my-team-tab">
                             <h6><MyTeam/></h6>
                         </div>
-                        <div class="tab-pane fade" id="my-team" role="tabpanel" aria-labelledby="my-team-tab">
+                        <div class="tab-pane fade" id="prizes" role="tabpanel" aria-labelledby="prizes-tab">
                             <h6><Prize/></h6>
                         </div>
-                        <div class="tab-pane fade" id="my-team" role="tabpanel" aria-labelledby="my-team-tab">
+                        <div class="tab-pane fade" id="gifts" role="tabpanel" aria-labelledby="gifts-tab">
                             <h6><ParticipantGift/></h6>
                         </div>
                         <div class="tab-pane fade" id="court-gallery" role="tabpanel" aria-labelledby="court-gallery-tab">

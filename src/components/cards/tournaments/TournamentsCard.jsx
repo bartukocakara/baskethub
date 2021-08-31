@@ -7,7 +7,10 @@ import { TiSocialFacebook } from "@react-icons/all-files/ti/TiSocialFacebook";
 import { AiOutlineWhatsApp } from "@react-icons/all-files/ai/AiOutlineWhatsApp";
 import { GoPerson } from "@react-icons/all-files/go/GoPerson";
 import { BsClockFill } from "@react-icons/all-files/bs/BsClockFill";
-import { IoIosPeople } from "@react-icons/all-files/io/IoIosPeople";
+import { GiTrophyCup } from "@react-icons/all-files/gi/GiTrophyCup";
+import { ImEnter } from "@react-icons/all-files/im/ImEnter";
+import { BiCalendarCheck } from "@react-icons/all-files/bi/BiCalendarCheck";
+
 import Avatar from '@material-ui/core/Avatar';
 import AvatarGroup from '@material-ui/lab/AvatarGroup';
 import {
@@ -18,7 +21,7 @@ const TournamentsCard = () => {
         <div className="tournament-card col-xl-9 col-md-9 col-sm-12 h-25 m-auto">
             <div className="d-flex m-2 p-2 row">
                 <div className="col-md-3">
-                <h6 className="m-1">İzmir Turnuvası</h6>
+                    <h6 className="m-1">İzmir Turnuvası</h6>
                 </div>
                 <div className="col-md-6 d-flex">
                 <AvatarGroup max={3} className="m-1" >
@@ -28,10 +31,10 @@ const TournamentsCard = () => {
                     <Avatar alt="Agnes Walker" src="assets/images/faces/2.jpg" />
                     <Avatar alt="Trevor Henderson" src="assets/images/faces/2.jpg" />
                 </AvatarGroup>
-                <span className="m-1">kişi katılıyor...</span>
+                <span className="m-1">takım katılıyor...</span>
                 </div>
                 <div className="col-md-2">
-                <span className="d-inline m-1 badge bg-success float-right">İlk maça son 3 gün</span>
+                <span className="d-inline m-1 badge bg-success float-right">Looking for 3 teams</span>
                 </div>
             </div>
             
@@ -46,17 +49,21 @@ const TournamentsCard = () => {
                     </div>
                     
                     <div className="row w-75 footer-bg">
-                        <div class="col-lg-4 footer-widget text-center text-light">
+                        <div class="col-lg-3 footer-widget text-center text-light">
                             <BsClockFill size={20} />
                             <p>4 x 10</p>
                         </div>
-                        <div class="col-lg-4 footer-widget text-center text-light">
-                            <IoIosPeople size={25} />
-                            <p>8</p>
+                        <div class="col-lg-3 footer-widget text-center text-light">
+                            <GiTrophyCup size={25} />
+                            <p>3000 $</p>
                         </div>
-                        <div class="col-lg-4 footer-widget text-center text-light">
-                            <IoIosPeople size={25} />
-                            <p>1-3</p>
+                        <div class="col-lg-3 footer-widget text-center text-light">
+                            <ImEnter size={25} />
+                            <p>100 $</p>
+                        </div>
+                        <div class="col-lg-3 footer-widget text-center text-light">
+                            <BiCalendarCheck size={25} />
+                            <p>25/12/2021</p>
                         </div>
                     </div>
                     <div className="footer-right d-flex">

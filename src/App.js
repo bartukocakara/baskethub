@@ -130,6 +130,7 @@ function App() {
                               <Route path="/profile-edit" component={ProfileEdit} />
                               <Route path="/profile-settings" component={ProfileSettings} />
                               <Route path="/message-detail" component={MessageDetail} />
+                              <Route path="/player-chat" component={MessageDetail} />
                               <Route path="/team-chat" component={TeamMessage} />
                               <Route path="/match-chat" component={MatchMessage} />
                               <Route path="/notifications" component={Notifications} />

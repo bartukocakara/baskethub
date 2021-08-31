@@ -1,5 +1,4 @@
 import React from 'react'
-import "./_referees.scss";
 
 const Referees = () => {
     return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import "./_schema.scss";
+import "./../schema/_schema.scss";
 
 const Schema = () => {
     return (

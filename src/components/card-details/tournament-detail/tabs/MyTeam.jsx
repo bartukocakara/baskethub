@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react'
 import { GiPalmTree } from "@react-icons/all-files/gi/GiPalmTree";
 import { GiHealthNormal } from "@react-icons/all-files/gi/GiHealthNormal";
 import { FaCalendarCheck } from "@react-icons/all-files/fa/FaCalendarCheck";
@@ -12,12 +12,26 @@ import { TiSocialTwitter } from "@react-icons/all-files/ti/TiSocialTwitter";
 import { TiSocialFacebook } from "@react-icons/all-files/ti/TiSocialFacebook";
 import { AiOutlineWhatsApp } from "@react-icons/all-files/ai/AiOutlineWhatsApp";
 
+import RequestPlayerJoin from '../../../../components/modals/request-player-join/RequestPlayerJoin';
+import RequestTeamJoin from '../../../../components/modals/request-team-join/RequestTeamJoin';
+
 import {
     Link
   } from "react-router-dom";
 const MyTeam = () => {
+    const [showRequestPlayerJoin, setRequestPJShow] = useState(false);
+
+    const handleRequestPlayerJoinClose = () => setRequestPJShow(false);
+    const handleRequestPlayerJoinModal = () => setRequestPJShow(true);
+    
+    const [showRequestTeamJoin, setRequestTeamJoinShow] = useState(false);
+
+    const handleRequestTeamJoinClose = () => setRequestTeamJoinShow(false);
+    const handleRequestTeamJoinModal = () => setRequestTeamJoinShow(true);
     return (
         <>
+        <RequestPlayerJoin handleRequestPlayerJoinClose={handleRequestPlayerJoinClose} show={showRequestPlayerJoin}  />
+        <RequestTeamJoin handleRequestTeamJoinClose={handleRequestTeamJoinClose} show={showRequestTeamJoin}  />
             <div class="col-10 m-auto">
                 <div class="card">
                     <div class="card-header d-flex justify-content-center align-items-center">
@@ -88,9 +102,28 @@ const MyTeam = () => {
                                             </td>
                                             <td>
                                                 <div className="btn-group">
-                                                    <button className="btn btn-success"><FaHandshake/></button>
-                                                    <button className="btn btn-warning"><FiMail/></button>
-                                                    <button className="btn btn-primary"><FiShare2/></button>
+                                                    <div class="dropdown btn btn-success">
+                                                        <Link class="text-light" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <FaHandshake className="card-footer-icon"  />
+                                                        </Link>
+                                                        <ul class="dropdown-menu mt-3" aria-labelledby="dropdownMenuLink">
+                                                            <li><Link class="dropdown-item text-center" onClick={handleRequestPlayerJoinModal}>Request join match </Link></li>
+                                                            <li><Link class="dropdown-item text-center" onClick={handleRequestTeamJoinModal}>Request join team </Link></li>
+                                                        </ul>
+                                                    </div>
+                                                    <Link to="player-chat" className="btn btn-warning"><FiMail/></Link>
+                                                    <div class="dropdown btn btn-primary p-1">
+                                                        <Link className="text-light" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <FiShare2 className="m-2" size={27}/>
+                                                        </Link>
+                                                        <ul class="dropdown-menu mt-3" aria-labelledby="dropdownMenuLink">
+                                                            <li><Link class="dropdown-item text-center">With Player <GoPerson /></Link></li>
+                                                            <li><Link class="dropdown-item text-center">Whatsapp <AiOutlineWhatsApp /></Link></li>
+                                                            <li><Link class="dropdown-item text-center">Facebook <TiSocialFacebook /></Link></li>
+                                                            <li><Link class="dropdown-item text-center">Twitter <TiSocialTwitter /></Link></li>
+                                                            <li><Link class="dropdown-item text-center">Instagram <TiSocialInstagram /></Link></li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </td>
                                         </tr>
