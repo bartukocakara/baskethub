@@ -1,8 +1,8 @@
 const AuthRoutes = () => {
     return (
-        <div>
+        <>
             
-        </div>
+        </>
     )
 }
 
