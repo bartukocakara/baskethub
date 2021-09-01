@@ -6,7 +6,7 @@ import "./_messageWidgetCard.scss";
 
 const MessageWidgetCard = () => {
     return (
-        <Link to="message-detail">
+        <Link to="player-chat">
             <div className="card-body border b-primary m-3 widget-player-card d-flex p-2 rounded">
                 <div className="widget-player-text">
                     <h6 className="">Bartu Kocakara</h6>

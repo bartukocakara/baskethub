@@ -38,7 +38,7 @@ const NotificationDetail = () => {
                     <div className="name flex-grow-1">
                         <div className="buttons text-center">
                             <button className="btn btn-success" onClick={handleConfirmShow}>Katıl +</button>
-                            <Link to="message-detail" className="btn btn-primary">Mesaj</Link>
+                            <Link to="player-chat" className="btn btn-primary">Mesaj</Link>
                             <button className="btn btn-warning">Paylaş</button>
                         </div>
                     </div>
