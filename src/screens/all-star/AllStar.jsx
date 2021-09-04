@@ -40,8 +40,8 @@ const AllStar = () => {
         </div>
         <div className="row">
             {
-                [...Array(5)].map((allStarCard) => (
-                    <AllStarCard/>
+                [...Array(5)].map((i, allStarCard) => (
+                    <AllStarCard key={i} detail={allStarCard} />
                 ))
             }
             

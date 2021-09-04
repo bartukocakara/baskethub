@@ -12,8 +12,8 @@ const LastActivities = () => {
             <section id="content-types">
                 <div className="row">
                     {
-                        [...Array(10)].map((match) => (
-                            <MyMatchesCard />
+                        [...Array(10)].map((i, lasActivity) => (
+                            <MyMatchesCard key={i}/>
                         ))
                     }
                    

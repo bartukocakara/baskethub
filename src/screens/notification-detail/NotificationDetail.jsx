@@ -16,12 +16,12 @@ const NotificationDetail = () => {
         <>
         <Confirm handleConfirmClose={handleConfirmClose} show={showConfirm} />
 
-        <div class="row">
-            <div class="card">
-                <div class="card-header">
-                    <h4 class="card-title">Match Request</h4>
+        <div className="row">
+            <div className="card">
+                <div className="card-header">
+                    <h4 className="card-title">Match Request</h4>
                 </div>
-                <div class="card-body">
+                <div className="card-body">
                     
                 <div className="media fav-court-detail-comment d-flex align-items-center">
                     <div className="avatar me-3">
@@ -44,7 +44,7 @@ const NotificationDetail = () => {
                     </div>
                 </div>
                 </div>
-                <div class="card-footer">
+                <div className="card-footer">
                     
                 </div>
             </div>

@@ -27,9 +27,9 @@ const Checkout = () => {
             <h6>Court Reservation </h6>
             <div className="row">
                 <div className="col-8 m-auto mt-2">
-                <ul class="progressbar">
-                    <li class="d-flex active"><FaRegCheckCircle size={20}/><h6>Teams</h6></li>
-                    <li class="d-flex active"><FaRegCheckCircle size={20}/><h6>Court</h6></li>
+                <ul className="progressbar">
+                    <li className="d-flex active"><FaRegCheckCircle size={20}/><h6>Teams</h6></li>
+                    <li className="d-flex active"><FaRegCheckCircle size={20}/><h6>Court</h6></li>
                     <li><AiFillQuestionCircle size={20} className="text-danger"/>Payment</li>
                 </ul>
                 </div>
@@ -46,25 +46,25 @@ const Checkout = () => {
                 </div>
             </div>
         </div>
-        <section class="list-group-navigation">
-            <div class="row ">
-                <div class="col-lg-12 checkout-steps">
-                    <div class="card">
-                        <div class="card-content">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-12 col-sm-12 col-md-4">
-                                        <div class="list-group" role="tablist">
-                                            <a class="list-group-item list-group-item-action text-center active" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-selected="false"><GiBasketballJersey/>Teams</a>
-                                            <a class="list-group-item list-group-item-action text-center" id="list-court-list" data-bs-toggle="list" href="#list-court" role="tab" aria-selected="false"><GiBasketballBasket/>Court Details</a>
-                                            <a class="list-group-item list-group-item-action text-center" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-selected="false"><HiOutlineMail/>Messages</a>
-                                            <a class="list-group-item list-group-item-action text-center" id="list-coupon-list" data-bs-toggle="list" href="#list-coupon" role="tab" aria-selected="true"><RiCoupon3Line/>Coupons</a>
-                                            <a class="list-group-item list-group-item-action text-center" id="list-payment-list" data-bs-toggle="list" href="#list-payment" role="tab" aria-selected="true"><FaCreditCard/>Payment</a>
+        <section className="list-group-navigation">
+            <div className="row ">
+                <div className="col-lg-12 checkout-steps">
+                    <div className="card">
+                        <div className="card-content">
+                            <div className="card-body">
+                                <div className="row">
+                                    <div className="col-12 col-sm-12 col-md-4">
+                                        <div className="list-group" role="tablist">
+                                            <a className="list-group-item list-group-item-action text-center active" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-selected="false"><GiBasketballJersey/>Teams</a>
+                                            <a className="list-group-item list-group-item-action text-center" id="list-court-list" data-bs-toggle="list" href="#list-court" role="tab" aria-selected="false"><GiBasketballBasket/>Court Details</a>
+                                            <a className="list-group-item list-group-item-action text-center" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-selected="false"><HiOutlineMail/>Messages</a>
+                                            <a className="list-group-item list-group-item-action text-center" id="list-coupon-list" data-bs-toggle="list" href="#list-coupon" role="tab" aria-selected="true"><RiCoupon3Line/>Coupons</a>
+                                            <a className="list-group-item list-group-item-action text-center" id="list-payment-list" data-bs-toggle="list" href="#list-payment" role="tab" aria-selected="true"><FaCreditCard/>Payment</a>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-sm-12 col-md-8 mt-1 h-50">
-                                        <div class="tab-content text-justifyx" id="nav-tabContent">
-                                            <div class="tab-pane show active" id="list-court" role="tabpanel" aria-labelledby="list-court-list">
+                                    <div className="col-12 col-sm-12 col-md-8 mt-1 h-50">
+                                        <div className="tab-content text-justifyx" id="nav-tabContent">
+                                            <div className="tab-pane show active" id="list-court" role="tabpanel" aria-labelledby="list-court-list">
                                             <h6 className="text-center">Bornova Court</h6>
                                                 <div id="carouselExampleCaptions" className="carousel slide m-auto" style={{ height:"200px", width:"400px" }} data-bs-ride="carousel">
                                                     <ol className="carousel-indicators">
@@ -95,7 +95,7 @@ const Checkout = () => {
                                                 </div>
                                             </div>
 
-                                            <div class="tab-pane" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                                            <div className="tab-pane" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
                                             
                                                 <div className="col-12 mb-3 text-center">
                                                     <h6>Takımlar</h6>
@@ -123,59 +123,59 @@ const Checkout = () => {
                                                     </div>
                                             </div>
                                             </div>
-                                            <div class="tab-pane" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-                                                <div class="d-flex justify-content-center">
+                                            <div className="tab-pane" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                                                <div className="d-flex justify-content-center">
                                                     <h6 className="text-center mr-2">Messages</h6>
                                                     <Link className="ml-2" to="message-detail">Go to chat</Link>
                                                 </div>
-                                                <div class="card">
-                                                    <div class="card-header">
-                                                        <div class="media d-flex align-items-center">
-                                                            <div class="avatar me-3">
+                                                <div className="card">
+                                                    <div className="card-header">
+                                                        <div className="media d-flex align-items-center">
+                                                            <div className="avatar me-3">
                                                                 <Link to="my-profile"><img src="assets/images/faces/1.jpg" alt="" srcset="" /></Link>
-                                                                <span class="avatar-status bg-success"></span>
+                                                                <span className="avatar-status bg-success"></span>
                                                             </div>
-                                                            <div class="name flex-grow-1">
-                                                                <h6 class="mb-0">Fred</h6>
-                                                                <span class="text-xs">Online</span>
+                                                            <div className="name flex-grow-1">
+                                                                <h6 className="mb-0">Fred</h6>
+                                                                <span className="text-xs">Online</span>
                                                             </div>
-                                                                <button class="btn btn-sm">
+                                                                <button className="btn btn-sm">
                                                                     <i data-feather="x"></i>
                                                                 </button>
                                                             </div>
                                                         </div>
-                                                        <div class="card-body pt-4 bg-grey">
-                                                            <div class="chat-content">
-                                                                <div class="chat">
-                                                                    <div class="chat-body">
-                                                                        <div class="chat-message">Hi Alfy, how can i help you?</div>
+                                                        <div className="card-body pt-4 bg-grey">
+                                                            <div className="chat-content">
+                                                                <div className="chat">
+                                                                    <div className="chat-body">
+                                                                        <div className="chat-message">Hi Alfy, how can i help you?</div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="chat chat-left">
-                                                                    <div class="chat-body">
-                                                                        <div class="chat-message">I'm looking for the best admin dashboard
+                                                                <div className="chat chat-left">
+                                                                    <div className="chat-body">
+                                                                        <div className="chat-message">I'm looking for the best admin dashboard
                                                                             template</div>
-                                                                        <div class="chat-message">With bootstrap certainly</div>
+                                                                        <div className="chat-message">With bootstrap certainly</div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="chat">
-                                                                <div class="chat-body">
-                                                                    <div class="chat-message">I recommend you to use Mazer Dashboard</div>
+                                                                <div className="chat">
+                                                                <div className="chat-body">
+                                                                    <div className="chat-message">I recommend you to use Mazer Dashboard</div>
                                                                 </div>
                                                             </div>
-                                                            <div class="chat chat-left">
-                                                            <div class="chat-body">
-                                                                <div class="chat-message">That"s great! I like it so much :)</div>
+                                                            <div className="chat chat-left">
+                                                            <div className="chat-body">
+                                                                <div className="chat-message">That"s great! I like it so much :)</div>
                                                             </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="tab-pane" id="list-coupon" role="tabpanel" aria-labelledby="list-coupon-list">
+                                            <div className="tab-pane" id="list-coupon" role="tabpanel" aria-labelledby="list-coupon-list">
                                                 <h6 className="text-center mr-2">Coupons</h6>
-                                                <div class="table-responsive">
-                                                    <table class="table table-hover table-lg">
+                                                <div className="table-responsive">
+                                                    <table className="table table-hover table-lg">
                                                         <thead>
                                                             <tr>
                                                                 <th className="m-auto text-center">Coupon id</th>
@@ -187,19 +187,19 @@ const Checkout = () => {
                                                             {
                                                                 [...Array(5)].map((coupon) => (
                                                                 <tr>
-                                                                    <td class="col-3">
-                                                                        <div class="d-flex align-items-center">
-                                                                            <div class="avatar avatar-md">
+                                                                    <td className="col-3">
+                                                                        <div className="d-flex align-items-center">
+                                                                            <div className="avatar avatar-md">
                                                                                 <img src="assets/images/faces/5.jpg" alt="checkout-coupon" />
                                                                             </div>
-                                                                            <p class="font-bold ms-3 mb-0">Si Cantik</p>
+                                                                            <p className="font-bold ms-3 mb-0">Si Cantik</p>
                                                                         </div>
                                                                     </td>
-                                                                    <td class="col-auto">
-                                                                        <p class="m-auto text-center">50₺</p>
+                                                                    <td className="col-auto">
+                                                                        <p className="m-auto text-center">50₺</p>
                                                                     </td>
-                                                                    <td class="col-auto">
-                                                                        <p class="m-auto text-center">25/06</p>
+                                                                    <td className="col-auto">
+                                                                        <p className="m-auto text-center">25/06</p>
                                                                     </td>
                                                                 </tr>
                                                                 ))
@@ -209,7 +209,7 @@ const Checkout = () => {
                                                     </table>
                                                 </div>
                                             </div>
-                                            <div class="tab-pane" id="list-payment" role="tabpanel" aria-labelledby="list-payment-list">
+                                            <div className="tab-pane" id="list-payment" role="tabpanel" aria-labelledby="list-payment-list">
                                                 <h6 className="text-center mb-4">Payment</h6>
                                                 <div className="d-flex mb-5 justify-content-evenly">
                                                     <div className="border rounded text-center p-2 bg-primary">

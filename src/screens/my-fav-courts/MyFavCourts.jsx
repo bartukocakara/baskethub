@@ -16,8 +16,8 @@ const MyFavCourts = () => {
                 </div> */}
                 <div className="row">
                     {
-                        [...Array(10)].map((match) => (
-                            <FavouriteCourtCard />
+                        [...Array(10)].map((i, match) => (
+                            <FavouriteCourtCard key={i} />
                         ))
                     }
                    

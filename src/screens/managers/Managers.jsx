@@ -11,8 +11,8 @@ const Managers = () => {
             <section id="content-types">
                 <div className="row">
                     {
-                        [...Array(10)].map((match) => (
-                            <ManagersCard />
+                        [...Array(10)].map((i, match) => (
+                            <ManagersCard key={i}/>
                         ))
                     }
                    
