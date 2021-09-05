@@ -69,7 +69,8 @@ const PrivacyOptions = () => {
                                     </div>
                                 </div>
                                 <div class="col-12 text-center">
-                                    <button type="reset" class="btn btn-light-secondary me-1 mb-1">Reset</button>
+                                    <button type="reset" class="btn btn-lg btn-success mx-3 ">Save</button>
+                                    <button type="reset" class="btn btn-lg btn-light-secondary ">Reset</button>
                                 </div>
                             </div>
                         </div>

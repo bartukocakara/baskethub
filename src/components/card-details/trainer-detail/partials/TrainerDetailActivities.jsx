@@ -1,0 +1,32 @@
+import Comments from '../tabs/Comments';
+import TrainingTypes from '../tabs/TrainingTypes';
+import Licences from '../tabs/Licences';
+import TrainingCalendar from '../tabs/TrainingCalendar';
+import Players from '../tabs/Players';
+
+const TrainerDetailActivities = () => {
+    return (
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <TrainingCalendar />
+            </div>
+            <div class="tab-pane fade mt-4" id="players" role="tabpanel" aria-labelledby="players-tab">
+                <Players />
+            </div>
+            <div class="tab-pane fade mt-4" id="training-types" role="tabpanel" aria-labelledby="training-types-tab">
+                <TrainingTypes />
+            </div>
+            <div class="tab-pane fade row mt-4" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <h1>LABEL</h1>
+            </div>
+            <div class="tab-pane fade row mt-4" id="licence" role="tabpanel" aria-labelledby="licence-tab">
+                <Licences />
+            </div>
+            <div class="tab-pane fade row mt-4" id="comments" role="tabpanel" aria-labelledby="comments-tab">
+                <Comments />
+            </div>
+        </div>
+    )
+}
+
+export default TrainerDetailActivities

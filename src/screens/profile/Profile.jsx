@@ -25,7 +25,7 @@ const Profile = () => {
                         <div className="card-body py-4 px-5">
                             <div className="align-items-center row">
                                 <div className="avatar avatar-xl col-md-1 player-detail-avatar">
-                                    <img src="assets/images/faces/1.jpg" className="d-block" alt="Face 1" />
+                                    <img src="assets/images/avatars/players/player2.jpg" className="d-block" alt="Face 1" />
                                     <i className="bi bi-award"></i>
                                     <i className="bi bi-award"></i>
                                     <i className="bi bi-award"></i>

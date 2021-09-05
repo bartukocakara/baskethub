@@ -88,7 +88,7 @@ const Navbar = () => {
                                     </div>
                                     <div className="user-img d-flex align-items-center">
                                         <div className="avatar avatar-md">
-                                            <img src="assets/images/faces/1.jpg" alt="profile" />
+                                            <img src="assets/images/avatars/players/player2.jpg" alt="profile" />
                                         </div>
                                     </div>
                                 </div>
@@ -101,7 +101,8 @@ const Navbar = () => {
                                         My Profile
                                     </NavLink>
                                 </li>
-                                <li><NavLink to="profile-settings" className="dropdown-item" href="#"><i class="icon-mid bi bi-gear me-2"></i>
+                                <li><NavLink to="profile-settings" className="dropdown-item" href="#">
+                                    <i class="icon-mid bi bi-gear me-2"></i>
                                         Settings
                                     </NavLink>
                                 </li>
@@ -121,8 +122,8 @@ const Navbar = () => {
                                 <li>
                                     <ExampleComponent />
                                 </li>
-                                <li><a className="dropdown-item" href="login.html"><i
-                                            cclassNameass="icon-mid bi bi-box-arrow-left me-2"></i> Logout</a></li>
+                                <li><a className="dropdown-item" href="login.html">
+                                    <i className="icon-mid bi bi-box-arrow-left me-2"></i> Logout</a></li>
                             </ul>
                         </div>
                     </div>
