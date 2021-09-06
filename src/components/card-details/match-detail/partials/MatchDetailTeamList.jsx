@@ -1,12 +1,39 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {
     Link
   } from "react-router-dom";
+import CancelMatchModal from './../../../modals/cancel/CancelMatchModal';
+import ExitPlayerModal from './../../../modals/exit-player/ExitPlayerModal';
+
 const MatchDetailTeamList = () => {
+
+    const [showCancelMatchModal, setCancelMatchModalShow] = useState(false);
+  
+    const handleCancelMatchModalClose = () => setCancelMatchModalShow(false);
+    const handleCancelMatchModalShow = () => setCancelMatchModalShow(true);
+
+    const [showExitPlayerModal, setExitPlayerModalShow] = useState(false);
+  
+    const handleExitPlayerModalClose = () => setExitPlayerModalShow(false);
+    const handleExitPlayerModalShow = () => setExitPlayerModalShow(true);
     return (
+        <>
+        <CancelMatchModal handleCancelMatchModalClose={handleCancelMatchModalClose} show={showCancelMatchModal} />
+        <ExitPlayerModal handleExitPlayerModalClose={handleExitPlayerModalClose} show={showExitPlayerModal} />
+
         <div className="col-12">
                 <div className="card">
                     <div class="card-body">
+                        <div class="dropdown">
+                            <Link class="btn btn-light m-1" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-gear"></i> Make changes
+                            </Link>
+                            <ul class="dropdown-menu mt-2 border" aria-labelledby="dropdownMenuLink">
+                                <li><Link class="dropdown-item text-center">Player change </Link></li>
+                                <li><Link class="dropdown-item text-center" onClick={handleExitPlayerModalShow}>Exit Player </Link></li>
+                                <li><Link class="dropdown-item text-center" onClick={handleCancelMatchModalShow}>Cancel Match <span class="badge bg-danger"> x </span> </Link></li>
+                            </ul>
+                        </div>
                         <ul class="nav nav-tabs match-team-list text-center col-lg-12" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Team 1</a>
@@ -14,19 +41,7 @@ const MatchDetailTeamList = () => {
                             <li class="nav-item" role="presentation">
                                 <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Team 2</a>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <div class="dropdown">
-                                    <Link class="btn btn-light m-1" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="bi bi-gear"></i> Make changes
-                                    </Link>
-
-                                    <ul class="dropdown-menu mt-2" aria-labelledby="dropdownMenuLink">
-                                        <li><Link class="dropdown-item text-center">Player change </Link></li>
-                                        <li><Link class="dropdown-item text-center">Exit Player </Link></li>
-                                        <li><Link class="dropdown-item text-center">Cancel Match <span class="badge bg-danger"> x </span> </Link></li>
-                                    </ul>
-                                </div>
-                            </li>
+                            
                         </ul>
                         <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -87,6 +102,7 @@ const MatchDetailTeamList = () => {
                 </div>
             </div>
         </div>
+        </>
     )
 }
 

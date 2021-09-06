@@ -1,10 +1,10 @@
 import React from 'react'
-import Address from './partials/profile-edit/Address'
-import UserInfo from './partials/profile-edit/UserInfo'
+import Address from './tabs/profile-edit/Address'
+import UserInfo from './tabs/profile-edit/UserInfo'
 import { GoLocation } from '@react-icons/all-files/go/GoLocation';
 import { FaAddressCard } from '@react-icons/all-files/fa/FaAddressCard';
 import { FaFileSignature } from '@react-icons/all-files/fa/FaFileSignature';
-import Licence from './partials/profile-edit/Licence';
+import Licence from './tabs/profile-edit/Licence';
 
 
 const ProfileEdit = () => {

@@ -1,5 +1,5 @@
 import Matches from './../../screens/matches/Matches';
-import MatchRequestResult from './../../screens/profile/partials/match-request-result/MatchRequestResult';
+import MatchRequestResult from './../../screens/profile/tabs/match-request-result/MatchRequestResult';
 import MatchDetail from './../../components/card-details/match-detail/MatchDetail';
 import MyMatches from './../../screens/my-matches/MyMatches';
 import EndedMatch from './../../components/card-details/ended-match/EndedMatch';

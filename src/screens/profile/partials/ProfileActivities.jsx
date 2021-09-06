@@ -11,8 +11,8 @@ const ProfileActivities = () => {
         <div className="tab-content" id="myTabContent">
             <div className="tab-pane fade show active col-10 m-auto" id="calendar" role="tabpanel" aria-labelledby="calendar-tab">
                 <FullCalendar
-                plugins={[ dayGridPlugin ]}
-                initialView="dayGridMonth"
+                    plugins={[ dayGridPlugin ]}
+                    initialView="dayGridMonth"
                 />
             </div>
             <div className="tab-pane fade col-11 m-auto" id="matches" role="tabpanel" aria-labelledby="matches-tab">

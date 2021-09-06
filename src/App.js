@@ -18,7 +18,7 @@ import NotificationDetail from './screens/notification-detail/NotificationDetail
 import Notifications from './screens/notifications/Notifications';
 import { ToastContainer } from 'react-toastify';
 import Watch from './screens/watch/Watch';
-import MatchRequestResult from './screens/profile/partials/match-request-result/MatchRequestResult';
+import MatchRequestResult from './screens/profile/tabs/match-request-result/MatchRequestResult';
 
 import playerRoutes from './helpers/route/PlayerRoutes';
 import allStarRoutes from './helpers/route/AllStarRoutes';
