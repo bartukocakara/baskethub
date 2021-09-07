@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom"
+
 const SugCourtCard = () => {
     return (
         <div class="col-md-3">
-            <div class="card border shadow rounded p-2">
+            <Link class="card border rounded p-2 recommended-card">
                 <div class="card-body py-4 px-5">
                     <div class="d-flex align-items-center">
                         <div class="avatar avatar-xl">
@@ -13,7 +15,7 @@ const SugCourtCard = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </Link>
         </div>
     )
 }
