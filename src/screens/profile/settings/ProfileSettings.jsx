@@ -1,6 +1,6 @@
 import React from 'react'
-import Privacy from './settings-partials/Privacy'
-import RequestPermissions from './settings-partials/RequestPermissions'
+import Privacy from './settings-tabs/Privacy'
+import RequestPermissions from './settings-tabs/RequestPermissions'
 import { BsFillLockFill } from '@react-icons/all-files/bs/BsFillLockFill';
 import { MdEventAvailable } from '@react-icons/all-files/md/MdEventAvailable';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import TeamDetailTop from './partials/TeamDetailSearch';
+import TeamDetailTop from './partials/TeamDetailTop';
 import TeamDetailTable from './partials/TeamDetailTable';
 
 const TeamDetail = () => {

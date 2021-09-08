@@ -4,6 +4,10 @@ import { TiSocialInstagram } from "@react-icons/all-files/ti/TiSocialInstagram";
 import { TiSocialTwitter } from "@react-icons/all-files/ti/TiSocialTwitter";
 import { TiSocialFacebook } from "@react-icons/all-files/ti/TiSocialFacebook";
 import { AiOutlineWhatsApp } from "@react-icons/all-files/ai/AiOutlineWhatsApp";
+import { AiOutlineUsergroupDelete } from "@react-icons/all-files/ai/AiOutlineUsergroupDelete";
+import { RiErrorWarningFill } from "@react-icons/all-files/ri/RiErrorWarningFill";
+import { BsFillLockFill } from "@react-icons/all-files/bs/BsFillLockFill";
+
 import {
     Link
   } from "react-router-dom";
@@ -18,17 +22,18 @@ const TeamDetailTop = () => {
                             <Link class="btn btn-light m-2 p-2 text-primary border" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                             <FiSettings/>                            
                             </Link>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <li><Link class="dropdown-item text-center">Edit Team <GoPerson /></Link></li>
-                                <li><Link class="dropdown-item text-center">Exit Player -</Link></li>
-                                <li><Link class="dropdown-item text-center">Warn Player !</Link></li>
+                            <ul class="dropdown-menu border" aria-labelledby="dropdownMenuLink">
+                                <li><Link class="dropdown-item text-center"><GoPerson /> Edit Team </Link></li>
+                                <li><Link class="dropdown-item text-center"><AiOutlineUsergroupDelete/> Exit Player </Link></li>
+                                <li><Link class="dropdown-item text-center"><RiErrorWarningFill /> Warn Player !</Link></li>
+                                <li><Link to="team-settings" class="dropdown-item text-center"><BsFillLockFill/>Privacy</Link></li>
                             </ul>
                         </div>
                         <div class="dropdown">
                         <Link class="btn btn-light m-2 p-2 text-primary border" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                             <FiShare2 />
                         </Link>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <ul class="dropdown-menu border" aria-labelledby="dropdownMenuLink">
                                 <li><Link class="dropdown-item text-center">With Player <GoPerson /></Link></li>
                                 <li><Link class="dropdown-item text-center">Whatsapp <AiOutlineWhatsApp /></Link></li>
                                 <li><Link class="dropdown-item text-center">Facebook <TiSocialFacebook /></Link></li>
