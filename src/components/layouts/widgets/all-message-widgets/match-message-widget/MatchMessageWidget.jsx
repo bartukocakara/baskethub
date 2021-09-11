@@ -1,9 +1,9 @@
 import { BsArrowRight } from '@react-icons/all-files/bs/BsArrowRight'
 import React from 'react'
 import { Link } from 'react-router-dom'
-import CoachMessageWidgetCard from "../../../../cards/widget-cards/message-widget-card/match-message-widget-card/CoachMessageWidgetCard"
+import MatchMessageWidgetCard from "../../../../cards/widget-cards/message-widget-card/match-message-widget-card/MatchMessageWidgetCard"
 
-const CoachMessageWidget = () => {
+const MatchMessageWidget = () => {
     return (
         <div className="col-4">
         <div class="card team-messages-widget mb-1 w-100" >
@@ -11,7 +11,7 @@ const CoachMessageWidget = () => {
             <div className="card-team-messages">
             {
                 [...Array(10)].map((match) => (
-                    <CoachMessageWidgetCard />
+                    <MatchMessageWidgetCard />
                 ))
             }
             </div>
@@ -23,4 +23,4 @@ const CoachMessageWidget = () => {
     )
 }
 
-export default CoachMessageWidget
+export default MatchMessageWidget

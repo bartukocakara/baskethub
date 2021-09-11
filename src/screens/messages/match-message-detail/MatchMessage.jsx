@@ -2,7 +2,7 @@ import React from 'react'
 import {
     Link
   } from "react-router-dom";
-  import MatchMessageWidget from '../../../components/layouts/widgets/match-message-widget/MatchMessageWidget';
+  import MatchMessageWidget from '../../../components/layouts/widgets/all-message-widgets/match-message-widget/MatchMessageWidget';
   const MatchMessage = () => {
     return (
         <>

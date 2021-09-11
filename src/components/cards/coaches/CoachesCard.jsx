@@ -66,7 +66,7 @@ const CoachesCard = () => {
                         <Link class="btn btn-light m-2 p-2 text-primary">
                             <FaComments className="card-footer-icon" size={25} onClick={handleShowCommentsModal} />
                         </Link>
-                        <Link class="btn btn-light m-2 p-2 text-primary " to="message-detail">
+                        <Link class="btn btn-light m-2 p-2 text-primary " to="player-chat">
                             <AiOutlineMail className="card-footer-icon" />
                         </Link>
                         <div class="dropdown">

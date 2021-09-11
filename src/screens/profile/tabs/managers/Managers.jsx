@@ -1,35 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
     Link
 } from "react-router-dom"
-import DateRangePicker from '@wojtekmaj/react-daterange-picker';
 
-const TrainingVideos = () => {
-
-    const [value, onChange] = useState([new Date(), new Date()]);
+const Managers = () => {
 
     return (
         <div>
             <div className="card">
                 <div className="card-body">
                     <div className="row">
-                        <div className="col-md-12 row">
-                            <div className="form-group col-md-4">
-                                <h6>Training Categoy</h6>
-                                <select className="form-control">
-                                    <option>Dribbling</option>
-                                    <option>Condition</option>
-                                    <option>Shooting</option>
-                                </select>
-                            </div>
-                            <div className="form-group col-md-4">
-                                <h6>Date </h6>
-                                <DateRangePicker
-                                    className="d-block rounded"
-                                    onChange={onChange}
-                                    value={value}
-                                />
-                            </div>
+                        <div className="col-md-12 m-2">
+                            <input type="search" class="form-control w-25 m-auto text-center" placeholder="Quick search" />
                         </div>
                         <div className="col-md-12 row m-2 p-2">
                             {
@@ -39,7 +21,7 @@ const TrainingVideos = () => {
                                             <div class="avatar avatar-lg me-3 d-flex justify-content-between">
                                                 <img src="assets/images/faces/2.jpg" alt="create team" />
                                                 <div className="m-auto">
-                                                    <span className="fw-bold d-block">Shooting</span>
+                                                    <span className="fw-bold d-block">Dogi Sarıbaş</span>
                                                     <p>Lorem ipsum dolor sit amet.</p>
                                                 </div>
                                             </div>
@@ -65,4 +47,4 @@ const TrainingVideos = () => {
     )
 }
 
-export default TrainingVideos
+export default Managers

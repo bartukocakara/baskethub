@@ -6,6 +6,7 @@ import Licence from './../tabs/licence/Licence';
 import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
 import TrainingVideos from '../tabs/training-videos/TrainingVideos';
+import Managers from '../tabs/managers/Managers';
 const ProfileActivities = () => {
     return (
         <div className="tab-content" id="myTabContent">
@@ -35,6 +36,9 @@ const ProfileActivities = () => {
             </div>
             <div className="tab-pane fade" id="training-videos" role="tabpanel" aria-labelledby="training-videos-tab">
                 <TrainingVideos />
+            </div>
+            <div className="tab-pane fade" id="managers" role="tabpanel" aria-labelledby="managers-tab">
+                <Managers />
             </div>
         </div>
     )

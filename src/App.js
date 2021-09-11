@@ -11,9 +11,11 @@ import {
   Route,
   Switch,
 } from "react-router-dom";
-import MessageDetail from './screens/messages/message-detail/MessageDetail';
+import PlayerMessage from './screens/messages/player-message-detail/PlayerMessage';
 import TeamMessage from './screens/messages/team-message-detail/TeamMessage';
 import MatchMessage from './screens/messages/match-message-detail/MatchMessage';
+import TrainerMessage from './screens/messages/trainer-message-detail/TrainerMessage';
+import ManagerMessage from './screens/messages/manager-message-detail/ManagerMessage';
 import NotificationDetail from './screens/notification-detail/NotificationDetail';
 import Notifications from './screens/notifications/Notifications';
 import { ToastContainer } from 'react-toastify';
@@ -36,6 +38,7 @@ import courtRoutes from './helpers/route/CourtRoutes';
 import managerRoutes from './helpers/route/ManagerRoutes';
 import prizeRoutes from './helpers/route/PrizeRoutes';
 import coachRoutes from './helpers/route/CoachRoutes';
+import CourtMessage from './screens/messages/court-host-message-detail/CourtMessage';
 
 function App() {
   return (
@@ -69,9 +72,12 @@ function App() {
 
                               {/* Other */}
                               <Route path="/last-search" component={LastSearch} />
-                              <Route path="/player-chat" component={MessageDetail} />
+                              <Route path="/player-chat" component={PlayerMessage} />
                               <Route path="/team-chat" component={TeamMessage} />
                               <Route path="/match-chat" component={MatchMessage} />
+                              <Route path="/trainer-chat" component={TrainerMessage} />
+                              <Route path="/court-host-chat" component={CourtMessage} />
+                              <Route path="/manager-chat" component={ManagerMessage} />
                               <Route path="/notifications" component={Notifications} />
                               <Route path="/notification-detail" component={NotificationDetail} />
                               <Route path="/watch" component={Watch} />

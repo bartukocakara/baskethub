@@ -1,18 +1,18 @@
 import React from 'react'
+import "./_playerMessageDetail.scss";
 import {
     Link
   } from "react-router-dom";
-import TeamMessageWidget from '../../../components/layouts/widgets/all-message-widgets/team-message-widget/TeamMessageWidget';
-  
-const TeamMessage = () => {
+import PlayerMessageWidget from '../../../components/layouts/widgets/all-message-widgets/player-message-widget/PlayerMessageWidget';
+const PlayerMessageDetail = () => {
     return (
         <>
-            <div class="col-md-8">
+            <div class="col-8">
                 <div class="card">
                     <div class="card-header">
                         <div class="media d-flex align-items-center">
                             <div class="avatar me-3">
-                                <Link to="player-detail"><img src="assets/images/faces/1.jpg" alt="" srcset="" /></Link>
+                                <Link to="my-profile"><img src="assets/images/faces/1.jpg" alt="" srcset="" /></Link>
                                 <span class="avatar-status bg-success"></span>
                             </div>
                             <div class="name flex-grow-1">
@@ -58,11 +58,11 @@ const TeamMessage = () => {
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
-            </div>
-            <TeamMessageWidget />
+            <PlayerMessageWidget />
         </>
     )
 }
 
-export default TeamMessage
+export default PlayerMessageDetail

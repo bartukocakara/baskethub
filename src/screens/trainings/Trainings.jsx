@@ -1,5 +1,5 @@
 import React from 'react'
-import TrainingCard from '../../components/cards/training-card/TrainingCard'
+import TrainingCard from '../../components/cards/trainings/TrainingCard'
 import TrainingSearch from '../../components/layouts/quick-search/traininig-search/TrainingSearch'
 import TrainingWidget from '../../components/layouts/widgets/training-widget/TrainingWidget'
 

@@ -2,9 +2,9 @@ import React from 'react'
 import {
     Link
   } from "react-router-dom";
-import TeamMessageWidget from '../../../components/layouts/widgets/all-message-widgets/team-message-widget/TeamMessageWidget';
+import ManagerMessageWidget from '../../../components/layouts/widgets/all-message-widgets/manager-message-widget/ManagerMessageWidget';
   
-const TeamMessage = () => {
+const ManagerMessage = () => {
     return (
         <>
             <div class="col-md-8">
@@ -60,9 +60,9 @@ const TeamMessage = () => {
                 </div>
             </div>
             </div>
-            <TeamMessageWidget />
+            <ManagerMessageWidget />
         </>
     )
 }
 
-export default TeamMessage
+export default ManagerMessage

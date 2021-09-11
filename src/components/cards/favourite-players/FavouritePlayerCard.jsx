@@ -42,7 +42,7 @@ const FavouritePlayerCard = () => {
                     <BsFillLockFill/>
                 </div>
                 <div className="player-share d-flex btn-group">
-                    <Link class="btn btn-light mt-2" to="message-detail">
+                    <Link class="btn btn-light mt-2" to="player-chat">
                         <AiOutlineMail className="card-footer-icon text-primary" size={25} />
                     </Link>
                     <div class="dropdown">
