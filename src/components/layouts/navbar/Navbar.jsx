@@ -30,7 +30,7 @@ const Navbar = () => {
                                 <Link class="btn btn-primary fw-bold" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                     Create +
                                 </Link>
-                                <ul class="dropdown-menu mt-2" aria-labelledby="dropdownMenuLink">
+                                <ul class="dropdown-menu mt-2 border" aria-labelledby="dropdownMenuLink">
                                     <li className="p-2"><Link to="create-team">Create Team</Link></li>
                                     <li className="p-2"><Link to="create-training-team">Create Training Team</Link></li>
                                     <li className="p-2"><Link to="create-court">Create Court</Link></li>

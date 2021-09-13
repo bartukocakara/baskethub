@@ -3,27 +3,19 @@ import Matches from './../tabs/matches/Matches';
 import MatchOptions from './../tabs/match-options/MatchOptions';
 import Licence from './../tabs/licence/Licence';
 
-import FullCalendar from '@fullcalendar/react'
-import dayGridPlugin from '@fullcalendar/daygrid'
 import TrainingVideos from '../tabs/training-videos/TrainingVideos';
 import Managers from '../tabs/managers/Managers';
+import Trainers from '../tabs/trainers/Trainers';
+import ProfileCalendar from '../tabs/calendar/ProfileCalendar';
+
 const ProfileActivities = () => {
     return (
         <div className="tab-content" id="myTabContent">
-            <div className="tab-pane fade show active col-10 m-auto" id="calendar" role="tabpanel" aria-labelledby="calendar-tab">
-                <FullCalendar
-                    plugins={[ dayGridPlugin ]}
-                    initialView="dayGridMonth"
-                />
+            <div className="tab-pane fade show active p-3" id="calendar" role="tabpanel" aria-labelledby="calendar-tab">
+                <ProfileCalendar />
             </div>
-            <div className="tab-pane fade col-11 m-auto" id="matches" role="tabpanel" aria-labelledby="matches-tab">
-            {
-                        [...Array(5)].map((matchesList) => (
-                            <>
-                                <Matches />
-                            </>
-                        ))
-                    }
+            <div className="tab-pane fade p-3" id="matches" role="tabpanel" aria-labelledby="matches-tab">
+                <Matches />
             </div>
             <div className="tab-pane fade" id="requests" role="tabpanel" aria-labelledby="requests-tab">
                 <RequestList />
@@ -39,6 +31,9 @@ const ProfileActivities = () => {
             </div>
             <div className="tab-pane fade" id="managers" role="tabpanel" aria-labelledby="managers-tab">
                 <Managers />
+            </div>
+            <div className="tab-pane fade" id="trainers" role="tabpanel" aria-labelledby="trainers-tab">
+                <Trainers />
             </div>
         </div>
     )

@@ -39,6 +39,7 @@ import managerRoutes from './helpers/route/ManagerRoutes';
 import prizeRoutes from './helpers/route/PrizeRoutes';
 import coachRoutes from './helpers/route/CoachRoutes';
 import CourtMessage from './screens/messages/court-host-message-detail/CourtMessage';
+import LicenceDetail from './screens/licence-detail/LicenceDetail';
 
 function App() {
   return (
@@ -81,6 +82,7 @@ function App() {
                               <Route path="/notifications" component={Notifications} />
                               <Route path="/notification-detail" component={NotificationDetail} />
                               <Route path="/watch" component={Watch} />
+                              <Route path="/licence-detail" component={LicenceDetail} />
                               <Route path="/checkout" component={Checkout} />
                               <Route path="/match-request-result" component={MatchRequestResult} />
                           </Switch>

@@ -37,7 +37,7 @@ const ExitPlayerModal = ({handleExitPlayerModalClose, show}) => {
                     Close
                 </Button>
                 <Button className="" variant="danger m-2">
-                    Yes
+                    Confirm
                 </Button>
             </div>
         </Modal>

@@ -3,7 +3,7 @@ import {
     Link
 } from "react-router-dom"
 
-const Managers = () => {
+const Trainers = () => {
 
     return (
         <div>
@@ -21,7 +21,7 @@ const Managers = () => {
                                             <div class="avatar avatar-lg me-3 d-flex justify-content-between">
                                                 <img src="assets/images/faces/2.jpg" alt="create team" />
                                                 <div className="m-auto">
-                                                    <span className="fw-bold d-block">Ogün Aycan</span>
+                                                    <span className="fw-bold d-block">Dogi Sarıbaş</span>
                                                     <p>Lorem ipsum dolor sit amet.</p>
                                                 </div>
                                             </div>
@@ -47,4 +47,4 @@ const Managers = () => {
     )
 }
 
-export default Managers
+export default Trainers
