@@ -10,6 +10,7 @@ import { AiOutlineUsergroupDelete } from "@react-icons/all-files/ai/AiOutlineUse
 import { RiErrorWarningFill } from "@react-icons/all-files/ri/RiErrorWarningFill";
 import { BsFillLockFill } from "@react-icons/all-files/bs/BsFillLockFill";
 import { BsFillAwardFill } from "@react-icons/all-files/bs/BsFillAwardFill";
+import { FiLogOut } from "@react-icons/all-files/fi/FiLogOut";
 
 import {
     Link
@@ -17,16 +18,23 @@ import {
 import { FiShare2 } from "@react-icons/all-files/fi/FiShare2";
 import { FiMail } from "@react-icons/all-files/fi/FiMail";
 import ExitPlayerModal from '../../../modals/exit-player/ExitPlayerModal';
+import QuitTeamModal from '../../../modals/quit-team/QuitTeam';
 
 const TeamDetailTop = () => {
 
     const [showExitPlayerModal, setExitPlayerModal] = useState(false);
 
     const handleExitPlayerModalClose = () => setExitPlayerModal(false);
-    const handlesetExitPlayerModalModal = () => setExitPlayerModal(true);
+    const handlesetExitPlayerModal = () => setExitPlayerModal(true);
+
+    const [showQuitTeamModal, setQuitTeamModal] = useState(false);
+
+    const handleQuitTeamModalClose = () => setQuitTeamModal(false);
+    const handleQuitTeamModal = () => setQuitTeamModal(true);
     return (
         <>
             <ExitPlayerModal handleExitPlayerModalClose={handleExitPlayerModalClose} show={showExitPlayerModal}  />
+            <QuitTeamModal handleQuitTeamModalClose={handleQuitTeamModalClose} show={showQuitTeamModal}  />
 
             <div className="card-header d-flex justify-content-center align-items-center">
                 <div className="w-25 rounded mx-5 text-center">
@@ -37,15 +45,15 @@ const TeamDetailTop = () => {
                         <BsFillAwardFill  size={30} className="text-success"/>
                     </div>
                 </div>
-                <span className="badge bg-primary mb-1 mr-2">12</span><h4 className="text-center">Bornova Team Detail</h4>
+                <span className="badge bg-primary mb-1 mr-2">12</span><h4 className="text-center">Bornova Team</h4>
                     <div className="d-flex">
                         <div className="dropdown">
                             <Link className="btn btn-light m-2 p-2 text-primary border" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                 <FiSettings/>                            
                             </Link>
                             <ul className="dropdown-menu border" aria-labelledby="dropdownMenuLink">
-                                <li><Link className="dropdown-item text-center"><GoPerson /> Edit Team </Link></li>
-                                <li><Link className="dropdown-item text-center" onClick={handlesetExitPlayerModalModal}><AiOutlineUsergroupDelete/> Exit Player </Link></li>
+                                <li><Link className="dropdown-item text-center" to="edit-team"><GoPerson /> Edit Team </Link></li>
+                                <li><Link className="dropdown-item text-center" onClick={handlesetExitPlayerModal}><AiOutlineUsergroupDelete/> Exit Player </Link></li>
                                 <li><Link className="dropdown-item text-center"><RiErrorWarningFill /> Warn Player !</Link></li>
                                 <li><Link to="team-settings" className="dropdown-item text-center"><BsFillLockFill/>Privacy</Link></li>
                             </ul>
@@ -62,8 +70,13 @@ const TeamDetailTop = () => {
                                 <li><Link className="dropdown-item text-center">Instagram <TiSocialInstagram /></Link></li>
                             </ul>
                             <Link className="btn btn-light m-2 p-2 rounded text-primary border" to="team-chat"><FiMail/></Link>
-
-                    </div>
+                        </div>
+                        <input type="text" class="form-control w-50 m-auto text-center" placeholder="Quick search"/>
+                        <div className="m-auto">
+                            <Link onClick={handleQuitTeamModal}>
+                                <FiLogOut className="bg-danger text-light p-1 rounded" size={30}/>
+                            </Link>
+                        </div>
                 </div>
             </div>
         </>
