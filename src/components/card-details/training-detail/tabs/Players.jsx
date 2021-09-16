@@ -41,7 +41,7 @@ const Players = () => {
             <div class="col-10 m-auto">
                 <div class="card">
                     <div class="card-header d-flex">
-                        <h4 className="w-75">Trainer List</h4>
+                        <h4 className="w-75">Player List</h4>
                         <input type="search" className="form-control w-25 text-center" placeholder="Quick search"/>
                     </div>
                     <div class="card-body">
@@ -93,7 +93,7 @@ const Players = () => {
                                                             <li><Link class="dropdown-item text-center" onClick={handleRequestTrainingJoinModal}>Request join trainig </Link></li>
                                                         </ul>
                                                     </div>
-                                                    <Link to="team-chat" className="btn btn-warning"><FiMail/></Link>
+                                                    <Link to="player-chat" className="btn btn-warning"><FiMail/></Link>
                                                     <div class="dropdown btn btn-primary p-1">
                                                         <Link className="text-light" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                                             <FiShare2 className="m-2" size={27}/>

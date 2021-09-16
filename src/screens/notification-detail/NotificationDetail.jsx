@@ -3,18 +3,18 @@ import "./_notificationDetail.scss";
 import {
     Link
   } from "react-router-dom";
-import Confirm from '../../components/modals/confirm/Confirm';
+import ConfirmJoinMatch from '../../components/modals/confirm/ConfirmJoinMatch';
 
 const NotificationDetail = () => {
 
-    const [showConfirm, setConfirmShow] = useState(false);
+    const [showConfirmJoinMatch, setConfirmJoinMatchShow] = useState(false);
   
-    const handleConfirmClose = () => setConfirmShow(false);
-    const handleConfirmShow = () => setConfirmShow(true);
+    const handleConfirmJoinMatchClose = () => setConfirmJoinMatchShow(false);
+    const handleConfirmJoinMatchShow = () => setConfirmJoinMatchShow(true);
     
     return (
         <>
-        <Confirm handleConfirmClose={handleConfirmClose} show={showConfirm} />
+        <ConfirmJoinMatch handleConfirmJoinMatchClose={handleConfirmJoinMatchClose} show={showConfirmJoinMatch} />
 
         <div className="row">
             <div className="card">
@@ -37,7 +37,7 @@ const NotificationDetail = () => {
                     </div>
                     <div className="name flex-grow-1">
                         <div className="buttons text-center">
-                            <button className="btn btn-success" onClick={handleConfirmShow}>Katıl +</button>
+                            <button className="btn btn-success" onClick={handleConfirmJoinMatchShow}>Katıl +</button>
                             <Link to="player-chat" className="btn btn-primary">Mesaj</Link>
                             <button className="btn btn-warning">Paylaş</button>
                         </div>

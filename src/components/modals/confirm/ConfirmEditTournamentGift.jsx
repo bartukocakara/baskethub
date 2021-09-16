@@ -2,10 +2,10 @@ import React from 'react'
 import { Modal } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 
-const Confirm = ({handleConfirmClose, show}) => {
+const ConfirmEditTournamentGift = ({handleConfirmEditTournamentGift, show}) => {
     return (
         <>
-        <Modal show={show} onHide={handleConfirmClose}>
+        <Modal show={show} onHide={handleConfirmEditTournamentGift}>
             <Modal.Body>
                 <div class="col-12">
                     <div class="card m-3 p-2">
@@ -14,8 +14,8 @@ const Confirm = ({handleConfirmClose, show}) => {
                 </div>
             </Modal.Body>
             <div className="text-center">
-                <Button className="" variant="secondary m-2" onClick={handleConfirmClose}>
-                    Close
+                <Button className="" variant="secondary m-2" onClick={handleConfirmEditTournamentGift}>
+                    Confirm
                 </Button>
                 <Button className="" variant="primary m-2">
                     Yes
@@ -26,4 +26,4 @@ const Confirm = ({handleConfirmClose, show}) => {
     )
 }
 
-export default Confirm
+export default ConfirmEditTournamentGift

@@ -4,12 +4,12 @@ import AvatarGroup from '@material-ui/lab/AvatarGroup';
 import {
     Link
   } from "react-router-dom";
-const Teams = () => {
+const TrainingTeams = () => {
     return (
         <>
         <div className="row">
             {
-                [...Array(10)].map((teamsList) => (
+                [...Array(10)].map((TrainingTeamsList) => (
                     <div className="col-3 mt-2">
                     <div className="card m-1 border rounded shadow text-center card-shadow">
                         <h4 className="card-title text-center mt-2">Bornova Team</h4>
@@ -37,4 +37,4 @@ const Teams = () => {
     )
 }
 
-export default Teams
+export default TrainingTeams

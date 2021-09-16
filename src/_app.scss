@@ -17,7 +17,7 @@
   }
 }
 
-.recommended-card:hover{
+.recommended-card:hover, .card-shadow:hover{
   box-shadow: rgba(110, 122, 131, 0.3) 0px 1px 2px 0px, rgba(53, 60, 63, 0.15) 0px 2px 6px 2px;
   transform: translateY(-3px);
 }

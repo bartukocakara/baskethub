@@ -7,7 +7,7 @@ const PriceInfo = () => {
                 <div class="pricing">
                     <div class="row align-items-center">
                         <div class="col-md-5 px-1">
-                            <div class="card">
+                            <div class="card card-shadow">
                                 <div class="card-header text-center">
                                     <h4 class="card-title">Basic</h4>
                                     <p class="text-center">A standart features you can get</p>
@@ -21,7 +21,7 @@ const PriceInfo = () => {
                         </div>
                         
                         <div class="col-md-5 px-1">
-                            <div class="card">
+                            <div class="card card-shadow">
                                 <div class="card-header text-center">
                                     <h4 class="card-title">Professional</h4>
                                     <p class="text-center">A higher features you will need</p>
