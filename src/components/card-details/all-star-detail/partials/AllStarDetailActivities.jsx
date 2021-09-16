@@ -1,13 +1,13 @@
 
-import EventCalendar from './../tabs/EventCalendar'
+import Activities from '../tabs/Activities';
 import News from './../tabs/News';
 import Players from './../tabs/Players'
 import Prizes from './../tabs/Prizes'
 const AllStarDetailActivities = () => {
     return (
         <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="event-calendar" role="tabpanel" aria-labelledby="event-calendar-tab">
-                <EventCalendar/>
+            <div class="tab-pane fade show active" id="activities" role="tabpanel" aria-labelledby="activities-tab">
+                <Activities/>
             </div>
             <div class="tab-pane fade" id="players" role="tabpanel" aria-labelledby="players-tab">
                 <Players/>

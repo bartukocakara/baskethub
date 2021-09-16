@@ -2,7 +2,7 @@ const AllStarDetailNavs = () => {
     return (
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-                <a class="nav-link active" id="event-calendar-tab" data-bs-toggle="tab" href="#event-calendar" role="tab" aria-controls="event-calendar" aria-selected="true">Calendar</a>
+                <a class="nav-link active" id="activities-tab" data-bs-toggle="tab" href="#activities" role="tab" aria-controls="activities" aria-selected="true">Activities</a>
             </li>
             <li class="nav-item" role="presentation">
                 <a class="nav-link" id="players-tab" data-bs-toggle="tab" href="#players" role="tab" aria-controls="players" aria-selected="false">Players</a>
