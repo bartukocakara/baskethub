@@ -11,7 +11,7 @@ const QuitTeamModal = ({handleQuitTeamModalClose, show}) => {
                 <div class="col-12">
                     <div class="card m-3">
                         <FiLogOut className="bg-danger text-light p-1 rounded" size={30}/>
-                        <h6 className="text-center">Exit Player</h6>
+                        <h6 className="text-center">Quit Team</h6>
                     </div>
                 </div>
             </Modal.Body>
