@@ -18,6 +18,9 @@ const TrainingDetailNavs = () => {
                 <a class="nav-link" id="players-tab" data-bs-toggle="tab" href="#players" role="tab" aria-controls="players" aria-selected="true">Players <FaUsers className="m-1"/></a>
             </li>
             <li class="nav-item" role="presentation">
+                <a class="nav-link" id="training-teams-tab" data-bs-toggle="tab" href="#training-teams" role="tab" aria-controls="training-teams" aria-selected="true">Training Teams <FaUsers className="m-1"/></a>
+            </li>
+            <li class="nav-item" role="presentation">
                 <a class="nav-link" id="training-types-tab" data-bs-toggle="tab" href="#training-types" role="tab" aria-controls="training-types" aria-selected="false">Training Types <FiList className="m-1"/></a>
             </li>
             <li class="nav-item" role="presentation">

@@ -8,6 +8,7 @@ import Players from './../tabs/Players';
 import TraininigTypes from './../tabs/TrainingTypes';
 import TrainingItems from './../tabs/TrainingItems';
 import Messages from './../tabs/Messages';
+import Teams from '../tabs/Teams';
 const TrainingDetailActivities = () => {
     return (
         <div class="tab-content" id="myTabContent">
@@ -15,7 +16,10 @@ const TrainingDetailActivities = () => {
                 <TrainingCalendar />
             </div>
             <div class="tab-pane fade" id="players" role="tabpanel" aria-labelledby="players-tab">
-                <Players/>
+                <Players />
+            </div>
+            <div class="tab-pane fade" id="players" role="tabpanel" aria-labelledby="players-tab">
+                <Teams />
             </div>
             <div class="tab-pane fade" id="training-types" role="tabpanel" aria-labelledby="training-types-tab">
                 <TraininigTypes/>

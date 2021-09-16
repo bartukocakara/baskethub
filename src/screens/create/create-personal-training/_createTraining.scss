@@ -1,0 +1,32 @@
+.overflow-x:hover {
+	overflow-x: overlay;
+  overflow-y: hidden;
+}
+
+.overflow-x {
+	white-space: nowrap;
+	overflow: hidden;
+  padding: 20px;
+}
+
+.overflow-x::-webkit-scrollbar {
+	width: 7px;
+	height: 7px;
+	padding: none;
+}
+
+.overflow-x::-webkit-scrollbar-track {
+	border-radius: 5px;
+	background: rgba(0, 0, 0, .1);
+}
+
+.overflow-x::-webkit-scrollbar-track:hover {
+	background: rgba(0, 0, 0, .3);
+}
+
+.overflow-x::-webkit-scrollbar-thumb:hover {
+	background: rgba(0, 0, 0, .7);
+}
+.create-training{
+	min-height: 420px;
+}

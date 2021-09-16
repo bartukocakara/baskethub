@@ -1,7 +1,4 @@
-import React, { useState } from 'react'
-import { GiBasketballBasket } from "@react-icons/all-files/gi/GiBasketballBasket";
-import { RiTeamLine } from "@react-icons/all-files/ri/RiTeamLine";
-import { GoPerson } from "@react-icons/all-files/go/GoPerson";
+import React from 'react'
 import { AiFillStar } from "@react-icons/all-files/ai/AiFillStar";
 import { AiOutlineFileSearch } from "@react-icons/all-files/ai/AiOutlineFileSearch";
 import {FaBasketballBall} from "@react-icons/all-files/fa/FaBasketballBall";
@@ -14,73 +11,22 @@ import {FaRunning} from "@react-icons/all-files/fa/FaRunning";
 import {FaUserTie} from "@react-icons/all-files/fa/FaUserTie";
 import {BsFillBriefcaseFill} from "@react-icons/all-files/bs/BsFillBriefcaseFill";
 
-import CourtSearchModal from '../../modals/search/court-search/CourtSearchModal';
-import PlayerSearchModal from '../../modals/search/player-search/PlayerSearchModal';
-import TeamSearchModal from '../../modals/search/team-search/TeamSearchModal';
-import TrainerSearchModal from '../../modals/search/trainer-search/TrainerSearchModal';
-import TournamentSearchModal from '../../modals/search/tournament-search/TournamentSearchModal';
-import TrainingSearchModal from '../../modals/search/training-search/TrainingSearchModal';
-import CoachSearchModal from '../../modals/search/coach-search/CoachSearchModal';
-import ManagerSearchModal from '../../modals/search/manager-search/ManagerSearchModal';
-
 import {
     NavLink,
     Link,
   } from "react-router-dom";
 import "./_sidebar.scss";
+import LanguageOptions from './partials/LanguageOptions';
+import NewSearch from './partials/NewSearch';
+import InfoButtons from './partials/InfoButtons';
 
 
 const Sidebar = () => {
 
-    const [showTeamSearch, setTeamShow] = useState(false);
-  
-    const handleTeamClose = () => setTeamShow(false);
-    const handleTeamShow = () => setTeamShow(true);
-
-    const [showPlayerSearch, setPlayerShow] = useState(false);
-  
-    const handlePlayerClose = () => setPlayerShow(false);
-    const handlePlayerShow = () => setPlayerShow(true);
-
-    const [showCourtSearch, setCourtShow] = useState(false);
-  
-    const handleCourtClose = () => setCourtShow(false);
-    const handleCourtShow = () => setCourtShow(true);
-
-    const [showTrainerSearch, setTrainerShow] = useState(false);
-  
-    const handleTrainerClose = () => setTrainerShow(false);
-    const handleTrainerShow = () => setTrainerShow(true);
-
-    const [showTournamentSearch, setTournamentShow] = useState(false);
-  
-    const handleTournamentClose = () => setTournamentShow(false);
-    const handleTournamentShow = () => setTournamentShow(true);
-
-    const [showTrainingSearch, setTrainingShow] = useState(false);
-  
-    const handleTrainingClose = () => setTrainingShow(false);
-    const handleTrainingShow = () => setTrainingShow(true);
-
-    const [showCoachSearch, setCoachShow] = useState(false);
-  
-    const handleCoachClose = () => setCoachShow(false);
-    const handleCoachShow = () => setCoachShow(true);
-
-    const [showManagerSearch, setManagerShow] = useState(false);
-  
-    const handleManagerClose = () => setManagerShow(false);
-    const handleManagerShow = () => setManagerShow(true);
+    
     return (
         <>
-        <CourtSearchModal handleCourtClose={handleCourtClose} show={showCourtSearch} />
-        <PlayerSearchModal handlePlayerClose={handlePlayerClose} show={showPlayerSearch} />
-        <TeamSearchModal handleTeamClose={handleTeamClose} show={showTeamSearch} />
-        <TrainerSearchModal handleTrainerClose={handleTrainerClose} show={showTrainerSearch}/>
-        <TournamentSearchModal handleTournamentClose={handleTournamentClose} show={showTournamentSearch}/>
-        <TrainingSearchModal handleTrainingClose={handleTrainingClose} show={showTrainingSearch}/>
-        <CoachSearchModal handleCoachClose={handleCoachClose} show={showCoachSearch}/>
-        <ManagerSearchModal handleManagerClose={handleManagerClose} show={showManagerSearch}/>
+
             <div id="sidebar" className="active">
                 <div className="sidebar-wrapper active ps ps--active-y">
                     <div class="sidebar-header">
@@ -90,28 +36,7 @@ const Sidebar = () => {
                                     <h4 class="sidebar-app-name">BasketHall</h4>
                                 </Link>
                             </div>
-                            <div class="lang-menu">
-                                <div class="selected-lang">
-                                    TR
-                                </div>
-                                <ul>
-                                    <li>
-                                        <Link class="en">EN</Link>
-                                    </li>
-                                    <li>
-                                        <Link class="de">DE</Link>
-                                    </li>
-                                    <li>
-                                        <Link class="es">ES</Link>
-                                    </li>
-                                    <li>
-                                        <Link class="fr">FR</Link>
-                                    </li>
-                                    <li>
-                                        <Link class="ar">AR</Link>
-                                    </li>
-                                </ul>
-                            </div>
+                            <LanguageOptions />
                             <div class="toggler">
                                 <Link class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></Link>
                             </div>
@@ -119,70 +44,9 @@ const Sidebar = () => {
                     </div>
                     <div className="sidebar-menu">
                         <ul className="menu">
-                            <li exact className="sidebar-item has-sub">
-                                <Link className="sidebar-link">
-                                <i class="bi bi-search"></i>
-                                <span>New Search</span>
-                                </Link>
-                                <ul className="submenu" style={{display: "none"}}>
-                                    <li className="submenu-item">
-                                        <Link variant="primary" onClick={handleCourtShow}>
-                                            <FaBasketballBall className="m-1" size={18} />
-                                            Match Search
-                                        </Link>
-                                    </li>
-                                    <li className="submenu-item">
-                                        <Link variant="primary" onClick={handleCourtShow}>
-                                            <GiBasketballBasket className="m-1" size={18} />
-                                            Court Search
-                                        </Link>
-                                    </li>
-                                    <li className="submenu-item">
-                                        <Link variant="primary" onClick={handleTeamShow}>
-                                            <RiTeamLine className="m-1" size={18}/>
-                                            Team Search
-                                        </Link>
-                                    </li>
-                                    <li className="submenu-item">
-                                        <Link variant="primary" onClick={handlePlayerShow}>
-                                            <GoPerson className="m-1" size={18} />
-                                            Player Search
-                                        </Link>
-                                    </li>
-                                    <li className="submenu-item">
-                                        <Link variant="primary" onClick={handleTrainingShow}>
-                                            <FaRunning className="m-1" size={18} />
-                                            Training Search
-                                        </Link>
-                                    </li>
-                                    <li className="submenu-item">
-                                        <Link variant="primary" onClick={handleCoachShow}>
-                                            <FaUserTie className="m-1" size={18} />
-                                            Coach Search
-                                        </Link>
-                                    </li>
-                                    <li className="submenu-item">
-                                        <Link variant="primary" onClick={handleManagerShow}>
-                                            <FaUserTie className="m-1" size={18} />
-                                            Manager Search
-                                        </Link>
-                                    </li>
-                                    <li className="submenu-item">
-                                        <Link variant="primary" className="d-flex" onClick={handleTournamentShow}>
-                                            <ImTree className="m-1" size={18} />
-                                            <span>
-                                            Tournament Search
-                                            </span>
-                                        </Link>
-                                    </li>
-                                    <li className="submenu-item">
-                                        <Link variant="primary" onClick={handleTrainerShow}>
-                                            <GiStrong className="m-1" size={18} />
-                                            Trainer Search
-                                        </Link>
-                                    </li>
-                                </ul>
-                            </li>
+
+                            <NewSearch />
+
                             <li className="sidebar-item">
                                 <NavLink  to="/my-matches" className="sidebar-link">
                                     <FaBasketballBall />
@@ -275,33 +139,7 @@ const Sidebar = () => {
                         </ul>
                     </div>
 
-                    <div class="sidebar-badges">
-                        <div class="card-body">
-                            <div class="badges">
-                                <NavLink to="/service-policies" target="_blank" className="sidebar-link info">
-                                    <span class="badge sidebar-badge">Hizmet Şartları</span>
-                                </NavLink>
-                                <NavLink to="/secure" target="_blank" className="sidebar-link info">
-                                    <span class="badge sidebar-badge">Gizlilik politikası</span>
-                                </NavLink>
-                                <NavLink to="/cookies" target="_blank" className="sidebar-link info">
-                                    <span class="badge sidebar-badge">Çerez Politikası</span>
-                                </NavLink>                                
-                                <NavLink to="/about-us" target="_blank" className="sidebar-link info">
-                                    <span class="badge sidebar-badge">Hakkımızda</span>
-                                </NavLink>
-                                <NavLink to="/sponsors" className="sidebar-link info">
-                                    <span class="badge sidebar-badge">Sponsorlar</span>
-                                </NavLink>
-                                <NavLink to="/contact" target="_blank" className="sidebar-link info">
-                                    <span class="badge sidebar-badge">İletişim</span>
-                                </NavLink>
-                                <NavLink to="/faq" className="sidebar-link info">
-                                    <span class="badge sidebar-badge">S.S.S</span>
-                                </NavLink>
-                            </div>
-                        </div>
-                    </div>
+                    <InfoButtons />
                 </div>
                 <button className="sidebar-toggler btn x"><i data-feather="x"></i></button>
                 <div className="ps__rail-x" style={{left: "0px", bottom: "0px"}}>
