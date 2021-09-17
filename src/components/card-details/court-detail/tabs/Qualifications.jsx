@@ -16,7 +16,6 @@ const Qualifications = () => {
                                 </div>
                                 <div className="col-md-8">
                                     <h6 className="text-muted font-semibold">Court Views</h6>
-                                    <h6 className="font-extrabold mb-0">112.000</h6>
                                 </div>
                             </div>
                         </div>

@@ -8,7 +8,8 @@ import Teams from '../new-match-tabs/Teams';
 import Prizes from '../new-match-tabs/Prizes';
 import Notes from '../new-match-tabs/Notes';
 import Courts from '../new-match-tabs/Courts';
-import Privacy from '../new-match-tabs/Privacy';
+import Settings from '../new-match-tabs/Settings';
+
 const NewMatchInputs = () => {
     return (
         <div class="tab-content create-match" id="myTabContent">
@@ -44,7 +45,7 @@ const NewMatchInputs = () => {
                 <Notes />
             </div>
             <div class="tab-pane fade" id="privacy" role="tabpanel" aria-labelledby="privacy-tab">
-                <Privacy />
+                <Settings />
             </div>
         </div>
     )

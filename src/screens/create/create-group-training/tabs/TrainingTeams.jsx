@@ -14,7 +14,7 @@ const TrainingTeams = () => {
                 [...Array(5)].map((player) => (
                     <span className="d-inline-block m-2">
                         <div className="card border rounded">
-                            <span className="text-center fw-bold">Bartu Kocakara</span>
+                            <span className="text-center fw-bold">Karşıyaka Team</span>
                             <div className="card-body text-center">
                                 <div class="avatar avatar-lg d-flex">
                                     <AvatarGroup max={4} >

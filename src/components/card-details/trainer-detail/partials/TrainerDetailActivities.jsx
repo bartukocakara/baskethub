@@ -3,6 +3,7 @@ import TrainingTypes from '../tabs/TrainingTypes';
 import Licences from '../tabs/Licences';
 import TrainingCalendar from '../tabs/TrainingCalendar';
 import Players from '../tabs/Players';
+import Teams from '../tabs/Teams';
 
 const TrainerDetailActivities = () => {
     return (
@@ -12,6 +13,9 @@ const TrainerDetailActivities = () => {
             </div>
             <div class="tab-pane fade mt-4" id="players" role="tabpanel" aria-labelledby="players-tab">
                 <Players />
+            </div>
+            <div class="tab-pane fade mt-4" id="teams" role="tabpanel" aria-labelledby="teams-tab">
+                <Teams />
             </div>
             <div class="tab-pane fade mt-4" id="training-types" role="tabpanel" aria-labelledby="training-types-tab">
                 <TrainingTypes />

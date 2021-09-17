@@ -13,7 +13,7 @@ const RequestList = () => {
                             <thead>
                                 <tr>
                                     <th className="w-25 text-center">Name</th>
-                                    <th className="w-25 text-center">Comment</th>
+                                    <th className="w-25 text-center">Message</th>
                                     <th className="w-25 text-center">Request Type</th>
                                     <th className="w-25 text-center">Status</th>
                                 </tr>

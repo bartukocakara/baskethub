@@ -26,13 +26,13 @@ const NewMatchNavs = () => {
                 <a class="nav-link" id="courts-tab" data-bs-toggle="tab" href="#courts" role="tab" aria-controls="courts" aria-selected="false">Courts</a>
             </li>
             <li class="nav-item" role="presentation">
-                <a class="nav-link" id="prizes-tab" data-bs-toggle="tab" href="#prizes" role="tab" aria-controls="prizes" aria-selected="false">Prizes</a>
+                <a class="nav-link" id="prizes-tab" data-bs-toggle="tab" href="#prizes" role="tab" aria-controls="prizes" aria-selected="false">Prize</a>
             </li>
             <li class="nav-item" role="presentation">
                 <a class="nav-link" id="notes-tab" data-bs-toggle="tab" href="#notes" role="tab" aria-controls="notes" aria-selected="false">Notes</a>
             </li>
             <li class="nav-item" role="presentation">
-                <a class="nav-link" id="privacy-tab" data-bs-toggle="tab" href="#privacy" role="tab" aria-controls="privacy" aria-selected="false">Privacy</a>
+                <a class="nav-link" id="privacy-tab" data-bs-toggle="tab" href="#privacy" role="tab" aria-controls="privacy" aria-selected="false">Settings</a>
             </li>
         </ul>
     )

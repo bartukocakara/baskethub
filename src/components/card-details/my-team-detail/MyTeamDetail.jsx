@@ -80,9 +80,9 @@ const MyTeamDetail = () => {
                                                         <Link class="text-light" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                                             <FaHandshake className="card-footer-icon"  />
                                                         </Link>
-                                                        <ul class="dropdown-menu mt-3" aria-labelledby="dropdownMenuLink">
-                                                            <li><Link class="dropdown-item text-center" onClick={handleRequestPlayerJoinModal}>Request join match </Link></li>
-                                                            <li><Link class="dropdown-item text-center" onClick={handleRequestTeamJoinModal}>Request join team </Link></li>
+                                                        <ul class="dropdown-menu mt-3 border " aria-labelledby="dropdownMenuLink">
+                                                            <li className="border-bottom"><Link class="dropdown-item text-center" onClick={handleRequestPlayerJoinModal}>Request join match </Link></li>
+                                                            <li className="border-bottom"><Link class="dropdown-item text-center" onClick={handleRequestTeamJoinModal}>Request join team </Link></li>
                                                         </ul>
                                                     </div>
                                                     <Link to="team-chat" className="btn btn-warning"><FiMail/></Link>
@@ -90,12 +90,12 @@ const MyTeamDetail = () => {
                                                         <Link className="text-light" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                                             <FiShare2 className="m-2" size={27}/>
                                                         </Link>
-                                                        <ul class="dropdown-menu mt-3" aria-labelledby="dropdownMenuLink">
-                                                            <li><Link class="dropdown-item text-center">With Player <GoPerson /></Link></li>
-                                                            <li><Link class="dropdown-item text-center">Whatsapp <AiOutlineWhatsApp /></Link></li>
-                                                            <li><Link class="dropdown-item text-center">Facebook <TiSocialFacebook /></Link></li>
-                                                            <li><Link class="dropdown-item text-center">Twitter <TiSocialTwitter /></Link></li>
-                                                            <li><Link class="dropdown-item text-center">Instagram <TiSocialInstagram /></Link></li>
+                                                        <ul class="dropdown-menu mt-3 border" aria-labelledby="dropdownMenuLink">
+                                                            <li className="border-bottom"><Link class="dropdown-item text-center">With Player <GoPerson /></Link></li>
+                                                            <li className="border-bottom"><Link class="dropdown-item text-center">Whatsapp <AiOutlineWhatsApp /></Link></li>
+                                                            <li className="border-bottom"><Link class="dropdown-item text-center">Facebook <TiSocialFacebook /></Link></li>
+                                                            <li className="border-bottom"><Link class="dropdown-item text-center">Twitter <TiSocialTwitter /></Link></li>
+                                                            <li className="border-bottom"><Link class="dropdown-item text-center">Instagram <TiSocialInstagram /></Link></li>
                                                         </ul>
                                                     </div>
                                                 </div>
