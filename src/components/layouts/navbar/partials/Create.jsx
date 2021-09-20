@@ -6,6 +6,7 @@ import { MdGroupAdd } from "@react-icons/all-files/md/MdGroupAdd";
 import { GiTennisCourt } from "@react-icons/all-files/gi/GiTennisCourt";
 import { ImTree } from "@react-icons/all-files/im/ImTree";
 import { FaBasketballBall } from "@react-icons/all-files/fa/FaBasketballBall";
+import { GiRainbowStar } from "@react-icons/all-files/gi/GiRainbowStar";
 
 const Create = () => {
     return (
@@ -22,6 +23,7 @@ const Create = () => {
                 <li className="p-3 m-1 border-bottom rounded"><Link to="create-group-training"> <MdGroupAdd size={15} /> Create Group Training</Link></li>
                 <li className="p-3 m-1 border-bottom rounded"><Link to="create-tournament"> <ImTree size={15}/> Create Tournament</Link></li>
                 <li className="p-3 m-1 border-bottom rounded"><Link to="create-match-event"> <FaBasketballBall size={15}/> Create Match</Link></li>
+                <li className="p-3 m-1 border-bottom rounded"><Link to="create-all-star"> <GiRainbowStar size={15}/> Create All Star</Link></li>
             </ul>
             </div>
         </li>

@@ -49,7 +49,7 @@ const Gifts = () => {
         <>
         <ConfirmDeleteTournamentGift handleConfirmDeleteGiftClose={handleConfirmDeleteGiftClose}  show={showConfirmDeleteGift} />
         <Link className="btn btn-warning w-25" to="create-gift">
-            Create new gift
+            Create gift
         </Link>
         <div className="row mt-3 p-3">
             {

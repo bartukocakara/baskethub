@@ -1,14 +1,11 @@
-import Gifts from './../tabs/ParticipantGifts'
-import Prizes from '../tabs/Prizes'
-import Rules from '../tabs/Rules'
 import Courts from './../tabs/Courts'
 import Dates from './../tabs/Dates'
 import Players from './../tabs/Players'
 import Privacy from './../tabs/Privacy'
 import Teams from './../tabs/Teams'
-import Referees from '../tabs/Referees'
+import EventList from './../tabs/EventList'
 
-const CreateTournamentInputs = () => {
+const CreateAllStarInputs = () => {
     return (
         <div class="col-9">
             <div class="tab-content" id="v-pills-tabContent">
@@ -24,17 +21,8 @@ const CreateTournamentInputs = () => {
                 <div class="tab-pane fade" id="v-pills-players" role="tabpanel" aria-labelledby="v-pills-players-tab">
                    <Players/>
                 </div>
-                <div class="tab-pane fade" id="v-pills-rules" role="tabpanel" aria-labelledby="v-pills-rules-tab">
-                   <Rules/>
-                </div>
-                <div class="tab-pane fade" id="v-pills-gifts" role="tabpanel" aria-labelledby="v-pills-gifts-tab">
-                   <Gifts/>
-                </div>
-                <div class="tab-pane fade" id="v-pills-prizes" role="tabpanel" aria-labelledby="v-pills-prizes-tab">
-                   <Prizes/>
-                </div>
-                <div class="tab-pane fade" id="v-pills-referees" role="tabpanel" aria-labelledby="v-pills-referees-tab">
-                    <Referees/>
+                <div class="tab-pane fade" id="v-pills-events" role="tabpanel" aria-labelledby="v-pills-events-tab">
+                   <EventList/>
                 </div>
                 <div class="tab-pane fade" id="v-pills-privacy" role="tabpanel" aria-labelledby="v-pills-privacy-tab">
                    <Privacy/>
@@ -44,4 +32,4 @@ const CreateTournamentInputs = () => {
     )
 }
 
-export default CreateTournamentInputs
+export default CreateAllStarInputs

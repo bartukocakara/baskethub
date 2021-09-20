@@ -10,7 +10,7 @@ const tournamentRoutes = [
             <Route path="/tournaments" component={Tournaments} />,
             <Route path="/tournament-detail" component={TournamentDetail} />,
             <Route path="/tournament-settings" component={TournamentSettings} />,
-            <Route path="/ceate-gift" component={CreateGift} />,
+            <Route path="/create-gift" component={CreateGift} />,
             <Route path="/edit-gift" component={EditGift} />
 
         ]

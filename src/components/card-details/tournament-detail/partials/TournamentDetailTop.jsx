@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { FiShare2 } from "@react-icons/all-files/fi/FiShare2";
 import { FiSettings } from "@react-icons/all-files/fi/FiSettings";
 import { FaHandshake } from "@react-icons/all-files/fa/FaHandshake";
@@ -7,9 +8,18 @@ import { TiSocialFacebook } from "@react-icons/all-files/ti/TiSocialFacebook";
 import { AiOutlineWhatsApp } from "@react-icons/all-files/ai/AiOutlineWhatsApp";
 import { GoPerson } from "@react-icons/all-files/go/GoPerson";
 import { Link } from 'react-router-dom';
+import ExitPlayerModal from './../../../modals/join-tournament/JoinTournamentTeamModal';
 
 const TournamentDetailTop = () => {
+
+    const [showJoinTournamentTeamModal, setJoinTournamentTeamModalShow] = useState(false);
+  
+    const handleJoinTournamentTeamModalClose = () => setJoinTournamentTeamModalShow(false);
+    const handleJoinTournamentTeamModalShow = () => setJoinTournamentTeamModalShow(true);
     return (
+        <>
+        <ExitPlayerModal handleJoinTournamentTeamModalClose={handleJoinTournamentTeamModalClose} show={showJoinTournamentTeamModal} />
+
         <div className="d-flex m-auto">
             <h5 className="card-title text-center m-2">İzmir Tournament</h5>
             <div className="dropdown">
@@ -27,8 +37,9 @@ const TournamentDetailTop = () => {
                     <FiSettings/>                          
                 </Link>
             </div>
-            <Link className="btn btn-warning m-2">Send join request <FaHandshake/></Link>
+            <Link className="btn btn-warning m-2" onClick={handleJoinTournamentTeamModalShow}>Send team join request <FaHandshake/></Link>
         </div>
+        </>
     )
 }
 

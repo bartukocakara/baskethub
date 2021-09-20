@@ -5,6 +5,7 @@ import CreateTournament from './../../screens/create/create-tournament/CreateTou
 import CreateMatch from './../../screens/create/create-match/CreateMatch';
 import CreateTeam from './../../screens/create/create-team/CreateTeam';
 import CreateTrainingTeam from '../../screens/create/create-training-team/CreateTrainingTeam';
+import CreateAllStar from '../../screens/create/create-all-star/CreateAllStar';
 import {
     Route,
   } from "react-router-dom";
@@ -17,7 +18,8 @@ const createRoutes = [
             <Route path="/create-group-training" component={CreateGroupTraining} />,
             <Route path="/create-tournament" component={CreateTournament} />,
             <Route path="/create-match-event" component={CreateMatch} />,
-            <Route path="/create-subscription" component={CreateSubscription} />
+            <Route path="/create-subscription" component={CreateSubscription} />,
+            <Route path="/create-all-star" component={CreateAllStar} />,
         ]
 
 export default createRoutes
