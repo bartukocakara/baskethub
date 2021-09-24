@@ -1,4 +1,7 @@
 const Courts = () => {
+
+    // only one court can be selected
+
     return (
         <div className="row m-auto">
             <div className="col-md-12">
@@ -10,14 +13,13 @@ const Courts = () => {
             {
                 [...Array(5)].map(() => (
                     <div class="card col-md-4">
-                        <div class=" border rounded text-center">
+                        <div class=" border rounded text-center card-shadow">
                             <div class="w-100">
-                                <img src="assets/images/samples/basket-salon3.jpg" className="w-100 rounded" alt="Face 1" />
+                                <img src="assets/images/samples/basket-salon2.jpg" className="w-100 rounded" alt="Face 1" />
                                 <div class="w-100 name">
                                 <h6 class="my-2">Bornova Spor Salonu, <span>İzmir</span></h6>
                                 </div>
                             </div>
-                            <input type="checkbox" className="m-auto form-check-input my-2"/>
                         </div>
                     </div>
                 ))

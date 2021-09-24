@@ -7,6 +7,7 @@ import Players from './../tabs/Players'
 import Privacy from './../tabs/Privacy'
 import Teams from './../tabs/Teams'
 import Referees from '../tabs/Referees'
+import Payment from '../tabs/Payment'
 
 const CreateTournamentInputs = () => {
     return (
@@ -38,6 +39,9 @@ const CreateTournamentInputs = () => {
                 </div>
                 <div class="tab-pane fade" id="v-pills-privacy" role="tabpanel" aria-labelledby="v-pills-privacy-tab">
                    <Privacy/>
+                </div>
+                <div class="tab-pane fade" id="v-pills-payment" role="tabpanel" aria-labelledby="v-pills-payment-tab">
+                   <Payment/>
                 </div>
             </div>
         </div>

@@ -11,6 +11,7 @@ const CreateTournamentNavs = () => {
                 <a class="nav-link" id="v-pills-prizes-tab" data-bs-toggle="pill" href="#v-pills-prizes" role="tab" aria-controls="v-pills-prizes" aria-selected="false">Prizes</a>
                 <a class="nav-link" id="v-pills-referees-tab" data-bs-toggle="pill" href="#v-pills-referees" role="tab" aria-controls="v-pills-referees" aria-selected="false">Referees</a>
                 <a class="nav-link" id="v-pills-privacy-tab" data-bs-toggle="pill" href="#v-pills-privacy" role="tab" aria-controls="v-pills-privacy" aria-selected="false">Privacy</a>
+                <a class="nav-link" id="v-pills-payment-tab" data-bs-toggle="pill" href="#v-pills-payment" role="tab" aria-controls="v-pills-payment" aria-selected="false">Payment</a>
             </div>
         </div>
     )

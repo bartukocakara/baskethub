@@ -1,36 +1,32 @@
 import React from 'react'
 
-const eventList = [
+const giftList = [
     {
-        imageName : "event1.jpg",
-        name : "Shooting",
+        imageName : "gift-tshirt.jpg",
+        name : "Tshirt",
     },
     {
-        imageName : "event2.jpg",
-        name : "Match",
+        imageName : "certification.jpg",
+        name : "Certfication",
     },
     {
-        imageName : "event3.jpg",
-        name : "Slam Dunk",
-    },
-    {
-        imageName : "event4.jpg",
-        name : "Talent",
+        imageName : "bag.jpg",
+        name : "Bag",
     },
 ]
-const EventList = () => {
+const Prizes = () => {
     
     return (
         <div className="row">
             <div className="col-md-6 row mt-3 p-3">
                 {
-                    eventList.map(gift => (
+                    giftList.map(gift => (
                         <div class="col-md-6">
                             <div class="card border card-shadow rounded p-2">
                                 <div class="text-center">
                                     <div class="m-auto">
-                                        <div className="w-100">
-                                            <img src={"../assets/images/create/all-star/events/"+gift.imageName} alt="Face 1"  className="w-75 rounded"/>
+                                        <div class="avatar avatar-xl">
+                                            <img src={"../assets/images/gifts/"+gift.imageName} alt="Face 1" />
                                         </div>
                                         <div>
                                             <p class="font-bold">{gift.name}</p>
@@ -45,7 +41,7 @@ const EventList = () => {
                 
             </div>
             <div className="col-md-6">
-                <h5 className="text-center">New Event</h5>
+                <h5 className="text-center">New Prize</h5>
                 <hr />
                 <div className="col-md-12 my-2">
                     <h6 className="text-center">Name</h6>
@@ -60,4 +56,4 @@ const EventList = () => {
     )
 }
 
-export default EventList
+export default Prizes

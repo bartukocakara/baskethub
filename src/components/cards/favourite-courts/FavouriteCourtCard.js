@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail";
-import { FaHandshake } from "@react-icons/all-files/fa/FaHandshake";
 import { FiShare2 } from "@react-icons/all-files/fi/FiShare2";
 import { TiSocialInstagram } from "@react-icons/all-files/ti/TiSocialInstagram";
 import { TiSocialTwitter } from "@react-icons/all-files/ti/TiSocialTwitter";
@@ -18,15 +17,10 @@ import {
     Link
   } from "react-router-dom";
 import "./_favouriteCourt.scss";
-import RequestCourtReservation from './../../../components/modals/request-court-reservation/RequestCourtReservation';
 import CourtCommentsModal from '../../modals/comments/court-comments/CourtCommentsModal';
      
 
 const FavouriteCourtCard = () => {
-    const [showRequestCourtReservationModal, setRequestCourtReservationModalShow] = useState(false);
-
-    const handleRequestCourtReservationModalClose = () => setRequestCourtReservationModalShow(false);
-    const handleShowRequestCourtReservationModal = () => setRequestCourtReservationModalShow(true);
 
     const [showCourtCommentsModal, setCourtCommentsModalShow] = useState(false);
 
@@ -34,8 +28,6 @@ const FavouriteCourtCard = () => {
     const handleShowCourtCommentsModal = () => setCourtCommentsModalShow(true); 
     return (
         <>
-        <RequestCourtReservation handleRequestCourtReservationModalClose={handleRequestCourtReservationModalClose}
-                                 show={showRequestCourtReservationModal}/>
         <CourtCommentsModal handleCourtCommentsModalClose={handleCourtCommentsModalClose}
                                  show={showCourtCommentsModal}/>
         <div className="col-xl-12 col-md-12 col-sm-12 feed-card feed-my-fav-courts-card">
@@ -91,9 +83,6 @@ const FavouriteCourtCard = () => {
                             <AiOutlineMail className="card-footer-icon" size={25} />
                         </Link>
                         
-                        <Link class="btn btn-light m-2 p-2 text-primary" onClick={handleShowRequestCourtReservationModal}>
-                            <FaHandshake className="card-footer-icon" />
-                        </Link>
                         <div class="dropdown">
                             <Link class="btn btn-light m-2 p-2 text-primary" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                 <FiShare2 className="card-footer-icon"  />
