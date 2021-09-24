@@ -46,37 +46,37 @@ const TeamDetailTop = () => {
                     </div>
                 </div>
                 <span className="badge bg-primary mb-1 mr-2">12</span><h4 className="text-center">Bornova Team</h4>
-                    <div className="d-flex">
-                        <div className="dropdown">
-                            <Link className="btn btn-light m-2 p-2 text-primary border" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                <FiSettings/>                            
-                            </Link>
-                            <ul className="dropdown-menu border" aria-labelledby="dropdownMenuLink">
-                                <li><Link className="dropdown-item text-center" to="edit-team"><GoPerson /> Edit Team </Link></li>
-                                <li><Link className="dropdown-item text-center" onClick={handlesetExitPlayerModal}><AiOutlineUsergroupDelete/> Exit Player </Link></li>
-                                <li><Link className="dropdown-item text-center"><RiErrorWarningFill /> Warn Player !</Link></li>
-                                <li><Link to="team-settings" className="dropdown-item text-center"><BsFillLockFill/>Privacy</Link></li>
-                            </ul>
-                        </div>
-                        <div className="dropdown">
-                            <Link className="btn btn-light m-2 p-2 text-primary border" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                <FiShare2 />
-                            </Link>
-                            <ul className="dropdown-menu border" aria-labelledby="dropdownMenuLink">
-                                <li><Link className="dropdown-item text-center">With Player <GoPerson /></Link></li>
-                                <li><Link className="dropdown-item text-center">Whatsapp <AiOutlineWhatsApp /></Link></li>
-                                <li><Link className="dropdown-item text-center">Facebook <TiSocialFacebook /></Link></li>
-                                <li><Link className="dropdown-item text-center">Twitter <TiSocialTwitter /></Link></li>
-                                <li><Link className="dropdown-item text-center">Instagram <TiSocialInstagram /></Link></li>
-                            </ul>
-                            <Link className="btn btn-light m-2 p-2 rounded text-primary border" to="team-chat"><FiMail/></Link>
-                        </div>
-                        <input type="text" class="form-control w-50 m-auto text-center" placeholder="Quick search"/>
-                        <div className="m-auto">
-                            <Link onClick={handleQuitTeamModal}>
-                                <FiLogOut className="bg-danger text-light p-1 rounded" size={30}/>
-                            </Link>
-                        </div>
+                <div className="d-flex">
+                    <div className="dropdown">
+                        <Link className="btn btn-light m-2 p-2 text-primary border" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <FiSettings/>                            
+                        </Link>
+                        <ul className="dropdown-menu border" aria-labelledby="dropdownMenuLink">
+                            <li><Link className="dropdown-item text-center" to="edit-team"><GoPerson /> Edit Team </Link></li>
+                            <li><Link className="dropdown-item text-center" onClick={handlesetExitPlayerModal}><AiOutlineUsergroupDelete/> Exit Player </Link></li>
+                            <li><Link className="dropdown-item text-center"><RiErrorWarningFill /> Warn Player !</Link></li>
+                            <li><Link to="team-settings" className="dropdown-item text-center"><BsFillLockFill/>Privacy</Link></li>
+                        </ul>
+                    </div>
+                    <div className="dropdown">
+                        <Link className="btn btn-light m-2 p-2 text-primary border" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <FiShare2 />
+                        </Link>
+                        <ul className="dropdown-menu border" aria-labelledby="dropdownMenuLink">
+                            <li><Link className="dropdown-item text-center">With Player <GoPerson /></Link></li>
+                            <li><Link className="dropdown-item text-center">Whatsapp <AiOutlineWhatsApp /></Link></li>
+                            <li><Link className="dropdown-item text-center">Facebook <TiSocialFacebook /></Link></li>
+                            <li><Link className="dropdown-item text-center">Twitter <TiSocialTwitter /></Link></li>
+                            <li><Link className="dropdown-item text-center">Instagram <TiSocialInstagram /></Link></li>
+                        </ul>
+                        <Link className="btn btn-light m-2 p-2 rounded text-primary border" to="team-chat"><FiMail/></Link>
+                    </div>
+                    <input type="text" class="form-control w-50 m-auto text-center" placeholder="Quick search"/>
+                    <div className="m-auto">
+                        <Link onClick={handleQuitTeamModal}>
+                            <FiLogOut className="bg-danger text-light p-1 rounded" size={30}/>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </>

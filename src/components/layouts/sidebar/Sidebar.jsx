@@ -33,8 +33,9 @@ const Sidebar = () => {
                         <div class="d-flex justify-content-between">
                             <div class="logo">
                                 <Link to="/">
-                                    <h4 class="sidebar-app-name">BasketHall</h4>
+                                    <h5 class="sidebar-app-name app-name">Social Basket</h5>
                                 </Link>
+
                             </div>
                             <LanguageOptions />
                             <div class="toggler">
