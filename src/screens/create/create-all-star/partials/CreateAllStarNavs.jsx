@@ -7,12 +7,16 @@ import { FaCalendarAlt } from "@react-icons/all-files/fa/FaCalendarAlt";
 import { GiTennisCourt } from "@react-icons/all-files/gi/GiTennisCourt";
 import { GoPerson } from "@react-icons/all-files/go/GoPerson";
 import { GoCreditCard } from "@react-icons/all-files/go/GoCreditCard";
+import { AiFillCheckCircle } from "@react-icons/all-files/ai/AiFillCheckCircle";
 
 const CreateAllStarNavs = () => {
+
+    // add check icon since form fields fiiled correctly = AiFillCheckCircle
+
     return (
         <div class="col-2">
             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                <a class="nav-link m-1 active" id="v-pills-teams-tab" data-bs-toggle="pill" href="#v-pills-teams" role="tab" aria-controls="v-pills-teams" aria-selected="true"> <BsPeopleFill className="m-1" /> Teams</a>
+                <a class="nav-link m-1 active" id="v-pills-teams-tab" data-bs-toggle="pill" href="#v-pills-teams" role="tab" aria-controls="v-pills-teams" aria-selected="true"> <BsPeopleFill className="m-1" /> Teams <AiFillCheckCircle size={20} /></a>
                 <a class="nav-link m-1" id="v-pills-players-tab" data-bs-toggle="pill" href="#v-pills-players" role="tab" aria-controls="v-pills-players" aria-selected="false"><GoPerson className="m-1" /> Players </a>
                 <a class="nav-link m-1" id="v-pills-courts-tab" data-bs-toggle="pill" href="#v-pills-courts" role="tab" aria-controls="v-pills-courts" aria-selected="false"><GiTennisCourt  className="m-1" /> Courts</a>
                 <a class="nav-link m-1" id="v-pills-dates-tab" data-bs-toggle="pill" href="#v-pills-dates" role="tab" aria-controls="v-pills-dates" aria-selected="false"><FaCalendarAlt className="m-1" />Dates</a>

@@ -25,7 +25,7 @@ const CreateCourtInputs = () => {
                 </div>
             </div>
             <div className="form-group col-md-12 p-2 text-center p-4">
-                <input type="button" className="btn btn-success btn-lg w-25 fw-bold" id="helpInputTop" value="Create" />
+                <input type="button" className="btn btn-success btn-lg w-25 fw-bold" id="helpInputTop" value="Create" disabled/>
             </div>
         </div>
     )

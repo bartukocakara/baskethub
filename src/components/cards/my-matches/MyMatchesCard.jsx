@@ -76,7 +76,7 @@ const MyMatchesCard = () => {
                                 <button class="btn btn-light text-primary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                     <FiShare2 className="card-footer-icon" />
                                 </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <ul class="dropdown-menu border" aria-labelledby="dropdownMenuButton1">
                                     <li><Link class="dropdown-item text-center">With Player <GoPerson /></Link></li>
                                     <li><Link class="dropdown-item text-center">Whatsapp <AiOutlineWhatsApp /></Link></li>
                                     <li><Link class="dropdown-item text-center">Facebook <TiSocialFacebook /></Link></li>

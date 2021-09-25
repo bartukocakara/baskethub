@@ -36,11 +36,11 @@ const TrainingVideos = () => {
                                 [...Array(12)].map((player) => (
                                     <Link to="training-video" className="col-md-3 mb-3">
                                         <div className="border rounded p-3">
-                                            <div class="avatar avatar-lg me-3 d-flex justify-content-between">
-                                                <img src="assets/images/faces/2.jpg" alt="create team" />
+                                            <div class="w-100 d-flex justify-content-between">
+                                                <img className="w-50 rounded" src="assets/images/trainings/video-banner/training-banner.jpg" alt="create team" />
                                                 <div className="m-auto">
                                                     <span className="fw-bold d-block">Shooting</span>
-                                                    <p>Lorem ipsum dolor sit amet.</p>
+                                                    <p>25/12/2021</p>
                                                 </div>
                                             </div>
                                         </div>

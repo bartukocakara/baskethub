@@ -1,4 +1,6 @@
+import { BsFillTrashFill } from '@react-icons/all-files/bs/BsFillTrashFill'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Images = () => {
     return (
@@ -14,8 +16,10 @@ const Images = () => {
                         <div class=" border rounded text-center card-shadow">
                             <div class="w-100">
                                 <img src="assets/images/samples/basket-salon2.jpg" className="w-100 rounded" alt="Face 1" />
-                                
                             </div>
+                        </div>
+                        <div className="fixed-actions">
+                            <span className="badge bg-danger avatar p-2 m-1"><Link className="text-light"> <BsFillTrashFill /> </Link></span>
                         </div>
                     </div>
                 ))

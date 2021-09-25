@@ -48,7 +48,7 @@ const TrainerDetailStatistics = () => {
                                 </div>
                             </div>
                             <div className="col-md-8">
-                                <h6 className="text-muted font-semibold">Match Joined</h6>
+                                <h6 className="text-muted font-semibold">Trainings Joined</h6>
                                 <h6 className="font-extrabold mb-0">80.000</h6>
                             </div>
                         </div>
@@ -65,7 +65,7 @@ const TrainerDetailStatistics = () => {
                                 </div>
                             </div>
                             <div className="col-md-8">
-                                <h6 className="text-muted font-semibold">Match Accepted</h6>
+                                <h6 className="text-muted font-semibold">Trainings Accepted</h6>
                                 <h6 className="font-extrabold mb-0">112</h6>
                             </div>
                         </div>

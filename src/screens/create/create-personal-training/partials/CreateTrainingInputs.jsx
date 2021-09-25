@@ -4,6 +4,7 @@ import Payment from "./../tabs/Payment";
 import Courts from "./../tabs/Courts";
 import Date from "./../tabs/Date";
 import Trainers from "./../tabs/Trainers";
+import TrainingItems from '../tabs/TrainingItems';
 const CreateTrainingInputs = () => {
     return (
         <div class="col-9">
@@ -17,6 +18,9 @@ const CreateTrainingInputs = () => {
                     </div>
                     <div class="tab-pane fade" id="v-pills-trainers" role="tabpanel" aria-labelledby="v-pills-trainers-tab">
                         <Trainers />
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-training-items" role="tabpanel" aria-labelledby="v-pills-training-items-tab">
+                        <TrainingItems />
                     </div>
                     <div class="tab-pane fade" id="v-pills-payment" role="tabpanel" aria-labelledby="v-pills-payment-tab">
                         <Payment />

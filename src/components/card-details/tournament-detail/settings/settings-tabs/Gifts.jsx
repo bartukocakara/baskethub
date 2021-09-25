@@ -65,7 +65,7 @@ const Gifts = () => {
                                         <p className="font-bold">{gift.name}</p>
                                     </div>
                                 </div>
-                                <div className="gift-actions">
+                                <div className="fixed-actions">
                                     <span className="badge bg-danger avatar p-2 m-1" onClick={handleConfirmDeleteGiftShow}><Link className="text-light"> <BsFillTrashFill/> </Link></span>
                                     <span className="badge bg-primary avatar p-2 m-1"><Link className="text-light" to="edit-gift"> <BiEdit/> </Link></span>
                                 </div>
