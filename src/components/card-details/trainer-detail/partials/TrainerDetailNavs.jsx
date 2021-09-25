@@ -19,6 +19,9 @@ const TrainerDetailNavs = () => {
             <li class="nav-item" role="presentation">
                 <a class="nav-link" id="comments-tab" data-bs-toggle="tab" href="#comments" role="tab" aria-controls="comments" aria-selected="false">Comments</a>
             </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="videos-tab" data-bs-toggle="tab" href="#videos" role="tab" aria-controls="videos" aria-selected="false">Videos</a>
+            </li>
         </ul>
     )
 }

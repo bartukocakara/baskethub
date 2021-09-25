@@ -4,6 +4,7 @@ import Licences from '../tabs/Licences';
 import TrainingCalendar from '../tabs/TrainingCalendar';
 import Players from '../tabs/Players';
 import Teams from '../tabs/Teams';
+import Videos from '../tabs/Videos';
 
 const TrainerDetailActivities = () => {
     return (
@@ -28,6 +29,9 @@ const TrainerDetailActivities = () => {
             </div>
             <div class="tab-pane fade row mt-4" id="comments" role="tabpanel" aria-labelledby="comments-tab">
                 <Comments />
+            </div>
+            <div class="tab-pane fade row mt-4" id="videos" role="tabpanel" aria-labelledby="videos-tab">
+                <Videos />
             </div>
         </div>
     )

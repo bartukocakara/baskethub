@@ -1,13 +1,12 @@
 import React from 'react'
 import { Modal } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
-import "./_requestMatchJoin.scss";
 
-const RequestMatchJoin = ({handleRequestMatchJoinModalClose, show}) => {
+const RequestJoinTrainingModal = ({handleRequestJoinTrainingModalClose, show}) => {
     return (
         <Modal
             show={show}
-            onHide={handleRequestMatchJoinModalClose}
+            onHide={handleRequestJoinTrainingModalClose}
             backdrop="static"
             keyboard={false}
             >
@@ -24,7 +23,7 @@ const RequestMatchJoin = ({handleRequestMatchJoinModalClose, show}) => {
             <form>
                 <div class="avatar avatar-lg m-4 widget-card-right">
                     <img src="assets/images/faces/2.jpg" alt="" srcset="" />
-                    <h6 className="text-center">Please select match you want to ask for join Bartu</h6>
+                    <h6 className="text-center">Please select training you want to ask for join Bartu</h6>
                 </div>
                 <select className="form-control m-2">
                     <option>Game 1</option>
@@ -36,10 +35,10 @@ const RequestMatchJoin = ({handleRequestMatchJoinModalClose, show}) => {
                 <h6 className="text-center">You can send note to a player</h6>
                 <textarea className="form-control m-2" rows="5">Write here...</textarea>
                 <div className="text-center">
-                <Button variant="danger m-2" onClick={handleRequestMatchJoinModalClose}>
+                <Button variant="danger m-2" onClick={handleRequestJoinTrainingModalClose}>
                     Close
                 </Button>
-                <Button variant="warning m-2" onClick={handleRequestMatchJoinModalClose}>
+                <Button variant="warning m-2" onClick={handleRequestJoinTrainingModalClose}>
                     Send Request
                 </Button>
                 </div>
@@ -49,4 +48,4 @@ const RequestMatchJoin = ({handleRequestMatchJoinModalClose, show}) => {
     )
 }
 
-export default RequestMatchJoin
+export default RequestJoinTrainingModal
