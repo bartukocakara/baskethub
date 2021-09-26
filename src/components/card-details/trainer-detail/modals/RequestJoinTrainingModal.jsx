@@ -12,7 +12,7 @@ const RequestJoinTrainingModal = ({handleRequestJoinTrainingModalClose, show}) =
             >
             <Modal.Header className="court-res-header">
                 <Modal.Title>
-                <h6 className="text-center">You can send note to match host</h6>
+                <h6 className="text-center">You can send note to training host</h6>
                 <div class="avatar me-3">
                     <img src="assets/images/faces/1.jpg" alt="" srcset="" />
                     <span class="avatar-status bg-success"></span>

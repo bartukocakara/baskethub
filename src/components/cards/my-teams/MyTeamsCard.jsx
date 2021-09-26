@@ -71,14 +71,15 @@ const MyTeamsCard = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="card-content card-body">
-                        <AvatarGroup max={3} className="m-auto w-25 ">
-                            <Avatar alt="Remy Sharp" src="assets/images/faces/2.jpg" />
-                            <Avatar alt="Travis Howard" src="assets/images/faces/2.jpg" />
-                            <Avatar alt="Cindy Baker" src="assets/images/faces/2.jpg" />
-                            <Avatar alt="Agnes Walker" src="assets/images/faces/2.jpg" />
-                            <Avatar alt="Trevor Henderson" src="assets/images/faces/2.jpg" />
+                    <div className="card-content card-body text-center">
+                        <AvatarGroup max={4} className="m-auto w-25 ">
+                            <Avatar alt="Remy Sharp" src="assets/images/avatars/players/player1.jpg" />
+                            <Avatar alt="Travis Howard" src="assets/images/avatars/players/player2.jpg" />
+                            <Avatar alt="Cindy Baker" src="assets/images/avatars/players/player3.jpg" />
+                            <Avatar alt="Agnes Walker" src="assets/images/avatars/players/player4.jpg" />
+                            <Avatar alt="Trevor Henderson" src="assets/images/avatars/players/player5.jpg" />
                         </AvatarGroup>
+                        <span>person in this team</span>
                     </div>
                     <div className="d-flex mt-4">
                         <Link to="my-team-detail" className="btn btn-light m-auto border">
