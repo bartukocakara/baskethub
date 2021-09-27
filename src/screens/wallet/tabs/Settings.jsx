@@ -1,6 +1,4 @@
-import React from 'react'
-
-const Privacy = () => {
+const Settings = () => {
     return (
         <div className="card">
             <div className="card-content">
@@ -69,4 +67,4 @@ const Privacy = () => {
     )
 }
 
-export default Privacy
+export default Settings

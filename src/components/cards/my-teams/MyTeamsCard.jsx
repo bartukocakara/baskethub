@@ -75,7 +75,7 @@ const MyTeamsCard = () => {
                         <AvatarGroup max={4} className="m-auto w-25 ">
                             <Avatar alt="Remy Sharp" src="assets/images/avatars/players/player1.jpg" />
                             <Avatar alt="Travis Howard" src="assets/images/avatars/players/player2.jpg" />
-                            <Avatar alt="Cindy Baker" src="assets/images/avatars/players/player3.jpg" />
+                            <Avatar alt="Cindy Baker" src="assets/images/avatars/players/player9.jpg" />
                             <Avatar alt="Agnes Walker" src="assets/images/avatars/players/player4.jpg" />
                             <Avatar alt="Trevor Henderson" src="assets/images/avatars/players/player5.jpg" />
                         </AvatarGroup>
