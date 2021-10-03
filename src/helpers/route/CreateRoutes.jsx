@@ -17,7 +17,7 @@ const createRoutes = [
             <Route path="/create-personal-training" component={CreatePersonalTraining} />,
             <Route path="/create-group-training" component={CreateGroupTraining} />,
             <Route path="/create-tournament" component={CreateTournament} />,
-            <Route path="/create-match-event" component={CreateMatch} />,
+            <Route path="/create-match" component={CreateMatch} />,
             <Route path="/create-subscription" component={CreateSubscription} />,
             <Route path="/create-all-star" component={CreateAllStar} />,
         ]

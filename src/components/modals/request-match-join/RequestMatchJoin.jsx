@@ -21,7 +21,7 @@ const RequestMatchJoin = ({handleRequestMatchJoinModalClose, show}) => {
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-            <form className="p-4">
+            <form>
                 <div class="avatar avatar-lg m-4 widget-card-right">
                     <img src="assets/images/faces/2.jpg" alt="" srcset="" />
                     <h6 className="text-center">Please select match you want to ask for join Bartu</h6>

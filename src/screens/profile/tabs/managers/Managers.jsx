@@ -16,7 +16,7 @@ const Managers = () => {
                         <div className="col-md-12 row m-2 p-2">
                             {
                                 [...Array(6)].map((player) => (
-                                    <Link to="training-video" className="col-md-3 mb-3">
+                                    <Link to="manager-detail" className="col-md-3 mb-3">
                                         <div className="border rounded p-3">
                                             <div class="avatar avatar-lg me-3 d-flex justify-content-between">
                                                 <img src="assets/images/faces/2.jpg" alt="create team" />

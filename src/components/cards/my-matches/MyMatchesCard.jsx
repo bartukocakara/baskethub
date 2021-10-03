@@ -19,12 +19,12 @@ const MyMatchesCard = () => {
         <div className="col-lg-10 col-sm-12 m-auto">
             <div className="col-md-12 d-flex p-1 match-card-up">
                 <h6 className="m-2 match-card-date">HAZ 13, PAZAR</h6>
-                <AvatarGroup max={3} className="m-2" >
-                    <Avatar alt="Remy Sharp" src="assets/images/faces/2.jpg" />
-                    <Avatar alt="Travis Howard" src="assets/images/faces/2.jpg" />
-                    <Avatar alt="Cindy Baker" src="assets/images/faces/2.jpg" />
-                    <Avatar alt="Agnes Walker" src="assets/images/faces/2.jpg" />
-                    <Avatar alt="Trevor Henderson" src="assets/images/faces/2.jpg" />
+                <AvatarGroup max={4} className="m-auto w-25 ">
+                    <Avatar alt="Remy Sharp" src="assets/images/avatars/players/player1.jpg" />
+                    <Avatar alt="Travis Howard" src="assets/images/avatars/players/player2.jpg" />
+                    <Avatar alt="Cindy Baker" src="assets/images/avatars/players/player3.jpg" />
+                    <Avatar alt="Agnes Walker" src="assets/images/avatars/players/player4.jpg" />
+                    <Avatar alt="Trevor Henderson" src="assets/images/avatars/players/player5.jpg" />
                 </AvatarGroup>
                 <span className="m-2">kişi katılıyor...</span>
             </div>
@@ -76,7 +76,7 @@ const MyMatchesCard = () => {
                                 <button class="btn btn-light text-primary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                     <FiShare2 className="card-footer-icon" />
                                 </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <ul class="dropdown-menu border" aria-labelledby="dropdownMenuButton1">
                                     <li><Link class="dropdown-item text-center">With Player <GoPerson /></Link></li>
                                     <li><Link class="dropdown-item text-center">Whatsapp <AiOutlineWhatsApp /></Link></li>
                                     <li><Link class="dropdown-item text-center">Facebook <TiSocialFacebook /></Link></li>

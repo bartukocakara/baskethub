@@ -1,9 +1,13 @@
-const TrainingCalendar = () => {
+
+import FullCalendar from '@fullcalendar/react'
+import dayGridPlugin from '@fullcalendar/daygrid'
+const TrainerCalendar = () => {
     return (
-        <div>
-            
-        </div>
+        <FullCalendar
+            plugins={[ dayGridPlugin ]}
+            initialView="dayGridMonth"
+        />
     )
 }
 
-export default TrainingCalendar
+export default TrainerCalendar

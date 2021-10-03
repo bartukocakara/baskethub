@@ -12,7 +12,7 @@ const CreateTournament = () => {
                     <CreateAllStarNavs />
                     <CreateAllStarInputs />
                     <div class="col-md-12 text-center">
-                        <button class="btn btn-success btn-md w-25 py-2">Create</button>
+                        <button class="btn btn-success btn-md w-25 py-2" disabled>Create</button>
                     </div>
                     
                 </div>

@@ -35,17 +35,17 @@ const CoachesCard = () => {
                 <div className="d-flex card-custom">
                     <div className="row coach">
                         <div class="col-md-4 avatar avatar-xl">
-                            <img className="coach-img" src="assets/images/samples/player.jpg"
+                            <img className="coach-img" src="assets/images/avatars/coaches/coach1.jpg"
                             alt="Card cap" />
                         </div>
                         <div class="col-md-4 text-center">
-                            <AvatarGroup max={4} className="m-auto">
-                                <Avatar alt="Remy Sharp" src="assets/images/faces/2.jpg" />
-                                <Avatar alt="Travis Howard" src="assets/images/faces/2.jpg" />
-                                <Avatar alt="Cindy Baker" src="assets/images/faces/2.jpg" />
-                                <Avatar alt="Agnes Walker" src="assets/images/faces/2.jpg" />
-                                <Avatar alt="Trevor Henderson" src="assets/images/faces/2.jpg" />
-                            </AvatarGroup>
+                            <AvatarGroup max={4} className="m-auto w-50 ">
+                            <Avatar alt="Remy Sharp" src="assets/images/avatars/players/player1.jpg" />
+                            <Avatar alt="Travis Howard" src="assets/images/avatars/players/player2.jpg" />
+                            <Avatar alt="Cindy Baker" src="assets/images/avatars/players/player3.jpg" />
+                            <Avatar alt="Agnes Walker" src="assets/images/avatars/players/player4.jpg" />
+                            <Avatar alt="Trevor Henderson" src="assets/images/avatars/players/player5.jpg" />
+                        </AvatarGroup>
                             <span>people working-out with this trainer</span>
                         </div>
                         <div class="col-md-4 text-center row">
@@ -74,7 +74,7 @@ const CoachesCard = () => {
                                 <FiShare2 className="card-footer-icon"  />
                             </Link>
 
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <ul class="dropdown-menu border" aria-labelledby="dropdownMenuLink">
                                 <li><Link class="dropdown-item text-center">With Player <GoPerson /></Link></li>
                                 <li><Link class="dropdown-item text-center">Whatsapp <AiOutlineWhatsApp /></Link></li>
                                 <li><Link class="dropdown-item text-center">Facebook <TiSocialFacebook /></Link></li>

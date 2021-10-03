@@ -5,7 +5,6 @@ import { TiSocialInstagram } from "@react-icons/all-files/ti/TiSocialInstagram";
 import { TiSocialTwitter } from "@react-icons/all-files/ti/TiSocialTwitter";
 import { TiSocialFacebook } from "@react-icons/all-files/ti/TiSocialFacebook";
 import { AiOutlineWhatsApp } from "@react-icons/all-files/ai/AiOutlineWhatsApp";
-import { GoLocation } from "@react-icons/all-files/go/GoLocation";
 import { GoPerson } from "@react-icons/all-files/go/GoPerson";
 import { FaComments } from "@react-icons/all-files/fa/FaComments";
 
@@ -16,6 +15,7 @@ import {
   } from "react-router-dom";
 import "./_managersCard.scss";
 import ManagerCommentsModal from '../../modals/comments/manager-comments/ManagerCommentsModal';
+import Header from './partials/Header';
 
 const ManagersCard = () => {
     
@@ -28,14 +28,11 @@ const ManagersCard = () => {
         <ManagerCommentsModal handleManagerCommentsModalClose={handleManagerCommentsModalClose} show={showManagerCommentsModal}/>
         <div className="col-xl-9 col-md-9 m-auto col-sm-12 feed-card feed-my-fav-players-card">
             <div className="card shadow">
-                <div class="d-flex justify-content-between p-2">
-                    <h4 className="card-title text-center">Bartu Kocakara</h4>
-                    <p><GoLocation size={25} className="text-primary"/>İstanbul <span>/ TR</span></p>
-                </div>
+                <Header />
                 <div className="d-flex card-custom">
                     <div className="row manager">
                         <div class="col-md-4 avatar avatar-xl me-3">
-                            <img className="manager-img" src="assets/images/samples/player.jpg" alt="Card cap" />
+                            <img className="manager-img" src="assets/images/avatars/managers/manager2.png" alt="Card cap" />
                         </div>
                         <div class="col-md-4 text-center">
                             <AvatarGroup max={4} className="m-auto">
@@ -73,7 +70,7 @@ const ManagersCard = () => {
                                 <FiShare2 className="card-footer-icon"  />
                             </Link>
 
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <ul class="dropdown-menu border" aria-labelledby="dropdownMenuLink">
                                 <li><Link class="dropdown-item text-center">With Player <GoPerson /></Link></li>
                                 <li><Link class="dropdown-item text-center">Whatsapp <AiOutlineWhatsApp /></Link></li>
                                 <li><Link class="dropdown-item text-center">Facebook <TiSocialFacebook /></Link></li>

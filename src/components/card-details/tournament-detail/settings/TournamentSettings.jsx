@@ -7,13 +7,13 @@ import TournamentSettingInputs from './partials/TournamentSettingInputs';
 
 const TournamentSetting = () => {
     return (
-        <div class="card">
-            <div class="d-flex">
+        <div className="card">
+            <div className="d-flex">
                 <Link to="tournament-detail" className="m-2"><BiArrowBack/> Turn back</Link>
-                <h4 class="card-title text-center mt-2" style={{ marginLeft:"30%" }}>Tournament Settings</h4>
+                <h4 className="card-title text-center mt-2" style={{ marginLeft:"30%" }}>Tournament Settings</h4>
             </div>
-            <div class="card-body">
-                <div class="row">
+            <div className="card-body">
+                <div className="row">
                     <TournamentSettingNavs />
                     <TournamentSettingInputs />
                 </div>

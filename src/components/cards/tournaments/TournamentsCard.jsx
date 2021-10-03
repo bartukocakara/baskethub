@@ -24,12 +24,12 @@ const TournamentsCard = () => {
                     <h6 className="m-1">İzmir Turnuvası</h6>
                 </div>
                 <div className="col-md-6 d-flex">
-                <AvatarGroup max={3} className="m-1" >
-                    <Avatar alt="Remy Sharp" src="assets/images/faces/2.jpg" />
-                    <Avatar alt="Travis Howard" src="assets/images/faces/2.jpg" />
-                    <Avatar alt="Cindy Baker" src="assets/images/faces/2.jpg" />
-                    <Avatar alt="Agnes Walker" src="assets/images/faces/2.jpg" />
-                    <Avatar alt="Trevor Henderson" src="assets/images/faces/2.jpg" />
+                <AvatarGroup max={4} className="m-auto w-25 ">
+                    <Avatar alt="Remy Sharp" src="assets/images/avatars/players/player1.jpg" />
+                    <Avatar alt="Travis Howard" src="assets/images/avatars/players/player2.jpg" />
+                    <Avatar alt="Cindy Baker" src="assets/images/avatars/players/player3.jpg" />
+                    <Avatar alt="Agnes Walker" src="assets/images/avatars/players/player4.jpg" />
+                    <Avatar alt="Trevor Henderson" src="assets/images/avatars/players/player5.jpg" />
                 </AvatarGroup>
                 <span className="m-1">takım katılıyor...</span>
                 </div>

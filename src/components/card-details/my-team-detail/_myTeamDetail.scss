@@ -1,0 +1,23 @@
+.message, .notification {
+    position: relative;
+    .fixed-actions {
+        border-radius :50%;
+        width:25px;
+        height:25px;
+        line-height:23px;
+        text-align: center;
+        align-items : center;
+        position: absolute;
+        bottom: -15px;
+        right:-9px;
+    }
+}
+.list-height{
+    height:50vh;
+    overflow-y:scroll;
+}
+.notification-drop{
+    width: 400px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}

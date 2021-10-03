@@ -58,7 +58,7 @@ const FavouritePlayerCard = () => {
                         <Link class="btn btn-light m-2 p-2 text-primary" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                             <FiShare2 className="card-footer-icon"  />
                         </Link>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <ul class="dropdown-menu border" aria-labelledby="dropdownMenuLink">
                             <li><Link class="dropdown-item text-center">With Player <GoPerson /></Link></li>
                             <li><Link class="dropdown-item text-center">Whatsapp <AiOutlineWhatsApp /></Link></li>
                             <li><Link class="dropdown-item text-center">Facebook <TiSocialFacebook /></Link></li>

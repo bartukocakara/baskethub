@@ -12,6 +12,7 @@ const CreateCourt = () => {
                 <div class="row">
                     <CreateCourtNavs />
                     <CreateCourtInputs />
+                    
                 </div>
             </div>
         </div>

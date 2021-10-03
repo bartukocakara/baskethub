@@ -7,29 +7,52 @@ import { TiSocialTwitter } from "@react-icons/all-files/ti/TiSocialTwitter";
 import { TiSocialFacebook } from "@react-icons/all-files/ti/TiSocialFacebook";
 import { AiOutlineWhatsApp } from "@react-icons/all-files/ai/AiOutlineWhatsApp";
 import { GoPerson } from "@react-icons/all-files/go/GoPerson";
+import { useState } from "react";
+import QuitAllStarModal from './../modals/QuitAllStarModal';
+import { FiLogOut } from "@react-icons/all-files/fi/FiLogOut";
 
 const AllStarDetailTop = () => {
+
+    const [showQuitAllStarModal, setQuitAllStarModal] = useState(false);
+
+    const handleQuitAllStarModalClose = () => setQuitAllStarModal(false);
+    const handleQuitAllStarModal = () => setQuitAllStarModal(true);
     return (
+        <>
+        <QuitAllStarModal handleQuitAllStarModalClose={handleQuitAllStarModalClose} show={showQuitAllStarModal}  />
+
         <div className="row">
-            <div className="col-md-6">
-                <div className=" d-flex">
-                    <h5 className="my-3 mx-2">Amsterdam </h5>
-                    <div className="dropdown">
-                        <Link className="btn btn-light m-2 p-2 text-primary border" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                            <FiShare2 />
-                        </Link>
-                        <ul className="dropdown-menu border" aria-labelledby="dropdownMenuLink">
-                            <li><Link className="dropdown-item text-center">With Player <GoPerson /></Link></li>
-                            <li><Link className="dropdown-item text-center">Whatsapp <AiOutlineWhatsApp /></Link></li>
-                            <li><Link className="dropdown-item text-center">Facebook <TiSocialFacebook /></Link></li>
-                            <li><Link className="dropdown-item text-center">Twitter <TiSocialTwitter /></Link></li>
-                            <li><Link className="dropdown-item text-center">Instagram <TiSocialInstagram /></Link></li>
-                        </ul>
+            <div className="col-md-12">
+            <h5 className="my-3 mx-2">Amsterdam <span>NET</span> </h5>
+
+            <div className="d-flex">
+                    <div className="d-flex">
+                        <div className="dropdown">
+                            <Link className="btn btn-light m-2 p-2 text-primary border" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                <FiShare2 />
+                            </Link>
+                            <ul className="dropdown-menu border" aria-labelledby="dropdownMenuLink">
+                                <li><Link className="dropdown-item text-center">With Player <GoPerson /></Link></li>
+                                <li><Link className="dropdown-item text-center">Whatsapp <AiOutlineWhatsApp /></Link></li>
+                                <li><Link className="dropdown-item text-center">Facebook <TiSocialFacebook /></Link></li>
+                                <li><Link className="dropdown-item text-center">Twitter <TiSocialTwitter /></Link></li>
+                                <li><Link className="dropdown-item text-center">Instagram <TiSocialInstagram /></Link></li>
+                            </ul>
+                        </div>
+
                         <Link className="btn btn-light m-2 p-2 text-primary border" to="all-star-settings" >
                             <FiSettings/>                          
                         </Link>
+                            <div className="m-auto mx-3">
+                                <Link onClick={handleQuitAllStarModal}>
+                                    <FiLogOut className="bg-danger text-light p-1 rounded" size={30}/>
+                                </Link>
+                            </div>
                     </div>
                 </div>
+            </div>
+            <div className="col-md-6">
+                
                 <div className="card-body">
                     <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
                         <div className="carousel-inner">
@@ -52,6 +75,7 @@ const AllStarDetailTop = () => {
                 </div>
             </div>
         </div>
+        </>
     )
 }
 

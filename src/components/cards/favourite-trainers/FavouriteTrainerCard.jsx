@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail";
-import { FaHandshake } from "@react-icons/all-files/fa/FaHandshake";
 import { FiShare2 } from "@react-icons/all-files/fi/FiShare2";
 import { TiSocialInstagram } from "@react-icons/all-files/ti/TiSocialInstagram";
 import { TiSocialTwitter } from "@react-icons/all-files/ti/TiSocialTwitter";
@@ -40,12 +39,12 @@ const FavouriteTrainerCard = () => {
                             alt="Card cap" />
                         </div>
                         <div class="col-md-4 text-center">
-                            <AvatarGroup max={4} className="m-auto">
-                                <Avatar alt="Remy Sharp" src="assets/images/faces/2.jpg" />
-                                <Avatar alt="Travis Howard" src="assets/images/faces/2.jpg" />
-                                <Avatar alt="Cindy Baker" src="assets/images/faces/2.jpg" />
-                                <Avatar alt="Agnes Walker" src="assets/images/faces/2.jpg" />
-                                <Avatar alt="Trevor Henderson" src="assets/images/faces/2.jpg" />
+                            <AvatarGroup max={4} className="m-auto w-50 ">
+                                <Avatar alt="Remy Sharp" src="assets/images/avatars/players/player1.jpg" />
+                                <Avatar alt="Travis Howard" src="assets/images/avatars/players/player2.jpg" />
+                                <Avatar alt="Cindy Baker" src="assets/images/avatars/players/player3.jpg" />
+                                <Avatar alt="Agnes Walker" src="assets/images/avatars/players/player4.jpg" />
+                                <Avatar alt="Trevor Henderson" src="assets/images/avatars/players/player5.jpg" />
                             </AvatarGroup>
                             <span>people working-out with this trainer</span>
                         </div>
@@ -70,15 +69,12 @@ const FavouriteTrainerCard = () => {
                         <Link class="btn btn-light m-2 p-2 text-primary " to="trainer-chat">
                             <AiOutlineMail className="card-footer-icon" />
                         </Link>
-                        <Link class="btn btn-light m-2 p-2 text-primary " to="trainer-offer">
-                            <FaHandshake className="card-footer-icon" />
-                        </Link>
                         <div class="dropdown">
                             <Link class="btn btn-light m-2 p-2 text-primary " role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                 <FiShare2 className="card-footer-icon"  />
                             </Link>
 
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <ul class="dropdown-menu border" aria-labelledby="dropdownMenuLink">
                                 <li><Link class="dropdown-item text-center">With Player <GoPerson /></Link></li>
                                 <li><Link class="dropdown-item text-center">Whatsapp <AiOutlineWhatsApp /></Link></li>
                                 <li><Link class="dropdown-item text-center">Facebook <TiSocialFacebook /></Link></li>
