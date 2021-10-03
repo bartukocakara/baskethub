@@ -17,9 +17,10 @@ const MyMatchesCard = () => {
     return (
         <>
         <div className="col-lg-10 col-sm-12 m-auto">
-            <div className="col-md-12 d-flex p-1 match-card-up">
-                <h6 className="m-2 match-card-date">HAZ 13, PAZAR</h6>
-                <AvatarGroup max={4} className="m-auto w-25 ">
+            <div className="col-md-12 d-flex p-1">
+                <h6 className="m-2 match-card-date col-md-4">HAZ 13, PAZAR</h6>
+                <div className="col-md-4 d-flex ">
+                <AvatarGroup max={4} className="m-auto ">
                     <Avatar alt="Remy Sharp" src="assets/images/avatars/players/player1.jpg" />
                     <Avatar alt="Travis Howard" src="assets/images/avatars/players/player2.jpg" />
                     <Avatar alt="Cindy Baker" src="assets/images/avatars/players/player3.jpg" />
@@ -27,6 +28,7 @@ const MyMatchesCard = () => {
                     <Avatar alt="Trevor Henderson" src="assets/images/avatars/players/player5.jpg" />
                 </AvatarGroup>
                 <span className="m-2">kişi katılıyor...</span>
+                </div>
             </div>
             <div className="col-xl-12 col-md-12 col-sm-12 feed-card feed-my-matches-card">
                 <div className="card shadow">
