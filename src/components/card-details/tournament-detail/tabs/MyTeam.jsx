@@ -53,7 +53,7 @@ const MyTeam = () => {
                                     <FiShare2 />
                                 </Link>
 
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <ul class="dropdown-menu border" aria-labelledby="dropdownMenuLink">
                                     <li><Link class="dropdown-item text-center">With Player <GoPerson /></Link></li>
                                     <li><Link class="dropdown-item text-center">Whatsapp <AiOutlineWhatsApp /></Link></li>
                                     <li><Link class="dropdown-item text-center">Facebook <TiSocialFacebook /></Link></li>
@@ -82,7 +82,7 @@ const MyTeam = () => {
                                             <td class="col-3">
                                                 <div class="d-flex align-items-center">
                                                     <div class="avatar avatar-lg">
-                                                        <img src="assets/images/faces/5.jpg" alt="team-detail" />
+                                                        <img src="assets/images/avatars/players/player2.jpg" alt="team-detail" />
                                                     </div>
                                                     <Link to="player-detail"><p class="font-bold ms-4 mb-0">Si Cantik</p></Link>
                                                 </div>
@@ -98,7 +98,10 @@ const MyTeam = () => {
                                                 </p>
                                             </td>
                                             <td class="col-auto">
-                                                <p class="mb-0 text-center"><GiPalmTree size={25} className="text-success m-1"/><GiHealthNormal size={25} className="text-danger m-1"/> <FaCalendarCheck size={25} className="text-primary m-1"/></p>
+                                                <p class="mb-0 text-center"><GiPalmTree size={25} className="text-success m-1"/>
+                                                    <GiHealthNormal size={25} className="text-danger m-1"/> 
+                                                    <FaCalendarCheck size={25} className="text-primary m-1"/>
+                                                </p>
                                             </td>
                                             <td>
                                                 <div className="btn-group">
@@ -116,7 +119,7 @@ const MyTeam = () => {
                                                         <Link className="text-light" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                                             <FiShare2 className="m-2" size={27}/>
                                                         </Link>
-                                                        <ul class="dropdown-menu mt-3" aria-labelledby="dropdownMenuLink">
+                                                        <ul class="dropdown-menu mt-3 border" aria-labelledby="dropdownMenuLink">
                                                             <li><Link class="dropdown-item text-center">With Player <GoPerson /></Link></li>
                                                             <li><Link class="dropdown-item text-center">Whatsapp <AiOutlineWhatsApp /></Link></li>
                                                             <li><Link class="dropdown-item text-center">Facebook <TiSocialFacebook /></Link></li>

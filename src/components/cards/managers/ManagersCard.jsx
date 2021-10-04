@@ -7,6 +7,7 @@ import { TiSocialFacebook } from "@react-icons/all-files/ti/TiSocialFacebook";
 import { AiOutlineWhatsApp } from "@react-icons/all-files/ai/AiOutlineWhatsApp";
 import { GoPerson } from "@react-icons/all-files/go/GoPerson";
 import { FaComments } from "@react-icons/all-files/fa/FaComments";
+import { AiOutlineFileSearch } from "@react-icons/all-files/ai/AiOutlineFileSearch";
 
 import Avatar from '@material-ui/core/Avatar';
 import AvatarGroup from '@material-ui/lab/AvatarGroup';
@@ -36,11 +37,11 @@ const ManagersCard = () => {
                         </div>
                         <div class="col-md-4 text-center">
                             <AvatarGroup max={4} className="m-auto">
-                                <Avatar alt="Remy Sharp" src="assets/images/faces/2.jpg" />
-                                <Avatar alt="Travis Howard" src="assets/images/faces/2.jpg" />
-                                <Avatar alt="Cindy Baker" src="assets/images/faces/2.jpg" />
-                                <Avatar alt="Agnes Walker" src="assets/images/faces/2.jpg" />
-                                <Avatar alt="Trevor Henderson" src="assets/images/faces/2.jpg" />
+                                <Avatar alt="Remy Sharp" src="assets/images/avatars/players/player10.jpg" />
+                                <Avatar alt="Travis Howard" src="assets/images/avatars/players/player1.jpg" />
+                                <Avatar alt="Cindy Baker" src="assets/images/avatars/players/player4.jpg" />
+                                <Avatar alt="Agnes Walker" src="assets/images/avatars/players/player3.jpg" />
+                                <Avatar alt="Trevor Henderson" src="assets/images/avatars/players/player5.jpg" />
                             </AvatarGroup>
                             <span>people working-out with this trainer</span>
                         </div>
@@ -53,11 +54,9 @@ const ManagersCard = () => {
                     
                 </div>
                 <div className="card-footer p-1">
-                    <div className="footer-left">
-                        <Link to="manager-detail" className="btn btn-light mt-2">
-                            Details
-                        </Link>
-                    </div>
+                    <Link  to="manager-detail">
+                        <AiOutlineFileSearch size={30} className="my-3 mx-4"/>
+                    </Link>
                     <div className="footer-right d-flex">
                         <Link class="btn btn-light m-2 p-2 text-primary">
                             <FaComments className="card-footer-icon" size={25} onClick={handleShowManagerCommentsModal} />

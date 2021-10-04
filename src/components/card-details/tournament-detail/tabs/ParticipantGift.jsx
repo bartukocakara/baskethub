@@ -21,7 +21,7 @@ const ParticipantGift = () => {
             {
                 giftList.map(gift => (
                     <div class="col-md-3">
-                        <div class="card border shadow rounded p-2">
+                        <div class="card border card-shadow rounded p-2">
                             <div class="card-body py-4 px-5">
                                 <div class="d-flex align-items-center">
                                     <div class="avatar avatar-xl">

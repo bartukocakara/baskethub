@@ -16,6 +16,7 @@ import AvatarGroup from '@material-ui/lab/AvatarGroup';
 import {
     Link
   } from "react-router-dom";
+import { AiOutlineFileSearch } from '@react-icons/all-files/ai/AiOutlineFileSearch';
 const TournamentsCard = () => {
     return (
         <div className="tournament-card col-xl-9 col-md-9 col-sm-12 h-25 m-auto">
@@ -43,8 +44,8 @@ const TournamentsCard = () => {
                 <div style={{ height: "60px" }} height="100"></div>
                 <div className="card-footer bg-transparent d-flex p-2 justify-content-between">
                     <div className="footer-left">
-                        <Link to="tournament-detail" className="btn btn-light">
-                            Details
+                        <Link  to="tournament-detail" className="btn text-primary bg-light ">
+                            <AiOutlineFileSearch size={30} className="my-1 mx-1"/>
                         </Link>
                     </div>
                     
@@ -69,7 +70,7 @@ const TournamentsCard = () => {
                     <div className="footer-right d-flex">
                         <div class="dropdown">
                         <button class="btn btn-light" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <FiShare2 className="card-footer-icon" />
+                            <FiShare2 className="card-footer-icon" />
                         </button>
                         <ul class="dropdown-menu tournament-dropdown" aria-labelledby="dropdownMenuButton1">
                             <li><Link class="dropdown-item text-center">With Player <GoPerson /></Link></li>

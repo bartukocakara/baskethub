@@ -6,6 +6,8 @@ import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail";
 
   import Avatar from '@material-ui/core/Avatar';
   import AvatarGroup from '@material-ui/lab/AvatarGroup';
+import { FaHandshake } from '@react-icons/all-files/fa/FaHandshake';
+import { AiOutlineFileSearch } from '@react-icons/all-files/ai/AiOutlineFileSearch';
 const Teams = () => {
     return (
         <div className="row mt-2">
@@ -14,7 +16,8 @@ const Teams = () => {
                 [...Array(5)].map((team) => (
                     <div className="col-md-4 feed-card feed-my-teams-card">
                         <div className="card border shadow ">
-                            <h4 className="card-title text-center">Bornova Team</h4>
+                            <h4 className="card-title mt-2 text-center">Bornova Team</h4>
+                            <h6 className="text-center">Istanbul <span>-TR</span> </h6>
                             <div className="card-content card-body">
                                 <div className="d-flex">
                                 <AvatarGroup max={3} className="m-1" >
@@ -26,13 +29,15 @@ const Teams = () => {
                                 </AvatarGroup>
                                 <span className="m-1">people</span>
                                 </div>
-                                <div className="d-flex mt-4">
-                                    <Link to="my-team-detail" className="btn btn-light w-50 m-auto">
-                                        Details
+                                <div className="d-flex justify-content-between mt-4">
+                                    <Link to="team-detail">
+                                        <AiOutlineFileSearch size={30} className="my-1 mx-1"/>
                                     </Link>
-                                    <div className="col-md-4"></div>
-                                    <Link to="team-chat" className="btn btn-warning ">
-                                        <AiOutlineMail width="100px" />
+                                    <Link to="team-detail" className="btn btn-warning">
+                                        Join <FaHandshake />
+                                    </Link>
+                                    <Link to="team-chat">
+                                        <AiOutlineMail size={30} />
                                     </Link>
                             </div>
                             </div>

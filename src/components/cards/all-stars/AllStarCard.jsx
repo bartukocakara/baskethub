@@ -6,6 +6,7 @@ import { TiSocialTwitter } from "@react-icons/all-files/ti/TiSocialTwitter";
 import { TiSocialFacebook } from "@react-icons/all-files/ti/TiSocialFacebook";
 import { AiOutlineWhatsApp } from "@react-icons/all-files/ai/AiOutlineWhatsApp";
 import { GoPerson } from "@react-icons/all-files/go/GoPerson";
+import { AiOutlineFileSearch } from '@react-icons/all-files/ai/AiOutlineFileSearch';
 
 const AllStarCard = () => {
     return (
@@ -25,13 +26,11 @@ const AllStarCard = () => {
                     </div>
                 </div>
                 <div className=" p-2 d-flex justify-content-between">
-                    <Link to="all-star-detail" className="btn btn-light">
-                        Details
+                    <Link  to="coach-detail">
+                        <AiOutlineFileSearch size={30} className="my-3 mx-4"/>
                     </Link>
                     <div class="dropdown">
-                        <button class="btn btn-light text-primary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                            <FiShare2 className="card-footer-icon" />
-                        </button>
+                        <FiShare2 className="my-3 mx-4 text-primary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" size={30}/>
                         <ul class="dropdown-menu border mt-1" aria-labelledby="dropdownMenuButton1">
                             <li><Link class="dropdown-item text-center">With Player <GoPerson /></Link></li>
                             <li><Link class="dropdown-item text-center">Whatsapp <AiOutlineWhatsApp /></Link></li>
