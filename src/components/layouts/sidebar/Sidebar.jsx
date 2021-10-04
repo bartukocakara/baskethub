@@ -33,7 +33,7 @@ const Sidebar = () => {
                         <div class="d-flex justify-content-between">
                             <div class="logo">
                                 <Link to="/">
-                                    <h5 class="sidebar-app-name app-name">Social Basket</h5>
+                                    <h5 class="sidebar-app-name app-name">Basket-Go</h5>
                                 </Link>
 
                             </div>
