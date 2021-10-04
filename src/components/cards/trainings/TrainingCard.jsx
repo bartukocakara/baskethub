@@ -13,6 +13,7 @@ import AvatarGroup from '@material-ui/lab/AvatarGroup';
 import {
     Link
   } from "react-router-dom";
+import { AiOutlineFileSearch } from '@react-icons/all-files/ai/AiOutlineFileSearch';
 const TrainingCard = () => {
     return (
         <div className="tournament-card col-xl-9 col-md-9 col-sm-12 h-25 m-auto">
@@ -41,7 +42,7 @@ const TrainingCard = () => {
                 <div className="card-footer bg-transparent d-flex p-2 justify-content-between">
                     <div className="footer-left">
                         <Link to="training-detail" className="btn btn-light">
-                            Details
+                            <AiOutlineFileSearch size={30} className="my-1 mx-1"/>
                         </Link>
                     </div>
                     
