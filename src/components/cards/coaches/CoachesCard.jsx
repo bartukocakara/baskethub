@@ -16,6 +16,7 @@ import {
   } from "react-router-dom";
 import "./_coachesCard.scss";
 import CourtCommentsModal from '../../modals/comments/court-comments/CourtCommentsModal';
+import { AiOutlineFileSearch } from '@react-icons/all-files/ai/AiOutlineFileSearch';
 
 const CoachesCard = () => {
     
@@ -57,11 +58,9 @@ const CoachesCard = () => {
                     
                 </div>
                 <div className="card-footer p-1">
-                    <div className="footer-left">
-                        <Link to="coach-detail" className="btn btn-light mt-2">
-                            Details
-                        </Link>
-                    </div>
+                    <Link  to="coach-detail">
+                        <AiOutlineFileSearch size={30} className="my-3 mx-4"/>
+                    </Link>
                     <div className="footer-right d-flex">
                         <Link class="btn btn-light m-2 p-2 text-primary">
                             <FaComments className="card-footer-icon" size={25} onClick={handleShowCommentsModal} />

@@ -18,6 +18,7 @@ import {
   } from "react-router-dom";
 import "./_favouriteCourt.scss";
 import CourtCommentsModal from '../../modals/comments/court-comments/CourtCommentsModal';
+import { AiOutlineFileSearch } from '@react-icons/all-files/ai/AiOutlineFileSearch';
      
 
 const FavouriteCourtCard = () => {
@@ -66,11 +67,9 @@ const FavouriteCourtCard = () => {
                     </div>
                 </div>
                 <div className="card-footer">
-                    <div className="footer-left mt-2">
-                        <Link className="btn btn-light" to="court-detail">
-                            Court Details
-                        </Link>
-                    </div>
+                    <Link  to="court-detail">
+                        <AiOutlineFileSearch size={30} className="my-3 mx-4"/>
+                    </Link>
                     <div className="m-auto fw-bold d-flex">
                         <GiPathDistance size={30} className="m-1"/>
                         <label className="m-1">15km uzaklıkta</label>

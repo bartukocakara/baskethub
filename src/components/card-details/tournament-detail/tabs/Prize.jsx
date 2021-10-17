@@ -6,7 +6,7 @@ const Prize = () => {
     return (
         <div className="row m-3 p-3">
                 <div className="col-6 col-lg-3 col-md-6">
-                    <div className="card border rounded">
+                    <div className="card border card-shadow rounded">
                         <div className="card-body px-3 py-4-5">
                             <div className="row">
                                 <div className="col-md-8 m-auto text-center">

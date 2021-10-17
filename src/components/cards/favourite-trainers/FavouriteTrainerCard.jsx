@@ -16,6 +16,7 @@ import {
   } from "react-router-dom";
 import "./_favouriteTrainer.scss";
 import TrainerCommentsModal from '../../modals/comments/trainer-comments/TrainerCommentsModal';
+import { AiOutlineFileSearch } from '@react-icons/all-files/ai/AiOutlineFileSearch';
 
 const FavouriteTrainerCard = () => {
     
@@ -57,11 +58,9 @@ const FavouriteTrainerCard = () => {
                     
                 </div>
                 <div className="card-footer p-1">
-                    <div className="footer-left mt-2">
-                        <Link to="trainer-detail" className="btn btn-light">
-                            Details
-                        </Link>
-                    </div>
+                    <Link  to="trainer-detail">
+                        <AiOutlineFileSearch size={30} className="my-3 mx-4"/>
+                    </Link>
                     <div className="footer-right d-flex">
                         <Link class="btn btn-light m-2 p-2 text-primary">
                             <FaComments className="card-footer-icon" size={25} onClick={handleShowTrainerCommentsModal} />

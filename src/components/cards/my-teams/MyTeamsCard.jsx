@@ -15,6 +15,8 @@ import { TiSocialTwitter } from '@react-icons/all-files/ti/TiSocialTwitter';
 import { TiSocialInstagram } from '@react-icons/all-files/ti/TiSocialInstagram';
 // import { FaRunning } from '@react-icons/all-files/fa/FaRunning';
 import { FaBasketballBall } from '@react-icons/all-files/fa/FaBasketballBall';
+import { FaHandshake } from "@react-icons/all-files/fa/FaHandshake";
+import { AiOutlineFileSearch } from "@react-icons/all-files/ai/AiOutlineFileSearch";
 
 import RequestAllStarJoinModal from './modals/RequestAllStarJoinModal';
 import RequestMatchJoinModal from './modals/RequestMatchJoinModal';
@@ -54,9 +56,12 @@ const MyTeamsCard = () => {
                 <div className="card shadow">
                     <div className="d-flex justify-content-between mt-2">
                         <FaBasketballBall className="text-success mx-3" size={25}/>
-                        <div className="d-flex">
-                            <h4 className="card-title text-center">Bornova Team</h4>
-                            <BsFillLockFill className="m-1"/>
+                        <div>
+                            <div className="d-flex">
+                                <h4 className="card-title text-center">Bornova Team</h4>
+                                <BsFillLockFill className="m-1"/>
+                            </div>
+                            <h6 className="text-center">Istanbul <span>- TR</span></h6>
                         </div>
                         <div class="dropdown">
                             <button class="btn btn-light text-primary border mx-3 " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -82,12 +87,12 @@ const MyTeamsCard = () => {
                         <span>person in this team</span>
                     </div>
                     <div className="d-flex mt-4">
-                        <Link to="my-team-detail" className="btn btn-light m-auto border">
-                            Details
+                        <Link to="team-detail" className="btn btn-light m-auto border">
+                            <AiOutlineFileSearch />
                         </Link>
                         <div class="dropdown m-2">
-                            <button class="btn btn-warning mx-3 " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                Request
+                            <button class="btn btn-warning" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                 <FaHandshake />
                             </button>
                             <ul class="dropdown-menu border" aria-labelledby="dropdownMenuButton1">
                                 <li><Link class="dropdown-item text-center" onClick={handleRequestMatchJoinModal}>Request join match </Link></li>
