@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import {ImTree} from "@react-icons/all-files/im/ImTree";
-import {GiStrong} from "@react-icons/all-files/gi/GiStrong";
-import {FaRunning} from "@react-icons/all-files/fa/FaRunning";
-import {FaUserTie} from "@react-icons/all-files/fa/FaUserTie";
+// import {ImTree} from "@react-icons/all-files/im/ImTree";
+// import {GiStrong} from "@react-icons/all-files/gi/GiStrong";
+// import {FaRunning} from "@react-icons/all-files/fa/FaRunning";
+// import {FaUserTie} from "@react-icons/all-files/fa/FaUserTie";
 import {FaBasketballBall} from "@react-icons/all-files/fa/FaBasketballBall";
 
 import {
@@ -16,11 +16,11 @@ import { GoPerson } from "@react-icons/all-files/go/GoPerson";
 import CourtSearchModal from '../../../modals/search/court-search/CourtSearchModal';
 import PlayerSearchModal from '../../../modals/search/player-search/PlayerSearchModal';
 import TeamSearchModal from '../../../modals/search/team-search/TeamSearchModal';
-import TrainerSearchModal from '../../../modals/search/trainer-search/TrainerSearchModal';
-import TournamentSearchModal from '../../../modals/search/tournament-search/TournamentSearchModal';
-import TrainingSearchModal from '../../../modals/search/training-search/TrainingSearchModal';
-import CoachSearchModal from '../../../modals/search/coach-search/CoachSearchModal';
-import ManagerSearchModal from '../../../modals/search/manager-search/ManagerSearchModal';
+// import TrainerSearchModal from '../../../modals/search/trainer-search/TrainerSearchModal';
+// import TournamentSearchModal from '../../../modals/search/tournament-search/TournamentSearchModal';
+// import TrainingSearchModal from '../../../modals/search/training-search/TrainingSearchModal';
+// import CoachSearchModal from '../../../modals/search/coach-search/CoachSearchModal';
+// import ManagerSearchModal from '../../../modals/search/manager-search/ManagerSearchModal';
 const NewSearch = () => {
 
     const [showTeamSearch, setTeamShow] = useState(false);
@@ -38,40 +38,40 @@ const NewSearch = () => {
     const handleCourtClose = () => setCourtShow(false);
     const handleCourtShow = () => setCourtShow(true);
 
-    const [showTrainerSearch, setTrainerShow] = useState(false);
+    // const [showTrainerSearch, setTrainerShow] = useState(false);
   
-    const handleTrainerClose = () => setTrainerShow(false);
-    const handleTrainerShow = () => setTrainerShow(true);
+    // const handleTrainerClose = () => setTrainerShow(false);
+    // const handleTrainerShow = () => setTrainerShow(true);
 
-    const [showTournamentSearch, setTournamentShow] = useState(false);
+    // const [showTournamentSearch, setTournamentShow] = useState(false);
   
-    const handleTournamentClose = () => setTournamentShow(false);
-    const handleTournamentShow = () => setTournamentShow(true);
+    // const handleTournamentClose = () => setTournamentShow(false);
+    // const handleTournamentShow = () => setTournamentShow(true);
 
-    const [showTrainingSearch, setTrainingShow] = useState(false);
+    // const [showTrainingSearch, setTrainingShow] = useState(false);
   
-    const handleTrainingClose = () => setTrainingShow(false);
-    const handleTrainingShow = () => setTrainingShow(true);
+    // const handleTrainingClose = () => setTrainingShow(false);
+    // const handleTrainingShow = () => setTrainingShow(true);
 
-    const [showCoachSearch, setCoachShow] = useState(false);
+    // const [showCoachSearch, setCoachShow] = useState(false);
   
-    const handleCoachClose = () => setCoachShow(false);
-    const handleCoachShow = () => setCoachShow(true);
+    // const handleCoachClose = () => setCoachShow(false);
+    // const handleCoachShow = () => setCoachShow(true);
 
-    const [showManagerSearch, setManagerShow] = useState(false);
+    // const [showManagerSearch, setManagerShow] = useState(false);
   
-    const handleManagerClose = () => setManagerShow(false);
-    const handleManagerShow = () => setManagerShow(true);
+    // const handleManagerClose = () => setManagerShow(false);
+    // const handleManagerShow = () => setManagerShow(true);
     return (
         <>
             <CourtSearchModal handleCourtClose={handleCourtClose} show={showCourtSearch} />
             <PlayerSearchModal handlePlayerClose={handlePlayerClose} show={showPlayerSearch} />
             <TeamSearchModal handleTeamClose={handleTeamClose} show={showTeamSearch} />
-            <TrainerSearchModal handleTrainerClose={handleTrainerClose} show={showTrainerSearch}/>
+            {/* <TrainerSearchModal handleTrainerClose={handleTrainerClose} show={showTrainerSearch}/>
             <TournamentSearchModal handleTournamentClose={handleTournamentClose} show={showTournamentSearch}/>
             <TrainingSearchModal handleTrainingClose={handleTrainingClose} show={showTrainingSearch}/>
             <CoachSearchModal handleCoachClose={handleCoachClose} show={showCoachSearch}/>
-            <ManagerSearchModal handleManagerClose={handleManagerClose} show={showManagerSearch}/>
+            <ManagerSearchModal handleManagerClose={handleManagerClose} show={showManagerSearch}/> */}
             <li exact className="sidebar-item has-sub">
                 <Link className="sidebar-link">
                 <i class="bi bi-search"></i>
@@ -102,7 +102,7 @@ const NewSearch = () => {
                             Player Search
                         </Link>
                     </li>
-                    <li className="submenu-item">
+                    {/* <li className="submenu-item">
                         <Link variant="primary" onClick={handleTrainingShow}>
                             <FaRunning className="m-1" size={18} />
                             Training Search
@@ -133,7 +133,7 @@ const NewSearch = () => {
                             <GiStrong className="m-1" size={18} />
                             Trainer Search
                         </Link>
-                    </li>
+                    </li> */}
                 </ul>
             </li>
         </>

@@ -3,13 +3,13 @@ import { AiFillStar } from "@react-icons/all-files/ai/AiFillStar";
 import { AiOutlineFileSearch } from "@react-icons/all-files/ai/AiOutlineFileSearch";
 import {FaBasketballBall} from "@react-icons/all-files/fa/FaBasketballBall";
 import {BsPeopleFill} from "@react-icons/all-files/bs/BsPeopleFill";
-import {ImTree} from "@react-icons/all-files/im/ImTree";
-import {GiStrong} from "@react-icons/all-files/gi/GiStrong";
-import {BsFillCameraVideoFill} from "@react-icons/all-files/bs/BsFillCameraVideoFill";
-import {GiRainbowStar} from "@react-icons/all-files/gi/GiRainbowStar";
-import {FaRunning} from "@react-icons/all-files/fa/FaRunning";
-import {FaUserTie} from "@react-icons/all-files/fa/FaUserTie";
-import {BsFillBriefcaseFill} from "@react-icons/all-files/bs/BsFillBriefcaseFill";
+// import {ImTree} from "@react-icons/all-files/im/ImTree";
+// import {GiStrong} from "@react-icons/all-files/gi/GiStrong";
+// import {BsFillCameraVideoFill} from "@react-icons/all-files/bs/BsFillCameraVideoFill";
+// import {GiRainbowStar} from "@react-icons/all-files/gi/GiRainbowStar";
+// import {FaRunning} from "@react-icons/all-files/fa/FaRunning";
+// import {FaUserTie} from "@react-icons/all-files/fa/FaUserTie";
+// import {BsFillBriefcaseFill} from "@react-icons/all-files/bs/BsFillBriefcaseFill";
 
 import {
     NavLink,
@@ -33,7 +33,7 @@ const Sidebar = () => {
                         <div class="d-flex justify-content-between">
                             <div class="logo">
                                 <Link to="/">
-                                    <h5 class="sidebar-app-name app-name">Basket-Go</h5>
+                                    <h5 class="sidebar-app-name app-name">Baskethub</h5>
                                 </Link>
 
                             </div>
@@ -62,14 +62,14 @@ const Sidebar = () => {
                                     <span className="badge bg-warning side-shadow">4</span>
                                 </NavLink >
                             </li>
-                            <li className="sidebar-item">
+                            {/* <li className="sidebar-item">
                                 <NavLink  to="/my-trainers" className="sidebar-link">
                                 <GiStrong />
                                     <span>My Trainers </span>
                                     <span className="badge bg-warning side-shadow">4</span>
                                 </NavLink >
-                            </li>
-                            <li className="sidebar-item">
+                            </li> */}
+                            {/* <li className="sidebar-item">
                                 <NavLink  to="/coaches" className="sidebar-link">
                                     <FaUserTie />
                                     <FaBasketballBall  size={13} className="mt-2"/>
@@ -82,7 +82,7 @@ const Sidebar = () => {
                                     <BsFillBriefcaseFill size={13} className="mt-2"/>
                                     <span>Managers</span>
                                 </NavLink >
-                            </li>
+                            </li> */}
                             <li className="sidebar-item has-sub">
                                 <Link  to="/my-matches" className="sidebar-link">
                                     <AiFillStar />
@@ -99,11 +99,11 @@ const Sidebar = () => {
                                         Favourite Courts
                                         </NavLink >
                                     </li>
-                                    <li className="submenu-item">
+                                    {/* <li className="submenu-item">
                                         <NavLink  to="/favourite-trainers" className="sidebar-link">
                                         Favourite Trainers
                                         </NavLink >
-                                    </li>
+                                    </li> */}
                                 </ul>
                             </li>
                             <li className="sidebar-item">
@@ -112,7 +112,7 @@ const Sidebar = () => {
                                     <span>Last Search</span>
                                 </NavLink >
                             </li>
-                            <li className="sidebar-item">
+                            {/* <li className="sidebar-item">
                                 <NavLink  to="/trainings" className="sidebar-link">
                                     <FaRunning />
                                     <span>Trainings</span>
@@ -136,10 +136,10 @@ const Sidebar = () => {
                                     <BsFillCameraVideoFill />
                                     <span>Watch</span>
                                 </NavLink >
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
-
+                    <hr />
                     <InfoButtons />
                 </div>
                 <button className="sidebar-toggler btn x"><i data-feather="x"></i></button>
